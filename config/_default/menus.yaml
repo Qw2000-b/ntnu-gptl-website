@@ -1,21 +1,17 @@
 # config/_default/menus.yaml
 main:
-  - name: 首頁          # 顯示在選單上的名稱
-    url: '#about'      # 對應到的頁面區塊 ID (連到首頁的關於我們)
-    weight: 10         # 排序數字，越小越靠左
+  - name: Home
+    url: /
+    weight: 10
 
-  - name: 研究方向
-    url: '#projects'   # 連到首頁的研究領域區塊
+  - name: About Us
+    url: /about/
     weight: 20
 
-  - name: 實驗室成員
-    url: 'people/'     # 連到獨立的成員頁面 (content/people/)
+  - name: Research
+    url: /research/
     weight: 30
 
-  - name: 論文發表
-    url: 'publication/'# 連到獨立的論文頁面
+  - name: Publications
+    url: /publication/
     weight: 40
-
-  - name: 最新消息
-    url: '#news'
-    weight: 50
