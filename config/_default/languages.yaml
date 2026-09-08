@@ -1,17 +1,7 @@
 # Languages
 
-# English
 en:
   languageCode: en-us
-  contentDir: content/en
   title: NTNU GPTL
   params:
     description: NTNU Green Power Technology Lab
-
-# Chinese
-zh:
-  languageCode: zh-Hans
-  contentDir: content/zh
-  title: GPTL
-  params:
-    description: 國立臺灣師範大學綠能動力特色實驗室
