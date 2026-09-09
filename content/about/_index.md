@@ -9,7 +9,7 @@ sections:
     content:
       title: Advisors
       text: |
-        Advisor information will be added here.
+        Advisor profiles will be added here.
 
   - block: markdown
     id: research-team
