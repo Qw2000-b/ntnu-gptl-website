@@ -1,5 +1,4 @@
 ---
-# Leave the homepage title empty to use the site title
 title:
 date: 2026-09-09
 type: landing
@@ -7,41 +6,48 @@ type: landing
 sections:
 
   # =========================================================
-  # 1. Lab Introduction
+  # Lab Introduction
   # =========================================================
   - block: hero
+    id: introduction
     content:
       title: |
         NTNU GPTL
       text: |
         <br>
 
-        Welcome to **NTNU GPTL**.
+        **Green Power Technology Laboratory**
 
-        Our laboratory focuses on interdisciplinary research in
-        energy systems, vehicle technologies, control strategies,
+        National Taiwan Normal University
+
+        Our laboratory focuses on interdisciplinary research
+        in energy systems, vehicle technologies, control,
         thermal management, and intelligent engineering.
 
-    design:
-      background:
-        color: white
-
 
   # =========================================================
-  # 2. Development Directions
+  # Development Directions
   # =========================================================
   - block: markdown
+    id: development
     content:
       title: Development Directions
       subtitle: ''
       text: |
-        Our research and development activities focus on several key directions:
+        ### Vehicle & Energy System Modeling
+        Modeling and simulation of vehicle and energy systems.
 
-        - **Vehicle & Energy System Modeling**
-        - **Control & Energy Management**
-        - **Thermal Management**
-        - **Real-Time Simulation & HIL**
-        - **AI for Energy & Mobility**
+        ### Control & Energy Management
+        Development of intelligent control and energy management strategies.
+
+        ### Thermal Management
+        Thermal system modeling, control, and energy-efficient operation.
+
+        ### Real-Time Simulation & HIL
+        Real-time simulation, controller validation, and hardware-in-the-loop testing.
+
+        ### AI for Energy & Mobility
+        Artificial intelligence applications for energy systems and intelligent mobility.
 
     design:
       columns: '1'
@@ -50,13 +56,12 @@ sections:
 
 
   # =========================================================
-  # 3. News
+  # News
   # =========================================================
   - block: collection
+    id: news
     content:
       title: News
-      subtitle:
-      text:
       count: 5
       filters:
         author: ''
@@ -74,9 +79,10 @@ sections:
 
 
   # =========================================================
-  # 4. Contact Us
+  # Contact Us
   # =========================================================
   - block: markdown
+    id: contact
     content:
       title: Contact Us
       subtitle: ''
@@ -87,7 +93,7 @@ sections:
         **Phone:** To be updated  
         **Email:** To be updated  
 
-        Google Map will be added here later.
+        Google Map will be added later.
 
     design:
       columns: '1'
