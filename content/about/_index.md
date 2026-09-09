@@ -11,10 +11,10 @@ sections:
       user_groups:
         - Advisors
     design:
-      show_interests: true
+      show_interests: false
       show_role: true
-      show_social: true
-      show_organizations: true
+      show_social: false
+      show_organizations: false
 
   - block: markdown
     id: research-team
