@@ -4,17 +4,12 @@ type: landing
 
 sections:
 
-  - block: people
+  - block: markdown
     id: advisors
     content:
       title: Advisors
-      user_groups:
-        - Advisors
-    design:
-      show_interests: false
-      show_role: true
-      show_social: false
-      show_organizations: false
+      text: |
+        Advisor profiles will be added here.
 
   - block: markdown
     id: research-team
