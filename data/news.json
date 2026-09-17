@@ -1,0 +1,245 @@
+[
+  {
+    "id": "isie-2026",
+    "sort_date": "2026-06-24",
+    "date_label": "發表日期｜2026/06/24",
+    "title": "IEEE ISIE 2026 論文發表",
+    "text": "莊啓文赴日本名古屋，於第 35 屆 IEEE International Symposium on Industrial Electronics（ISIE 2026）發表論文。",
+    "papers": [
+      {
+        "people": "莊啓文",
+        "title": "Comparative Benefit Assessment of Diesel–Electric Hybrid and Hydrogen Fuel-Cell Hybrid Powertrains for a 5-Ton-Class Refrigeration Truck",
+        "award": ""
+      }
+    ],
+    "period": "會議期間｜2026/06/23–26",
+    "award": ""
+  },
+  {
+    "id": "iv-2026",
+    "sort_date": "2026-06-22",
+    "date_label": "會議期間｜2026/06/22–25",
+    "title": "IEEE IV 2026 論文發表",
+    "text": "黃啟錩赴美國密西根州，於第 37 屆 IEEE Intelligent Vehicles Symposium（IV 2026）發表論文。",
+    "papers": [
+      {
+        "people": "黃啟錩",
+        "title": "Energy-optimal lane-change planning for fuel cell electric vehicles",
+        "award": ""
+      }
+    ],
+    "period": "",
+    "award": ""
+  },
+  {
+    "id": "isme-2026",
+    "sort_date": "2026-05-09",
+    "date_label": "活動日期｜2026/05/09",
+    "title": "ISME 2026 研討會與研究成果",
+    "text": "實驗室專題學生參與「2026 ISME 第 11 屆台灣機電工程國際學會全國學術研討會」，各組研究題目與學生如下。",
+    "papers": [
+      {
+        "people": "廖詠頡、陳沛廷",
+        "title": "氫能移動式電動車之智慧型最佳能源控制系統開發",
+        "award": "最佳論文獎"
+      },
+      {
+        "people": "張右杰、陳竑聿、劉俊輝",
+        "title": "混合電力船舶模型建立與控制器開發",
+        "award": "最佳論文獎"
+      },
+      {
+        "people": "陳泓佑、蔡易庭、林睦鈞",
+        "title": "人類駕駛風格之自動駕駛能耗最佳化軌跡規劃設計",
+        "award": "最佳論文獎"
+      },
+      {
+        "people": "莊才威、黃晧翔",
+        "title": "冷鏈車之細部系統設計與開發",
+        "award": "最佳論文獎"
+      },
+      {
+        "people": "李家宇、劉宥宣、陳祖言",
+        "title": "混合電動車熱管理系統熱流與奈米流體調製及性能分析",
+        "award": "最佳論文獎"
+      }
+    ],
+    "period": "",
+    "award": "",
+    "award_source": "使用者於 2026-09-18 明確確認五組皆獲最佳論文獎。",
+    "editor_note": "使用者指出師大公告標註有誤，本則依使用者確認標示五組獲獎；保留使用者提供的學生名單。"
+  },
+  {
+    "id": "icmet-2026",
+    "sort_date": "2026-04-28",
+    "date_label": "會議期間｜2026/04/28–30",
+    "title": "ICMET 2026 國際研討會",
+    "text": "研究生蕭程萇、施權祐、鄭安哲與梁耘碩赴日本大阪，參與 The 17th International Conference on Mechanical and Electrical Technologies（ICMET 2026）。",
+    "papers": [
+      {
+        "people": "",
+        "title": null,
+        "award": ""
+      },
+      {
+        "people": "",
+        "title": null,
+        "award": ""
+      }
+    ],
+    "period": "",
+    "award": ""
+  },
+  {
+    "id": "icatye-exchange",
+    "sort_date": "2026-03-09",
+    "date_label": "行程期間｜2026/03/09–14",
+    "title": "日本學術交流",
+    "text": "研究生施權祐代表實驗室及台灣 SAE 赴日本，參與 JSAE KANTO International Conference of Automotive Technology for Young Engineers（ICATYE）相關活動。",
+    "papers": [
+      {
+        "people": "施權祐",
+        "title": null,
+        "award": ""
+      }
+    ],
+    "period": "",
+    "award": ""
+  },
+  {
+    "id": "aiact-2026",
+    "sort_date": "2026-02-10",
+    "date_label": "公告日期｜2026/02/10",
+    "title": "AIACT 2026 最佳講者",
+    "text": "洪翊軒教授赴澳洲雪梨參與第 10 屆 International Conference on Artificial Intelligence, Automation and Control Technologies（AIACT 2026），以以下論文進行發表，並獲「最佳講者」肯定。",
+    "papers": [
+      {
+        "people": "洪翊軒",
+        "title": "An Integrated Optimal System/Controller Design with Fuel Cell and Battery State-of-Health Factors for EV-based Hydrogen/Energy Storage Systems",
+        "award": ""
+      }
+    ],
+    "period": "會議期間｜2026/02/02–06",
+    "award": "最佳講者"
+  },
+  {
+    "id": "vehicle-engineering-2025",
+    "sort_date": "2025-12-20",
+    "date_label": "活動日期｜2025/12/20",
+    "title": "第 30 屆車輛工程學術研討會",
+    "text": "研究生蕭程萇與梁耘碩參與第 30 屆車輛工程學術研討會，發表題目如下。",
+    "papers": [
+      {
+        "people": "蕭程萇",
+        "title": "基於基因演算法之模糊控制策略應用於燃料電池車能量管理系統",
+        "award": ""
+      },
+      {
+        "people": "梁耘碩",
+        "title": "基於全域搜索與 Simulink 模擬之燃料電池電動巴士功率響應補償與設計",
+        "award": ""
+      }
+    ],
+    "period": "",
+    "award": ""
+  },
+  {
+    "id": "csme-2025",
+    "sort_date": "2025-12-05",
+    "date_label": "會議期間｜2025/12/05–06",
+    "title": "CSME 2025 論文發表",
+    "text": "研究生施權祐、鄭安哲及專題生李杰庭參與「中國機械工程學會 114 年度年會暨第 42 屆全國學術研討會」，發表題目如下。",
+    "papers": [
+      {
+        "people": "施權祐",
+        "title": "應用全域搜尋演算法於氫燃料電池巴士之多目標動力系統最佳化規格匹配研究",
+        "award": ""
+      },
+      {
+        "people": "鄭安哲",
+        "title": "適應性人工蜂群演算法應用於電動巴士多能源充電場域之最佳化電力調度分析",
+        "award": ""
+      },
+      {
+        "people": "李杰庭",
+        "title": "燃料電池複合鋰電池商用車熱管理系統應用粒子群仿生演算法之動態性能分析",
+        "award": ""
+      }
+    ],
+    "period": "",
+    "award": ""
+  },
+  {
+    "id": "kyushu-dual-degree",
+    "sort_date": "2025-12-03",
+    "date_label": "公告日期｜2025/12/03",
+    "title": "九州大學碩士雙聯學位核准",
+    "text": "研究生黃啟錩與施權祐經九州大學審查通過，將於 114 學年度第 2 學期及 115 學年度第 1 學期赴日本九州大學綜合理工學研究院修讀碩士雙聯學位。",
+    "papers": [],
+    "period": "",
+    "award": ""
+  },
+  {
+    "id": "power-conference-2025",
+    "sort_date": "2025-11-15",
+    "date_label": "活動日期｜2025/11/15",
+    "title": "電力工程與電力電子研討會",
+    "text": "研究生白定梧參與「第 46 屆中華民國電力工程研討會暨第 22 屆台灣電力電子研討會暨 2025 電力學門成果發表會」，發表以下論文。",
+    "papers": [
+      {
+        "people": "白定梧",
+        "title": "利用雙調排序法實現模組化多階層轉換器之電容電壓平衡控制",
+        "award": ""
+      }
+    ],
+    "period": "",
+    "award": ""
+  },
+  {
+    "id": "kyushu-exchange-2025",
+    "sort_date": "2025-10-12",
+    "date_label": "行程期間｜2025/10/12–18",
+    "title": "九州大學學術交流",
+    "text": "研究生莊啓文、范正威、周士綸及其他同學赴日本九州大學參訪與學術交流。",
+    "papers": [],
+    "period": "",
+    "award": ""
+  },
+  {
+    "id": "hefc-2025",
+    "sort_date": "2025-06-18",
+    "date_label": "活動期間｜2025/06/18–20",
+    "title": "HEFC 2025 學生論文競賽",
+    "text": "研究生莊啓文及專題生李杰庭參與「2025 國際氫能與燃料電池學術研討會暨氫能與燃料電池技術論壇」學生論文競賽，莊啓文榮獲第二名，李杰庭榮獲佳作。",
+    "papers": [
+      {
+        "people": "莊啓文",
+        "title": "燃料電池小型冷鏈物流貨車之動態模擬與能耗分析",
+        "award": "第二名"
+      },
+      {
+        "people": "李杰庭",
+        "title": "燃料電池及鋰電池小型複電動車之四迴路散熱系統設計與效益分析",
+        "award": "佳作"
+      }
+    ],
+    "period": "",
+    "award": ""
+  },
+  {
+    "id": "evtec-2025",
+    "sort_date": "2025-05-21",
+    "date_label": "發表日期｜2025/05/21",
+    "title": "EVTeC 2025 論文發表",
+    "text": "研究生黃啟錩赴日本橫濱，參與第 7 屆 International Electric Vehicle Technology Conference（EVTeC 2025），發表以下論文。",
+    "papers": [
+      {
+        "people": "黃啟錩",
+        "title": "Energy Management System for Hydrogen Vehicles Considering State of Health of Fuel Cells and Lithium Batteries",
+        "award": ""
+      }
+    ],
+    "period": "",
+    "award": ""
+  }
+]

@@ -1,0 +1,6 @@
+{{ partial "news-style.html" . }}
+<div class="col-12 gptl-news">
+  <h2>News</h2><p class="news-subtitle">最新消息</p>
+  {{ partial "news-list.html" (dict "limit" 3) }}
+  <a class="news-all" href="{{ "post/" | relURL }}">查看完整消息紀錄 →</a>
+</div>

@@ -1,0 +1,25 @@
+{{ $items := sort site.Data.news "sort_date" "desc" }}
+{{ if .limit }}{{ $items = first .limit $items }}{{ end }}
+{{ $year := "" }}{{ $month := "" }}
+<div class="news-timeline" lang="zh-Hant">
+{{ range $items }}
+  {{ $nextYear := substr .sort_date 0 4 }}{{ $nextMonth := substr .sort_date 5 2 }}
+  {{ if ne $year $nextYear }}
+    <h3 class="news-year">{{ $nextYear }} 年</h3>
+    {{ $year = $nextYear }}{{ $month = "" }}
+  {{ end }}
+  {{ if ne $month $nextMonth }}<h4 class="news-month">{{ $nextMonth }} 月</h4>{{ $month = $nextMonth }}{{ end }}
+  <article class="news-entry" id="news-{{ .id }}">
+    <p class="news-date">{{ .date_label }}{{ with .period }}<br>{{ . }}{{ end }}</p>
+    <h5 class="news-title">{{ .title }}</h5>
+    {{ with .award }}<span class="news-award">{{ . }}</span>{{ end }}
+    <p class="news-description">{{ .text }}</p>
+    {{ $papers := where .papers "title" "ne" nil }}
+    {{ if $papers }}<ul class="news-papers">
+    {{ range $papers }}{{ if .title }}
+      <li><strong>{{ .people }}</strong>{{ with .award }} <span class="news-award">{{ . }}</span>{{ end }}<br><span class="news-paper-title">〈{{ .title }}〉</span></li>
+    {{ end }}{{ end }}
+    </ul>{{ end }}
+  </article>
+{{ end }}
+</div>
