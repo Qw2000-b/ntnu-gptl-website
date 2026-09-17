@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Professor Name"
 
 first_name: "First"
