@@ -1,2 +1,31 @@
 html{font-size:22px!important}body{font-size:22px!important;line-height:1.85!important}p,li{line-height:1.85}#navbar-main .nav-link{font-size:20px!important}#navbar-main .navbar-brand{font-size:26px!important}h1,.hero-title{font-size:52px!important;line-height:1.25!important}h2,.section-heading h1{font-size:38px!important;line-height:1.35!important}h3{font-size:28px!important}h4{font-size:24px!important}.gptl-advisors h2{font-size:36px!important}.gptl-advisors .role,.gptl-advisors li,.gptl-advisors .contact,.gptl-advisors summary,.gptl-advisors h3{font-size:20px!important}.gptl-advisors .en{font-size:18px!important}.gptl-advisors details h4{font-size:20px!important}.gptl-advisors .subnav a,.gptl-advisors .crumb,.gptl-advisors .photo span{font-size:16px!important}#contact .contact{font-size:20px!important}#contact .location{font-size:22px!important}#contact .columns section h2,#contact .route h2{font-size:28px!important}#contact h2#contact-title{font-size:46px!important}#contact .label,#contact .mail,#contact .steps li,#contact .steps strong,#contact .map-link,#contact .route-head a{font-size:19px!important}#contact .eyebrow,#contact h2 span,#contact figcaption{font-size:15px!important}#contact .subtitle{font-size:22px!important}#contact .info p span{font-size:17px!important}#contact .steps li:before{width:38px;height:38px;font-size:16px!important}#contact .columns{gap:42px}#contact .steps{gap:22px}.site-footer p{font-size:16px!important}@media(max-width:700px){h1,.hero-title{font-size:38px!important}h2,.section-heading h1{font-size:30px!important}h3{font-size:25px!important}body{font-size:20px!important}.gptl-advisors .person{grid-template-columns:1fr!important}.gptl-advisors h2{font-size:32px!important}#contact h2#contact-title{font-size:36px!important}#contact .columns{grid-template-columns:1fr!important}#contact .steps{grid-template-columns:1fr!important}}
 #contact figure>a{display:block;position:relative;overflow:hidden;aspect-ratio:1875/1108}#contact figure>a img{position:absolute;width:102.46%!important;max-width:none!important;height:auto!important;left:-1.2%;top:-1%;border:0!important}
+/* Shared wide layout: retain gutters without nesting narrow content caps. */
+:root{--gptl-page-width:1440px;--gptl-page-gutter:4vw}
+.container,.universal-wrapper,.article-container,.docs-article-container{
+width:calc(100% - 2 * var(--gptl-page-gutter))!important;
+max-width:var(--gptl-page-width)!important;
+margin-left:auto;margin-right:auto;
+}
+.container .container,.container .universal-wrapper,.container .article-container{
+width:100%!important;max-width:none!important;
+}
+.gptl-advisors{
+width:calc(100% - 2 * var(--gptl-page-gutter));
+max-width:var(--gptl-page-width)!important;
+padding-left:15px!important;padding-right:15px!important;
+}
+.gptl-news{max-width:none!important}
+.news-archive{max-width:var(--gptl-page-width)!important}
+#contact .contact{max-width:none!important;padding-left:0!important;padding-right:0!important}
+@media(min-width:992px){
+.gptl-advisors .person{grid-template-columns:240px minmax(0,1fr);gap:56px}
+.gptl-advisors .photo{width:240px;height:300px}
+}
+@media(max-width:700px){
+:root{--gptl-page-gutter:20px}
+.container,.universal-wrapper,.article-container,.docs-article-container{padding-left:0!important;padding-right:0!important}
+.container .row{margin-left:0;margin-right:0}
+.container .row>.col-12{padding-left:0;padding-right:0}
+.gptl-advisors,.news-archive{padding-left:0!important;padding-right:0!important}
+}
