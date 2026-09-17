@@ -5,6 +5,7 @@ main:
     weight: 10
 
   - name: About Us
+    identifier: about
     url: /about/
     weight: 20
 
@@ -15,3 +16,18 @@ main:
   - name: Publications
     url: /publication/
     weight: 40
+
+  - name: Advisors
+    parent: about
+    url: /about/advisors/
+    weight: 21
+
+  - name: Research Team
+    parent: about
+    url: /about/research-team/
+    weight: 22
+
+  - name: Alumni
+    parent: about
+    url: /about/alumni/
+    weight: 23

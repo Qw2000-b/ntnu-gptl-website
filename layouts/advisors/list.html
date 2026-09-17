@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ $css := resources.Get "css/advisors.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<div class="gptl-advisors" lang="zh-Hant">
+<p class="crumb">About Us / {{ .Title }}</p><h1>{{ .Title }}</h1>
+<nav class="subnav" aria-label="About Us">
+{{ range slice (dict "label" "Advisors" "path" "/about/advisors/" "kind" "advisors") (dict "label" "Research Team" "path" "/about/research-team/" "kind" "research-team") (dict "label" "Alumni" "path" "/about/alumni/" "kind" "alumni") }}
+<a href="{{ .path | relURL }}" {{ if eq $.Params.section_kind .kind }}aria-current="page"{{ end }}>{{ .label }}</a>
+{{ end }}</nav>
+{{ if eq .Params.section_kind "advisors" }}
+<p class="intro">指導老師</p>
+{{ range site.Data.advisors }}
+<article class="person" aria-labelledby="{{ .slug }}">
+{{ if .photo }}<img class="photo" src="{{ .photo | relURL }}" alt="{{ .name }}老師" width="220" height="275" loading="lazy">{{ else }}
+<div class="photo placeholder" role="img" aria-label="{{ .name }}老師照片預留位置"><svg viewBox="0 0 80 90" aria-hidden="true"><circle cx="40" cy="26" r="17"/><path d="M9 82v-9a31 31 0 0 1 62 0v9"/></svg><span>教師照片</span><small>{{ .english }}</small></div>{{ end }}
+<div class="identity"><h2 id="{{ .slug }}">{{ .name }}</h2><div class="en">{{ .english }}</div>{{ .role | safeHTML }}{{ .contact | safeHTML }}{{ .fields | safeHTML }}{{ .details | safeHTML }}</div>
+</article>{{ end }}
+{{ else }}<p class="intro">{{ .Params.placeholder }}</p>{{ end }}
+</div>
+{{ end }}
