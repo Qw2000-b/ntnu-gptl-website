@@ -81,23 +81,12 @@ sections:
   # =========================================================
   # Contact Us
   # =========================================================
-  - block: markdown
+  - block: gptl-contact
     id: contact
     content:
-      title: Contact Us
-      subtitle: ''
-      text: |
-        **National Taiwan Normal University**
-
-        **Address:** To be updated  
-        **Phone:** To be updated  
-        **Email:** To be updated  
-
-        Google Map will be added later.
-
+      title: ''
     design:
       columns: '1'
       spacing:
         padding: ['60px', '0', '60px', '0']
-
 ---
