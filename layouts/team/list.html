@@ -14,7 +14,7 @@
 {{ if $members }}
 <section class="team-institute" aria-label="{{ .name }}"><h4>{{ .name }}<span class="team-en-label">{{ .english }}</span></h4>
 <div class="team-grid">
-{{ range $members }}
+{{ range sort $members "entry_year" "desc" }}
 <article class="team-card" aria-label="{{ .name }}">
 <div class="team-photo">
 {{ if .photo }}<img src="{{ .photo | relURL }}" alt="{{ .name }}" width="400" height="400" loading="lazy">{{ else }}
