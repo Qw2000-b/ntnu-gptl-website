@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{ $css := resources.Get "css/team.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<div class="container gptl-team" lang="zh-Hant">
+<p class="team-breadcrumb">About Us / Research Team</p>
+<h1>Research Team</h1>
+<nav class="team-nav" aria-label="About Us"><a href="{{ "about/advisors/" | relURL }}">Advisors</a><a href="{{ "about/research-team/" | relURL }}" aria-current="page">Research Team</a><a href="{{ "about/alumni/" | relURL }}">Alumni</a></nav>
+<h2>在校生 <span class="team-en-label">Current Students</span></h2>
+{{ range slice "博士生" "碩士生" }}
+{{ $degree := . }}
+<section class="team-degree" aria-label="{{ $degree }}"><h3>{{ $degree }}</h3>
+{{ range site.Data.team.institutes }}
+{{ $institute := . }}{{ $members := where (where site.Data.team.members "degree" $degree) "institute" .id }}
+{{ if $members }}
+<section class="team-institute" aria-label="{{ .name }}"><h4>{{ .name }}<span class="team-en-label">{{ .english }}</span></h4>
+<div class="team-grid">
+{{ range $members }}
+<article class="team-card" aria-label="{{ .name }}">
+<div class="team-photo">
+{{ if .photo }}<img src="{{ .photo | relURL }}" alt="{{ .name }}" width="400" height="400" loading="lazy">{{ else }}
+<div class="team-placeholder" role="img" aria-label="{{ .name }}照片預留位置"><span class="team-silhouette" aria-hidden="true"></span><span>照片預留</span></div>
+{{ end }}
+</div>
+<div class="team-card-body"><h5>{{ .name }}</h5><p class="team-english">{{ .english }}</p><p class="team-degree-label">{{ .degree }}</p><p class="team-institute-name">{{ $institute.name }}</p><p class="team-entry">{{ .entry_year }} 學年度入學</p></div>
+</article>
+{{ end }}
+</div></section>
+{{ end }}{{ end }}
+</section>{{ end }}
+</div>
+{{ end }}

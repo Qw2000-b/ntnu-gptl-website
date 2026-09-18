@@ -1,0 +1,125 @@
+{
+  "institutes": [
+    {
+      "id": "ai",
+      "name": "AI 跨域應用研究所",
+      "english": "Graduate Institute of AI Interdisciplinary Applied Technology"
+    },
+    {
+      "id": "green",
+      "name": "綠能科技與永續治理研究所",
+      "english": "Graduate Institute of Green Energy and Sustainable Technology"
+    },
+    {
+      "id": "vehicle",
+      "name": "車輛與能源工程研究所",
+      "english": "Graduate Institute of Vehicle and Energy Engineering"
+    }
+  ],
+  "members": [
+    {
+      "name": "莊啓文",
+      "english": "Chi-Wen Chuang",
+      "degree": "博士生",
+      "institute": "ai",
+      "entry_year": 115,
+      "photo": null
+    },
+    {
+      "name": "余路加",
+      "english": "Lu-Jia Yu",
+      "degree": "碩士生",
+      "institute": "green",
+      "entry_year": 115,
+      "photo": null
+    },
+    {
+      "name": "蕭程萇",
+      "english": "Cheng-Chang Xiao",
+      "degree": "碩士生",
+      "institute": "green",
+      "entry_year": 114,
+      "photo": null
+    },
+    {
+      "name": "周士綸",
+      "english": "Shih-Lun Chou",
+      "degree": "碩士生",
+      "institute": "green",
+      "entry_year": 114,
+      "photo": null
+    },
+    {
+      "name": "鄭安哲",
+      "english": "An-Zhe Zheng",
+      "degree": "碩士生",
+      "institute": "green",
+      "entry_year": 114,
+      "photo": null
+    },
+    {
+      "name": "梁耘碩",
+      "english": "Yun-Shuo Liang",
+      "degree": "碩士生",
+      "institute": "green",
+      "entry_year": 114,
+      "photo": null
+    },
+    {
+      "name": "林恩睿",
+      "english": "En-Ruei Lin",
+      "degree": "碩士生",
+      "institute": "green",
+      "entry_year": 113,
+      "photo": null
+    },
+    {
+      "name": "吳敬霆",
+      "english": "Jing-Ting Wu",
+      "degree": "碩士生",
+      "institute": "green",
+      "entry_year": 112,
+      "photo": null
+    },
+    {
+      "name": "李峰州",
+      "english": "Feng-Chou Lee",
+      "degree": "碩士生",
+      "institute": "vehicle",
+      "entry_year": 115,
+      "photo": null
+    },
+    {
+      "name": "蔡浚輝",
+      "english": "Chun-hui Tsai",
+      "degree": "碩士生",
+      "institute": "vehicle",
+      "entry_year": 115,
+      "photo": null
+    },
+    {
+      "name": "鄭登元",
+      "english": "Teng-Yuan Cheng",
+      "degree": "碩士生",
+      "institute": "vehicle",
+      "entry_year": 115,
+      "photo": null
+    },
+    {
+      "name": "黃啟錩",
+      "english": "Chi-Chang Huang",
+      "degree": "碩士生",
+      "institute": "vehicle",
+      "entry_year": 114,
+      "photo": null
+    },
+    {
+      "name": "施權祐",
+      "english": "Quan-You Shi",
+      "degree": "碩士生",
+      "institute": "vehicle",
+      "entry_year": 114,
+      "photo": null
+    }
+  ]
+}
