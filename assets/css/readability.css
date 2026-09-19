@@ -29,3 +29,8 @@ padding-left:15px!important;padding-right:15px!important;
 .container .row>.col-12{padding-left:0;padding-right:0}
 .gptl-advisors,.news-archive{padding-left:0!important;padding-right:0!important}
 }
+
+/* Navbar uses container-xl rather than the page's container. */
+#navbar-main{padding-left:0;padding-right:0}
+#navbar-main>.container-xl{width:calc(100% - 2 * var(--gptl-page-gutter))!important;max-width:var(--gptl-page-width)!important;margin-left:auto;margin-right:auto;padding-left:15px;padding-right:15px}
+@media(max-width:700px){#navbar-main>.container-xl{padding-left:0;padding-right:0}}

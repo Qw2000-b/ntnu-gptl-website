@@ -77,13 +77,13 @@
     "text": "研究生蕭程萇、施權祐、鄭安哲與梁耘碩赴日本大阪，參與 The 17th International Conference on Mechanical and Electrical Technologies（ICMET 2026）。",
     "papers": [
       {
-        "people": "",
-        "title": null,
+        "people": "Quan-You Shi, Cheng-Chang Xiao, Yi-Hsuan Hung",
+        "title": "Global Search Algorithm of Optimal Powertrain Sizing for Fuel Cell Electric Buses via Genetic Algorithm-Fuzzy Logic Strategy",
         "award": ""
       },
       {
-        "people": "",
-        "title": null,
+        "people": "An-Zhe Zheng, Yun-Shuo Liang, Yi-Hsuan Hung",
+        "title": "SOH-Based Power Response Compensation Design for Fuel Cell Electric Buses with a Global Search Algorithm",
         "award": ""
       }
     ],
@@ -98,8 +98,8 @@
     "text": "研究生施權祐代表實驗室及台灣 SAE 赴日本，參與 JSAE KANTO International Conference of Automotive Technology for Young Engineers（ICATYE）相關活動。",
     "papers": [
       {
-        "people": "施權祐",
-        "title": null,
+        "people": "Quan-You Shi, Zheng-Wei Fan, Yi-Hsuan Hung",
+        "title": "A Two-Stage Powertrain Sizing and Multi-Objective Decision-Making Framework for FCEV Buses: Integrating Global Search with Continuous Particle Swarm Optimization for Refined Feasibility",
         "award": ""
       }
     ],
