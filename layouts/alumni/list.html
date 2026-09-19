@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ $css := resources.Get "css/team.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<div class="container gptl-team" lang="zh-Hant">
+<p class="team-breadcrumb">About Us / Alumni</p><h1>Alumni</h1>
+<nav class="team-nav" aria-label="About Us"><a href="{{ "about/advisors/" | relURL }}">Advisors</a><a href="{{ "about/research-team/" | relURL }}">Research Team</a><a href="{{ "about/alumni/" | relURL }}" aria-current="page">Alumni</a></nav>
+<h2>校友</h2>
+{{ $years := slice }}
+{{ range site.Data.alumni }}{{ $years = $years | append .graduationAcademicYear }}{{ end }}
+{{ range sort (uniq $years) "value" "desc" }}
+{{ $members := where site.Data.alumni "graduationAcademicYear" . }}
+<section class="team-degree" aria-label="{{ . }}學年度畢業校友">
+<h3>{{ . }}學年度（{{ (index $members 0).graduationYear }}）</h3>
+<div class="team-grid">
+{{ range $members }}
+<article class="team-card" aria-label="{{ .chineseName }}"><div class="team-card-body">
+<h5>{{ .chineseName }}</h5><p class="team-english">{{ .englishName }}</p>
+<p class="team-degree-label">{{ .degree }}</p><p class="team-institute-name">{{ .department }}</p>
+</div></article>
+{{ end }}
+</div></section>{{ end }}
+</div>
+{{ end }}
