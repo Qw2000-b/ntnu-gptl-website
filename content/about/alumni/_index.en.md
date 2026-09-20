@@ -1,0 +1,4 @@
+---
+title: Alumni
+type: alumni
+---

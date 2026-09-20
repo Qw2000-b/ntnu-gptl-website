@@ -101,3 +101,13 @@ body :is(.btn,.gptl-button,#contact .map-link,.gptl-news .news-all):active{backg
   *,*::before,*::after{animation:none!important;transition:none!important}
   .text-link span,.gptl-partners .partner-logo img{transform:none!important}
 }
+
+/* Language navigation remains available outside the mobile menu. */
+#navbar-main .gptl-language-switch {display:flex;align-items:center;gap:10px;margin-left:12px;white-space:nowrap;font-size:14px;}
+#navbar-main .gptl-language-switch a {color:var(--color-text-muted);padding:8px 0;border-bottom:1px solid transparent;text-decoration:none;}
+#navbar-main .gptl-language-switch a[aria-current="true"] {color:var(--color-accent);border-bottom-color:currentColor;}
+@media (hover:hover) and (pointer:fine) {#navbar-main .gptl-language-switch a:hover {color:var(--color-accent);}}
+@media(max-width:991px) {#navbar-main .navbar-brand {position:static!important;} #navbar-main .gptl-language-switch {gap:8px;margin-left:4px;font-size:13px;}}
+
+@media(max-width:991px) {#navbar-main .navbar-brand-mobile-wrapper {position:static;width:auto;margin-left:16px;} #navbar-main .navbar-brand-mobile-wrapper .navbar-brand {margin:0;} }
+

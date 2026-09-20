@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ partial "news-style.html" . }}
 <div class="gptl-news news-archive container">
-  <a class="news-back" href="{{ "/#news" | relURL }}">← 回首頁</a>
+  <a class="news-back" href="{{ "/#news" | relLangURL }}">← 回首頁</a>
   <h1>News</h1><p class="news-subtitle">最新消息・完整紀錄</p>
   {{ partial "news-list.html" (dict "limit" 0) }}
 </div>

@@ -1,7 +1,16 @@
-# Languages
-
-en:
-  languageCode: en-us
+zh:
+  languageCode: zh-Hant
+  languageName: 中文
+  weight: 1
   title: NTNU GPTL
-  params:
-    description: NTNU Green Power Technology Lab
+  menus:
+    main:
+      - {name: 主頁, url: /, weight: 10}
+      - {name: 研究團隊, url: /about/, weight: 20}
+      - {name: 研究方向, url: /research/, weight: 30}
+      - {name: 研究成果, url: /publication/, weight: 40}
+en:
+  languageCode: en
+  languageName: English
+  weight: 2
+  title: NTNU GPTL

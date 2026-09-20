@@ -1,19 +1,20 @@
-{{ $c := .wcBlock.content }}
-<div class="col-12 gptl-introduction" lang="zh-Hant">
+{{ $c := partial "homepage-content.html" .wcBlock }}
+{{ $en := eq site.Language.Lang "en" }}
+<div class="col-12 gptl-introduction">
   <div class="hero-editorial">
-    <div class="hero-main"><p class="section-label" lang="en">{{ $c.eyebrow }}</p><p class="section-subtitle">{{ $c.eyebrow_zh }}</p><h1 lang="en">{{ $c.headline }}</h1><p class="hero-translation">{{ $c.headline_zh }}</p></div>
-    <div class="hero-context"><p class="hero-lab" lang="en">{{ $c.supporting }}</p><p>{{ $c.supporting_zh }}</p><p class="hero-summary" lang="en">{{ $c.affiliation }}</p></div>
+    <div class="hero-main"><p class="section-label">{{ cond $en $c.eyebrow $c.eyebrow_zh }}</p><h1>{{ cond $en $c.headline $c.headline_zh }}</h1></div>
+    <div class="hero-context"><p class="hero-lab">{{ cond $en $c.supporting $c.supporting_zh }}</p><p class="hero-summary">{{ cond $en $c.affiliation "國立臺灣師範大學" }}</p></div>
   </div>
   {{ with $c.image }}{{ if fileExists (printf "static/%s" (strings.TrimPrefix "/" .)) }}
   <figure class="hero-image"><img src="{{ . | relURL }}" alt="{{ $c.image_alt }}" fetchpriority="high"></figure>
   {{ end }}{{ end }}
   <div class="editorial-grid home-about">
-    <header><p class="section-label">01</p><h2 lang="en">{{ $c.about_heading }}</h2><p class="section-subtitle">{{ $c.about_label }}</p></header>
+    <header><p class="section-label">01</p><h2>{{ cond $en $c.about_heading $c.about_label }}</h2></header>
     <div class="reading-column">
-      <p class="about-lead" lang="en">{{ $c.about_subtitle }}</p><p class="about-lead">{{ $c.about_subtitle_zh }}</p>
-      {{ range $c.paragraphs }}<div class="copy-pair"><p lang="en">{{ .en }}</p><p lang="zh-Hant">{{ .zh }}</p></div>{{ end }}
-      <div class="home-approach"><p class="section-label"><span lang="en">{{ $c.approach_label }}</span> · {{ $c.approach_label_zh }}</p><p lang="en">{{ $c.methodology }}</p><p>{{ $c.methodology_zh }}</p></div>
-      <a class="text-link gptl-button" href="{{ "about/" | relURL }}">Meet Our People <span aria-hidden="true">→</span></a>
+      <p class="about-lead">{{ cond $en $c.about_subtitle $c.about_subtitle_zh }}</p>
+      {{ range $c.paragraphs }}<div class="copy-pair"><p>{{ cond $en .en .zh }}</p></div>{{ end }}
+      <div class="home-approach"><p class="section-label">{{ cond $en $c.approach_label $c.approach_label_zh }}</p><p>{{ cond $en $c.methodology $c.methodology_zh }}</p></div>
+      <a class="text-link gptl-button" href="{{ "about/" | relLangURL }}">{{ cond $en "Meet Our People" "認識研究團隊" }} <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </div>
