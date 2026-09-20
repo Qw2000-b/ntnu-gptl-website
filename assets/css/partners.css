@@ -15,3 +15,6 @@
 .gptl-partners .partner-logo:hover img{filter:grayscale(0);opacity:1}
 }
 @media(prefers-reduced-motion:reduce){.gptl-partners .partner-logo img{transition:none!important}}
+/* NeoPower uses the supplied vertical lockup; keep its individual visual weight balanced. */
+.gptl-partners .partner-logo-art:has(>img[src$="/neopower.png"]){--logo-scale:.76}
+
