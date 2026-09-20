@@ -145,6 +145,11 @@
     "optionalClass": "",
     "variant": "tall",
     "scale": 1.06
+  },
+  {
+    "name": "健益汽車",
+    "logo": "/images/partners/jianyi-auto.png",
+    "scale": 1
   }
 ]
 
