@@ -8,17 +8,17 @@
   },
   {
     "name": "工業技術研究院 ITRI",
-    "logo": "/images/partners/itri.png",
+    "logo": "/images/partners/itri-symbol.png",
     "optionalClass": "",
     "variant": "wide",
-    "scale": 1
+    "scale": 0.76
   },
   {
     "name": "經濟部產業發展署",
-    "logo": "/images/partners/ida.png",
+    "logo": "/images/partners/ida-symbol.png",
     "optionalClass": "",
     "variant": "wide",
-    "scale": 1
+    "scale": 0.96
   },
   {
     "name": "台船動力科技",
@@ -43,10 +43,10 @@
   },
   {
     "name": "江陵機電",
-    "logo": "/images/partners/jiangling.png",
+    "logo": "/images/partners/jiangling-symbol.png",
     "optionalClass": "",
     "variant": "wide",
-    "scale": 1
+    "scale": 0.96
   },
   {
     "name": "中興電工",
@@ -113,10 +113,10 @@
   },
   {
     "name": "新動智能 NeoPower",
-    "logo": "/images/partners/neopower.png",
+    "logo": "/images/partners/neopower-symbol.png",
     "optionalClass": "",
     "variant": "wide",
-    "scale": 1
+    "scale": 0.84
   },
   {
     "name": "Panasonic",
@@ -134,10 +134,10 @@
   },
   {
     "name": "金屬工業研究發展中心 MIRDC",
-    "logo": "/images/partners/mirdc.png",
+    "logo": "/images/partners/mirdc-symbol.png",
     "optionalClass": "",
     "variant": "wide",
-    "scale": 1
+    "scale": 0.84
   },
   {
     "name": "國家中山科學研究院 NCSIST",
@@ -147,3 +147,4 @@
     "scale": 1.06
   }
 ]
+
