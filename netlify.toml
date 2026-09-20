@@ -13,7 +13,7 @@
   command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-  HUGO_UMAMI_PREVIEW = "true"
+  HUGO_GOATCOUNTER_PREVIEW = "true"
 
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"

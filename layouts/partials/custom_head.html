@@ -5,6 +5,6 @@
 <noscript><style>#navbar-content.collapse{display:block!important}#navbar-main{position:relative!important}.navbar-toggler{display:none!important}body{padding-top:0!important}</style></noscript>
 
 {{/* Only the Netlify Deploy Preview context enables this public tracker. */}}
-{{ if eq (os.Getenv "HUGO_UMAMI_PREVIEW") "true" }}
-<script defer src="https://cloud.umami.is/script.js" data-website-id="f37e6bf3-2781-49da-9e06-41a91cc210cf"></script>
+{{ if eq (os.Getenv "HUGO_GOATCOUNTER_PREVIEW") "true" }}
+<script data-goatcounter="https://ntnu-gptl.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 {{ end }}
