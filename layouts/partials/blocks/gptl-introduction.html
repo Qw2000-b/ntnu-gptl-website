@@ -1,14 +1,19 @@
 {{ $c := .wcBlock.content }}
 <div class="col-12 gptl-introduction" lang="zh-Hant">
   <div class="hero-editorial">
-    <div class="hero-main"><p class="section-label">NTNU GPTL</p><h1>{{ $c.headline }}</h1>{{ with $c.headline_en }}<p>{{ . }}</p>{{ end }}</div>
-    <div class="hero-context"><p class="hero-lab">{{ $c.lab_name }}</p><p>{{ $c.affiliation }}</p><p class="hero-summary" lang="en">{{ $c.summary }}</p></div>
+    <div class="hero-main"><p class="section-label" lang="en">{{ $c.eyebrow }}</p><p class="section-subtitle">{{ $c.eyebrow_zh }}</p><h1 lang="en">{{ $c.headline }}</h1><p class="hero-translation">{{ $c.headline_zh }}</p></div>
+    <div class="hero-context"><p class="hero-lab" lang="en">{{ $c.supporting }}</p><p>{{ $c.supporting_zh }}</p><p class="hero-summary" lang="en">{{ $c.affiliation }}</p></div>
   </div>
   {{ with $c.image }}{{ if fileExists (printf "static/%s" (strings.TrimPrefix "/" .)) }}
   <figure class="hero-image"><img src="{{ . | relURL }}" alt="{{ $c.image_alt }}" fetchpriority="high"></figure>
   {{ end }}{{ end }}
   <div class="editorial-grid home-about">
-    <header><p class="section-label">01</p><h2>About Us</h2></header>
-    <div class="reading-column" lang="en"><p>{{ $c.text | markdownify }}</p><a class="text-link gptl-button" href="{{ "about/" | relURL }}">Meet Our People <span aria-hidden="true">→</span></a></div>
+    <header><p class="section-label">01</p><h2 lang="en">{{ $c.about_heading }}</h2><p class="section-subtitle">{{ $c.about_label }}</p></header>
+    <div class="reading-column">
+      <p class="about-lead" lang="en">{{ $c.about_subtitle }}</p><p class="about-lead">{{ $c.about_subtitle_zh }}</p>
+      {{ range $c.paragraphs }}<div class="copy-pair"><p lang="en">{{ .en }}</p><p lang="zh-Hant">{{ .zh }}</p></div>{{ end }}
+      <div class="home-approach"><p class="section-label"><span lang="en">{{ $c.approach_label }}</span> · {{ $c.approach_label_zh }}</p><p lang="en">{{ $c.methodology }}</p><p>{{ $c.methodology_zh }}</p></div>
+      <a class="text-link gptl-button" href="{{ "about/" | relURL }}">Meet Our People <span aria-hidden="true">→</span></a>
+    </div>
   </div>
 </div>

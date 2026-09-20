@@ -1,5 +1,11 @@
 {{ $c := .wcBlock.content }}
 <div class="col-12 gptl-directions editorial-grid">
-  <header><p class="section-label">02</p><h2>{{ $c.heading }}</h2><p class="section-subtitle" lang="zh-Hant">{{ $c.label }}</p></header>
-  <div class="directions-text">{{ $c.text | markdownify }}</div>
+  <header><p class="section-label">02</p><h2 lang="en">{{ $c.heading }}</h2><p class="section-subtitle" lang="zh-Hant">{{ $c.label }}</p></header>
+  <div class="directions-text">
+    <div class="directions-intro"><p lang="en">{{ $c.subtitle }}</p><p lang="zh-Hant">{{ $c.subtitle_zh }}</p></div>
+    {{ range $c.directions }}
+    <h3 lang="en">{{ .title }}</h3><p class="direction-label" lang="zh-Hant">{{ .title_zh }}</p>
+    <p lang="en">{{ .description }}</p><p class="direction-translation" lang="zh-Hant">{{ .description_zh }}</p>
+    {{ end }}
+  </div>
 </div>
