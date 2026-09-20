@@ -5,10 +5,10 @@
   <p class="partners-subtitle">合作夥伴</p></header>
   <ul class="partners-grid gptl-cell-grid" aria-labelledby="partners-title">
     {{ range site.Data.partners }}
-    <li class="partner-logo {{ .optionalClass }}">
+    <li class="partner-logo partner-logo--{{ .variant | default "wide" }} {{ .optionalClass }}" style="--logo-scale: {{ .scale | default 1 }}">
       {{ $file := printf "static/%s" (strings.TrimPrefix "/" .logo) }}
       {{ if fileExists $file }}
-      <img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy" decoding="async">
+      <span class="partner-logo-art"><img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy" decoding="async"></span>
       {{ else }}
       <span class="partner-placeholder">{{ .name }}</span>
       {{ end }}
