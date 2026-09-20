@@ -1,7 +1,7 @@
 // Temporary aggregate-only schema verification; replaced after live verification.
 exports.handler = async () => {
   const reply = (statusCode, data) => ({statusCode, headers:{'Content-Type':'application/json','Cache-Control':'no-store'},body:JSON.stringify(data)});
-  if (process.env.CONTEXT !== 'deploy-preview') return reply(404,{available:false});
+  if (!require('./lib/deploy-context.json').enabled) return reply(404,{available:false});
   const token=process.env.GOATCOUNTER_API_KEY;
   if (!token || !process.env.GOATCOUNTER_BASE_URL) return reply(503,{available:false,reason:'configuration'});
   try {
@@ -25,4 +25,3 @@ exports.handler = async () => {
     return reply(200,result);
   } catch {return reply(503,{available:false,reason:'upstream'});}
 };
-
