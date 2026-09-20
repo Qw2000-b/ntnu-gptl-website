@@ -3,7 +3,7 @@
 <div class="col-12 gptl-partners" lang="zh-Hant">
   <header class="partners-heading"><p class="section-label">03</p><h2 id="partners-title">Partners</h2>
   <p class="partners-subtitle">合作夥伴</p></header>
-  <ul class="partners-grid" aria-labelledby="partners-title">
+  <ul class="partners-grid gptl-cell-grid" aria-labelledby="partners-title">
     {{ range site.Data.partners }}
     <li class="partner-logo {{ .optionalClass }}">
       {{ $file := printf "static/%s" (strings.TrimPrefix "/" .logo) }}

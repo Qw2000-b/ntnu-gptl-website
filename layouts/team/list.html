@@ -13,7 +13,7 @@
 {{ $institute := . }}{{ $members := where (where site.Data.team.members "degree" $degree) "institute" .id }}
 {{ if $members }}
 <section class="team-institute" aria-label="{{ .name }}"><h4>{{ .name }}<span class="team-en-label">{{ .english }}</span></h4>
-<div class="team-grid">
+<div class="team-grid gptl-cell-grid">
 {{ range sort $members "entry_year" "desc" }}
 <article class="team-card" aria-label="{{ .name }}">
 <div class="team-photo">

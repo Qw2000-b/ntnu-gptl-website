@@ -1,0 +1,12 @@
+# Hugo Blox generated fallbacks mirror the CSS design tokens.
+name = "GPTL Neutral"
+[light]
+primary = "#242623"
+link = "#245A43"
+link_hover = "#242623"
+menu_primary = "#FFFFFF"
+menu_text = "#242623"
+menu_text_active = "#245A43"
+menu_title = "#242623"
+home_section_odd = "#FAFAF8"
+home_section_even = "#FAFAF8"

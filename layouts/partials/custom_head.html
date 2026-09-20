@@ -1,4 +1,4 @@
-{{ range slice "css/design-tokens.css" "css/readability.css" "css/home.css" }}
+{{ range slice "css/design-tokens.css" "css/readability.css" "css/home.css" "css/visual-system.css" }}
 {{ $css := resources.Get . | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ end }}

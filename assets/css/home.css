@@ -3,10 +3,8 @@
 .home-section:is(#development,#partners,#news,#contact){border-top:1px solid var(--gptl-line)}
 .home-section:is(#introduction,#development,#partners,#news,#contact)>.container>.row{margin:0}
 .home-section:is(#introduction,#development,#partners,#news,#contact)>.container>.col-12,.home-section:is(#introduction,#development,#partners,#news,#contact)>.container>.row>.col-12{padding:0;min-width:0}
-/* Alternate full-width bands while retaining the existing five homepage sections. */
+/* Shared neutral canvas; section boundaries are defined in visual-system.css. */
 .home-section#introduction{padding-bottom:0;overflow-x:clip}
-.home-section:is(#partners,#contact){background:var(--gptl-surface)}
-.home-section#news{background:var(--gptl-tint)}
 .editorial-grid,.hero-editorial{display:grid;grid-template-columns:repeat(var(--gptl-grid-columns),minmax(0,1fr));gap:var(--gptl-grid-gap)}
 .editorial-grid>header{grid-column:span 3}.editorial-grid>div{grid-column:span 9;min-width:0}
 .section-label{font-size:var(--font-label);color:var(--gptl-accent);margin:0 0 4px;font-weight:500;line-height:1.35}
@@ -16,11 +14,8 @@
 .hero-context p{font-size:var(--font-body);margin:0 0 8px;line-height:1.45}.hero-context .hero-lab{font-size:var(--font-large);color:var(--gptl-accent);font-weight:500}
 .hero-context .hero-summary{margin-top:16px;color:var(--gptl-muted)}.hero-image{margin:64px 0 0}.hero-image img{width:100%;height:auto;display:block;border-radius:var(--radius-image)}
 .home-about{position:relative;isolation:isolate;margin-top:64px;padding-block:calc(var(--gptl-section-space)/2);border-top:1px solid var(--gptl-line)}
-.home-about::before{content:"";position:absolute;inset-block:0;left:50%;width:100vw;transform:translateX(-50%);background:var(--gptl-surface);z-index:-1;pointer-events:none}
 .reading-column{max-width:65ch}.home-about .reading-column{max-width:52ch}.reading-column p{margin-top:0}
 .text-link{color:var(--gptl-accent);font-size:18px;text-decoration:underline;text-underline-offset:5px}
-.text-link span{display:inline-block;transition:transform 200ms}
-@media(hover:hover) and (pointer:fine){.text-link:hover span{transform:translateX(2px)}}
 .directions-text{counter-reset:direction}.directions-text h3{counter-increment:direction;border-top:1px solid var(--gptl-line);padding-top:24px;margin:32px 0 12px;font-weight:600;line-height:1.4}
 .directions-text h3:first-child{margin-top:0}.directions-text h3::before{content:counter(direction,decimal-leading-zero);display:block;color:var(--gptl-accent);font-size:var(--font-label);font-weight:500;margin-bottom:12px}
 .directions-text p{max-width:65ch;margin:0;color:var(--gptl-muted)}
