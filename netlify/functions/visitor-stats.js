@@ -8,10 +8,10 @@ exports.handler = async () => {
     const base = new URL(process.env.GOATCOUNTER_BASE_URL);
     if (base.origin !== 'https://ntnu-gptl.goatcounter.com' || base.username || base.password) return reply(503,{available:false,reason:'base-url'});
     const end=new Date(Math.ceil(Date.now()/3600000)*3600000).toISOString();
-    const q=new URLSearchParams({start:'2026-09-01T00:00:00Z',end,limit:'100'});
+    const q=new URLSearchParams({start:'2026-09-01T00:00:00Z',end});
     const result={};
     for (const kind of ['total','locations']) {
-      const res=await fetch(`${base.origin}/api/v0/stats/${kind}?${q}`,{headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},signal:AbortSignal.timeout(8000),redirect:'error'});
+      const res=await fetch(`${base.origin}/api/v0/stats/${kind}?${q}${kind === 'locations' ? '&limit=100' : ''}`,{headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},signal:AbortSignal.timeout(8000),redirect:'error'});
       if (!res.ok) return reply(503,{available:false,endpoint:kind,status:res.status});
       const value=await res.json();
       const schema=Object.fromEntries(Object.entries(value).map(([key,val])=>[key,Array.isArray(val)?'array':typeof val]));
@@ -25,3 +25,4 @@ exports.handler = async () => {
     return reply(200,result);
   } catch {return reply(503,{available:false,reason:'upstream'});}
 };
+
