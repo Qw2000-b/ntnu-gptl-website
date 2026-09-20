@@ -1,0 +1,107 @@
+[
+  {
+    "name": "車輛研究測試中心 ARTC",
+    "logo": "/images/partners/artc.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "工業技術研究院 ITRI",
+    "logo": "/images/partners/itri.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "經濟部產業發展署",
+    "logo": "/images/partners/ida.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "台船動力科技",
+    "logo": "/images/partners/csbc-power.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "鐙鋒科技",
+    "logo": "/images/partners/deng-feng.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "康舒科技 AcBel",
+    "logo": "/images/partners/acbel.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "江陵機電",
+    "logo": "/images/partners/jiangling.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "中興電工",
+    "logo": "/images/partners/chec.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "威杰能源 Nexcellent Energy",
+    "logo": "/images/partners/nexcellent-energy.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "科飛數位 KopherBit",
+    "logo": "/images/partners/kopherbit.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "亞福儲能 APh ePower",
+    "logo": "/images/partners/aph-epower.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "光陽工業 KYMCO",
+    "logo": "/images/partners/kymco.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "中華汽車 CMC",
+    "logo": "/images/partners/cmc.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "國立臺灣科技大學",
+    "logo": "/images/partners/ntust.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "國立臺北科技大學",
+    "logo": "/images/partners/ntut.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "國立虎尾科技大學",
+    "logo": "/images/partners/nfu.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "新動智能 NeoPower",
+    "logo": "/images/partners/neopower.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "Panasonic",
+    "logo": "/images/partners/panasonic.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "思渤科技 CYBERNET",
+    "logo": "/images/partners/cybernet.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "金屬工業研究發展中心 MIRDC",
+    "logo": "/images/partners/mirdc.svg",
+    "optionalClass": ""
+  },
+  {
+    "name": "國家中山科學研究院 NCSIST",
+    "logo": "/images/partners/ncsist.svg",
+    "optionalClass": ""
+  }
+]

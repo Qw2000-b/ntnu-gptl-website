@@ -1,0 +1,18 @@
+{{ $css := resources.Get "css/partners.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<div class="col-12 gptl-partners" lang="zh-Hant">
+  <h2 id="partners-title">Partners</h2>
+  <p class="partners-subtitle">合作夥伴</p>
+  <ul class="partners-grid" aria-labelledby="partners-title">
+    {{ range site.Data.partners }}
+    <li class="partner-logo {{ .optionalClass }}">
+      {{ $file := printf "static/%s" (strings.TrimPrefix "/" .logo) }}
+      {{ if fileExists $file }}
+      <img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy" decoding="async">
+      {{ else }}
+      <span class="partner-placeholder">{{ .name }}</span>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
