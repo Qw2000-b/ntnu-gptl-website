@@ -24,6 +24,7 @@
 <div class="team-card-body"><h5>{{ .name }}</h5><p class="team-english">{{ .english }}</p><p class="team-degree-label">{{ .degree }}</p><p class="team-institute-name">{{ $institute.name }}</p><p class="team-entry">{{ .entry_year }} 學年度入學</p></div>
 </article>
 {{ end }}
+{{ partial "grid-fillers.html" (dict "count" (len $members) "tag" "div" "kind" "team" "breakpoints" (slice (dict "name" "desktop" "columns" 4) (dict "name" "tablet" "columns" 2) (dict "name" "mobile" "columns" 1))) }}
 </div></section>
 {{ end }}{{ end }}
 </section>{{ end }}

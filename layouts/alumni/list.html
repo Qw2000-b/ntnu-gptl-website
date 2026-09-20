@@ -18,6 +18,7 @@
 <p class="team-degree-label">{{ .degree }}</p><p class="team-institute-name">{{ .department }}</p>
 </div></article>
 {{ end }}
+{{ partial "grid-fillers.html" (dict "count" (len $members) "tag" "div" "kind" "team" "breakpoints" (slice (dict "name" "desktop" "columns" 4) (dict "name" "tablet" "columns" 2) (dict "name" "mobile" "columns" 1))) }}
 </div></section>{{ end }}
 </div>
 {{ end }}

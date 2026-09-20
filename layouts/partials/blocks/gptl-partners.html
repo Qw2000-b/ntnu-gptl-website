@@ -14,5 +14,6 @@
       {{ end }}
     </li>
     {{ end }}
+    {{ partial "grid-fillers.html" (dict "count" (len site.Data.partners) "tag" "li" "kind" "partners" "breakpoints" (slice (dict "name" "desktop" "columns" 6) (dict "name" "tablet" "columns" 3) (dict "name" "mobile" "columns" 2))) }}
   </ul>
 </div>

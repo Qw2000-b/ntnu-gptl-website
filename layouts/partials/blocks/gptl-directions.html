@@ -5,8 +5,8 @@
   <div class="directions-text">
     <div class="directions-intro"><p>{{ cond $en $c.subtitle $c.subtitle_zh }}</p></div>
     {{ range $c.directions }}
-    <h3>{{ cond $en .title .title_zh }}</h3>
-    <p>{{ cond $en .description .description_zh }}</p>
+    <div class="direction-item"><h3>{{ cond $en .title .title_zh }}</h3>
+    <p>{{ cond $en .description .description_zh }}</p></div>
     {{ end }}
   </div>
 </div>
