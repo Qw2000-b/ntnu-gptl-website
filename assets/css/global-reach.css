@@ -17,3 +17,6 @@
 .gptl-global-reach .reach-since{margin:24px 0 0}
 @media(max-width:767px){.reach-kpis{grid-template-columns:1fr;margin-top:24px}.reach-kpis>div,.reach-kpis>div:first-child{padding:20px 0}.reach-kpis>div+div{border-left:0;border-top:1px solid var(--color-border)}.reach-kpis dd{font-size:32px}.reach-countries li{grid-template-columns:minmax(0,1fr) 5ch;gap:8px 16px}.reach-track{grid-column:1/-1;grid-row:2}.reach-percentage{grid-column:2;grid-row:1}}
 /* No animated counters or bar motion, including reduced-motion mode. */
+
+.gptl-global-reach .reach-demo{min-height:3em}.reach-countries{min-height:340px}
+@media(max-width:767px){.reach-countries{min-height:380px}}

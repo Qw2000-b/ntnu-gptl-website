@@ -9,7 +9,7 @@ test('mock mode makes no network request', async () => {
   assert.deepEqual(result, {data: mock, isMock: true});
 });
 test('valid aggregate response replaces mock data', async () => {
-  const data = {...mock, totalVisitors: 15000, since: 'October 2026'};
+  const data = {...mock, totalVisitors: 15000, since: 'October 2026', source: 'goatcounter', metric: 'Visits'};
   assert.deepEqual(await getVisitorStats(mock, '/stats', async () => ({ok:true,json:async()=>data})), {data,isMock:false});
 });
 test('HTTP, JSON, network and schema failures retain mock', async () => {
