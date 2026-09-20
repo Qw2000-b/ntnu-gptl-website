@@ -1,8 +1,8 @@
-/* Homepage only: five sections share one grid and spacing system. */
-.home-section:is(#introduction,#development,#partners,#news,#contact){padding-block:calc(var(--gptl-section-space)/2);background:var(--gptl-bg);color:var(--gptl-ink)}
-.home-section:is(#development,#partners,#news,#contact){border-top:1px solid var(--gptl-line)}
-.home-section:is(#introduction,#development,#partners,#news,#contact)>.container>.row{margin:0}
-.home-section:is(#introduction,#development,#partners,#news,#contact)>.container>.col-12,.home-section:is(#introduction,#development,#partners,#news,#contact)>.container>.row>.col-12{padding:0;min-width:0}
+/* Homepage sections share one grid and spacing system. */
+.home-section:is(#introduction,#development,#partners,#news,#global-reach,#contact){padding-block:calc(var(--gptl-section-space)/2);background:var(--gptl-bg);color:var(--gptl-ink)}
+.home-section:is(#development,#partners,#news,#global-reach,#contact){border-top:1px solid var(--gptl-line)}
+.home-section:is(#introduction,#development,#partners,#news,#global-reach,#contact)>.container>.row{margin:0}
+.home-section:is(#introduction,#development,#partners,#news,#global-reach,#contact)>.container>.col-12,.home-section:is(#introduction,#development,#partners,#news,#global-reach,#contact)>.container>.row>.col-12{padding:0;min-width:0}
 /* Shared neutral canvas; section boundaries are defined in visual-system.css. */
 .home-section#introduction{padding-bottom:0;overflow-x:clip}
 .editorial-grid,.hero-editorial{display:grid;grid-template-columns:repeat(var(--gptl-grid-columns),minmax(0,1fr));gap:var(--gptl-grid-gap)}

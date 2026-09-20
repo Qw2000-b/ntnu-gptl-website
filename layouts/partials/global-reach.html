@@ -1,0 +1,23 @@
+{{ $s := .stats }}
+<div class="col-12 gptl-global-reach" data-global-reach lang="en">
+  <header class="reach-heading">
+    <h2>GLOBAL REACH</h2>
+    <p class="section-subtitle">Research connects beyond geographic boundaries.</p>
+    <p class="reach-demo" data-reach-demo lang="{{ cond .english "en" "zh-Hant" }}">{{ cond .english "Demo data · Analytics not connected" "示範資料 · 尚未串接訪客統計" }}</p>
+  </header>
+  <dl class="reach-kpis">
+    <div><dt>Visitors</dt><dd data-reach-visitors>{{ lang.FormatNumber 0 $s.totalVisitors }}</dd></div>
+    <div><dt>Countries</dt><dd data-reach-countries>{{ $s.countries }}</dd></div>
+    <div><dt>International</dt><dd data-reach-international>{{ printf "%.1f%%" $s.internationalPercentage }}</dd></div>
+  </dl>
+  <div class="reach-distribution">
+    <h3>Top Country Distribution</h3>
+    <ul class="reach-countries" data-reach-distribution>
+      {{ range $s.countryDistribution }}
+      <li><span class="reach-country">{{ .country }}</span><span class="reach-track" aria-hidden="true"><span style="width:{{ printf "%.1f" .percentage | safeCSS }}%"></span></span><span class="reach-percentage">{{ printf "%.1f%%" .percentage }}</span></li>
+      {{ end }}
+    </ul>
+  </div>
+  <p class="reach-since" data-reach-since>Analytics since {{ $s.since }}</p>
+  <script type="application/json" data-reach-data>{{ $s | jsonify | safeJS }}</script>
+</div>

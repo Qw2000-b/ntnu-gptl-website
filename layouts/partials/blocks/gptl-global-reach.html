@@ -1,0 +1,5 @@
+{{ $css := resources.Get "css/global-reach.css" | minify | fingerprint }}
+{{ $js := resources.Get "js/global-reach.js" | js.Build (dict "target" "es2018" "minify" true) | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ partial "global-reach.html" (dict "stats" site.Data.visitor_stats "english" (eq site.Language.Lang "en")) }}
+<script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>

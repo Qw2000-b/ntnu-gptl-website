@@ -26,6 +26,13 @@ sections:
       title: ''
     design:
       columns: '1'
+  - block: gptl-global-reach
+    id: global-reach
+    content:
+      title: ''
+    design:
+      columns: '1'
+
   - block: gptl-contact
     id: contact
     content:

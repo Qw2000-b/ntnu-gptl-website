@@ -1,0 +1,19 @@
+@media(min-width:992px){#global-reach{scroll-margin-top:80px}}
+.gptl-global-reach{color:var(--color-text)}
+.gptl-global-reach .reach-heading h2{margin:0;line-height:1.2!important}
+.gptl-global-reach .reach-heading .section-subtitle{margin:12px 0}
+.gptl-global-reach .reach-demo,.gptl-global-reach .reach-since{font-size:var(--font-label);color:var(--color-text-muted);line-height:1.5}
+.reach-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:32px 0 40px;border-block:1px solid var(--color-border)}
+.reach-kpis>div{display:flex;flex-direction:column;padding:24px 32px;min-width:0}
+.reach-kpis>div:first-child{padding-left:0}.reach-kpis>div+div{border-left:1px solid var(--color-border)}
+.reach-kpis dt{font-size:var(--font-label);font-weight:400;color:var(--color-text-muted)}
+.reach-kpis dd{order:-1;margin:0 0 8px;font-size:38px;font-weight:600;line-height:1.2;font-variant-numeric:tabular-nums}
+.gptl-global-reach .reach-distribution h3{font-size:var(--font-large);margin:0 0 24px}
+.reach-countries{list-style:none;padding:0;margin:0}
+.reach-countries li{display:grid;grid-template-columns:minmax(150px,1fr) minmax(0,4fr) 5ch;gap:24px;align-items:center;padding:12px 0;border-bottom:1px solid var(--color-border)}
+.reach-country{word-break:normal;overflow-wrap:normal}.reach-percentage{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.reach-track{display:block;height:6px;background:var(--color-surface-subtle)}
+.reach-track>span{display:block;height:100%;background:var(--color-text-muted)}
+.gptl-global-reach .reach-since{margin:24px 0 0}
+@media(max-width:767px){.reach-kpis{grid-template-columns:1fr;margin-top:24px}.reach-kpis>div,.reach-kpis>div:first-child{padding:20px 0}.reach-kpis>div+div{border-left:0;border-top:1px solid var(--color-border)}.reach-kpis dd{font-size:32px}.reach-countries li{grid-template-columns:minmax(0,1fr) 5ch;gap:8px 16px}.reach-track{grid-column:1/-1;grid-row:2}.reach-percentage{grid-column:2;grid-row:1}}
+/* No animated counters or bar motion, including reduced-motion mode. */
