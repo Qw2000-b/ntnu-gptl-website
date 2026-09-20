@@ -2,11 +2,8 @@
 {{ $css := resources.Get "css/advisors.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 <div class="gptl-advisors" lang="zh-Hant">
-<p class="crumb">About Us / {{ .Title }}</p><h1>{{ .Title }}</h1>
-<nav class="subnav" aria-label="About Us">
-{{ range slice (dict "label" "Advisors" "path" "/about/advisors/" "kind" "advisors") (dict "label" "Research Team" "path" "/about/research-team/" "kind" "research-team") (dict "label" "Alumni" "path" "/about/alumni/" "kind" "alumni") }}
-<a href="{{ .path | relURL }}" {{ if eq $.Params.section_kind .kind }}aria-current="page"{{ end }}>{{ .label }}</a>
-{{ end }}</nav>
+<p class="crumb">People / {{ .Title }}</p><h1>{{ .Title }}</h1>
+{{ partial "people-nav.html" . }}
 {{ if eq .Params.section_kind "advisors" }}
 <p class="intro">指導老師</p>
 {{ range site.Data.advisors }}

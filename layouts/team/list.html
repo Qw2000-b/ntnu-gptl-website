@@ -2,9 +2,9 @@
 {{ $css := resources.Get "css/team.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 <div class="container gptl-team" lang="zh-Hant">
-<p class="team-breadcrumb">About Us / Research Team</p>
+<p class="team-breadcrumb">People / Research Team</p>
 <h1>Research Team</h1>
-<nav class="team-nav" aria-label="About Us"><a href="{{ "about/advisors/" | relURL }}">Advisors</a><a href="{{ "about/research-team/" | relURL }}" aria-current="page">Research Team</a><a href="{{ "about/alumni/" | relURL }}">Alumni</a></nav>
+{{ partial "people-nav.html" . }}
 <h2>在校生 <span class="team-en-label">Current Students</span></h2>
 {{ range slice "博士生" "碩士生" }}
 {{ $degree := . }}

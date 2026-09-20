@@ -1,0 +1,13 @@
+:root{
+  color-scheme:light;
+  --gptl-bg:#F7F8F5;--gptl-surface:#FFFFFF;--gptl-ink:#172B2A;--gptl-muted:#536561;
+  --gptl-accent:#245A43;--gptl-tint:#EDF3EE;--gptl-line:#D8E1DB;--gptl-focus:#245A43;
+  --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-8:32px;
+  --space-12:48px;--space-16:64px;--space-20:80px;--space-24:96px;--space-32:128px;--space-40:160px;
+  --gptl-page-width:1320px;--gptl-page-gutter:64px;--gptl-grid-columns:12;--gptl-grid-gap:32px;--gptl-section-space:128px;
+  --font-body:22px;--font-large:24px;--font-display:60px;--font-h1:52px;--font-h2:38px;--font-h3:28px;--font-label:16px;--font-nav:20px;
+  --gptl-font:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;
+  --radius-image:4px;--radius-button:4px;--radius-card:6px;
+}
+@media(max-width:1199px){:root{--gptl-page-gutter:32px;--gptl-grid-columns:8;--gptl-grid-gap:24px;--gptl-section-space:96px;--font-display:56px}}
+@media(max-width:767px){:root{--gptl-page-gutter:20px;--gptl-grid-columns:4;--gptl-grid-gap:16px;--gptl-section-space:80px;--font-body:20px;--font-large:22px;--font-display:38px;--font-h1:38px;--font-h2:32px;--font-h3:26px;--font-nav:18px}}

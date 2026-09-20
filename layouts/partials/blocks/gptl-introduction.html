@@ -1,0 +1,14 @@
+{{ $c := .wcBlock.content }}
+<div class="col-12 gptl-introduction" lang="zh-Hant">
+  <div class="hero-editorial">
+    <div class="hero-main"><p class="section-label">NTNU GPTL</p><h1>{{ $c.headline }}</h1>{{ with $c.headline_en }}<p>{{ . }}</p>{{ end }}</div>
+    <div class="hero-context"><p class="hero-lab">{{ $c.lab_name }}</p><p>{{ $c.affiliation }}</p><p class="hero-summary" lang="en">{{ $c.summary }}</p></div>
+  </div>
+  {{ with $c.image }}{{ if fileExists (printf "static/%s" (strings.TrimPrefix "/" .)) }}
+  <figure class="hero-image"><img src="{{ . | relURL }}" alt="{{ $c.image_alt }}" fetchpriority="high"></figure>
+  {{ end }}{{ end }}
+  <div class="editorial-grid home-about">
+    <header><p class="section-label">01</p><h2>About Us</h2></header>
+    <div class="reading-column" lang="en"><p>{{ $c.text | markdownify }}</p><a class="text-link" href="{{ "about/" | relURL }}">Meet Our People <span aria-hidden="true">→</span></a></div>
+  </div>
+</div>

@@ -8,30 +8,33 @@ sections:
   # =========================================================
   # Lab Introduction
   # =========================================================
-  - block: hero
+  - block: gptl-introduction
     id: introduction
     content:
-      title: |
-        NTNU GPTL
+      title: ''
+      headline: '整合能源、車輛與控制，推進工程系統的實際應用。'
+      headline_en: ''
+      lab_name: Green Power Technology Laboratory
+      affiliation: National Taiwan Normal University
+      summary: 'Energy systems · Vehicle technologies · Control · Thermal management'
+      image: ''
+      image_alt: ''
       text: |
-        <br>
-
-        **Green Power Technology Laboratory**
-
-        National Taiwan Normal University
-
         Our laboratory focuses on interdisciplinary research
         in energy systems, vehicle technologies, control,
         thermal management, and intelligent engineering.
-
+    design:
+      columns: '1'
 
   # =========================================================
   # Development Directions
   # =========================================================
-  - block: markdown
+  - block: gptl-directions
     id: development
     content:
-      title: Development Directions
+      title: ''
+      heading: Research Areas
+      label: 研究方向
       subtitle: ''
       text: |
         ### Vehicle & Energy System Modeling
@@ -51,8 +54,6 @@ sections:
 
     design:
       columns: '1'
-      spacing:
-        padding: ['60px', '0', '60px', '0']
 
 
   # =========================================================
@@ -85,6 +86,4 @@ sections:
       title: ''
     design:
       columns: '1'
-      spacing:
-        padding: ['60px', '0', '60px', '0']
 ---

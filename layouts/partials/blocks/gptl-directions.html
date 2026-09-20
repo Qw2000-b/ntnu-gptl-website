@@ -1,0 +1,5 @@
+{{ $c := .wcBlock.content }}
+<div class="col-12 gptl-directions editorial-grid">
+  <header><p class="section-label">02</p><h2>{{ $c.heading }}</h2><p class="section-subtitle" lang="zh-Hant">{{ $c.label }}</p></header>
+  <div class="directions-text">{{ $c.text | markdownify }}</div>
+</div>

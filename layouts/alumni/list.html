@@ -2,8 +2,8 @@
 {{ $css := resources.Get "css/team.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 <div class="container gptl-team" lang="zh-Hant">
-<p class="team-breadcrumb">About Us / Alumni</p><h1>Alumni</h1>
-<nav class="team-nav" aria-label="About Us"><a href="{{ "about/advisors/" | relURL }}">Advisors</a><a href="{{ "about/research-team/" | relURL }}">Research Team</a><a href="{{ "about/alumni/" | relURL }}" aria-current="page">Alumni</a></nav>
+<p class="team-breadcrumb">People / Alumni</p><h1>Alumni</h1>
+{{ partial "people-nav.html" . }}
 <h2>校友</h2>
 {{ $years := slice }}
 {{ range site.Data.alumni }}{{ $years = $years | append .graduationAcademicYear }}{{ end }}

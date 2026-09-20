@@ -1,0 +1,4 @@
+{{ define "main" }}
+<div class="container gptl-people"><h1>{{ .Title }}</h1>
+{{ range .Params.sections }}<section class="people-group" id="{{ .id }}"><h2>{{ .content.title }}</h2>{{ .content.text | markdownify | replaceRE "<h2" "<h3" | replaceRE "</h2>" "</h3>" | safeHTML }}</section>{{ end }}
+</div>{{ end }}

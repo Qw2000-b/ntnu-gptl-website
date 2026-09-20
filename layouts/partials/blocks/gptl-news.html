@@ -1,6 +1,5 @@
 {{ partial "news-style.html" . }}
-<div class="col-12 gptl-news">
-  <h2>News</h2><p class="news-subtitle">最新消息</p>
-  {{ partial "news-list.html" (dict "limit" 3) }}
-  <a class="news-all" href="{{ "post/" | relURL }}">查看完整消息紀錄 →</a>
+<div class="col-12 gptl-news editorial-grid">
+  <header class="news-heading"><p class="section-label">04</p><h2>Latest News</h2><p class="section-subtitle">最新消息</p><a class="text-link" href="{{ "post/" | relURL }}">查看完整消息紀錄 →</a></header>
+  <div>{{ partial "news-list.html" (dict "limit" 3 "home" true) }}</div>
 </div>

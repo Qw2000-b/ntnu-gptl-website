@@ -1,15 +1,15 @@
 .gptl-team{padding-top:48px;padding-bottom:72px}
-.gptl-team .team-breadcrumb{font-size:16px;color:#63776b}
-.gptl-team .team-nav{display:flex;flex-wrap:wrap;gap:28px;border-bottom:1px solid #dce5df;padding:12px 0 18px;margin:16px 0 36px}
-.gptl-team .team-nav a{color:#245a43;font-size:18px}
-.gptl-team .team-nav [aria-current=page]{font-weight:700;border-bottom:2px solid #245a43}
-.gptl-team .team-en-label{display:block;font-size:17px;font-weight:400;line-height:1.6;color:#63776b;margin-top:6px}
+.gptl-team .team-breadcrumb{font-size:16px;color:var(--gptl-muted)}
+.gptl-team .team-nav{display:flex;flex-wrap:wrap;gap:28px;border-bottom:1px solid var(--gptl-line);padding:12px 0 18px;margin:16px 0 36px}
+.gptl-team .team-nav a{color:var(--gptl-accent);font-size:18px}
+.gptl-team .team-nav [aria-current=page]{font-weight:700;border-bottom:2px solid var(--gptl-accent)}
+.gptl-team .team-en-label{display:block;font-size:17px;font-weight:400;line-height:1.6;color:var(--gptl-muted);margin-top:6px}
 .gptl-team .team-degree{margin-top:40px}
-.gptl-team .team-degree>h3{color:#245a43;border-bottom:2px solid #dce5df;padding-bottom:12px}
+.gptl-team .team-degree>h3{color:var(--gptl-accent);border-bottom:2px solid var(--gptl-line);padding-bottom:12px}
 .gptl-team .team-institute{margin:28px 0 44px}
 .gptl-team .team-institute>h4{margin-bottom:24px;line-height:1.6}
 .gptl-team .team-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;align-items:stretch}
-.gptl-team .team-card{min-width:0;border:1px solid #dce5df;border-radius:6px;overflow:hidden;background:#fff}
+.gptl-team .team-card{min-width:0;border:1px solid var(--gptl-line);border-radius:6px;overflow:hidden;background:#fff}
 .gptl-team .team-photo{aspect-ratio:1/1;width:100%;background:#eef3ef;overflow:hidden}
 .gptl-team .team-photo img{display:block;width:100%;height:100%;object-fit:cover;margin:0}
 .gptl-team .team-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:20px;color:#657e6e;font-size:15px}
@@ -19,10 +19,10 @@
 .gptl-team .team-card-body{padding:22px;overflow-wrap:anywhere}
 .gptl-team .team-card h5{font-size:27px;line-height:1.4;margin:0 0 6px;font-weight:600}
 .gptl-team .team-card p{margin:0 0 10px;line-height:1.65}
-.gptl-team .team-english{font-size:18px;color:#63776b;min-height:1.65em}
-.gptl-team .team-degree-label{font-size:18px;color:#245a43;font-weight:600;padding-top:10px}
+.gptl-team .team-english{font-size:18px;color:var(--gptl-muted);min-height:1.65em}
+.gptl-team .team-degree-label{font-size:18px;color:var(--gptl-accent);font-weight:600;padding-top:10px}
 .gptl-team .team-institute-name{font-size:19px}
-.gptl-team .team-entry{font-size:17px;color:#63776b;border-top:1px solid #e1e8e3;padding-top:12px}
+.gptl-team .team-entry{font-size:17px;color:var(--gptl-muted);border-top:1px solid #e1e8e3;padding-top:12px}
 .dark .gptl-team .team-card{background:#23332c}.dark .gptl-team .team-nav a,.dark .gptl-team .team-degree>h3,.dark .gptl-team .team-degree-label{color:#b0d9be}.dark .gptl-team .team-english,.dark .gptl-team .team-entry,.dark .gptl-team .team-en-label,.dark .gptl-team .team-breadcrumb{color:#b8c9c0}
 .gptl-team a:focus-visible{outline:3px solid #7b9e89;outline-offset:4px}
 @media(max-width:991px){.gptl-team .team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}}

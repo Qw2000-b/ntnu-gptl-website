@@ -1,8 +1,8 @@
 {{ $css := resources.Get "css/partners.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 <div class="col-12 gptl-partners" lang="zh-Hant">
-  <h2 id="partners-title">Partners</h2>
-  <p class="partners-subtitle">合作夥伴</p>
+  <header class="partners-heading"><p class="section-label">03</p><h2 id="partners-title">Partners</h2>
+  <p class="partners-subtitle">合作夥伴</p></header>
   <ul class="partners-grid" aria-labelledby="partners-title">
     {{ range site.Data.partners }}
     <li class="partner-logo {{ .optionalClass }}">

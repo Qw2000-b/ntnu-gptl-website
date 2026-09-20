@@ -1,2 +1,5 @@
-{{ $css := resources.Get "css/readability.css" | minify | fingerprint }}
+{{ range slice "css/design-tokens.css" "css/readability.css" "css/home.css" }}
+{{ $css := resources.Get . | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ end }}
+<noscript><style>#navbar-content.collapse{display:block!important}#navbar-main{position:relative!important}.navbar-toggler{display:none!important}body{padding-top:0!important}</style></noscript>

@@ -1,4 +1,4 @@
-.gptl-partners{--partner-line:#dce5df;--partner-muted:#63776b;--partner-surface:#fff;--partner-tint:#f7f9f7}
+.gptl-partners{--partner-line:var(--gptl-line);--partner-muted:var(--gptl-muted);--partner-surface:var(--gptl-surface);--partner-tint:var(--gptl-tint)}
 .gptl-partners h2{margin:0 0 8px}
 .gptl-partners .partners-subtitle{color:var(--partner-muted);font-size:17px;margin:0 0 32px}
 .gptl-partners .partners-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:24px;list-style:none;padding:0;margin:0}

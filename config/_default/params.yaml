@@ -17,9 +17,9 @@ marketing:
   seo:
     site_type: Organization
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo research group theme powered by Wowchemy website builder.'
-    twitter: 'GetResearchDev'
+    org_name: 'NTNU GPTL — Green Power Technology Laboratory'
+    description: 'Green Power Technology Laboratory at National Taiwan Normal University researches energy systems, vehicle technologies, control, thermal management, and intelligent engineering.'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -37,15 +37,16 @@ header:
     align: r
     show_logo: true
     show_language: false
-    show_day_night: true
+    show_day_night: false
     show_search: true
     highlight_active_link: false
 
 # Site footer
 
 footer:
+  text: "Green Power Technology Laboratory · 國立臺灣師範大學"
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} NTNU GPTL. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false

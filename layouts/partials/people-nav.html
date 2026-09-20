@@ -1,0 +1,5 @@
+<nav class="team-nav subnav" aria-label="People">
+{{ $page := . }}
+{{ range slice (dict "label" "People" "path" "about/") (dict "label" "Advisors" "path" "about/advisors/") (dict "label" "Research Team" "path" "about/research-team/") (dict "label" "Alumni" "path" "about/alumni/") }}
+<a href="{{ .path | relURL }}"{{ if eq $page.RelPermalink (.path | relURL) }} aria-current="page"{{ end }}>{{ .label }}</a>
+{{ end }}</nav>

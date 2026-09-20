@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ $css := resources.Get "css/team.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<div class="container gptl-team gptl-people" lang="zh-Hant">
+<h1>People</h1>{{ partial "people-nav.html" . }}
+<section class="people-group"><h2>Advisors</h2><p class="section-subtitle">指導老師</p>
+<ul class="people-names">{{ range site.Data.advisors }}<li>{{ .name }} <span lang="en">{{ .english }}</span></li>{{ end }}</ul>
+<a class="text-link" href="{{ "about/advisors/" | relURL }}">查看老師簡介 →</a></section>
+{{ range slice (dict "degree" "博士生" "title" "PhD Students") (dict "degree" "碩士生" "title" "Master Students") }}
+{{ $members := where site.Data.team.members "degree" .degree }}{{ if $members }}
+<section class="people-group"><h2>{{ .title }}</h2><p class="section-subtitle">{{ .degree }}</p>
+<ul class="people-names">{{ range sort $members "entry_year" "desc" }}<li>{{ .name }}</li>{{ end }}</ul>
+<a class="text-link" href="{{ "about/research-team/" | relURL }}">查看在校生資料 →</a></section>
+{{ end }}{{ end }}
+<section class="people-group"><h2>Alumni</h2><p class="section-subtitle">校友</p><a class="text-link" href="{{ "about/alumni/" | relURL }}">依畢業學年度查看校友 →</a></section>
+</div>{{ end }}
