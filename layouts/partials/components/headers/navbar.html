@@ -13,6 +13,8 @@
   {{ $logo = (partial "blox-core/functions/get_logo" (dict "constraint" "max_height" "size" 70)) }}
 {{ end }}
 
+{{ $navCSS := resources.Get "css/header-glass.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $navCSS.RelPermalink }}" integrity="{{ $navCSS.Data.Integrity }}">
 <header>
   <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
     <div class="container-xl">
@@ -20,7 +22,9 @@
       {{if $show_logo}}
       <div class="d-none d-lg-inline-flex">
         <a class="navbar-brand" href="{{ site.Home.RelPermalink }}">
-          {{- if $has_logo -}}
+          {{- if fileExists "static/images/gptl-logo-transparent.png" -}}
+          <img class="gptl-brand-logo" src="{{ "images/gptl-logo-transparent.png" | relURL }}" alt="" width="639" height="253"><span>{{ site.Title }}</span>
+        {{- else if $has_logo -}}
             <img src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
             {{with site.Params.header.image.width}}width="{{.}}"{{end}}
             {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
@@ -41,7 +45,9 @@
       {{if $show_logo}}
       <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
         <a class="navbar-brand" href="{{ site.Home.RelPermalink }}">
-        {{- if $has_logo -}}
+        {{- if fileExists "static/images/gptl-logo-transparent.png" -}}
+          <img class="gptl-brand-logo" src="{{ "images/gptl-logo-transparent.png" | relURL }}" alt="" width="639" height="253"><span>{{ site.Title }}</span>
+        {{- else if $has_logo -}}
           <img src="{{ $logo.RelPermalink }}" alt="{{ site.Title }}"
           {{with site.Params.header.image.width}}width="{{.}}"{{end}}
           {{with site.Params.header.image.height}}height="{{.}}"{{end}}>

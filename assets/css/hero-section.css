@@ -43,7 +43,7 @@
 .gptl-hero__title {
   margin: 0;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(54px, 7.5vw, 124px);
+  font-size: clamp(57.24px, 7.95vw, 131.44px);
   font-weight: 400;
   line-height: 0.9;
   letter-spacing: -0.055em;
@@ -73,9 +73,9 @@
   margin: 0;
   max-width: 37rem;
   font-family: "Noto Sans TC", "PingFang TC", sans-serif;
-  font-size: clamp(14px, 1.15vw, 18px);
+  font-size: clamp(18px, 1.4vw, 21px);
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1.7;
   letter-spacing: 0.04em;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.32);
 }
@@ -131,5 +131,5 @@
   }
 }
 
-.gptl-introduction h1.gptl-hero__title{font-size:clamp(54px,7.5vw,124px)!important;line-height:.9!important;font-weight:400;letter-spacing:-.055em;color:var(--gptl-hero-text)}
+.gptl-introduction h1.gptl-hero__title{font-size:clamp(57.24px,7.95vw,131.44px)!important;line-height:.9!important;font-weight:400;letter-spacing:-.055em;color:var(--gptl-hero-text)}
 @media(max-width:760px){.gptl-introduction h1.gptl-hero__title{font-size:clamp(50px,15vw,76px)!important}}
