@@ -15,7 +15,13 @@
 
 {{ $navCSS := resources.Get "css/header-glass.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $navCSS.RelPermalink }}" integrity="{{ $navCSS.Data.Integrity }}">
-<header>
+{{ if .IsHome }}
+{{ $overlayCSS := resources.Get "css/home-header-overlay.css" | minify | fingerprint }}
+{{ $overlayJS := resources.Get "js/home-header-overlay.js" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $overlayCSS.RelPermalink }}" integrity="{{ $overlayCSS.Data.Integrity }}">
+<script defer src="{{ $overlayJS.RelPermalink }}" integrity="{{ $overlayJS.Data.Integrity }}"></script>
+{{ end }}
+<header{{ if .IsHome }} class="gptl-home-header"{{ end }}>
   <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
     <div class="container-xl">
 
