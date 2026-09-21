@@ -1,13 +1,29 @@
 {{ $c := partial "homepage-content.html" .wcBlock }}
 {{ $en := eq site.Language.Lang "en" }}
+{{ $heroCSS := resources.Get "css/hero-section.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $heroCSS.RelPermalink }}" integrity="{{ $heroCSS.Data.Integrity }}">
 <div class="col-12 gptl-introduction">
-  <div class="hero-editorial">
-    <div class="hero-main"><p class="section-label">{{ cond $en $c.eyebrow $c.eyebrow_zh }}</p><h1>{{ cond $en $c.headline $c.headline_zh }}</h1></div>
-    <div class="hero-context"><p class="hero-lab">{{ cond $en $c.supporting $c.supporting_zh }}</p><p class="hero-summary">{{ cond $en $c.affiliation "國立臺灣師範大學" }}</p></div>
+<section class="gptl-hero" aria-labelledby="gptl-hero-title">
+  <picture class="gptl-hero__media" aria-hidden="true">
+    <source srcset="{{ "images/gptl-fuel-cell-hero.webp" | relURL }}" type="image/webp">
+    <img src="{{ "images/gptl-fuel-cell-hero.jpg" | relURL }}" alt="" fetchpriority="high">
+  </picture>
+
+  <div class="gptl-hero__shade" aria-hidden="true"></div>
+
+  <div class="gptl-hero__content">
+    <h1 id="gptl-hero-title" class="gptl-hero__title">
+      <span class="gptl-hero__title-left">From Energy<br>Systems</span>
+      <span class="gptl-hero__title-right">to Sustainable<br>Mobility.</span>
+    </h1>
+
+    <p class="gptl-hero__tagline">
+      <span aria-hidden="true"></span>
+      {{ if $en }}{{ $c.supporting }}{{ else }}透過建模、最佳化、控制與驗證，<br>探索先進能源與移動系統的工程實現。{{ end }}
+    </p>
   </div>
-  {{ with $c.image }}{{ if fileExists (printf "static/%s" (strings.TrimPrefix "/" .)) }}
-  <figure class="hero-image"><img src="{{ . | relURL }}" alt="{{ $c.image_alt }}" fetchpriority="high"></figure>
-  {{ end }}{{ end }}
+</section>
+
   <div class="editorial-grid home-about">
     <header><p class="section-label">01</p><h2>{{ cond $en $c.about_heading $c.about_label }}</h2></header>
     <div class="reading-column">
