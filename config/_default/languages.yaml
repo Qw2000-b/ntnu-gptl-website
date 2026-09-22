@@ -1,7 +1,14 @@
-# Languages
-
-en:
-  languageCode: en-us
+zh:
+  languageCode: zh-Hant
+  languageName: 中文
+  weight: 1
   title: NTNU GPTL
   params:
-    description: NTNU Green Power Technology Lab
+    footer:
+      copyright:
+        notice: '© {year} NTNU GPTL。本網站內容採用 {license} 授權。'
+en:
+  languageCode: en
+  languageName: English
+  weight: 2
+  title: NTNU GPTL

@@ -1,18 +1,18 @@
 .gptl-news{max-width:1060px;margin:auto;color:inherit}
-.gptl-news .news-subtitle{color:#63776b;margin:8px 0 32px;font-size:20px}
-.gptl-news .news-year{font-size:30px!important;color:#245a43;margin:36px 0 14px;font-weight:600}
-.gptl-news .news-month{font-size:22px!important;color:#567260;margin:24px 0 12px}
-.gptl-news .news-entry{padding:24px 0 28px 24px;border-left:3px solid #b9cdbf;border-bottom:1px solid #dde7df;margin-bottom:22px;scroll-margin-top:100px}
-.gptl-news .news-date{font-size:16px;color:#63776b;margin:0 0 12px;line-height:1.7}
+.gptl-news .news-subtitle{color:var(--gptl-muted);margin:8px 0 32px;font-size:20px}
+.gptl-news .news-year{font-size:30px!important;color:var(--gptl-accent);margin:36px 0 14px;font-weight:600}
+.gptl-news .news-month{font-size:22px!important;color:var(--color-text-muted);margin:24px 0 12px}
+.gptl-news .news-entry{padding:24px 0 28px 24px;border-left:1px solid var(--color-border);border-bottom:1px solid var(--gptl-line);margin-bottom:22px;scroll-margin-top:100px}
+.gptl-news .news-date{font-size:16px;color:var(--gptl-muted);margin:0 0 12px;line-height:1.7}
 .gptl-news .news-title{font-size:26px!important;font-weight:600;line-height:1.5;margin:0 0 14px;color:inherit}
 .gptl-news .news-description,.gptl-news .news-papers{font-size:20px;line-height:1.85;margin:12px 0 0}
 .gptl-news .news-papers{padding-left:24px}
 .gptl-news .news-papers li{margin:16px 0;overflow-wrap:anywhere;white-space:normal}
 .gptl-news .news-paper-title{display:inline;white-space:normal;overflow-wrap:anywhere}
-.gptl-news .news-award{display:inline-block;border:1px solid #b4cbbd;background:#edf4ef;color:#245a43;font-size:15px;line-height:1.6;padding:2px 10px;border-radius:4px;vertical-align:middle}
-.gptl-news .news-all{display:inline-block;background:#245a43;color:#fff;padding:10px 20px;border-radius:4px;font-size:18px;margin:20px 0;text-decoration:none}
-.news-archive{padding:48px 32px 72px}.gptl-news .news-back{display:inline-block;color:#245a43;font-size:17px;margin-bottom:28px}
-.gptl-news a:focus-visible{outline:3px solid #7b9e89;outline-offset:4px}
-.dark .gptl-news .news-year,.dark .gptl-news .news-month,.dark .gptl-news .news-back{color:#aad2b9}
-.dark .gptl-news .news-date,.dark .gptl-news .news-subtitle{color:#b8c9c0}
+.gptl-news .news-award{display:inline-block;border:1px solid var(--color-border);background:var(--gptl-tint);color:var(--gptl-accent);font-size:15px;line-height:1.6;padding:2px 10px;border-radius:4px;vertical-align:middle}
+.gptl-news .news-all{display:inline-block;background:var(--gptl-accent);color:#fff;padding:10px 20px;border-radius:4px;font-size:18px;margin:20px 0;text-decoration:none}
+.news-archive{padding:48px 32px 72px}.gptl-news .news-back{display:inline-block;color:var(--gptl-accent);font-size:17px;margin-bottom:28px}
+.gptl-news a:focus-visible{outline:3px solid var(--color-focus);outline-offset:4px}
+
+
 @media(max-width:700px){.news-archive{padding:32px 22px}.gptl-news .news-entry{padding-left:16px}.gptl-news .news-title{font-size:23px!important}.gptl-news .news-description,.gptl-news .news-papers{font-size:19px}}

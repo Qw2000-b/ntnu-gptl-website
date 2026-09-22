@@ -1,0 +1,36 @@
+{{ $c := partial "homepage-content.html" .wcBlock }}
+{{ $en := eq site.Language.Lang "en" }}
+{{ $heroCSS := resources.Get "css/hero-section.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $heroCSS.RelPermalink }}" integrity="{{ $heroCSS.Data.Integrity }}">
+<div class="col-12 gptl-introduction">
+<section class="gptl-hero" aria-labelledby="gptl-hero-title">
+  <picture class="gptl-hero__media" aria-hidden="true">
+    <source srcset="{{ "images/gptl-fuel-cell-hero-bluegray-orange.webp" | relURL }}" type="image/webp">
+    <img src="{{ "images/gptl-fuel-cell-hero-bluegray-orange.jpg" | relURL }}" alt="" fetchpriority="high">
+  </picture>
+
+  <div class="gptl-hero__shade" aria-hidden="true"></div>
+
+  <div class="gptl-hero__content">
+    <h1 id="gptl-hero-title" class="gptl-hero__title">
+      <span class="gptl-hero__title-left">From Energy<br>Systems</span>
+      <span class="gptl-hero__title-right">to Sustainable<br>Mobility.</span>
+    </h1>
+
+    <p class="gptl-hero__tagline">
+      <span aria-hidden="true"></span>
+      {{ if $en }}{{ $c.supporting }}{{ else }}透過建模、最佳化、控制與驗證，<br>探索先進能源與移動系統的工程實現。{{ end }}
+    </p>
+  </div>
+</section>
+
+  <div class="editorial-grid home-about">
+    <header>{{ if not $en }}<p class="section-label" lang="en">About Us</p>{{ end }}<h2>{{ $c.about_heading }}</h2></header>
+    <div class="reading-column">
+      <p class="about-lead">{{ $c.about_subtitle }}</p>
+      {{ range $c.paragraphs }}<div class="copy-pair"><p>{{ .text }}</p></div>{{ end }}
+      <div class="home-approach"><p class="section-label">{{ $c.approach_label }}</p><p>{{ $c.methodology }}</p></div>
+      <a class="text-link gptl-button" href="{{ "about/" | relLangURL }}">{{ cond $en "Meet Our People" "認識研究團隊" }} <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</div>

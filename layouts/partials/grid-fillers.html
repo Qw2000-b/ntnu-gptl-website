@@ -1,0 +1,7 @@
+{{ $count := .count }}{{ $tag := .tag }}{{ $kind := .kind }}
+{{ range .breakpoints }}
+  {{ $name := .name }}{{ $missing := mod (sub .columns (mod $count .columns)) .columns }}
+  {{ if gt $missing 0 }}{{ range seq $missing }}
+    {{ if eq $tag "li" }}<li class="grid-filler grid-filler--{{ $kind }}-{{ $name }}" aria-hidden="true"></li>{{ else }}<div class="grid-filler grid-filler--{{ $kind }}-{{ $name }}" aria-hidden="true"></div>{{ end }}
+  {{ end }}{{ end }}
+{{ end }}

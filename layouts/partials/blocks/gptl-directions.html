@@ -1,0 +1,12 @@
+{{ $c := partial "homepage-content.html" .wcBlock }}
+{{ $en := eq site.Language.Lang "en" }}
+<div class="col-12 gptl-directions editorial-grid">
+  <header>{{ if not $en }}<p class="section-label" lang="en">Research Directions</p>{{ end }}<h2>{{ $c.heading }}</h2></header>
+  <div class="directions-text">
+    <div class="directions-intro"><p>{{ $c.subtitle }}</p></div>
+    {{ range $c.directions }}
+    <div class="direction-item"><h3>{{ .title }}</h3>
+    <p>{{ .description }}</p></div>
+    {{ end }}
+  </div>
+</div>

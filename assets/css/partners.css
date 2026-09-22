@@ -1,0 +1,20 @@
+.gptl-partners{--partner-line:var(--color-border);--partner-muted:var(--color-text-muted)}
+.gptl-partners h2{margin:0 0 8px}
+.gptl-partners .partners-subtitle{color:var(--partner-muted);font-size:17px;margin:0 0 32px}
+.gptl-partners .partners-grid{list-style:none;padding:0;margin:0}
+/* Square grid cells; artwork keeps its original aspect ratio inside a safe area. */
+.page-body .gptl-partners .partners-grid>:is(.partner-logo,.grid-filler){height:auto;aspect-ratio:1;padding:clamp(16px,2vw,24px)}
+.gptl-partners .partner-logo{--logo-size:100%;box-sizing:border-box;min-width:0;display:flex;align-items:center;justify-content:center;cursor:default}
+.gptl-partners .partner-logo--compact{--logo-size:76%}
+.gptl-partners .partner-logo--tall{--logo-size:72%}
+.gptl-partners .partner-logo-art{display:block;flex:none;width:min(100%,calc(var(--logo-size)*var(--logo-scale,1)));aspect-ratio:1;min-width:0}
+.gptl-partners .partner-logo img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;object-position:center;filter:grayscale(1);opacity:.8;cursor:default}
+.gptl-partners .partner-placeholder{color:var(--partner-muted);font-size:16px;line-height:1.6;text-align:center;overflow-wrap:break-word;font-weight:400}
+@media(hover:hover) and (pointer:fine){
+.gptl-partners .partner-logo img{transition:filter var(--transition-default),opacity var(--transition-default)}
+.gptl-partners .partner-logo:hover img{filter:grayscale(0);opacity:1}
+}
+@media(prefers-reduced-motion:reduce){.gptl-partners .partner-logo img{transition:none!important}}
+/* NeoPower uses the supplied vertical lockup; keep its individual visual weight balanced. */
+.gptl-partners .partner-logo-art:has(>img[src$="/neopower.png"]){--logo-scale:.76}
+

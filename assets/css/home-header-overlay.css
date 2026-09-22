@@ -1,0 +1,4 @@
+/* Homepage only: keep Hero at y=0 and leave scrolling to the existing script. */
+.page-header:has(.gptl-home-header){position:static!important}
+.gptl-home-header{position:absolute;top:0;left:0;right:0;z-index:1000}
+.gptl-home-header.is-scrolled{position:fixed}

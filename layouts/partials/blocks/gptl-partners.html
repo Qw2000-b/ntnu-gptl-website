@@ -1,0 +1,19 @@
+{{ $en := eq site.Language.Lang "en" }}
+{{ $css := resources.Get "css/partners.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<div class="col-12 gptl-partners" lang="{{ site.Language.LanguageCode }}">
+  <header class="partners-heading">{{ if not $en }}<p class="section-label" lang="en">Partners</p>{{ end }}<h2 id="partners-title">{{ .wcBlock.content.heading }}</h2></header>
+  <ul class="partners-grid gptl-cell-grid" aria-labelledby="partners-title">
+    {{ range site.Data.partners }}
+    <li class="partner-logo partner-logo--{{ .variant | default "wide" }} {{ .optionalClass }}" style="--logo-scale: {{ .scale | default 1 }}">
+      {{ $file := printf "static/%s" (strings.TrimPrefix "/" .logo) }}
+      {{ if fileExists $file }}
+      <span class="partner-logo-art"><img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy" decoding="async"></span>
+      {{ else }}
+      <span class="partner-placeholder">{{ .name }}</span>
+      {{ end }}
+    </li>
+    {{ end }}
+    {{ partial "grid-fillers.html" (dict "count" (len site.Data.partners) "tag" "li" "kind" "partners" "breakpoints" (slice (dict "name" "desktop" "columns" 6) (dict "name" "tablet" "columns" 3) (dict "name" "mobile" "columns" 2))) }}
+  </ul>
+</div>

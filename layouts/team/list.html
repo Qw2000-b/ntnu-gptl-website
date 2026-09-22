@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ $en := eq site.Language.Lang "en" }}
+{{ $css := resources.Get "css/team.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<div class="container gptl-team" lang="{{ site.Language.LanguageCode }}">
+<p class="team-breadcrumb">{{ cond $en "People" "研究團隊" }} / {{ .Title }}</p>
+<h1>{{ .Title }}</h1>
+{{ partial "people-nav.html" . }}
+<h2>{{ cond $en "Current Students" "在校成員" }}</h2>
+{{ range slice "博士生" "碩士生" }}
+{{ $degree := . }}{{ $degreeLabel := . }}{{ if $en }}{{ $degreeLabel = cond (eq . "博士生") "PhD Students" "Master Students" }}{{ end }}
+<section class="team-degree" aria-label="{{ $degreeLabel }}"><h3>{{ $degreeLabel }}</h3>
+{{ range site.Data.team.institutes }}
+{{ $institute := . }}{{ $members := where (where site.Data.team.members "degree" $degree) "institute" .id }}
+{{ if $members }}
+<section class="team-institute" aria-label="{{ cond $en .english .name }}"><h4>{{ cond $en .english .name }}</h4>
+<div class="team-grid gptl-cell-grid">
+{{ range sort $members "entry_year" "desc" }}
+<article class="team-card" aria-label="{{ cond $en .english .name }}">
+<div class="team-photo">
+{{ if .photo }}<img src="{{ .photo | relURL }}" alt="{{ cond $en .english .name }}" width="400" height="400" loading="lazy">{{ else }}
+<div class="team-placeholder" role="img" aria-label="{{ cond $en "Portrait placeholder" "照片預留位置" }}"><span class="team-silhouette" aria-hidden="true"></span><span>{{ cond $en "Portrait placeholder" "照片預留" }}</span></div>
+{{ end }}
+</div>
+<div class="team-card-body"><h5>{{ cond $en .english .name }}</h5>{{ if not $en }}<p class="team-english">{{ .english }}</p>{{ end }}<p class="team-degree-label">{{ $degreeLabel }}</p><p class="team-institute-name">{{ cond $en $institute.english $institute.name }}</p><p class="team-entry">{{ if $en }}Entry academic year: {{ .entry_year }} (R.O.C.){{ else }}{{ .entry_year }} 學年度入學{{ end }}</p></div>
+</article>
+{{ end }}
+{{ partial "grid-fillers.html" (dict "count" (len $members) "tag" "div" "kind" "team" "breakpoints" (slice (dict "name" "desktop" "columns" 4) (dict "name" "tablet" "columns" 2) (dict "name" "mobile" "columns" 1))) }}
+</div></section>
+{{ end }}{{ end }}
+</section>{{ end }}
+</div>
+{{ end }}

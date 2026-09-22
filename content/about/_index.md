@@ -1,6 +1,4 @@
----
-title: Advisors
-type: advisors
-section_kind: advisors
-placeholder: ""
----
+{
+  "title": "研究團隊",
+  "type": "people"
+}

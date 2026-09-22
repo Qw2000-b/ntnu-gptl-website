@@ -1,0 +1,28 @@
+{
+  "totalVisitors": 12842,
+  "countries": 37,
+  "internationalPercentage": 28.4,
+  "countryDistribution": [
+    {
+      "country": "Taiwan",
+      "percentage": 71.6
+    },
+    {
+      "country": "Japan",
+      "percentage": 8.4
+    },
+    {
+      "country": "United States",
+      "percentage": 7.1
+    },
+    {
+      "country": "Germany",
+      "percentage": 3.9
+    },
+    {
+      "country": "Others",
+      "percentage": 9.0
+    }
+  ],
+  "since": "September 2026"
+}
