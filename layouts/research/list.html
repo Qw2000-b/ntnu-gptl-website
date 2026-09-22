@@ -5,7 +5,7 @@
 <div class="container gptl-people gptl-research"><h1>{{ .Title }}</h1>
 {{ range .Params.sections }}
 <section class="people-group gptl-section-grid" id="{{ .id }}">
-<header><h2>{{ .content.title }}</h2></header><div>
+<header><h2>{{ with .content.title_lines }}{{ range . }}<span class="research-title-line">{{ . }}</span>{{ end }}{{ else }}{{ .content.title }}{{ end }}</h2></header><div>
 {{ with .content.projects }}
 {{/* Date groups sort newest first; within each month retain the supplied order. */}}
 {{ $projects := . }}

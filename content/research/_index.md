@@ -5,7 +5,7 @@
   "project_labels": {
     "principal": "主持人",
     "coprincipal": "共同主持人",
-    "unit": "校內執行單位"
+    "unit": "執行單位"
   },
   "sections": [
     {
@@ -236,6 +236,10 @@
             "coprincipal": "洪翊軒",
             "unit": "跨域科技產業創新研究學院綠能科技與永續治理研究所"
           }
+        ],
+        "title_lines": [
+          "產學合作與",
+          "研究計畫"
         ]
       }
     },

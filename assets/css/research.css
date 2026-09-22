@@ -11,3 +11,5 @@
 .gptl-research .project-details dt{font-weight:400;flex-shrink:0}
 .gptl-research .project-details dd{margin:0;flex:1;min-width:180px;overflow-wrap:anywhere}
 @media(max-width:767px){.gptl-research .gptl-section-grid{grid-template-columns:minmax(0,1fr)}.gptl-research .research-project h3{font-size:22px!important}.gptl-research .project-details>div{display:block}}
+
+.gptl-research .research-title-line{display:block;white-space:nowrap}
