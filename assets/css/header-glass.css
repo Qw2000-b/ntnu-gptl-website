@@ -1,6 +1,16 @@
 /* Shared alignment token, scoped to the existing header and homepage hero. */
 #navbar-main,.gptl-hero{--gptl-content-gutter:clamp(24px,2.7vw,48px)}
-#navbar-main{background:rgba(245,248,250,.72)!important;backdrop-filter:blur(16px) saturate(125%);-webkit-backdrop-filter:blur(16px) saturate(125%);border:0;border-bottom:1px solid rgba(255,255,255,.38);box-shadow:0 8px 28px rgba(15,27,38,.10)!important}
+/* Opaque-enough fallback when backdrop filtering is unavailable. */
+#navbar-main{position:relative!important;top:auto;left:auto;right:auto;background:rgba(245,248,250,.88)!important;border:0;border-bottom:1px solid rgba(255,255,255,.26);box-shadow:0 8px 28px rgba(15,27,38,.07)!important}
+@supports ((backdrop-filter:blur(18px)) or (-webkit-backdrop-filter:blur(18px))){#navbar-main{background:rgba(245,248,250,.48)!important;-webkit-backdrop-filter:blur(18px) saturate(125%);backdrop-filter:blur(18px) saturate(125%)}}
+body:has(.gptl-site-header){padding-top:0!important}
+/* Sticky belongs to the Blox outer header, not its one-row inner child.
+   Neutralize Headroom transforms so it cannot hide the navigation. */
+.page-header:has(.gptl-site-header){transform:none!important;transition:none!important;z-index:1000}
+.page-header:has(.gptl-site-header:not(.gptl-home-header)){position:sticky!important;top:0}
+.gptl-site-header{background:transparent}
+.gptl-site-header #navbar-main>.container-xl,.gptl-site-header #navbar-main::before,.gptl-site-header #navbar-main::after{background:transparent}
+.gptl-site-header .navbar-brand,.gptl-site-header .nav-link{color:#202b2e;text-shadow:0 1px 1px rgba(255,255,255,.15)}
 #navbar-main>.container-xl{width:100%!important;max-width:none!important;margin-inline:0;padding-inline:var(--gptl-content-gutter)!important}
 #navbar-main .navbar-brand{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;margin:0}
 #navbar-main .navbar-brand img.gptl-brand-logo{display:block;height:34px;width:auto;max-height:none;object-fit:contain;flex-shrink:0}

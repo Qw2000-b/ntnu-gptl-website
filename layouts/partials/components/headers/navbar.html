@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="{{ $overlayCSS.RelPermalink }}" integrity="{{ $overlayCSS.Data.Integrity }}">
 <script defer src="{{ $overlayJS.RelPermalink }}" integrity="{{ $overlayJS.Data.Integrity }}"></script>
 {{ end }}
-<header{{ if .IsHome }} class="gptl-home-header"{{ end }}>
+<header class="gptl-site-header{{ if .IsHome }} gptl-home-header{{ end }}">
   <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
     <div class="container-xl">
 

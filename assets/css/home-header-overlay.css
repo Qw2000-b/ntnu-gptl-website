@@ -1,8 +1,4 @@
-/* Loaded only on the Chinese and English homepages. */
-body:has(.gptl-home-header){padding-top:0!important}
-.gptl-home-header{position:absolute;top:0;left:0;right:0;z-index:100;background:transparent}
+/* Homepage only: keep Hero at y=0 and leave scrolling to the existing script. */
+.page-header:has(.gptl-home-header){position:static!important}
+.gptl-home-header{position:absolute;top:0;left:0;right:0;z-index:1000}
 .gptl-home-header.is-scrolled{position:fixed}
-.gptl-home-header #navbar-main{position:relative!important;top:auto;left:auto;right:auto;background:rgba(245,248,250,.48)!important;border-bottom:1px solid rgba(255,255,255,.26);box-shadow:0 8px 28px rgba(15,27,38,.07)!important;-webkit-backdrop-filter:blur(18px) saturate(125%);backdrop-filter:blur(18px) saturate(125%)}
-.gptl-home-header #navbar-main>.container-xl{background:transparent}
-.gptl-home-header #navbar-main::before,.gptl-home-header #navbar-main::after{background:transparent}
-.gptl-home-header .navbar-brand,.gptl-home-header .nav-link{color:#202b2e;text-shadow:0 1px 1px rgba(255,255,255,.15)}
