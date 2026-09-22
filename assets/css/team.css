@@ -17,7 +17,7 @@
 .gptl-team .team-silhouette:before{content:"";position:absolute;width:34px;height:34px;border-radius:50%;background:var(--color-border);left:27px;top:0}
 .gptl-team .team-silhouette:after{content:"";position:absolute;width:76px;height:43px;border-radius:42px 42px 8px 8px;background:var(--color-border);left:6px;bottom:0}
 .gptl-team .team-card-body{padding:22px;overflow-wrap:anywhere}
-.gptl-team .team-card h5{font-size:27px;line-height:1.4;margin:0 0 6px;font-weight:600}
+.gptl-team .team-card h5,.gptl-team .team-card .team-member-name{font-size:27px;line-height:1.4;margin:0 0 6px;font-weight:600}
 .gptl-team .team-card p{margin:0 0 10px;line-height:1.65}
 .gptl-team .team-english{font-size:18px;color:var(--gptl-muted);min-height:1.65em}
 .gptl-team .team-degree-label{font-size:18px;color:var(--gptl-accent);font-weight:600;padding-top:10px}

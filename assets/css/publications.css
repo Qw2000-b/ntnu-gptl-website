@@ -1,0 +1,7 @@
+/* Keep the preparation state within the existing section grid, without an empty card. */
+.gptl-publications .people-group>div>p:last-child{margin-bottom:0}
+@media(max-width:767px){
+  .gptl-publications .people-group>header{padding-block:24px 8px}
+  .gptl-publications .people-group>header h2{margin-bottom:0}
+  .gptl-publications .people-group>div{padding-block:0 24px}
+}

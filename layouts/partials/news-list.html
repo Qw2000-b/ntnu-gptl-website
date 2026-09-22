@@ -1,3 +1,4 @@
+{{ if eq site.Language.Lang "en" }}<p class="text-muted">Content in preparation.</p>{{ else }}
 {{ $items := sort site.Data.news "sort_date" "desc" }}
 {{ if .limit }}{{ $items = first .limit $items }}{{ end }}
 {{ $home := .home | default false }}
@@ -6,13 +7,13 @@
 {{ range $items }}
   {{ $nextYear := substr .sort_date 0 4 }}{{ $nextMonth := substr .sort_date 5 2 }}
   {{ if ne $year $nextYear }}
-    <h3 class="news-year">{{ $nextYear }} 年</h3>
+    {{ if $home }}<h3 class="news-year">{{ $nextYear }} 年</h3>{{ else }}<h2 class="news-year">{{ $nextYear }} 年</h2>{{ end }}
     {{ $year = $nextYear }}{{ $month = "" }}
   {{ end }}
   {{ if ne $month $nextMonth }}<p class="news-month">{{ $nextMonth }} 月</p>{{ $month = $nextMonth }}{{ end }}
   <article class="news-entry" id="news-{{ .id }}">
     <p class="news-date">{{ .date_label }}{{ with .period }}<br>{{ . }}{{ end }}</p>
-    <div class="news-content"><h4 class="news-title">{{ .title }}</h4>
+    <div class="news-content">{{ if $home }}<h4 class="news-title">{{ .title }}</h4>{{ else }}<h3 class="news-title">{{ .title }}</h3>{{ end }}
     {{ with .award }}<span class="news-award">{{ . }}</span>{{ end }}
     <p class="news-description">{{ .text }}</p>
     {{ $papers := where .papers "title" "ne" nil }}
@@ -25,3 +26,5 @@
   </article>
 {{ end }}
 </div>
+
+{{ end }}

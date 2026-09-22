@@ -1,4 +1,4 @@
----
-title: Research Team
-type: team
----
+{
+  "title": "Research Team",
+  "type": "team"
+}

@@ -1,5 +1,1 @@
-{{/* Both languages share one source of existing bilingual homepage copy. */}}
-{{ $source := index (where site.Sites "Language.Lang" "zh") 0 }}
-{{ $section := index (where $source.Home.Params.sections "id" .id) 0 }}
-{{ return $section.content }}
-
+{{ return .content }}

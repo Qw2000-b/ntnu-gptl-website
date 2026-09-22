@@ -1,18 +1,19 @@
 {{ define "main" }}
+{{ $en := eq site.Language.Lang "en" }}
 {{ $css := resources.Get "css/team.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ $portraitCSS := resources.Get "css/advisor-photos.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $portraitCSS.RelPermalink }}" integrity="{{ $portraitCSS.Data.Integrity }}">
-<div class="container gptl-team gptl-people" lang="zh-Hant">
-<h1>People</h1>{{ partial "people-nav.html" . }}
-<section class="people-group gptl-section-grid"><header><h2>Advisors</h2><p class="section-subtitle">指導老師</p></header><div>
-<ul class="people-names advisor-photo-grid">{{ range site.Data.advisors }}<li>{{ if .photo }}{{ partial "advisor-photo.html" . }}{{ end }}<div class="advisor-photo-name">{{ .name }} <span lang="en">{{ .english }}</span></div></li>{{ end }}</ul>
-<a class="text-link gptl-button" href="{{ "about/advisors/" | relLangURL }}">查看老師簡介 <span aria-hidden="true">→</span></a></div></section>
+<div class="container gptl-team gptl-people" lang="{{ site.Language.LanguageCode }}">
+<h1>{{ .Title }}</h1>{{ partial "people-nav.html" . }}
+<section class="people-group gptl-section-grid"><header><h2>{{ cond $en "Advisors" "指導老師" }}</h2></header><div>
+<ul class="people-names advisor-photo-grid">{{ range site.Data.advisors }}<li>{{ if .photo }}{{ partial "advisor-photo.html" . }}{{ end }}<div class="advisor-photo-name">{{ if $en }}{{ .english }}{{ else }}{{ .name }} <span lang="en">{{ .english }}</span>{{ end }}</div></li>{{ end }}</ul>
+<a class="text-link gptl-button" href="{{ "about/advisors/" | relLangURL }}">{{ cond $en "View Advisors" "查看老師簡介" }} <span aria-hidden="true">→</span></a></div></section>
 {{ range slice (dict "degree" "博士生" "title" "PhD Students") (dict "degree" "碩士生" "title" "Master Students") }}
 {{ $members := where site.Data.team.members "degree" .degree }}{{ if $members }}
-<section class="people-group gptl-section-grid"><header><h2>{{ .title }}</h2><p class="section-subtitle">{{ .degree }}</p></header><div>
-<ul class="people-names">{{ range sort $members "entry_year" "desc" }}<li>{{ .name }}</li>{{ end }}</ul>
-<a class="text-link gptl-button" href="{{ "about/research-team/" | relLangURL }}">查看在校生資料 <span aria-hidden="true">→</span></a></div></section>
+<section class="people-group gptl-section-grid"><header><h2>{{ cond $en .title .degree }}</h2></header><div>
+<ul class="people-names">{{ range sort $members "entry_year" "desc" }}<li>{{ cond $en .english .name }}</li>{{ end }}</ul>
+<a class="text-link gptl-button" href="{{ "about/research-team/" | relLangURL }}">{{ cond $en "View Research Team" "查看在校成員資料" }} <span aria-hidden="true">→</span></a></div></section>
 {{ end }}{{ end }}
-<section class="people-group gptl-section-grid"><header><h2>Alumni</h2><p class="section-subtitle">校友</p></header><div><a class="text-link gptl-button" href="{{ "about/alumni/" | relLangURL }}">依畢業學年度查看校友 <span aria-hidden="true">→</span></a></div></section>
+<section class="people-group gptl-section-grid"><header><h2>{{ cond $en "Alumni" "歷屆成員" }}</h2></header><div><a class="text-link gptl-button" href="{{ "about/alumni/" | relLangURL }}">{{ cond $en "View Alumni" "依畢業學年度查看歷屆成員" }} <span aria-hidden="true">→</span></a></div></section>
 </div>{{ end }}

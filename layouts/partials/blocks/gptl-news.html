@@ -1,5 +1,5 @@
+{{ $en := eq site.Language.Lang "en" }}
 {{ partial "news-style.html" . }}
 <div class="col-12 gptl-news editorial-grid">
-  <header class="news-heading"><p class="section-label">04</p><h2>Latest News</h2><p class="section-subtitle">最新消息</p><a class="text-link gptl-button" href="{{ "post/" | relLangURL }}">查看完整消息紀錄 →</a></header>
-  <div>{{ partial "news-list.html" (dict "limit" 3 "home" true) }}</div>
-</div>
+<header class="news-heading">{{ if not $en }}<p class="section-label" lang="en">Latest News</p>{{ end }}<h2>{{ .wcBlock.content.heading }}</h2><a class="text-link gptl-button" href="{{ "post/" | relLangURL }}">{{ cond $en "See All News" "查看完整消息紀錄" }} <span aria-hidden="true">→</span></a></header>
+<div>{{ partial "news-list.html" (dict "limit" 3 "home" true) }}</div></div>

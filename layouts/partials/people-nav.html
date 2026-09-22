@@ -1,5 +1,6 @@
-<nav class="team-nav subnav" aria-label="People">
+{{ $en := eq site.Language.Lang "en" }}
+<nav class="team-nav subnav" aria-label="{{ cond $en "People" "研究團隊" }}">
 {{ $page := . }}
-{{ range slice (dict "label" "People" "path" "about/") (dict "label" "Advisors" "path" "about/advisors/") (dict "label" "Research Team" "path" "about/research-team/") (dict "label" "Alumni" "path" "about/alumni/") }}
-<a href="{{ .path | relLangURL }}"{{ if eq $page.RelPermalink (.path | relLangURL) }} aria-current="page"{{ end }}>{{ .label }}</a>
+{{ range slice (dict "en" "People" "zh" "研究團隊" "path" "about/") (dict "en" "Advisors" "zh" "指導老師" "path" "about/advisors/") (dict "en" "Research Team" "zh" "在校成員" "path" "about/research-team/") (dict "en" "Alumni" "zh" "歷屆成員" "path" "about/alumni/") }}
+<a href="{{ .path | relLangURL }}"{{ if eq $page.RelPermalink (.path | relLangURL) }} aria-current="page"{{ end }}>{{ cond $en .en .zh }}</a>
 {{ end }}</nav>

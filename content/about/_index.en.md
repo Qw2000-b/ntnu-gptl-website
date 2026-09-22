@@ -1,4 +1,4 @@
----
-title: People
-type: people
----
+{
+  "title": "People",
+  "type": "people"
+}

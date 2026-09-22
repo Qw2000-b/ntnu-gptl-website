@@ -1,6 +1,6 @@
 ---
 {
-  "title": "研究",
+  "title": "研究方向",
   "type": "research",
   "project_labels": {
     "principal": "主持人",

@@ -25,11 +25,11 @@
 </section>
 
   <div class="editorial-grid home-about">
-    <header><p class="section-label">01</p><h2>{{ cond $en $c.about_heading $c.about_label }}</h2></header>
+    <header>{{ if not $en }}<p class="section-label" lang="en">About Us</p>{{ end }}<h2>{{ $c.about_heading }}</h2></header>
     <div class="reading-column">
-      <p class="about-lead">{{ cond $en $c.about_subtitle $c.about_subtitle_zh }}</p>
-      {{ range $c.paragraphs }}<div class="copy-pair"><p>{{ cond $en .en .zh }}</p></div>{{ end }}
-      <div class="home-approach"><p class="section-label">{{ cond $en $c.approach_label $c.approach_label_zh }}</p><p>{{ cond $en $c.methodology $c.methodology_zh }}</p></div>
+      <p class="about-lead">{{ $c.about_subtitle }}</p>
+      {{ range $c.paragraphs }}<div class="copy-pair"><p>{{ .text }}</p></div>{{ end }}
+      <div class="home-approach"><p class="section-label">{{ $c.approach_label }}</p><p>{{ $c.methodology }}</p></div>
       <a class="text-link gptl-button" href="{{ "about/" | relLangURL }}">{{ cond $en "Meet Our People" "認識研究團隊" }} <span aria-hidden="true">→</span></a>
     </div>
   </div>

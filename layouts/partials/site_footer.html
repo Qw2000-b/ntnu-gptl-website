@@ -1,5 +1,5 @@
-<footer class="site-footer" lang="zh-Hant">
+<footer class="site-footer" lang="{{ site.Language.LanguageCode }}">
   <div class="footer-brand"><p class="footer-identity">NTNU GPTL</p>
-  {{ with site.Params.footer.text }}<p>{{ . }}</p>{{ end }}
+  <p>{{ if eq site.Language.Lang "en" }}Green Power Technology Laboratory · National Taiwan Normal University{{ else }}國立臺灣師範大學 · 綠能動力特色實驗室{{ end }}</p>
   </div><div class="footer-legal">{{ partial "site_footer_license.html" . }}</div>
 </footer>

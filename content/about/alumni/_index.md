@@ -1,4 +1,4 @@
----
-title: Alumni
-type: alumni
----
+{
+  "title": "歷屆成員",
+  "type": "alumni"
+}

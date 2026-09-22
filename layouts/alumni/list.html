@@ -1,21 +1,23 @@
 {{ define "main" }}
+{{ $en := eq site.Language.Lang "en" }}
 {{ $css := resources.Get "css/team.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-<div class="container gptl-team" lang="zh-Hant">
-<p class="team-breadcrumb">People / Alumni</p><h1>Alumni</h1>
+<div class="container gptl-team" lang="{{ site.Language.LanguageCode }}">
+<p class="team-breadcrumb">{{ cond $en "People" "研究團隊" }} / {{ .Title }}</p><h1>{{ .Title }}</h1>
 {{ partial "people-nav.html" . }}
-<h2>校友</h2>
+<h2>{{ cond $en "Alumni" "歷屆成員" }}</h2>
 {{ $years := slice }}
 {{ range site.Data.alumni }}{{ $years = $years | append .graduationAcademicYear }}{{ end }}
 {{ range sort (uniq $years) "value" "desc" }}
 {{ $members := where site.Data.alumni "graduationAcademicYear" . }}
-<section class="team-degree" aria-label="{{ . }}學年度畢業校友">
-<h3>{{ . }}學年度（{{ (index $members 0).graduationYear }}）</h3>
+<section class="team-degree" aria-label="{{ if $en }}Graduation academic year {{ . }} (R.O.C.){{ else }}{{ . }}學年度畢業成員{{ end }}">
+<h3>{{ if $en }}{{ (index $members 0).graduationYear }}{{ else }}{{ . }}學年度（{{ (index $members 0).graduationYear }}）{{ end }}</h3>
 <div class="team-grid gptl-cell-grid">
 {{ range $members }}
-<article class="team-card" aria-label="{{ .chineseName }}"><div class="team-card-body">
-<h5>{{ .chineseName }}</h5><p class="team-english">{{ .englishName }}</p>
-<p class="team-degree-label">{{ .degree }}</p><p class="team-institute-name">{{ .department }}</p>
+<article class="team-card" aria-label="{{ cond $en .englishName .chineseName }}"><div class="team-card-body">
+<h4 class="team-member-name">{{ cond $en .englishName .chineseName }}</h4>{{ if $en }}
+{{ range where site.Data.team.institutes "name" .department }}<p class="team-institute-name">{{ .english }}</p>{{ end }}
+{{ else }}<p class="team-english">{{ .englishName }}</p><p class="team-degree-label">{{ .degree }}</p><p class="team-institute-name">{{ .department }}</p>{{ end }}
 </div></article>
 {{ end }}
 {{ partial "grid-fillers.html" (dict "count" (len $members) "tag" "div" "kind" "team" "breakpoints" (slice (dict "name" "desktop" "columns" 4) (dict "name" "tablet" "columns" 2) (dict "name" "mobile" "columns" 1))) }}

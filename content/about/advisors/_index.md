@@ -1,6 +1,5 @@
----
-title: Advisors
-type: advisors
-section_kind: advisors
-placeholder: ""
----
+{
+  "title": "指導老師",
+  "type": "advisors",
+  "section_kind": "advisors"
+}

@@ -1,4 +1,4 @@
----
-title: Research Team
-type: team
----
+{
+  "title": "在校成員",
+  "type": "team"
+}

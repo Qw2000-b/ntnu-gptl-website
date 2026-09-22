@@ -1,18 +1,19 @@
 {{ define "main" }}
+{{ $en := eq site.Language.Lang "en" }}
 {{ $css := resources.Get "css/advisors.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ $portraitCSS := resources.Get "css/advisor-photos.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $portraitCSS.RelPermalink }}" integrity="{{ $portraitCSS.Data.Integrity }}">
-<div class="gptl-advisors" lang="zh-Hant">
-<p class="crumb">People / {{ .Title }}</p><h1>{{ .Title }}</h1>
+<div class="gptl-advisors" lang="{{ site.Language.LanguageCode }}">
+<p class="crumb">{{ cond $en "People" "研究團隊" }} / {{ .Title }}</p><h1>{{ .Title }}</h1>
 {{ partial "people-nav.html" . }}
 {{ if eq .Params.section_kind "advisors" }}
-<p class="intro">指導老師</p>
+
 {{ range site.Data.advisors }}
 <article class="person" aria-labelledby="{{ .slug }}">
 <div class="person-media">{{ if .photo }}{{ partial "advisor-photo.html" . }}{{ else }}
 <div class="photo placeholder" role="img" aria-label="{{ .name }}老師照片預留位置"><svg viewBox="0 0 80 90" aria-hidden="true"><circle cx="40" cy="26" r="17"/><path d="M9 82v-9a31 31 0 0 1 62 0v9"/></svg><span>教師照片</span><small>{{ .english }}</small></div>{{ end }}
-</div><div class="identity"><div class="identity-content"><h2 id="{{ .slug }}">{{ .name }}</h2><div class="en">{{ .english }}</div>{{ .role | safeHTML }}{{ .contact | safeHTML }}{{ .fields | safeHTML }}</div>{{ .details | safeHTML }}</div>
+</div><div class="identity"><div class="identity-content"><h2 id="{{ .slug }}">{{ cond $en .english .name }}</h2>{{ if $en }}{{ .contact | safeHTML }}<p class="text-muted">Content in preparation.</p>{{ else }}<div class="en">{{ .english }}</div>{{ .role | safeHTML }}{{ .contact | safeHTML }}{{ .fields | safeHTML }}{{ end }}</div>{{ if not $en }}{{ .details | safeHTML }}{{ end }}</div>
 </article>{{ end }}
 {{ else }}<p class="intro">{{ .Params.placeholder }}</p>{{ end }}
 </div>

@@ -1,6 +1,5 @@
----
-title: Advisors
-type: advisors
-section_kind: advisors
-placeholder: ""
----
+{
+  "title": "Advisors",
+  "type": "advisors",
+  "section_kind": "advisors"
+}

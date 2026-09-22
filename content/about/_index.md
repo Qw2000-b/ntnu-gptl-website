@@ -1,4 +1,4 @@
----
-title: People
-type: people
----
+{
+  "title": "研究團隊",
+  "type": "people"
+}

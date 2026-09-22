@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ $en := eq site.Language.Lang "en" }}
+{{ $css := resources.Get "css/publications.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<div class="container gptl-people gptl-publications"><h1>{{ .Title }}</h1>
+{{ $pages := where (where .RegularPages "Draft" false) "Params.gptl" true }}
+{{ range slice (dict "id" "article-journal" "zh" "期刊論文" "en" "Journal Articles") (dict "id" "paper-conference" "zh" "研討會論文" "en" "Conference Papers") (dict "id" "thesis" "zh" "學位論文" "en" "Theses") }}
+<section class="people-group gptl-section-grid" id="{{ .id }}"><header><h2>{{ cond $en .en .zh }}</h2></header><div>
+{{ $items := where $pages "Params.publication_types" "intersect" (slice .id) }}
+{{ if $items }}{{ range $items.ByDate.Reverse }}<article><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>{{ with .Params.authors }}<p>{{ delimit . ", " }}</p>{{ end }}<p class="text-muted">{{ .Date.Format "2006" }}</p>{{ with .Params.publication }}<p>{{ . }}</p>{{ end }}</article>{{ end }}
+{{ else }}<p class="text-muted">{{ cond $en "Content in preparation." "資料整理中" }}</p>{{ end }}
+</div></section>{{ end }}</div>{{ end }}
