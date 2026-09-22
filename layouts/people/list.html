@@ -7,12 +7,12 @@
 <h1>People</h1>{{ partial "people-nav.html" . }}
 <section class="people-group gptl-section-grid"><header><h2>Advisors</h2><p class="section-subtitle">指導老師</p></header><div>
 <ul class="people-names advisor-photo-grid">{{ range site.Data.advisors }}<li>{{ if .photo }}{{ partial "advisor-photo.html" . }}{{ end }}<div class="advisor-photo-name">{{ .name }} <span lang="en">{{ .english }}</span></div></li>{{ end }}</ul>
-<a class="text-link" href="{{ "about/advisors/" | relLangURL }}">查看老師簡介 →</a></div></section>
+<a class="text-link gptl-button" href="{{ "about/advisors/" | relLangURL }}">查看老師簡介 <span aria-hidden="true">→</span></a></div></section>
 {{ range slice (dict "degree" "博士生" "title" "PhD Students") (dict "degree" "碩士生" "title" "Master Students") }}
 {{ $members := where site.Data.team.members "degree" .degree }}{{ if $members }}
 <section class="people-group gptl-section-grid"><header><h2>{{ .title }}</h2><p class="section-subtitle">{{ .degree }}</p></header><div>
 <ul class="people-names">{{ range sort $members "entry_year" "desc" }}<li>{{ .name }}</li>{{ end }}</ul>
-<a class="text-link" href="{{ "about/research-team/" | relLangURL }}">查看在校生資料 →</a></div></section>
+<a class="text-link gptl-button" href="{{ "about/research-team/" | relLangURL }}">查看在校生資料 <span aria-hidden="true">→</span></a></div></section>
 {{ end }}{{ end }}
-<section class="people-group gptl-section-grid"><header><h2>Alumni</h2><p class="section-subtitle">校友</p></header><div><a class="text-link" href="{{ "about/alumni/" | relLangURL }}">依畢業學年度查看校友 →</a></div></section>
+<section class="people-group gptl-section-grid"><header><h2>Alumni</h2><p class="section-subtitle">校友</p></header><div><a class="text-link gptl-button" href="{{ "about/alumni/" | relLangURL }}">依畢業學年度查看校友 <span aria-hidden="true">→</span></a></div></section>
 </div>{{ end }}
