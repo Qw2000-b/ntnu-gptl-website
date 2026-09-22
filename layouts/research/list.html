@@ -1,4 +1,27 @@
 {{ define "main" }}
-<div class="container gptl-people"><h1>{{ .Title }}</h1>
-{{ range .Params.sections }}<section class="people-group gptl-section-grid" id="{{ .id }}"><header><h2>{{ .content.title }}</h2></header><div>{{ .content.text | markdownify | replaceRE "<h2" "<h3" | replaceRE "</h2>" "</h3>" | safeHTML }}</div></section>{{ end }}
+{{ $css := resources.Get "css/research.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ $labels := .Params.project_labels }}
+<div class="container gptl-people gptl-research"><h1>{{ .Title }}</h1>
+{{ range .Params.sections }}
+<section class="people-group gptl-section-grid" id="{{ .id }}">
+<header><h2>{{ .content.title }}</h2></header><div>
+{{ with .content.projects }}
+{{/* Date groups sort newest first; within each month retain the supplied order. */}}
+{{ $projects := . }}
+<ol class="research-projects">
+{{ $starts := slice }}{{ range $projects }}{{ $starts = $starts | append .start }}{{ end }}
+{{ range sort (uniq $starts) "value" "desc" }}
+{{ range where $projects "start" . }}
+<li class="research-project">
+<div class="project-meta"><span class="project-kind">{{ .kind }}</span><span class="project-period">{{ .start }}–{{ .end }}</span></div>
+<h3>{{ .title }}</h3>
+<dl class="project-details">
+{{ with .principal }}<div><dt>{{ $labels.principal }}</dt><dd>{{ . }}</dd></div>{{ end }}
+{{ with .coprincipal }}<div><dt>{{ $labels.coprincipal }}</dt><dd>{{ . }}</dd></div>{{ end }}
+<div><dt>{{ $labels.unit }}</dt><dd>{{ .unit }}</dd></div>
+</dl></li>
+{{ end }}{{ end }}</ol>
+{{ else }}{{ .content.text | markdownify | replaceRE "<h2" "<h3" | replaceRE "</h2>" "</h3>" | safeHTML }}{{ end }}
+</div></section>{{ end }}
 </div>{{ end }}
