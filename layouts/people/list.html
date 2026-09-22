@@ -1,10 +1,12 @@
 {{ define "main" }}
 {{ $css := resources.Get "css/team.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ $portraitCSS := resources.Get "css/advisor-photos.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $portraitCSS.RelPermalink }}" integrity="{{ $portraitCSS.Data.Integrity }}">
 <div class="container gptl-team gptl-people" lang="zh-Hant">
 <h1>People</h1>{{ partial "people-nav.html" . }}
 <section class="people-group gptl-section-grid"><header><h2>Advisors</h2><p class="section-subtitle">指導老師</p></header><div>
-<ul class="people-names">{{ range site.Data.advisors }}<li>{{ .name }} <span lang="en">{{ .english }}</span></li>{{ end }}</ul>
+<ul class="people-names advisor-photo-grid">{{ range site.Data.advisors }}<li>{{ if .photo }}{{ partial "advisor-photo.html" . }}{{ end }}<div class="advisor-photo-name">{{ .name }} <span lang="en">{{ .english }}</span></div></li>{{ end }}</ul>
 <a class="text-link" href="{{ "about/advisors/" | relLangURL }}">查看老師簡介 →</a></div></section>
 {{ range slice (dict "degree" "博士生" "title" "PhD Students") (dict "degree" "碩士生" "title" "Master Students") }}
 {{ $members := where site.Data.team.members "degree" .degree }}{{ if $members }}

@@ -1,6 +1,8 @@
 {{ define "main" }}
 {{ $css := resources.Get "css/advisors.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ $portraitCSS := resources.Get "css/advisor-photos.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $portraitCSS.RelPermalink }}" integrity="{{ $portraitCSS.Data.Integrity }}">
 <div class="gptl-advisors" lang="zh-Hant">
 <p class="crumb">People / {{ .Title }}</p><h1>{{ .Title }}</h1>
 {{ partial "people-nav.html" . }}
@@ -8,7 +10,7 @@
 <p class="intro">指導老師</p>
 {{ range site.Data.advisors }}
 <article class="person" aria-labelledby="{{ .slug }}">
-<div class="person-media">{{ if .photo }}<img class="photo" src="{{ .photo | relURL }}" alt="{{ .name }}老師" width="220" height="275" loading="lazy">{{ else }}
+<div class="person-media">{{ if .photo }}{{ partial "advisor-photo.html" . }}{{ else }}
 <div class="photo placeholder" role="img" aria-label="{{ .name }}老師照片預留位置"><svg viewBox="0 0 80 90" aria-hidden="true"><circle cx="40" cy="26" r="17"/><path d="M9 82v-9a31 31 0 0 1 62 0v9"/></svg><span>教師照片</span><small>{{ .english }}</small></div>{{ end }}
 </div><div class="identity"><div class="identity-content"><h2 id="{{ .slug }}">{{ .name }}</h2><div class="en">{{ .english }}</div>{{ .role | safeHTML }}{{ .contact | safeHTML }}{{ .fields | safeHTML }}</div>{{ .details | safeHTML }}</div>
 </article>{{ end }}
