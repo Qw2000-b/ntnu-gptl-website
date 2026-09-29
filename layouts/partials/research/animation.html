@@ -1,0 +1,17 @@
+{{ $en := .english }}
+{{ $animation := index site.Data.research_animations .id }}
+{{ with $animation }}
+  {{ $svg := resources.Get .file }}
+  {{ $document := partial "research/animation-document.html" (dict "svg" $svg.Content "nameEn" .nameEn) }}
+  {{/* Include content in the resource key so local incremental builds refresh SVG edits. */}}
+  {{ $page := resources.FromString (printf "research-animations/%s-%s.html" $.id (substr (sha256 $document) 0 12)) $document | fingerprint }}
+  <div class="direction-animation" data-direction-animation>
+    <iframe class="direction-animation-frame" src="{{ $page.RelPermalink }}" title="{{ cond $en .nameEn .nameZh }}" loading="lazy" sandbox="allow-same-origin" tabindex="-1"></iframe>
+    <button class="gptl-button direction-animation-toggle" type="button" hidden data-paused="true" data-play="{{ cond $en "Play animation" "播放動畫" }}" data-pause="{{ cond $en "Pause animation" "暫停動畫" }}" aria-label="{{ cond $en "Play animation" "播放動畫" }}" title="{{ cond $en "Play animation" "播放動畫" }}">
+      <svg class="direction-icon-play" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 5v14l11-7z"/></svg>
+      <svg class="direction-icon-pause" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+    </button>
+  </div>
+{{ else }}
+  {{ errorf "Unknown research animation: %s" .id }}
+{{ end }}

@@ -1,0 +1,12 @@
+{{/* One dataset, deduplicated before optional advisor filtering. */}}
+{{ $items := slice }}{{ $seen := slice }}
+{{ range site.Data.publications.publications }}
+  {{ $key := lower (.doi | default .title) }}
+  {{ if not (in $seen $key) }}
+    {{ $seen = $seen | append $key }}
+    {{ if or (not $.author) (in .author_ids $.author) }}
+      {{ $items = $items | append (merge . (dict "sort_key" (add (mul (int .year) 100) (int (.month | default 0))))) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return (sort $items "sort_key" "desc") }}

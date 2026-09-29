@@ -1,0 +1,15 @@
+<!doctype html>
+<html class="is-paused">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .nameEn }}</title>
+  <style>
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent}
+    body>svg{display:block;width:100%;height:100%;max-height:none}
+    .is-paused *{animation-play-state:paused!important}
+    @media(prefers-reduced-motion:reduce){:root:not(.motion-enabled) *{animation-play-state:paused!important}}
+  </style>
+</head>
+<body>{{ .svg | safeHTML }}</body>
+</html>

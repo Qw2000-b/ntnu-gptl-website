@@ -1,0 +1,6 @@
+{{ $items := slice }}
+{{ range where site.Data.news "publish" "ne" false }}
+  {{ $item := partial "locale/record.html" (dict "record" . "kind" "news" "key" .id) }}
+  {{ if or (ne site.Language.Lang "en") (and $item.title_en $item.summary_en) }}{{ $items = $items | append $item }}{{ end }}
+{{ end }}
+{{ return $items }}

@@ -23,7 +23,7 @@
       "degree": "博士生",
       "institute": "ai",
       "entry_year": 115,
-      "photo": null
+      "photo": "/images/team/莊啓文.webp"
     },
     {
       "name": "余路加",
@@ -31,7 +31,7 @@
       "degree": "碩士生",
       "institute": "green",
       "entry_year": 115,
-      "photo": null
+      "photo": "/images/team/余路加.webp"
     },
     {
       "name": "蕭程萇",
@@ -39,7 +39,7 @@
       "degree": "碩士生",
       "institute": "green",
       "entry_year": 114,
-      "photo": null
+      "photo": "/images/team/蕭程萇.webp"
     },
     {
       "name": "周士綸",
@@ -47,7 +47,8 @@
       "degree": "碩士生",
       "institute": "green",
       "entry_year": 114,
-      "photo": null
+      "photo": "/images/team/周士綸.webp",
+      "photo_framing": "slightly-up"
     },
     {
       "name": "鄭安哲",
@@ -55,7 +56,7 @@
       "degree": "碩士生",
       "institute": "green",
       "entry_year": 114,
-      "photo": null
+      "photo": "/images/team/鄭安哲.webp"
     },
     {
       "name": "梁耘碩",
@@ -63,7 +64,7 @@
       "degree": "碩士生",
       "institute": "green",
       "entry_year": 114,
-      "photo": null
+      "photo": "/images/team/梁耘碩.webp"
     },
     {
       "name": "林恩睿",
@@ -71,7 +72,7 @@
       "degree": "碩士生",
       "institute": "green",
       "entry_year": 113,
-      "photo": null
+      "photo": "/images/team/林恩睿.webp"
     },
     {
       "name": "吳敬霆",
@@ -79,7 +80,7 @@
       "degree": "碩士生",
       "institute": "green",
       "entry_year": 112,
-      "photo": null
+      "photo": "/images/team/吳敬霆.webp"
     },
     {
       "name": "李峰州",
@@ -87,7 +88,7 @@
       "degree": "碩士生",
       "institute": "vehicle",
       "entry_year": 115,
-      "photo": null
+      "photo": "/images/team/李峰州.webp"
     },
     {
       "name": "蔡浚輝",
@@ -95,7 +96,7 @@
       "degree": "碩士生",
       "institute": "vehicle",
       "entry_year": 115,
-      "photo": null
+      "photo": "/images/team/蔡浚輝.webp"
     },
     {
       "name": "鄭登元",
@@ -103,7 +104,7 @@
       "degree": "碩士生",
       "institute": "green",
       "entry_year": 115,
-      "photo": null
+      "photo": "/images/team/鄭登元.webp"
     },
     {
       "name": "黃啟錩",
@@ -111,7 +112,8 @@
       "degree": "碩士生",
       "institute": "vehicle",
       "entry_year": 114,
-      "photo": null
+      "photo": "/images/team/黃啟錩.webp",
+      "photo_framing": "center-left"
     },
     {
       "name": "施權祐",
@@ -119,7 +121,8 @@
       "degree": "碩士生",
       "institute": "vehicle",
       "entry_year": 114,
-      "photo": null
+      "photo": "/images/team/施權祐.webp",
+      "photo_framing": "center-far-left"
     }
   ]
 }

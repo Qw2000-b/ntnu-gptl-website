@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="microgrid-animation" width="1008" height="481" viewBox="0 0 1008 481" role="img" aria-labelledby="microgrid-title microgrid-description">
+  <title id="microgrid-title">Microgrid Energy Flow</title>
+  <desc id="microgrid-description">Blue: electric grid to EMS. Green: solar PV to EMS, inner EMS to ESS recharge and outer ESS to EMS output. Red: EMS to user load.</desc>
+  <style>.microgrid-animation .microgrid-dot { animation-timing-function: linear; animation-iteration-count: infinite; animation-delay: var(--delay); }
+.microgrid-animation .microgrid-grid-ems { fill: #2F80ED; animation-name: microgrid-grid-ems; animation-duration: 3.6s; }
+@keyframes microgrid-grid-ems {
+  0% { transform: translate(174px, 346px); }
+  23.14814815% { transform: translate(174px, 396px); }
+  100% { transform: translate(340px, 396px); }
+}
+.microgrid-animation .microgrid-pv-ems { fill: #22A68A; animation-name: microgrid-pv-ems; animation-duration: 1.63333333s; }
+@keyframes microgrid-pv-ems {
+  0% { transform: translate(390px, 269px); }
+  100% { transform: translate(390px, 367px); }
+}
+.microgrid-animation .microgrid-ems-ess-charge { fill: #22A68A; animation-name: microgrid-ems-ess-charge; animation-duration: 3.5s; }
+@keyframes microgrid-ems-ess-charge {
+  0% { transform: translate(622px, 392px); }
+  38.57142857% { transform: translate(703px, 392px); }
+  100% { transform: translate(703px, 263px); }
+}
+.microgrid-animation .microgrid-ess-ems-output { fill: #22A68A; animation-name: microgrid-ess-ems-output; animation-duration: 4.03333333s; }
+@keyframes microgrid-ess-ems-output {
+  0% { transform: translate(719px, 263px); }
+  59.91735537% { transform: translate(719px, 408px); }
+  100% { transform: translate(622px, 408px); }
+}
+.microgrid-animation .microgrid-ems-load { fill: #BB2649; animation-name: microgrid-ems-load; animation-duration: 5.76886667s; }
+@keyframes microgrid-ems-load {
+  0% { transform: translate(525px, 461px); }
+  10.97847064% { transform: translate(525px, 499px); }
+  100% { transform: translate(833.132px, 499px); }
+}</style>
+  <g transform="translate(-95 -87)">
+<path d="M622 408 718.478 408" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 49.7729" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 525 495.773)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M607 392 703.478 392" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 131.164" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 703 394.164)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 119.946" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 390 388.946)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M172 396 402.777 396" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M122 104 222.591 104" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M96 136 248.924 136" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 16.6667 186.792" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 135 276.792)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M208.667 276.792 192 90" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 27.8667 31.8582" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 122 134.858)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M219.867 134.858 192 103" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 9.17596" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 98 137.176)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 9.17596" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 247 137.176)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 9.17596" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 221 106.176)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 9.17596" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 124 106.176)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M204.726 236.618 149 136" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 55.7264 100.618" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 140 235.618)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M204.638 235.308 140 235" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="24" transform="translate(134.919 307)" xmlns="http://www.w3.org/2000/svg">Electric</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="24" transform="translate(151.419 335)" xmlns="http://www.w3.org/2000/svg">Grid</text>
+<path d="M524 499 833.132 499" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="961.5" y="448.187" width="108.313" height="23.3129" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1069.81 448.187 1101.5 416.5 1101.5 439.813 1069.81 471.5Z" fill="#CDCDCD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 448.187 993.187 416.5 1101.5 416.5 1069.81 448.187Z" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 448.187 993.187 416.5 1101.5 416.5 1101.5 439.813 1069.81 471.5 961.5 471.5ZM961.5 448.187 1069.81 448.187 1101.5 416.5M1069.81 448.187 1069.81 471.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="961.5" y="425.763" width="107.737" height="23.7368" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1069.24 425.763 1101.5 393.5 1101.5 417.237 1069.24 449.5Z" fill="#CDCDCD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 425.763 993.763 393.5 1101.5 393.5 1069.24 425.763Z" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 425.763 993.763 393.5 1101.5 393.5 1101.5 417.237 1069.24 449.5 961.5 449.5ZM961.5 425.763 1069.24 425.763 1101.5 393.5M1069.24 425.763 1069.24 449.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="961.5" y="405.763" width="107.737" height="23.7368" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1069.24 405.763 1101.5 373.5 1101.5 397.237 1069.24 429.5Z" fill="#CDCDCD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 405.763 993.763 373.5 1101.5 373.5 1069.24 405.763Z" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 405.763 993.763 373.5 1101.5 373.5 1101.5 397.237 1069.24 429.5 961.5 429.5ZM961.5 405.763 1069.24 405.763 1101.5 373.5M1069.24 405.763 1069.24 429.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="961.5" y="383.187" width="108.313" height="23.3129" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1069.81 383.187 1101.5 351.5 1101.5 374.813 1069.81 406.5Z" fill="#CDCDCD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 383.187 993.187 351.5 1101.5 351.5 1069.81 383.187Z" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 383.187 993.187 351.5 1101.5 351.5 1101.5 374.813 1069.81 406.5 961.5 406.5ZM961.5 383.187 1069.81 383.187 1101.5 351.5M1069.81 383.187 1069.81 406.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="961.5" y="360.763" width="107.737" height="23.7368" fill="#5B9BD5" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1069.24 360.763 1101.5 328.5 1101.5 352.237 1069.24 384.5Z" fill="#497DAB" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 360.763 993.763 328.5 1101.5 328.5 1069.24 360.763Z" fill="#7BAFDD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 360.763 993.763 328.5 1101.5 328.5 1101.5 352.237 1069.24 384.5 961.5 384.5ZM961.5 360.763 1069.24 360.763 1101.5 328.5M1069.24 360.763 1069.24 384.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="961.5" y="338.187" width="108.313" height="23.3129" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1069.81 338.187 1101.5 306.5 1101.5 329.813 1069.81 361.5Z" fill="#CDCDCD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 338.187 993.187 306.5 1101.5 306.5 1069.81 338.187Z" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 338.187 993.187 306.5 1101.5 306.5 1101.5 329.813 1069.81 361.5 961.5 361.5ZM961.5 338.187 1069.81 338.187 1101.5 306.5M1069.81 338.187 1069.81 361.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="961.5" y="318.187" width="108.313" height="23.3129" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1069.81 318.187 1101.5 286.5 1101.5 309.813 1069.81 341.5Z" fill="#CDCDCD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 318.187 993.187 286.5 1101.5 286.5 1069.81 318.187Z" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 318.187 993.187 286.5 1101.5 286.5 1101.5 309.813 1069.81 341.5 961.5 341.5ZM961.5 318.187 1069.81 318.187 1101.5 286.5M1069.81 318.187 1069.81 341.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="961.5" y="295.763" width="107.737" height="23.7368" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1069.24 295.763 1101.5 263.5 1101.5 287.237 1069.24 319.5Z" fill="#CDCDCD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 295.763 993.763 263.5 1101.5 263.5 1069.24 295.763Z" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M961.5 295.763 993.763 263.5 1101.5 263.5 1101.5 287.237 1069.24 319.5 961.5 319.5ZM961.5 295.763 1069.24 295.763 1101.5 263.5M1069.24 295.763 1069.24 319.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="848.5" y="499.154" width="136.346" height="20.3458" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M984.846 499.154 1012.5 471.5 1012.5 491.846 984.846 519.5Z" fill="#CDCDCD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M848.5 499.154 876.154 471.5 1012.5 471.5 984.846 499.154Z" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M848.5 499.154 876.154 471.5 1012.5 471.5 1012.5 491.846 984.846 519.5 848.5 519.5ZM848.5 499.154 984.846 499.154 1012.5 471.5M984.846 499.154 984.846 519.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="848.5" y="481.154" width="136.346" height="20.3458" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M984.846 481.154 1012.5 453.5 1012.5 473.846 984.846 501.5Z" fill="#CDCDCD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M848.5 481.154 876.154 453.5 1012.5 453.5 984.846 481.154Z" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M848.5 481.154 876.154 453.5 1012.5 453.5 1012.5 473.846 984.846 501.5 848.5 501.5ZM848.5 481.154 984.846 481.154 1012.5 453.5M984.846 481.154 984.846 501.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="848.5" y="462.154" width="136.346" height="20.3458" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M984.846 462.154 1012.5 434.5 1012.5 454.846 984.846 482.5Z" fill="#CDCDCD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M848.5 462.154 876.154 434.5 1012.5 434.5 984.846 462.154Z" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M848.5 462.154 876.154 434.5 1012.5 434.5 1012.5 454.846 984.846 482.5 848.5 482.5ZM848.5 462.154 984.846 462.154 1012.5 434.5M984.846 462.154 984.846 482.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="848.5" y="443.578" width="136.922" height="19.9218" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M985.422 443.578 1012.5 416.5 1012.5 436.422 985.422 463.5Z" fill="#CDCDCD" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M848.5 443.578 875.578 416.5 1012.5 416.5 985.422 443.578Z" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M848.5 443.578 875.578 416.5 1012.5 416.5 1012.5 436.422 985.422 463.5 848.5 463.5ZM848.5 443.578 985.422 443.578 1012.5 416.5M985.422 443.578 985.422 463.5" stroke="#D0CECE" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="24" transform="translate(929.905 547)" xmlns="http://www.w3.org/2000/svg">User Load</text>
+<path d="M415 176 415 208.983" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="286.5" y="220.473" width="88.027" height="4.02692" fill="#A6A6A6" xmlns="http://www.w3.org/2000/svg" />
+<path d="M374.527 220.473 422.5 172.5 422.5 176.527 374.527 224.5Z" fill="#858585" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M286.5 220.473 334.473 172.5 422.5 172.5 374.527 220.473Z" fill="#B7B7B7" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M286.5 220.473 334.473 172.5 422.5 172.5 422.5 176.527 374.527 224.5 286.5 224.5ZM286.5 220.473 374.527 220.473 422.5 172.5M374.527 220.473 374.527 224.5" stroke="#D9DEDA" stroke-width="1.33333" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M292 217 312.515 197 339 197 318.485 217Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M314 195 334.515 175 361 175 340.485 195Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M320 217 340.515 197 367 197 346.485 217Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M342 195 362.515 175 389 175 368.485 195Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M347 217 367.515 197 395 197 374.485 217Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M369 195 389.515 175 417 175 396.485 195Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M519 176 519 208.983" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="390.5" y="220.473" width="89.0269" height="4.02686" fill="#A6A6A6" xmlns="http://www.w3.org/2000/svg" />
+<path d="M479.527 220.473 527.5 172.5 527.5 176.527 479.527 224.5Z" fill="#858585" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M390.5 220.473 438.473 172.5 527.5 172.5 479.527 220.473Z" fill="#B7B7B7" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M390.5 220.473 438.473 172.5 527.5 172.5 527.5 176.527 479.527 224.5 390.5 224.5ZM390.5 220.473 479.527 220.473 527.5 172.5M479.527 220.473 479.527 224.5" stroke="#D9DEDA" stroke-width="1.33333" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M396 217 416.515 197 444 197 423.485 217Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M418 195 438.515 175 466 175 445.485 195Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M424 217 444.515 197 471 197 450.485 217Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M446 195 466.515 175 493 175 472.485 195Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M452 217 472.515 197 499 197 478.485 217Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M474 195 494.515 175 521 175 500.485 195Z" fill="#6D736F" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="24" transform="translate(343.643 252)" xmlns="http://www.w3.org/2000/svg">Solar PV</text>
+<rect x="340" y="367" width="282" height="94" fill="#F28C45" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(353.503 407)" xmlns="http://www.w3.org/2000/svg">Energy Management</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(436.09 439)" xmlns="http://www.w3.org/2000/svg">System</text>
+<path d="M0 10 10.0619 0 29 0 18.9381 10Z" fill="#FFFFFF" fill-rule="evenodd" transform="matrix(-1.83697e-16 -1 -1 1.83697e-16 1001 513)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 5 5.03095 0 10 0 4.96905 5Z" fill="#FFFFFF" fill-rule="evenodd" transform="matrix(-1.83697e-16 -1 -1 1.83697e-16 1009 486)" xmlns="http://www.w3.org/2000/svg" />
+<rect x="611.5" y="207.514" width="57.9865" height="6.98647" fill="#6D736F" xmlns="http://www.w3.org/2000/svg" />
+<path d="M669.487 207.514 687.5 189.5 687.5 196.487 669.487 214.5Z" fill="#585C59" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M611.5 207.514 629.514 189.5 687.5 189.5 669.487 207.514Z" fill="#8A8E8B" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M611.5 207.514 629.514 189.5 687.5 189.5 687.5 196.487 669.487 214.5 611.5 214.5ZM611.5 207.514 669.487 207.514 687.5 189.5M669.487 207.514 669.487 214.5" stroke="#6D736F" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="611.5" y="116.93" width="60.5705" height="88.5705" fill="#D9D9D9" xmlns="http://www.w3.org/2000/svg" />
+<path d="M672.071 116.93 687.5 101.5 687.5 190.071 672.071 205.5Z" fill="#AEAEAE" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M611.5 116.93 626.93 101.5 687.5 101.5 672.071 116.93Z" fill="#E0E0E0" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M611.5 116.93 626.93 101.5 687.5 101.5 687.5 190.071 672.071 205.5 611.5 205.5ZM611.5 116.93 672.071 116.93 687.5 101.5M672.071 116.93 672.071 205.5" stroke="#F2F2F2" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 11.8987" stroke="#7F7F7F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 661 168.899)" xmlns="http://www.w3.org/2000/svg" />
+<rect x="618.5" y="126.5" width="46" height="73" stroke="#F2F2F2" stroke-width="1.33333" stroke-miterlimit="8" fill="none" xmlns="http://www.w3.org/2000/svg" />
+<rect x="687.5" y="207.514" width="57.9865" height="6.98647" fill="#6D736F" xmlns="http://www.w3.org/2000/svg" />
+<path d="M745.487 207.514 763.5 189.5 763.5 196.487 745.487 214.5Z" fill="#585C59" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M687.5 207.514 705.514 189.5 763.5 189.5 745.487 207.514Z" fill="#8A8E8B" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M687.5 207.514 705.514 189.5 763.5 189.5 763.5 196.487 745.487 214.5 687.5 214.5ZM687.5 207.514 745.487 207.514 763.5 189.5M745.487 207.514 745.487 214.5" stroke="#6D736F" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="687.5" y="116.93" width="60.5705" height="88.5705" fill="#D9D9D9" xmlns="http://www.w3.org/2000/svg" />
+<path d="M748.071 116.93 763.5 101.5 763.5 190.071 748.071 205.5Z" fill="#AEAEAE" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M687.5 116.93 702.93 101.5 763.5 101.5 748.071 116.93Z" fill="#E0E0E0" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M687.5 116.93 702.93 101.5 763.5 101.5 763.5 190.071 748.071 205.5 687.5 205.5ZM687.5 116.93 748.071 116.93 763.5 101.5M748.071 116.93 748.071 205.5" stroke="#F2F2F2" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 11.8987" stroke="#7F7F7F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 737 168.899)" xmlns="http://www.w3.org/2000/svg" />
+<rect x="694.5" y="126.5" width="46" height="73" stroke="#F2F2F2" stroke-width="1.33333" stroke-miterlimit="8" fill="none" xmlns="http://www.w3.org/2000/svg" />
+<rect x="763.5" y="207.514" width="57.9865" height="6.98647" fill="#6D736F" xmlns="http://www.w3.org/2000/svg" />
+<path d="M821.487 207.514 839.5 189.5 839.5 196.487 821.487 214.5Z" fill="#585C59" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M763.5 207.514 781.514 189.5 839.5 189.5 821.487 207.514Z" fill="#8A8E8B" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M763.5 207.514 781.514 189.5 839.5 189.5 839.5 196.487 821.487 214.5 763.5 214.5ZM763.5 207.514 821.487 207.514 839.5 189.5M821.487 207.514 821.487 214.5" stroke="#6D736F" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="763.5" y="116.93" width="60.5705" height="88.5705" fill="#D9D9D9" xmlns="http://www.w3.org/2000/svg" />
+<path d="M824.071 116.93 839.5 101.5 839.5 190.071 824.071 205.5Z" fill="#AEAEAE" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M763.5 116.93 778.93 101.5 839.5 101.5 824.071 116.93Z" fill="#E0E0E0" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M763.5 116.93 778.93 101.5 839.5 101.5 839.5 190.071 824.071 205.5 763.5 205.5ZM763.5 116.93 824.071 116.93 839.5 101.5M824.071 116.93 824.071 205.5" stroke="#F2F2F2" stroke-width="2.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 11.8987" stroke="#7F7F7F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 813 168.899)" xmlns="http://www.w3.org/2000/svg" />
+<rect x="770.5" y="126.5" width="46" height="73" stroke="#F2F2F2" stroke-width="1.33333" stroke-miterlimit="8" fill="none" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="24" transform="translate(597.501 248)" xmlns="http://www.w3.org/2000/svg">Energy Storage System</text>
+<path d="M0 0 0.000104987 49.7729" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 174 395.773)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 147.164" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 719 410.164)" xmlns="http://www.w3.org/2000/svg" />
+    <g id="microgrid-energy-dots" aria-hidden="true">
+<g id="microgrid-grid-ems" aria-label="Electric Grid → EMS"><circle class="microgrid-dot microgrid-grid-ems" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="microgrid-dot microgrid-grid-ems" cx="0" cy="0" r="3.5" style="--delay: -0.9s" /><circle class="microgrid-dot microgrid-grid-ems" cx="0" cy="0" r="3.5" style="--delay: -1.8s" /><circle class="microgrid-dot microgrid-grid-ems" cx="0" cy="0" r="3.5" style="--delay: -2.7s" /></g>
+<g id="microgrid-pv-ems" aria-label="Solar PV → EMS"><circle class="microgrid-dot microgrid-pv-ems" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="microgrid-dot microgrid-pv-ems" cx="0" cy="0" r="3.5" style="--delay: -0.81666667s" /></g>
+<g id="microgrid-ems-ess-charge" aria-label="EMS → ESS (inner recharge line)"><circle class="microgrid-dot microgrid-ems-ess-charge" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="microgrid-dot microgrid-ems-ess-charge" cx="0" cy="0" r="3.5" style="--delay: -1.16666667s" /><circle class="microgrid-dot microgrid-ems-ess-charge" cx="0" cy="0" r="3.5" style="--delay: -2.33333333s" /></g>
+<g id="microgrid-ess-ems-output" aria-label="ESS → EMS (outer output line)"><circle class="microgrid-dot microgrid-ess-ems-output" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="microgrid-dot microgrid-ess-ems-output" cx="0" cy="0" r="3.5" style="--delay: -1.00833333s" /><circle class="microgrid-dot microgrid-ess-ems-output" cx="0" cy="0" r="3.5" style="--delay: -2.01666667s" /><circle class="microgrid-dot microgrid-ess-ems-output" cx="0" cy="0" r="3.5" style="--delay: -3.025s" /></g>
+<g id="microgrid-ems-load" aria-label="EMS → User Load"><circle class="microgrid-dot microgrid-ems-load" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="microgrid-dot microgrid-ems-load" cx="0" cy="0" r="3.5" style="--delay: -1.15377333s" /><circle class="microgrid-dot microgrid-ems-load" cx="0" cy="0" r="3.5" style="--delay: -2.30754667s" /><circle class="microgrid-dot microgrid-ems-load" cx="0" cy="0" r="3.5" style="--delay: -3.46132s" /><circle class="microgrid-dot microgrid-ems-load" cx="0" cy="0" r="3.5" style="--delay: -4.61509333s" /></g>
+    </g>
+  </g>
+</svg>

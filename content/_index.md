@@ -38,18 +38,26 @@
         "directions": [
           {
             "title": "電動化移動系統",
+            "icon": "/images/research/01-electrified-mobility.svg",
+            "page": "/research/electrified-mobility/",
             "description": "涵蓋動力系統建模、能源管理、整車控制，以及陸域與水域等多元電動載具應用。"
           },
           {
             "title": "能源與儲能系統",
+            "icon": "/images/research/02-energy-storage.svg",
+            "page": "/research/energy-storage/",
             "description": "研究電池、燃料電池、混合儲能、充電基礎設施與新興低碳能源技術之整合與應用。"
           },
           {
             "title": "熱管理與能源管理",
+            "icon": "/images/research/03-thermal-energy-management.svg",
+            "page": "/research/thermal-energy-management/",
             "description": "整合熱管理與能源管理策略，以提升系統能源效率、可靠度與整體運行效能。"
           },
           {
             "title": "智慧控制與系統驗證",
+            "icon": "/images/research/04-intelligent-control-validation.svg",
+            "page": "/research/intelligent-control-validation/",
             "description": "結合最佳化、預測控制、AI 控制、即時模擬、HIL 與實驗驗證，發展可實際部署的智慧工程系統。"
           }
         ]

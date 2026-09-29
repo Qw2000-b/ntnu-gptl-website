@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="mobile-animation" width="1035" height="297" viewBox="0 0 1035 297" role="img" aria-labelledby="mobile-title mobile-description">
+  <title id="mobile-title">Mobile Energy Work Vehicle</title>
+  <desc id="mobile-description">A work vehicle tows an energy cabinet. All four wheels rotate counterclockwise; road markings move right. The amber rooftop beacon flashes. Green dots flow from fuel cell and battery to EMS; red dots flow from EMS to the load.</desc>
+  <style>.mobile-animation .mobile-dot { animation-timing-function: linear; animation-iteration-count: infinite; animation-delay: var(--delay); }
+.mobile-animation .mobile-wheel { transform-box: view-box; animation: mobile-wheel 2s linear infinite; transform-origin: var(--cx) var(--cy); }
+.mobile-animation .mobile-wheel-small { animation-duration: 0.8s; }
+.mobile-animation .mobile-road { animation: mobile-road 0.9s linear infinite; }
+.mobile-animation .mobile-beacon { animation: mobile-beacon 1.6s ease-in-out infinite; }
+.mobile-animation .mobile-glow { animation: mobile-glow 1.6s ease-in-out infinite; }
+@keyframes mobile-wheel { to { transform: rotate(-360deg); } }
+@keyframes mobile-road { to { stroke-dashoffset: -128; } }
+@keyframes mobile-beacon { 0%,40%,50%,90%,100% { opacity:0.4; } 10%,20%,60%,70% { opacity:1; } }
+@keyframes mobile-glow { 0%,40%,50%,90%,100% { opacity:0; } 10%,20%,60%,70% { opacity:0.85; } }
+.mobile-animation .mobile-fc-ems { fill: #22A68A; animation-name: mobile-fc-ems; animation-duration: 0.9s; }
+@keyframes mobile-fc-ems {
+  0% { transform: translate(779px, 324px); }
+  31.48148148% { transform: translate(779px, 307px); }
+  100% { transform: translate(816px, 307px); }
+}
+.mobile-animation .mobile-battery-ems { fill: #22A68A; animation-name: mobile-battery-ems; animation-duration: 0.85s; }
+@keyframes mobile-battery-ems {
+  0% { transform: translate(938px, 324px); }
+  33.33333333% { transform: translate(938px, 307px); }
+  100% { transform: translate(904px, 307px); }
+}
+.mobile-animation .mobile-ems-load { fill: #BB2649; animation-name: mobile-ems-load; animation-duration: 2.22316667s; }
+@keyframes mobile-ems-load {
+  0% { transform: translate(904px, 296px); }
+  100% { transform: translate(1037.39px, 296px); }
+}</style>
+  <defs><radialGradient id="mobile-beacon-glow"><stop offset="0" stop-color="#FFD966" stop-opacity="0.7" /><stop offset="1" stop-color="#FFD966" stop-opacity="0" /></radialGradient></defs>
+  <g transform="translate(-95 -230)">
+    <g class="mobile-glow" aria-hidden="true">
+      <ellipse cx="373.5" cy="253" rx="43" ry="22" fill="url(#mobile-beacon-glow)" />
+      <path d="M341 244 L334 240 M373.5 239 L373.5 233 M406 244 L413 240" stroke="#FFD966" stroke-width="2" stroke-linecap="round" fill="none" />
+    </g>
+<path d="M733.5 277.825C733.5 273.227 737.227 269.5 741.825 269.5L979.175 269.5C983.773 269.5 987.5 273.227 987.5 277.825L987.5 437.175C987.5 441.773 983.773 445.5 979.175 445.5L741.825 445.5C737.227 445.5 733.5 441.773 733.5 437.175Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M896 296 1037.39 296" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M779 306 779 352.778" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M938 306 938 352.778" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M349.939 268 518.448 268C521.777 268 525.027 268.337 528.166 268.979L531.752 270.093 535.673 270.967C543.749 273.6 551.152 278.589 556.763 285.796L593.438 332.903C597.179 337.708 599.768 343.043 601.249 348.577L602.225 362.848 602.667 365.034 602.667 420.987C602.667 431.426 594.204 439.888 583.766 439.888L501.315 439.888 200.234 439.888 116.201 439.888C106.2 439.888 98.0915 431.78 98.0914 421.778L98.0914 373.36C98.0914 365.858 102.652 359.422 109.152 356.673L115.932 355.304 118.237 354.617 214.363 341.098 214.481 341.005 317.118 276.063C323.271 272.17 329.985 269.887 336.764 269.103L340.624 268.939Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<g id="mobile-wheel-0" class="mobile-wheel" style="--cx: 181.5px; --cy: 446.5px"><path d="M138 446.5C138 422.476 157.476 403 181.5 403 205.524 403 225 422.476 225 446.5 225 470.524 205.524 490 181.5 490 157.476 490 138 470.524 138 446.5Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /><path d="M0 0 0.000104987 13.3802" stroke="#FFFFFF" stroke-width="6.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 181.5 417.88)" xmlns="http://www.w3.org/2000/svg" /><path d="M151 446.5C151 429.655 164.431 416 181 416 197.569 416 211 429.655 211 446.5 211 463.345 197.569 477 181 477 164.431 477 151 463.345 151 446.5Z" fill="#FFC000" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="mobile-wheel-1" class="mobile-wheel" style="--cx: 498.5px; --cy: 446.5px"><path d="M455 446.5C455 422.476 474.476 403 498.5 403 522.524 403 542 422.476 542 446.5 542 470.524 522.524 490 498.5 490 474.476 490 455 470.524 455 446.5Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /><path d="M0 0 0.000104987 13.3802" stroke="#FFFFFF" stroke-width="6.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 499.5 417.88)" xmlns="http://www.w3.org/2000/svg" /><path d="M469 446.5C469 429.655 482.431 416 499 416 515.569 416 529 429.655 529 446.5 529 463.345 515.569 477 499 477 482.431 477 469 463.345 469 446.5Z" fill="#FFC000" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /></g>
+<path d="M112 384C107.582 384 104 380.418 104 376L104 369C104 364.582 107.582 361 112 361L112 361C116.418 361 120 364.582 120 369L120 376C120 380.418 116.418 384 112 384Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M620.5 417.5 733.423 417.5" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M620.5 413.5 733.423 413.5" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M602.5 425.5 632.375 425.5" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 18.9659" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 626.5 427.466)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M777 307 938.137 307" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<g id="mobile-wheel-2" class="mobile-wheel mobile-wheel-small" style="--cx: 760px; --cy: 473px"><path d="M743 473C743 463.611 750.611 456 760 456 769.389 456 777 463.611 777 473 777 482.389 769.389 490 760 490 750.611 490 743 482.389 743 473Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /><path d="M0 0 0.000104987 5.25543" stroke="#FFFFFF" stroke-width="3.33333" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 760.5 461.755)" xmlns="http://www.w3.org/2000/svg" /><path d="M748 473C748 466.373 753.373 461 760 461 766.627 461 772 466.373 772 473 772 479.627 766.627 485 760 485 753.373 485 748 479.627 748 473Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="mobile-wheel-3" class="mobile-wheel mobile-wheel-small" style="--cx: 961px; --cy: 473px"><path d="M944 473C944 463.611 951.611 456 961 456 970.389 456 978 463.611 978 473 978 482.389 970.389 490 961 490 951.611 490 944 482.389 944 473Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /><path d="M0 0 0.000104987 5.25543" stroke="#FFFFFF" stroke-width="3.33333" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 961.5 461.755)" xmlns="http://www.w3.org/2000/svg" /><path d="M949 473C949 466.373 954.373 461 961 461 967.627 461 973 466.373 973 473 973 479.627 967.627 485 961 485 954.373 485 949 479.627 949 473Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /></g>
+<path d="M743 334.717C743 328.798 747.798 324 753.717 324L893.283 324C899.202 324 904 328.798 904 334.717L904 425.283C904 431.202 899.202 436 893.283 436L753.717 436C747.798 436 743 431.202 743 425.283Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(757.259 353)" xmlns="http://www.w3.org/2000/svg">Fuel</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(757.259 385)" xmlns="http://www.w3.org/2000/svg">Cell</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(757.259 417)" xmlns="http://www.w3.org/2000/svg">System</text>
+<path d="M845.5 329C850.194 329 854 332.806 854 337.5L854 385.5C854 390.194 850.194 394 845.5 394L845.5 394C840.806 394 837 390.194 837 385.5L837 337.5C837 332.806 840.806 329 845.5 329Z" fill="#FFE699" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M865.5 329C870.194 329 874 332.806 874 337.5L874 385.5C874 390.194 870.194 394 865.5 394L865.5 394C860.806 394 857 390.194 857 385.5L857 337.5C857 332.806 860.806 329 865.5 329Z" fill="#FFE699" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M885.5 329C890.194 329 894 332.806 894 337.5L894 385.5C894 390.194 890.194 394 885.5 394L885.5 394C880.806 394 877 390.194 877 385.5L877 337.5C877 332.806 880.806 329 885.5 329Z" fill="#FFE699" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="15" transform="translate(837.739 367)" xmlns="http://www.w3.org/2000/svg">H</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="9" transform="translate(847.739 367)" xmlns="http://www.w3.org/2000/svg">2</text>
+<path d="M907 335.536C907 329.165 912.165 324 918.536 324L963.464 324C969.835 324 975 329.165 975 335.536L975 424.464C975 430.835 969.835 436 963.464 436L918.536 436C912.165 436 907 430.835 907 424.464Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(915.309 384)" xmlns="http://www.w3.org/2000/svg">Batt.</text>
+<path d="M816 294.389C816 286.994 821.994 281 829.389 281L890.611 281C898.006 281 904 286.994 904 294.389L904 304.611C904 312.006 898.006 318 890.611 318L829.389 318C821.994 318 816 312.006 816 304.611Z" fill="#F28C45" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(833.589 308)" xmlns="http://www.w3.org/2000/svg">EMS</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(1046.27 320)" xmlns="http://www.w3.org/2000/svg">Loa</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(1088.94 320)" xmlns="http://www.w3.org/2000/svg">d</text>
+<g class="mobile-beacon"><path d="M348 257.557C348 253.936 350.936 251 354.557 251L392.443 251C396.064 251 399 253.936 399 257.557L399 258.443C399 262.064 396.064 265 392.443 265L354.557 265C350.936 265 348 262.064 348 258.443Z" fill="#FFD966" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /></g>
+<g xmlns="http://www.w3.org/2000/svg"><g><g><path d="M1070.64 259.168 1051.19 278.614C1049.05 280.761 1049.05 284.244 1051.19 286.392L1051.19 286.392C1053.34 288.54 1056.82 288.54 1058.97 286.392L1078.42 266.947" stroke="#6D736F" stroke-width="4.12499" stroke-linecap="round" stroke-linejoin="round" fill="none" /><path d="M1090.28 267.948 1100.95 278.614C1103.09 280.761 1103.09 284.244 1100.95 286.392L1100.95 286.392C1098.8 288.54 1095.31 288.54 1093.17 286.392L1076.09 269.319" stroke="#6D736F" stroke-width="4.12499" stroke-linecap="round" stroke-linejoin="round" fill="none" /><path d="M1061.51 246.235 1055.68 248.18 1049.85 238.457 1053.74 234.568 1063.46 240.402 1061.51 246.235ZM1061.51 246.235 1069.3 254.019" stroke="#6D736F" stroke-width="4.12499" stroke-linecap="round" stroke-linejoin="round" fill="none" /><path d="M1070.64 259.168C1068.32 253.247 1068.77 245.479 1073.56 240.695 1078.34 235.911 1087.17 234.861 1092.03 237.778L1083.67 246.14 1082.89 254.695 1091.44 253.918 1099.81 245.556C1102.72 250.418 1101.67 259.246 1096.89 264.03 1092.11 268.813 1084.34 269.267 1078.42 266.946" stroke="#6D736F" stroke-width="4.12499" stroke-linecap="round" stroke-linejoin="round" fill="none" /></g></g></g>
+<path d="M363 248C363 247.448 363.448 247 364 247L382 247C382.552 247 383 247.448 383 248L383 252C383 252.552 382.552 253 382 253L364 253C363.448 253 363 252.552 363 252Z" fill="#F2F2F2" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<g class="mobile-beacon"><path d="M373.5 255C379.851 255 385 259.477 385 265L362 265C362 259.477 367.149 255 373.5 255Z" fill="#FFF2CC" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /></g>
+    <path id="mobile-road" class="mobile-road" d="M100 511 H987" fill="none" stroke="#D0CECE" stroke-width="4" stroke-dasharray="64 64" aria-hidden="true" />
+    <g id="mobile-energy-dots" aria-hidden="true">
+<g id="mobile-fc-ems" aria-label="Fuel Cell → EMS"><circle class="mobile-dot mobile-fc-ems" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="mobile-dot mobile-fc-ems" cx="0" cy="0" r="3.5" style="--delay: -0.45s" /></g>
+<g id="mobile-battery-ems" aria-label="Battery → EMS"><circle class="mobile-dot mobile-battery-ems" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="mobile-dot mobile-battery-ems" cx="0" cy="0" r="3.5" style="--delay: -0.425s" /></g>
+<g id="mobile-ems-load" aria-label="EMS → Load"><circle class="mobile-dot mobile-ems-load" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="mobile-dot mobile-ems-load" cx="0" cy="0" r="3.5" style="--delay: -0.74105556s" /><circle class="mobile-dot mobile-ems-load" cx="0" cy="0" r="3.5" style="--delay: -1.48211111s" /></g>
+    </g>
+  </g>
+</svg>

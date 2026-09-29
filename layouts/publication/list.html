@@ -2,11 +2,25 @@
 {{ $en := eq site.Language.Lang "en" }}
 {{ $css := resources.Get "css/publications.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ partial "list-archives-style.html" . }}
 <div class="container gptl-people gptl-publications"><h1>{{ .Title }}</h1>
+{{ $sections := slice (dict "id" "article-journal" "zh" "期刊論文" "en" "Journal Articles") (dict "id" "paper-conference" "zh" "研討會論文" "en" "Conference Papers") (dict "id" "thesis" "zh" "學位論文" "en" "Theses") }}
+<nav class="team-nav publication-nav" aria-label="{{ cond $en "Publication sections" "研究成果頁內導覽" }}">
+{{ range $sections }}<a href="#{{ .id }}">{{ cond $en .en .zh }}</a>{{ end }}
+</nav>
+
 {{ $pages := where (where .RegularPages "Draft" false) "Params.gptl" true }}
-{{ range slice (dict "id" "article-journal" "zh" "期刊論文" "en" "Journal Articles") (dict "id" "paper-conference" "zh" "研討會論文" "en" "Conference Papers") (dict "id" "thesis" "zh" "學位論文" "en" "Theses") }}
-<section class="people-group gptl-section-grid" id="{{ .id }}"><header><h2>{{ cond $en .en .zh }}</h2></header><div>
+{{ range $sections }}
+<section class="people-group gptl-section-grid" id="{{ .id }}" tabindex="-1"><header><h2>{{ cond $en .en .zh }}</h2>{{ if eq .id "article-journal" }}<a class="text-link gptl-button list-all-link" href="{{ "publication/journal-articles/" | relLangURL }}">{{ cond $en "View All Journal Articles" "查看更多" }} <span aria-hidden="true">→</span></a>{{ else if eq .id "paper-conference" }}<a class="text-link gptl-button list-all-link" href="{{ "publication/conference-papers/" | relLangURL }}">{{ cond $en "View All Conference Papers" "查看更多" }} <span aria-hidden="true">→</span></a>{{ else if eq .id "thesis" }}<a class="text-link gptl-button list-all-link" href="{{ "publication/theses/" | relLangURL }}">{{ cond $en "View All Theses" "查看更多" }} <span aria-hidden="true">→</span></a>{{ end }}</header><div{{ if in (slice "article-journal" "paper-conference" "thesis") .id }} class="publication-cell"{{ end }}>
+{{ if eq .id "article-journal" }}
+{{ partial "publications/list.html" (dict "items" (where (partial "publications/items.html" (dict)) "year" "in" (slice 2025 2024 2023 2022)) "english" $en) }}
+{{ else if eq .id "paper-conference" }}
+{{ partial "publications/conference-list.html" (dict "items" (where (partial "publications/conference-items.html" (dict "english" $en)) "year" "in" (slice 2026))) }}
+{{ else if and (eq .id "thesis") site.Data.publications.theses }}
+{{ partial "publications/theses-list.html" (dict "items" (where site.Data.publications.theses "graduationYear" "in" (slice 2026 2025)) "english" $en) }}
+{{ else }}
 {{ $items := where $pages "Params.publication_types" "intersect" (slice .id) }}
 {{ if $items }}{{ range $items.ByDate.Reverse }}<article><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>{{ with .Params.authors }}<p>{{ delimit . ", " }}</p>{{ end }}<p class="text-muted">{{ .Date.Format "2006" }}</p>{{ with .Params.publication }}<p>{{ . }}</p>{{ end }}</article>{{ end }}
 {{ else }}<p class="text-muted">{{ cond $en "Content in preparation." "資料整理中" }}</p>{{ end }}
+{{ end }}
 </div></section>{{ end }}</div>{{ end }}

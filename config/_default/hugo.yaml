@@ -3,8 +3,8 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Wowchemy Research Group # Website name
-baseURL: 'https://example.com/' # Website URL
+title: NTNU GPTL # Website name
+baseURL: '/' # Local fallback; Netlify supplies the deployment URL via -b.
 
 ############################
 ## LANGUAGE
@@ -33,6 +33,7 @@ permalinks:
   categories: '/category/:slug/'
   publication_types: '/publication-type/:slug/'
 disableAliases: true
+disableKinds: [taxonomy, term] # People and publications use their own data-driven pages.
 outputs:
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]

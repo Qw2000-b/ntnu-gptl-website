@@ -1,0 +1,28 @@
+{{ $level := .yearLevel | default 3 }}
+{{ $highlight := slice }}
+{{ range site.Data.publications.highlight_authors }}
+  {{ $highlight = $highlight | append .display_name }}
+  {{ range .aliases }}{{ $highlight = $highlight | append . }}{{ end }}
+{{ end }}
+{{ $months := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "October" "November" "December" }}
+{{ $year := 0 }}
+<div class="gptl-publication-list">
+{{ range .items }}
+  {{ $paper := . }}
+  {{ if ne $year .year }}
+    {{ if $year }}</ul></section>{{ end }}
+    <section class="publication-year-group" aria-label="{{ .year }}">
+    {{ printf "<h%d class=\"publication-year\">%d</h%d>" $level (int .year) $level | safeHTML }}
+    <ul class="publication-records">
+    {{ $year = .year }}
+  {{ end }}
+  <li id="journal-{{ .title | sha1 }}" class="publication-record" lang="en"{{ with .doi }} data-doi="{{ . }}"{{ end }}>
+    <p class="publication-authors">{{ $count := len .authors }}{{ range $index, $author := .authors }}{{ if $index }}{{ if eq $index (sub $count 1) }}{{ if gt $count 2 }},{{ end }} and {{ else }}, {{ end }}{{ end }}{{ if in $highlight $author }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}{{ end }}</p>
+    {{ $publicationURL := .doi_url | default .publication_url }}
+    {{ printf "<h%d class=\"publication-title\">" (add $level 1) | safeHTML }}{{ if $publicationURL }}<a href="{{ $publicationURL }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}{{ printf "</h%d>" (add $level 1) | safeHTML }}
+    <p class="publication-journal"><em>{{ .journal }}</em>{{ with .volume }}, {{ . }}{{ end }}{{ with .issue }}({{ . }}){{ end }}{{ if .article_number }}, Article {{ .article_number }}{{ else }}{{ with .pages }}, {{ . }}{{ end }}{{ end }}, {{ with .month }}{{ index $months (sub (int .) 1) }} {{ end }}{{ .year }}.</p>
+    <p class="publication-labels"><span>{{ .type }}</span>{{ if .jcr_year }}{{ with .jcr_quartile }}<span>JCR {{ . }} ({{ $paper.jcr_year }})</span>{{ end }}{{ with .impact_factor }}<span>IF {{ . }} ({{ $paper.jcr_year }})</span>{{ end }}{{ end }}</p>
+  </li>
+{{ end }}
+{{ if $year }}</ul></section>{{ end }}
+</div>

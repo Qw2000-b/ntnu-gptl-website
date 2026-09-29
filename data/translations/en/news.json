@@ -1,0 +1,307 @@
+{
+  "isie-2026": {
+    "title_en": "Paper Presentation at IEEE ISIE 2026",
+    "summary_en": "Chi-Wen Chuang traveled to Nagoya, Japan, to present a paper at the 35th IEEE International Symposium on Industrial Electronics (ISIE 2026).",
+    "date_label": "Presentation date | 2026/06/24",
+    "period": "Conference dates | 2026/06/23–26",
+    "papers_en": [
+      {
+        "title": "Comparative Benefit Assessment of Diesel–Electric Hybrid and Hydrogen Fuel-Cell Hybrid Powertrains for a 5-Ton-Class Refrigeration Truck",
+        "people": "Chi-Wen Chuang, Yi-Hsuan Hung, Yu-Hsuan Lin, Chien-Chiang Tung, Tien-Chu Huang, Ding-Wu Bai",
+        "award": ""
+      }
+    ]
+  },
+  "iv-2026": {
+    "title_en": "Paper Presentation at IEEE IV 2026",
+    "summary_en": "Chi-Chang Huang traveled to Michigan, USA, to present a paper at the 37th IEEE Intelligent Vehicles Symposium (IV 2026).",
+    "date_label": "Conference dates | 2026/06/22–25",
+    "papers_en": [
+      {
+        "title": "Energy-optimal lane-change planning for fuel cell electric vehicles",
+        "people": "Chi-Chang Huang, Yi-Hsuan Hung",
+        "award": ""
+      }
+    ]
+  },
+  "isme-2026": {
+    "title_en": "Five Vehicle and Energy Research Teams Receive Best Paper Awards at ISME 2026",
+    "summary_en": "NTNU’s vehicle and energy teams presented research on intelligent vehicles, integrated energy systems, and sustainable technologies at the 11th National Conference of the International Society of Mechatronic Engineering, Taiwan (ISME 2026). Five teams working on hydrogen-powered mobile electric vehicles, hybrid electric vessels, autonomous driving trajectories, refrigerated vehicles, and thermal management received Best Paper Awards. The full paper titles and author lists are provided below.",
+    "category_en": "Conference Achievement",
+    "source_title": "NTNU Office of Public Affairs",
+    "date_label": "Event dates | 2026/05/08–2026/05/09",
+    "papers_en": [
+      {
+        "title": "Thermal Flow, Nanofluid Formulation, and Performance Analysis of a Hybrid Electric Vehicle Thermal Management System",
+        "people": "Yi-Hsuan Hung, Yu-Hsuan Lin, 李家宇, 劉宥宣, 陳祖言",
+        "award": "Best Paper Award"
+      },
+      {
+        "title": "Energy-Optimal Autonomous Driving Trajectory Planning Incorporating Human Driving Styles",
+        "people": "陳泓佑, 蔡易庭, 林睦鈞, Chi-Chang Huang, Yi-Hsuan Hung",
+        "award": "Best Paper Award"
+      },
+      {
+        "title": "Detailed System Design and Development of a Refrigerated Vehicle",
+        "people": "Yi-Hsuan Hung, Yu-Hsuan Lin, 莊才威, 黃晧翔, Chi-Wen Chuang",
+        "award": "Best Paper Award"
+      },
+      {
+        "title": "Modeling and Controller Development for a Hybrid Electric Vessel",
+        "people": "張右杰, 陳竑聿, 劉俊輝, Chi-Chang Huang, Yi-Hsuan Hung",
+        "award": "Best Paper Award"
+      },
+      {
+        "title": "Development of an Intelligent Optimal Power Control System for a Hydrogen-Powered Mobile Electric Vehicle",
+        "people": "廖詠頡, 陳沛廷, Ding-Wu Bai, Yi-Hsuan Hung",
+        "award": "Best Paper Award"
+      }
+    ]
+  },
+  "icmet-2026": {
+    "title_en": "International Conference Presentations at ICMET 2026",
+    "summary_en": "Graduate students Cheng-Chang Xiao, Quan-You Shi, An-Zhe Zheng, and Yun-Shuo Liang traveled to Osaka, Japan, to participate in the 17th International Conference on Mechanical and Electrical Technologies (ICMET 2026).",
+    "date_label": "Conference dates | 2026/04/28–30",
+    "papers_en": [
+      {
+        "title": "Global Search Algorithm of Optimal Powertrain Sizing for Fuel Cell Electric Buses via Genetic Algorithm-Fuzzy Logic Strategy",
+        "people": "Quan-You Shi, Cheng-Chang Xiao, Yi-Hsuan Hung",
+        "award": ""
+      },
+      {
+        "title": "SOH-Based Power Response Compensation Design for Fuel Cell Electric Buses with a Global Search Algorithm",
+        "people": "An-Zhe Zheng, Yun-Shuo Liang, Yi-Hsuan Hung",
+        "award": ""
+      }
+    ]
+  },
+  "icatye-exchange": {
+    "title_en": "Academic Exchange in Japan",
+    "summary_en": "Graduate student Quan-You Shi represented GPTL and SAE Taiwan in Japan, participating in activities associated with the JSAE KANTO International Conference of Automotive Technology for Young Engineers (ICATYE).",
+    "date_label": "Visit dates | 2026/03/09–14",
+    "papers_en": [
+      {
+        "title": "A Two-Stage Powertrain Sizing and Multi-Objective Decision-Making Framework for FCEV Buses: Integrating Global Search with Continuous Particle Swarm Optimization for Refined Feasibility",
+        "people": "Quan-You Shi, Zheng-Wei Fan, Yi-Hsuan Hung",
+        "award": ""
+      }
+    ]
+  },
+  "aiact-2026": {
+    "title_en": "Best Speaker Award at AIACT 2026",
+    "summary_en": "Prof. Yi-Hsuan Hung participated in the 10th International Conference on Artificial Intelligence, Automation and Control Technologies (AIACT 2026) in Sydney, Australia. He presented the paper listed below and received the Best Speaker Award.",
+    "award": "Best Speaker Award",
+    "date_label": "Announcement date | 2026/02/10",
+    "period": "Conference dates | 2026/02/02–06",
+    "papers_en": [
+      {
+        "title": "An Integrated Optimal System/Controller Design with Fuel Cell and Battery State-of-Health Factors for EV-based Hydrogen/Energy Storage Systems",
+        "people": "Yi-Hsuan Hung",
+        "award": ""
+      }
+    ]
+  },
+  "vehicle-engineering-2025": {
+    "title_en": "30th National Conference on Vehicle Engineering",
+    "summary_en": "Graduate students Cheng-Chang Xiao and Yun-Shuo Liang participated in the 30th National Conference on Vehicle Engineering. Their paper titles and authors are listed below.",
+    "date_label": "Event dates | 2025/12/20",
+    "papers_en": [
+      {
+        "title": "Application of a Genetic Algorithm-Based Fuzzy Energy Management Strategy to Fuel Cell Vehicles",
+        "people": "Cheng-Chang Xiao, Yi-Hsuan Hung, Yu-Hsuan Lin",
+        "award": ""
+      },
+      {
+        "title": "Power Response Compensation and Design for Fuel Cell Electric Buses Using Global Search and Simulink Simulation",
+        "people": "Yun-Shuo Liang, Zheng-Wei Fan, Yi-Hsuan Hung, Tsu-Yang Tsai",
+        "award": ""
+      }
+    ]
+  },
+  "csme-2025": {
+    "title_en": "Paper Presentations at CSME 2025",
+    "summary_en": "Graduate students Quan-You Shi and An-Zhe Zheng, together with undergraduate project student Jie-Ting Li, participated in the Chinese Society of Mechanical Engineers’ 2025 Annual Meeting and 42nd National Conference. Their paper titles and authors are listed below.",
+    "date_label": "Conference dates | 2025/12/05–06",
+    "papers_en": [
+      {
+        "title": "Optimal Powertrain Specification Matching for Hydrogen Fuel Cell Buses with Three Objectives Using a Global Search Algorithm",
+        "people": "Quan-You Shi, Zheng-Wei Fan, Yi-Hsuan Hung, 林博煦",
+        "award": ""
+      },
+      {
+        "title": "Optimal Power Scheduling Analysis for Multi-Source Electric Bus Charging Facilities Using an Adaptive Artificial Bee Colony Algorithm",
+        "people": "An-Zhe Zheng, Chang-Yan Bin, Zheng-Wei Fan, Chi-Wen Chuang, Yi-Hsuan Hung",
+        "award": ""
+      },
+      {
+        "title": "Dynamic Performance Analysis of a Fuel Cell/Lithium-Ion Battery Truck Thermal Management System Using Particle Swarm Optimization",
+        "people": "Jie-Ting Li, Yu-Hsuan Lin, Yi-Hsuan Hung",
+        "award": ""
+      }
+    ]
+  },
+  "kyushu-dual-degree": {
+    "source_title": "NTNU Vehicle and Energy Engineering Program | 2025 News",
+    "summary_en": "Graduate students Chi-Chang Huang and Quan-You Shi of the Graduate Institute of Vehicle and Energy Engineering passed the review of Kyushu University’s Interdisciplinary Graduate School of Engineering Sciences. They will pursue a master’s dual-degree program in Japan during the second semester of academic year 114 and the first semester of academic year 115 (R.O.C. academic years, as stated in the announcement). This reflects GPTL’s continued commitment to research talent development and international academic exchange."
+  },
+  "power-conference-2025": {
+    "title_en": "Electrical Power and Power Electronics Conference",
+    "summary_en": "Graduate student Ding-Wu Bai presented the paper below at the 46th Electrical Power Engineering Conference, 22nd Taiwan Power Electronics Conference, and 2025 Power Engineering Research Results Conference.",
+    "date_label": "Event dates | 2025/11/15",
+    "papers_en": [
+      {
+        "title": "Capacitor Voltage Balancing Control of a Modular Multilevel Converter Using Bitonic Sorting",
+        "people": "Ding-Wu Bai, 林士文, Yi-Hsuan Hung",
+        "award": ""
+      }
+    ]
+  },
+  "kyushu-exchange-2025": {
+    "title_en": "Academic Exchange at Kyushu University",
+    "summary_en": "Graduate students Chi-Wen Chuang, Zheng-Wei Fan, and Shih-Lun Chou, along with fellow students, visited Kyushu University in Japan for academic exchange.",
+    "date_label": "Visit dates | 2025/10/12–18"
+  },
+  "vehicle-energy-institute-2025": {
+    "title_en": "Graduate Institute of Vehicle and Energy Engineering Inaugurated",
+    "summary_en": "National Taiwan Normal University officially established its Graduate Institute of Vehicle and Energy Engineering, holding an inauguration ceremony at the College of Technology and Engineering. The institute strengthens research in intelligent vehicles, new energy, and interdisciplinary engineering while expanding connections with industry.",
+    "category_en": "Development Milestone",
+    "date_label_en": "Inauguration date",
+    "source_title": "NTNU Center for Sustainable Development"
+  },
+  "hung-dean-2025": {
+    "title_en": "Prof. Yi-Hsuan Hung Appointed Tenth Dean of the College of Technology and Engineering",
+    "summary_en": "Prof. Yi-Hsuan Hung became the tenth dean of NTNU’s College of Technology and Engineering on August 1, 2025. His research and teaching have long spanned vehicles, energy, control, and industrial applications, alongside continued efforts to advance interdisciplinary engineering research and talent development.",
+    "category_en": "Laboratory Milestone",
+    "date_label_en": "Appointment date",
+    "source_title": "NTNU College of Technology and Engineering"
+  },
+  "hefc-2025": {
+    "source_title": "NTNU College of Technology and Engineering Newsletter",
+    "papers_en": [
+      {
+        "title": "Dynamic Simulation and Energy Consumption Analysis of a Small Fuel Cell Refrigerated Logistics Truck",
+        "people": "Chi-Wen Chuang, Zheng-Wei Fan, Ding-Wu Bai, Nien-Heng Hsieh, Yu-Hsuan Lin, Yi-Hsuan Hung",
+        "award": "Second Place"
+      },
+      {
+        "title": "Design and Benefit Analysis of a Four-Loop Cooling System for a Small Fuel Cell/Lithium-Ion Battery Hybrid Electric Vehicle",
+        "people": "Jie-Ting Li, Yu-Hsuan Lin, Yi-Hsuan Hung, Chun-Hsing Chang, 李正麒",
+        "award": "Honorable Mention"
+      }
+    ]
+  },
+  "evtec-2025": {
+    "title_en": "Paper Presentation at EVTeC 2025",
+    "summary_en": "Chi-Chang Huang traveled to Yokohama, Japan, to participate in the 7th International Electric Vehicle Technology Conference (EVTeC 2025) and present the paper listed below.",
+    "date_label": "Presentation date | 2025/05/21",
+    "papers_en": [
+      {
+        "title": "Energy Management System for Hydrogen Vehicles Considering State of Health of Fuel Cells and Lithium Batteries",
+        "people": "Chi-Chang Huang, Zheng-Wei Fan, Yi-Hsuan Hung, Tsu-Yang Tsai",
+        "award": ""
+      }
+    ]
+  },
+  "eco-vehicle-2025": {
+    "source_title": "NTNU Vehicle and Energy Engineering Program",
+    "summary_en": "Students jointly advised by Prof. Yi-Hsuan Hung, Asst. Prof. Chun-Hsing Chang, and Adjunct Asst. Prof. Yu-Hsuan Lin competed in the 33rd National Collegiate Eco-Vehicle Competition at Changhua Coastal Industrial Park. In their first appearance, the team won first place in vehicle fabrication and fourth place in the dynamic competition."
+  },
+  "purdue-exchange-2023": {
+    "source_title": "NTNU Office of Public Affairs",
+    "summary_en": "Faculty and students from Purdue University’s College of Engineering visited NTNU’s College of Technology and Engineering. Prof. Yi-Hsuan Hung and graduate students introduced vehicle and energy research facilities and the automotive workshop, promoting academic exchange between the two institutions."
+  },
+  "kyushu-agreement-2023": {
+    "title_en": "NTNU and Kyushu University Sign a Master’s Dual-Degree Agreement",
+    "summary_en": "NTNU’s College of Technology and Engineering and College of Science signed a master’s dual-degree agreement with Kyushu University’s Interdisciplinary Graduate School of Engineering Sciences, expanding research and student development cooperation. Following the signing, Prof. Yi-Hsuan Hung guided the visiting faculty through the automotive and electric vehicle workshop and related research facilities.",
+    "category_en": "International Exchange",
+    "date_label_en": "Signing date",
+    "source_title": "NTNU Alumni Center"
+  },
+  "research-promotion-award-2023": {
+    "source_title": "NTNU 2023 Industry–Academia Collaboration and Research Achievement Promotion Award Recipients"
+  },
+  "neopower-startup-2022": {
+    "source_title": "NTNU Office of Public Affairs",
+    "summary_en": "NTNU’s Office of Research and Development highlighted university research commercialization. Prof. Yi-Hsuan Hung shared the experience of NeoPower Technologies, which he co-founded, tracing the transition from vehicle energy-management research to products and business applications."
+  },
+  "green-transport-lecture-2021": {
+    "title_en": "Prof. Yi-Hsuan Hung Shares Innovations in Energy-Efficient Vehicles and Green Transportation",
+    "summary_en": "Prof. Yi-Hsuan Hung delivered an invited lecture on innovative inventions for energy-efficient vehicles and green transportation at the training camp for the 2021 Taiwan Energy and Clean Energy Technology Creative Practice Competition. The lecture focused on energy-efficient vehicles, green transportation, and practical innovation, reflecting GPTL’s long-standing research and educational interests.",
+    "category_en": "Invited Lecture",
+    "date_label_en": "Lecture date",
+    "source_title": "Energy Education Resource Center"
+  },
+  "neopower-established-2020": {
+    "source_title": "NeoPower Technologies | About Us"
+  },
+  "vehicle-energy-investment-2019": {
+    "title_en": "Active Vehicle Energy Management Technology Attracts NT$10 Million Investment",
+    "summary_en": "Active vehicle electrical energy management technology jointly developed by Prof. Yi-Hsuan Hung and Associate Prof. Syuan-Yi Chen received board approval for an NT$10 million investment from a Taiwan-listed company. The technology also received support from the Ministry of Education’s university–industry innovation R&D program, supporting a specialized laboratory, a technical team, and subsequent startup development.",
+    "category_en": "Industry–Academia Achievement",
+    "date_label_en": "Publication date",
+    "source_title": "NTNU Office of Public Affairs"
+  },
+  "michigan-collaboration-2019": {
+    "title_en": "NTNU Vehicle and Energy Researchers Begin Collaboration with the University of Michigan",
+    "summary_en": "Prof. Huei Peng of the University of Michigan visited NTNU to discuss international research collaboration with Prof. Yi-Hsuan Hung and university representatives. Focusing on intelligent vehicles and control technology, the exchange marked an important starting point for further collaboration.",
+    "category_en": "International Collaboration",
+    "date_label_en": "Exchange date",
+    "source_title": "NTNU Office of Public Affairs"
+  },
+  "industry-collaboration-award-2019": {
+    "source_title": "NTNU 2019 Industry–Academia Collaboration and Research Achievement Promotion Award Recipients"
+  },
+  "moe-industry-research-2018": {
+    "title_en": "Intelligent Energy Management Project Selected for Ministry of Education Innovation R&D Program",
+    "summary_en": "Prof. Yi-Hsuan Hung’s project on optimal system design and intelligent energy management modules for electric vehicles and green-energy facilities was selected for the Ministry of Education’s university–industry innovation R&D program. The project integrates electric vehicles, green-energy facilities, and intelligent energy management, with commercialization and startup development as major goals.",
+    "category_en": "Research Project",
+    "date_label_en": "Publication date",
+    "source_title": "NTNU Office of Public Affairs"
+  },
+  "vehicle-energy-program-2018": {
+    "source_title": "NTNU Office of Public Affairs"
+  },
+  "multi-energy-award-2018": {
+    "title_en": "Multi-Source Energy Management System Receives Honorable Mention in Energy Technology Competition",
+    "summary_en": "Students advised by Prof. Yi-Hsuan Hung and Prof. Syuan-Yi Chen entered an innovative wireless-transfer active multi-source energy management system in the 2018 Taiwan Energy and Clean Energy Technology Creative Practice Competition, receiving an honorable mention in the collegiate local-practice category. The project integrates renewable energy, grid power, storage, and active power control to demonstrate optimized multi-source energy management.",
+    "category_en": "Competition Achievement",
+    "date_label_en": "Award year",
+    "source_title": "Energy Education Resource Center"
+  },
+  "engineering-education-2017": {
+    "title_en": "From Vehicle Development to Engineering Education: Prof. Yi-Hsuan Hung on Hands-On Teaching",
+    "summary_en": "An interview by NTNU’s Center for Teaching and Learning Development documented how Prof. Yi-Hsuan Hung brought experience in energy-efficient vehicle R&D at ITRI into engineering education. It also followed students from ideation and frame welding to body fabrication and vehicle competitions, reflecting GPTL’s emphasis on hands-on learning, innovation, and engineering validation.",
+    "category_en": "Teaching and Laboratory Culture",
+    "date_label_en": "Publication date",
+    "source_title": "NTNU Center for Teaching and Learning Development"
+  },
+  "intelligent-vehicle-2017": {
+    "source_title": "National Taipei University of Technology | 2017 National Intelligent Vehicle Scenario Creativity Competition"
+  },
+  "teaching-award-2017": {
+    "source_title": "NTNU Center for Teaching and Learning Development",
+    "summary_en": "Prof. Yi-Hsuan Hung received NTNU’s 2017 Distinguished Teaching Award. NTNU highlighted his integration of industrial technologies, electric-vehicle equipment, hands-on competitions, and problem-based learning into engineering education. These practices underpin GPTL’s long-standing approach to talent development through “Learning through Building.”"
+  },
+  "startup-program-2016": {
+    "title_en": "NTNU Launches NTNU Master Start-Up with Prof. Yi-Hsuan Hung’s Participation",
+    "summary_en": "NTNU launched NTNU Master Start-Up, a program centered on interdisciplinary practice and entrepreneurial talent development. Prof. Yi-Hsuan Hung, then Associate Vice President for Research and Development at National Taiwan Normal University, helped advance the program, continuing his efforts to connect technology development, industry, and education.",
+    "category_en": "Innovation and Entrepreneurship",
+    "date_label_en": "Publication date",
+    "source_title": "NTNU Office of Public Affairs"
+  },
+  "greentech-2016": {
+    "source_title": "2016 GreenTech TECO Technology Creativity Competition",
+    "summary_en": "Students Hsueh-Chung Han, Kuo Cheng-Ju, and Wang Ming-Yu, advised by Prof. Yi-Hsuan Hung, entered the 2016 GreenTech TECO Technology Creativity Competition with a spring-energy eco-vehicle and received an honorable mention. The project demonstrates GPTL’s hands-on approach to turning energy concepts into student-built engineering prototypes and competition entries."
+  },
+  "yulon-nissan-2014": {
+    "source_title": "NTNU Office of Public Affairs",
+    "summary_en": "NTNU Industrial Education students Po-Lin Shih, 陳彥霖, and 游明倫, advised by Prof. Yi-Hsuan Hung, won the Gold Prize in the Yulon Nissan Innovation Award with a magnetic vehicle anti-collision, anti-theft, and rescue system. Following Air Leaf and Endurance Life, the team achieved a third consecutive Gold Prize."
+  },
+  "endurance-life-2012": {
+    "source_title": "NTNU Office of Public Affairs"
+  },
+  "air-leaf-2010": {
+    "source_title": "NTNU Office of Public Affairs",
+    "summary_en": "Prof. Yi-Hsuan Hung led a student team including Yu-Hsuan Lin and Jian-Hao Chen to the Yulon Nissan Innovation Award with Air Leaf, winning the Gold Prize in the Innovative Technology category on their first attempt. The concept integrated pneumatic energy with electric mobility and became an early representative GPTL student project."
+  }
+}

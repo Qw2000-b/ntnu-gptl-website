@@ -1,0 +1,13 @@
+{{/* Keep existing People spellings, then apply explicitly reviewed coauthor records. */}}
+{{ $names := dict }}
+{{ range site.Data.team.members }}{{ $names = merge $names (dict .name .english) }}{{ end }}
+{{ range site.Data.advisors }}{{ $names = merge $names (dict .name .english) }}{{ end }}
+{{ range site.Data.alumni }}{{ $names = merge $names (dict .chineseName .englishName) }}{{ end }}
+{{ range $name, $record := site.Data.translations.en.names }}
+  {{ $english := $name }}
+  {{ if in (slice "verified" "existing_source") $record.status }}
+    {{ $english = $record.english | default $name }}
+  {{ end }}
+  {{ $names = merge $names (dict $name $english) }}
+{{ end }}
+{{ return $names }}

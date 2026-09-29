@@ -1,6 +1,6 @@
 ---
 {
-  "title": "研究方向",
+  "title": "研究計畫",
   "type": "research",
   "project_labels": {
     "principal": "主持人",
@@ -9,16 +9,9 @@
   },
   "sections": [
     {
-      "id": "research-areas",
-      "content": {
-        "title": "研究方向",
-        "text": ""
-      }
-    },
-    {
       "id": "collaboration-projects",
       "content": {
-        "title": "產學合作與研究計畫",
+        "title": "產學合作研究計畫",
         "projects": [
           {
             "kind": "校內計畫",
@@ -238,7 +231,7 @@
           }
         ],
         "title_lines": [
-          "產學合作與",
+          "產學合作",
           "研究計畫"
         ]
       }

@@ -1,0 +1,29 @@
+{{ $level := .yearLevel | default 3 }}
+{{ $year := 0 }}
+{{ $en := eq site.Language.Lang "en" }}
+<div class="gptl-publication-list gptl-conference-list">
+{{ range .items }}
+  {{ $paper := . }}
+  {{ if ne $year .year }}
+    {{ if $year }}</ul></section>{{ end }}
+    <section class="publication-year-group" aria-label="{{ .year }}">
+    {{ printf "<h%d class=\"publication-year\">%d</h%d>" $level (int .year) $level | safeHTML }}
+    <ul class="publication-records">
+    {{ $year = .year }}
+  {{ end }}
+  <li id="conference-{{ printf "%v/%s" .year (.anchor_title | default .title) | sha1 }}" class="publication-record conference-record" lang="{{ cond (eq .language "zh") "zh-Hant" "en" }}">
+    {{ if .authors }}
+    <p class="publication-authors">{{ range $index, $author := .authors }}{{ if $index }}{{ cond (eq $paper.language "zh") "、" ", " }}{{ end }}{{ if in $paper.highlight_authors $author }}<strong>{{ $author }}</strong>{{ else }}{{ $author }}{{ end }}{{ end }}</p>
+    {{ else if .presenters }}
+    {{ $people := .presenters }}{{ if and $en .presenters_en }}{{ $people = .presenters_en }}{{ end }}
+    <p class="publication-authors">{{ cond $en "Presenter: " "發表者：" }}{{ delimit $people (cond $en ", " "、") }}</p>
+    {{ else if .student_team }}
+    <p class="publication-authors">{{ cond $en "Student team: " "學生團隊：" }}{{ delimit .student_team "、" }}</p>
+    {{ end }}
+    {{ printf "<h%d class=\"publication-title\">" (add $level 1) | safeHTML }}{{ if .publication_url }}<a href="{{ .publication_url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}{{ printf "</h%d>" (add $level 1) | safeHTML }}
+    <p class="publication-journal">{{ $details := slice }}{{ with .conference }}{{ $details = $details | append . }}{{ end }}{{ with .conference_abbreviation }}{{ $details = $details | append . }}{{ end }}{{ with .venue }}{{ $details = $details | append . }}{{ end }}{{ with .city }}{{ $details = $details | append . }}{{ end }}{{ with .region }}{{ $details = $details | append . }}{{ end }}{{ with .country }}{{ $details = $details | append . }}{{ end }}{{ if .date }}{{ $details = $details | append (replace .date "-" "/") }}{{ else if .date_start }}{{ $date := replace .date_start "-" "/" }}{{ with .date_end }}{{ $date = printf "%s–%s" $date (replace . "-" "/") }}{{ end }}{{ $details = $details | append $date }}{{ else }}{{ $details = $details | append (string .year) }}{{ end }}{{ delimit $details " · " }}</p>
+    {{ with .award }}<p class="publication-labels"><span>{{ . }}</span></p>{{ end }}
+  </li>
+{{ end }}
+{{ if $year }}</ul></section>{{ end }}
+</div>

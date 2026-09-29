@@ -1,0 +1,28 @@
+{{/* Translation overlays contain copy only; canonical dates, ordering and links stay in their original datasets. */}}
+{{ $record := .record }}
+{{ if eq site.Language.Lang "en" }}
+  {{ $translations := index site.Data.translations.en .kind }}
+  {{ with index $translations .key }}{{ $record = merge $record . }}{{ end }}
+  {{ range slice "kind" "type" "principal" "coprincipal" "unit" "principal_investigator" "role" "unit_zh" "conference" "venue" "city" "region" "country" "award" }}
+    {{ $field := . }}{{ with index $record $field }}{{ $record = merge $record (dict $field (partial "locale/term.html" .)) }}{{ end }}
+  {{ end }}
+  {{ range slice "authors" "highlight_authors" "co_investigators" "presenters" }}
+    {{ $field := . }}{{ $people := slice }}
+    {{ range index $record $field }}{{ $people = $people | append (partial "locale/term.html" .) }}{{ end }}
+    {{ if $people }}{{ $record = merge $record (dict $field $people) }}{{ end }}
+  {{ end }}
+  {{/* News stores its byline as a comma-separated string. Match complete names,
+       preserving ordering and any original English paper signatures. */}}
+  {{ with $record.papers_en }}
+    {{ $papers := slice }}
+    {{ range . }}
+      {{ $people := slice }}
+      {{ range split .people ", " }}
+        {{ $people = $people | append (partial "locale/term.html" .) }}
+      {{ end }}
+      {{ $papers = $papers | append (merge . (dict "people" (delimit $people ", "))) }}
+    {{ end }}
+    {{ $record = merge $record (dict "papers_en" $papers) }}
+  {{ end }}
+{{ end }}
+{{ return $record }}

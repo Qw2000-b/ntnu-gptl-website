@@ -5,8 +5,17 @@
   <div class="directions-text">
     <div class="directions-intro"><p>{{ $c.subtitle }}</p></div>
     {{ range $c.directions }}
-    <div class="direction-item"><h3>{{ .title }}</h3>
-    <p>{{ .description }}</p></div>
+    <article class="direction-item">
+      <a class="direction-icon" href="{{ .page | relLangURL }}" aria-label="{{ .title }}">
+        {{ with .icon }}
+          {{- $svg := readFile (printf "static%s" .) -}}
+          {{- $svg = replaceRE `^<\?xml[^>]*>\s*` "" $svg -}}
+          {{- replace $svg "<svg " `<svg aria-hidden="true" focusable="false" ` | safeHTML -}}
+        {{ end }}
+      </a>
+      <div class="direction-content"><h3>{{ .title }}</h3>
+      <p>{{ .description }}</p></div>
+    </article>
     {{ end }}
   </div>
 </div>

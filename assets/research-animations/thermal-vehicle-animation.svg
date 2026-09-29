@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="thermal-animation" width="906" height="320" viewBox="0 0 906 320" role="img" aria-labelledby="thermal-title thermal-description">
+<title id="thermal-title">Fuel Cell Vehicle Energy and Cooling</title>
+<desc id="thermal-description">Purple hydrogen dots feed the fuel cell. Green power flows to the battery and motor. Coolant leaves the radiator bottom in blue, splits through battery and fuel cell, turns orange after absorbing heat, merges on the right and returns to the radiator. Incoming airflow cools it back to blue.</desc>
+<style>
+.thermal-animation .thermal-dot { animation-timing-function:linear; animation-iteration-count:infinite; animation-delay:var(--delay); }
+.thermal-animation .thermal-wheel { transform-box:view-box; transform-origin:var(--cx) var(--cy); animation:thermal-wheel 2s linear infinite; }
+.thermal-animation .thermal-air path { animation:thermal-air 0.55s linear infinite; }
+.thermal-animation .thermal-road { animation:thermal-road 0.9s linear infinite; }
+@keyframes thermal-wheel { to { transform:rotate(-360deg); } }
+@keyframes thermal-air { to { stroke-dashoffset:-16; } }
+@keyframes thermal-road { from { stroke-dashoffset:0; } to { stroke-dashoffset:-128; } }
+.thermal-animation .thermal-h2-fc { animation-name:thermal-h2-fc,thermal-h2-fc-color; animation-duration:1.683333s; }
+@keyframes thermal-h2-fc { 0% { transform:translate(832px,374px); }
+29.70297% { transform:translate(832px,404px); }
+100% { transform:translate(761px,404px); } }
+@keyframes thermal-h2-fc-color { 0% { fill:#8B5CF6; }
+100% { fill:#8B5CF6; } }
+.thermal-animation .thermal-fc-battery { animation-name:thermal-fc-battery,thermal-fc-battery-color; animation-duration:1.516667s; }
+@keyframes thermal-fc-battery { 0% { transform:translate(557px,395px); }
+17.582418% { transform:translate(541px,395px); }
+82.417582% { transform:translate(541px,336px); }
+100% { transform:translate(557px,336px); } }
+@keyframes thermal-fc-battery-color { 0% { fill:#22A68A; }
+100% { fill:#22A68A; } }
+.thermal-animation .thermal-battery-motor { animation-name:thermal-battery-motor,thermal-battery-motor-color; animation-duration:2.116667s; }
+@keyframes thermal-battery-motor { 0% { transform:translate(557px,313px); }
+59.055118% { transform:translate(482px,313px); }
+89.76378% { transform:translate(482px,352px); }
+100% { transform:translate(469px,352px); } }
+@keyframes thermal-battery-motor-color { 0% { fill:#22A68A; }
+100% { fill:#22A68A; } }
+.thermal-animation .thermal-fc-motor { animation-name:thermal-fc-motor,thermal-fc-motor-color; animation-duration:2.066667s; }
+@keyframes thermal-fc-motor { 0% { transform:translate(557px,412px); }
+22.580645% { transform:translate(529px,412px); }
+51.612903% { transform:translate(529px,376px); }
+100% { transform:translate(469px,376px); } }
+@keyframes thermal-fc-motor-color { 0% { fill:#22A68A; }
+100% { fill:#22A68A; } }
+.thermal-animation .thermal-cold-supply { animation-name:thermal-cold-supply,thermal-cold-supply-color; animation-duration:3.283333s; }
+@keyframes thermal-cold-supply { 0% { transform:translate(287px,435px); }
+100% { transform:translate(484px,435px); } }
+@keyframes thermal-cold-supply-color { 0% { fill:#2F80ED; }
+100% { fill:#2F80ED; } }
+.thermal-animation .thermal-battery-cooling { animation-name:thermal-battery-cooling,thermal-battery-cooling-color; animation-duration:6.89754s; }
+@keyframes thermal-battery-cooling { 0% { transform:translate(484px,435px); }
+0.55873% { transform:translate(486.306791px,434.840246px); }
+1.105031% { transform:translate(488.519259px,434.374884px); }
+1.643378% { transform:translate(490.61715px,433.624766px); }
+2.177261% { transform:translate(492.580207px,432.610741px); }
+2.709346% { transform:translate(494.388176px,431.35366px); }
+3.241691% { transform:translate(496.0208px,429.874375px); }
+3.775998% { transform:translate(497.457824px,428.193736px); }
+4.313872% { transform:translate(498.678993px,426.332593px); }
+4.857085% { transform:translate(499.66405px,424.311797px); }
+5.407818% { transform:translate(500.392741px,422.152199px); }
+5.968883% { transform:translate(500.844809px,419.87465px); }
+6.543899% { transform:translate(501px,417.5px); }
+24.907934% { transform:translate(501px,341.5px); }
+25.48295% { transform:translate(501.155187px,339.12535px); }
+26.044014% { transform:translate(501.607245px,336.847801px); }
+26.594746% { transform:translate(502.335922px,334.688203px); }
+27.137957% { transform:translate(503.320963px,332.667407px); }
+27.67583% { transform:translate(504.542115px,330.806264px); }
+28.210134% { transform:translate(505.979125px,329.125625px); }
+28.742477% { transform:translate(507.611739px,327.64634px); }
+29.274561% { transform:translate(509.419704px,326.389259px); }
+29.808446% { transform:translate(511.382766px,325.375234px); }
+30.346796% { transform:translate(513.480671px,324.625116px); }
+30.893104% { transform:translate(515.693167px,324.159754px); }
+31.451844% { transform:translate(518px,324px); }
+40.875493% { transform:translate(557px,324px); }
+90.16843% { transform:translate(761px,324px); }
+93.309647% { transform:translate(774px,324px); }
+93.868301% { transform:translate(776.306791px,323.84481px); }
+94.41395% { transform:translate(778.519259px,323.392745px); }
+94.950576% { transform:translate(780.61715px,322.664058px); }
+95.481283% { transform:translate(782.580207px,321.679006px); }
+96.008461% { transform:translate(784.388176px,320.457842px); }
+96.534003% { transform:translate(786.0208px,319.020823px); }
+97.059546% { transform:translate(787.457824px,317.388201px); }
+97.586724% { transform:translate(788.678993px,315.580234px); }
+98.117432% { transform:translate(789.66405px,313.617175px); }
+98.65406% { transform:translate(790.392741px,311.51928px); }
+99.19971% { transform:translate(790.844809px,309.306803px); }
+99.758368% { transform:translate(791px,307px); }
+100% { transform:translate(792px,307px); } }
+@keyframes thermal-battery-cooling-color { 0% { fill:#2F80ED; }
+40.875493% { fill:#2F80ED; }
+90.16843% { fill:#F28C45; }
+100% { fill:#F28C45; } }
+.thermal-animation .thermal-fc-cooling { animation-name:thermal-fc-cooling,thermal-fc-cooling-color; animation-duration:7.143035s; }
+@keyframes thermal-fc-cooling { 0% { transform:translate(484px,435px); }
+17.03291% { transform:translate(557px,435px); }
+64.631725% { transform:translate(761px,435px); }
+67.781647% { transform:translate(774.5px,435px); }
+68.3369% { transform:translate(776.87465px,434.84481px); }
+68.878682% { transform:translate(779.152199px,434.392744px); }
+69.410487% { transform:translate(781.311797px,433.664056px); }
+69.935031% { transform:translate(783.332593px,432.679001px); }
+70.454419% { transform:translate(785.193736px,431.457836px); }
+70.970362% { transform:translate(786.874375px,430.020815px); }
+71.48441% { transform:translate(788.35366px,428.388193px); }
+71.998208% { transform:translate(789.610741px,426.580225px); }
+72.513743% { transform:translate(790.624766px,424.617167px); }
+73.033589% { transform:translate(791.374884px,422.519273px); }
+73.561115% { transform:translate(791.840246px,420.306799px); }
+74.100644% { transform:translate(792px,418px); }
+100% { transform:translate(792px,307px); } }
+@keyframes thermal-fc-cooling-color { 0% { fill:#2F80ED; }
+17.03291% { fill:#2F80ED; }
+64.631725% { fill:#F28C45; }
+100% { fill:#F28C45; } }
+.thermal-animation .thermal-hot-return { animation-name:thermal-hot-return,thermal-hot-return-color; animation-duration:9.624327s; }
+@keyframes thermal-hot-return { 0% { transform:translate(792px,307px); }
+5.195169% { transform:translate(792px,277px); }
+5.600172% { transform:translate(791.615068px,274.693167px); }
+5.999196% { transform:translate(790.971458px,272.480671px); }
+6.393532% { transform:translate(790.085953px,270.382766px); }
+6.784115% { transform:translate(788.975333px,268.419704px); }
+7.171664% { transform:translate(787.65638px,266.611739px); }
+7.556834% { transform:translate(786.145875px,264.979125px); }
+7.940368% { transform:translate(784.460599px,263.542115px); }
+8.323265% { transform:translate(782.617333px,262.320963px); }
+8.706928% { transform:translate(780.632859px,261.335922px); }
+9.093317% { transform:translate(778.523958px,260.607245px); }
+9.485063% { transform:translate(776.307411px,260.155187px); }
+9.885545% { transform:translate(774px,260px); }
+41.576074% { transform:translate(591px,260px); }
+41.84413% { transform:translate(589.45363px,260.069144px); }
+42.112666% { transform:translate(587.908708px,260.202731px); }
+42.381697% { transform:translate(586.367766px,260.40025px); }
+42.651233% { transform:translate(584.833333px,260.661185px); }
+42.921276% { transform:translate(583.307943px,260.985023px); }
+43.191825% { transform:translate(581.794125px,261.37125px); }
+43.462879% { transform:translate(580.294411px,261.819352px); }
+43.734438% { transform:translate(578.811333px,262.328815px); }
+44.006505% { transform:translate(577.347422px,262.899125px); }
+44.27909% { transform:translate(575.905208px,263.529769px); }
+44.55221% { transform:translate(574.487224px,264.220231px); }
+44.825891% { transform:translate(573.096px,264.97px); }
+68.520162% { transform:translate(444px,310.305px); }
+90.973199% { transform:translate(317px,336.42px); }
+91.271573% { transform:translate(318.690459px,336.086745px); }
+91.459923% { transform:translate(317.651003px,336.406897px); }
+91.64732% { transform:translate(316.639068px,336.790327px); }
+91.833981% { transform:translate(315.65722px,337.235105px); }
+92.020106% { transform:translate(314.708024px,337.739301px); }
+92.205881% { transform:translate(313.794047px,338.300986px); }
+92.391483% { transform:translate(312.917852px,338.918231px); }
+92.577085% { transform:translate(312.082007px,339.589103px); }
+92.76286% { transform:translate(311.289076px,340.311675px); }
+92.948986% { transform:translate(310.541624px,341.084016px); }
+93.135648% { transform:translate(309.842217px,341.904198px); }
+93.323047% { transform:translate(309.19342px,342.770287px); }
+93.511398% { transform:translate(308.597799px,343.680357px); }
+93.767326% { transform:translate(309.342201px,342.403643px); }
+93.955678% { transform:translate(308.74658px,343.313713px); }
+94.143076% { transform:translate(308.097783px,344.179802px); }
+94.329739% { transform:translate(307.398376px,344.999984px); }
+94.515864% { transform:translate(306.650924px,345.772325px); }
+94.701639% { transform:translate(305.857993px,346.494897px); }
+94.887241% { transform:translate(305.022148px,347.165769px); }
+95.072844% { transform:translate(304.145953px,347.783014px); }
+95.258619% { transform:translate(303.231976px,348.344699px); }
+95.444743% { transform:translate(302.28278px,348.848895px); }
+95.631405% { transform:translate(301.300932px,349.293673px); }
+95.818802% { transform:translate(300.288997px,349.677103px); }
+96.007151% { transform:translate(299.249541px,349.997255px); }
+100% { transform:translate(277px,356.046px); } }
+@keyframes thermal-hot-return-color { 0% { fill:#F28C45; }
+100% { fill:#F28C45; } }
+.thermal-animation .thermal-radiator-cooling { animation-name:thermal-radiator-cooling,thermal-radiator-cooling-color; animation-duration:1.330836s; }
+@keyframes thermal-radiator-cooling { 0% { transform:translate(277px,356.046px); }
+27.671678% { transform:translate(279.5px,378px); }
+79.398241% { transform:translate(284.5px,419px); }
+99.624296% { transform:translate(286.7px,435px); }
+100% { transform:translate(287px,435px); } }
+@keyframes thermal-radiator-cooling-color { 0% { fill:#F28C45; }
+15% { fill:#F28C45; }
+80% { fill:#2F80ED; }
+100% { fill:#2F80ED; } }</style><g transform="translate(-168 -228)"><path class="thermal-road" d="M215 533H1065" fill="none" stroke="#D0CECE" stroke-width="3" stroke-dasharray="80 48" aria-hidden="true"/><path d="M745 404 832.799 404" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M0 0 0.000104987 38.5369" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 832 404.537)"/>
+<path d="M539 395 626.799 395" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M539 336 626.799 336" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M527 412 614.799 412" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M481 313 622.329 313" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M452 376 530.799 376" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M444 352 481.799 352" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M0 0 0.000104987 42.2346" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 482 354.235)"/>
+<path d="M0 0 0.000104987 38.5369" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 529 412.537)"/>
+<path d="M0 0 0.000104987 62.6147" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 541 396.615)"/>
+<path d="M792 276 792 416.199" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M0 0 23.9693 6.04598" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 277 356.046)"/>
+<path d="M0 0 0.100682 74.1051" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(-1 0 0 1 501.101 342)"/>
+<path d="M517 324 774.343 324" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M287 435 776.133 435" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M261.943 359.712C261.351 354.418 265.163 349.647 270.457 349.055L270.457 349.055C275.751 348.463 280.522 352.274 281.114 357.568L290.538 441.832C291.13 447.125 287.318 451.897 282.024 452.489L282.024 452.489C276.731 453.081 271.959 449.269 271.367 443.976Z" fill="#D9DEDA" fill-rule="evenodd"/>
+<path d="M573.096 264.97C578.604 261.853 584.815 260.147 591.163 260.009" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M501 341.5C501 331.835 508.611 324 518 324 518.633 324 519.266 324.036 519.895 324.109" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M17 0C26.3888-4.45597e-15 34 7.83502 34 17.5 34 18.1154 33.9685 18.7303 33.9055 19.3422" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 467 435)"/>
+<path d="M17.1109 0C21.475-2.17844e-15 25.6743 1.66757 28.8495 4.66155" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(0.964563 -0.263852 -0.263852 -0.964563 282.745 354.512)"/>
+<path d="M17.5 0C27.165 0 35 7.61116 35 17 35 17.6332 34.9636 18.2659 34.8909 18.8951" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 757 435)"/>
+<path d="M17 0C26.3888-2.16433e-15 34 7.61114 34 17 34 17.6152 33.9666 18.23 33.9 18.8416" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 757 324)"/>
+<path d="M17.1109 0C21.475-2.17844e-15 25.6743 1.66757 28.8495 4.66155" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(-0.964563 0.263852 0.263852 0.964563 335.195 331.572)"/>
+<path d="M0 0 128.08 26.4204" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 317 336.42)"/>
+<path d="M774 260C783.389 260 791 267.611 791 277 791 277.615 790.967 278.23 790.9 278.842" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M591 260 776.007 260.194" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<path d="M0 0 130.228 46.3052" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 444 310.305)"/>
+<g id="thermal-coolant" aria-hidden="true"><g id="thermal-cold-supply"><circle class="thermal-dot thermal-cold-supply" cx="0" cy="0" r="3" style="--delay:0s" /><circle class="thermal-dot thermal-cold-supply" cx="0" cy="0" r="3" style="--delay:-0.656667s" /><circle class="thermal-dot thermal-cold-supply" cx="0" cy="0" r="3" style="--delay:-1.313333s" /><circle class="thermal-dot thermal-cold-supply" cx="0" cy="0" r="3" style="--delay:-1.97s" /><circle class="thermal-dot thermal-cold-supply" cx="0" cy="0" r="3" style="--delay:-2.626667s" /></g>
+<g id="thermal-battery-cooling"><circle class="thermal-dot thermal-battery-cooling" cx="0" cy="0" r="3" style="--delay:0s" /><circle class="thermal-dot thermal-battery-cooling" cx="0" cy="0" r="3" style="--delay:-0.766393s" /><circle class="thermal-dot thermal-battery-cooling" cx="0" cy="0" r="3" style="--delay:-1.532787s" /><circle class="thermal-dot thermal-battery-cooling" cx="0" cy="0" r="3" style="--delay:-2.29918s" /><circle class="thermal-dot thermal-battery-cooling" cx="0" cy="0" r="3" style="--delay:-3.065573s" /><circle class="thermal-dot thermal-battery-cooling" cx="0" cy="0" r="3" style="--delay:-3.831967s" /><circle class="thermal-dot thermal-battery-cooling" cx="0" cy="0" r="3" style="--delay:-4.59836s" /><circle class="thermal-dot thermal-battery-cooling" cx="0" cy="0" r="3" style="--delay:-5.364753s" /><circle class="thermal-dot thermal-battery-cooling" cx="0" cy="0" r="3" style="--delay:-6.131147s" /></g>
+<g id="thermal-fc-cooling"><circle class="thermal-dot thermal-fc-cooling" cx="0" cy="0" r="3" style="--delay:0s" /><circle class="thermal-dot thermal-fc-cooling" cx="0" cy="0" r="3" style="--delay:-0.793671s" /><circle class="thermal-dot thermal-fc-cooling" cx="0" cy="0" r="3" style="--delay:-1.587341s" /><circle class="thermal-dot thermal-fc-cooling" cx="0" cy="0" r="3" style="--delay:-2.381012s" /><circle class="thermal-dot thermal-fc-cooling" cx="0" cy="0" r="3" style="--delay:-3.174682s" /><circle class="thermal-dot thermal-fc-cooling" cx="0" cy="0" r="3" style="--delay:-3.968353s" /><circle class="thermal-dot thermal-fc-cooling" cx="0" cy="0" r="3" style="--delay:-4.762023s" /><circle class="thermal-dot thermal-fc-cooling" cx="0" cy="0" r="3" style="--delay:-5.555694s" /><circle class="thermal-dot thermal-fc-cooling" cx="0" cy="0" r="3" style="--delay:-6.349364s" /></g>
+<g id="thermal-hot-return"><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:0s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-0.740333s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-1.480666s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-2.220998s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-2.961331s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-3.701664s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-4.441997s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-5.18233s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-5.922663s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-6.662995s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-7.403328s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-8.143661s" /><circle class="thermal-dot thermal-hot-return" cx="0" cy="0" r="3" style="--delay:-8.883994s" /></g>
+<g id="thermal-radiator-cooling"><circle class="thermal-dot thermal-radiator-cooling" cx="0" cy="0" r="3" style="--delay:0s" /><circle class="thermal-dot thermal-radiator-cooling" cx="0" cy="0" r="3" style="--delay:-0.443612s" /><circle class="thermal-dot thermal-radiator-cooling" cx="0" cy="0" r="3" style="--delay:-0.887224s" /></g></g>
+<path d="M622.353 231.5 803.063 231.5C810.563 231.5 817.752 232.83 824.407 235.266L827.762 236.831 832.334 237.942 957.931 282.2C961.973 283.624 965.775 285.424 969.311 287.547L971.775 289.38 1057.03 289.38C1064.47 289.38 1070.5 295.409 1070.5 302.845L1070.5 400.052 1069.85 403.289 1070.5 409.77C1070.5 444.05 1042.71 471.839 1008.42 471.839L349.564 471.839 337.411 470.614 325.259 471.839 301.611 471.839 298.071 471.482 286.896 472.5C258.024 472.196 232.375 451.673 226.671 422.226L225.644 416.927C223.199 404.307 224.765 391.84 229.453 380.842L230.63 378.68 231.197 376.528C237.757 358.82 252.71 344.58 272.439 339.764L421.124 303.47C424.083 302.748 427.044 302.263 429.988 302.004L431.855 301.98 441.518 296.975 592.58 237.085C596.613 235.486 600.713 234.333 604.824 233.604L607.882 233.369 609.842 232.761C613.883 231.934 618.067 231.5 622.353 231.5Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<g class="thermal-wheel" style="--cx:910.5px;--cy:445.5px"><path d="M840 445.5C840 405.459 871.564 373 910.5 373 949.436 373 981 405.459 981 445.5 981 485.541 949.436 518 910.5 518 871.564 518 840 485.541 840 445.5Z" fill="#242825" fill-rule="evenodd"/><path d="M0 0 0.000104987 22.2539" stroke="#FFFFFF" stroke-width="6.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 911.5 397.754)"/><path d="M862 445C862 417.386 883.938 395 911 395 938.062 395 960 417.386 960 445 960 472.614 938.062 495 911 495 883.938 495 862 472.614 862 445Z" fill="#373D38" fill-rule="evenodd"/></g>
+<path d="M557 297.563C557 290.073 563.073 284 570.563 284L747.437 284C754.927 284 761 290.073 761 297.563L761 344.437C761 351.927 754.927 358 747.437 358L570.563 358C563.073 358 557 351.927 557 344.437Z" fill="#D9DEDA" fill-rule="evenodd"/>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(613.951 330)">Battery</text>
+<path d="M557 391.563C557 384.073 563.073 378 570.563 378L747.437 378C754.927 378 761 384.073 761 391.563L761 438.437C761 445.927 754.927 452 747.437 452L570.563 452C563.073 452 557 445.927 557 438.437Z" fill="#D9DEDA" fill-rule="evenodd"/>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(607.618 408)">Fuel Cell</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(614.038 440)">System</text>
+<path d="M345 354.564C345 347.073 351.073 341 358.564 341L455.436 341C462.927 341 469 347.073 469 354.564L469 401.436C469 408.927 462.927 415 455.436 415L358.564 415C351.073 415 345 408.927 345 401.436Z" fill="#D9DEDA" fill-rule="evenodd"/>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(373.641 366)">Motor</text>
+<g class="thermal-wheel" style="--cx:383.5px;--cy:445.5px"><path d="M313 445.5C313 405.459 344.564 373 383.5 373 422.436 373 454 405.459 454 445.5 454 485.541 422.436 518 383.5 518 344.564 518 313 485.541 313 445.5Z" fill="#242825" fill-rule="evenodd"/><path d="M0 0 0.000104987 22.2539" stroke="#FFFFFF" stroke-width="6.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 384.5 397.754)"/><path d="M335 445C335 417.386 356.938 395 384 395 411.062 395 433 417.386 433 445 433 472.614 411.062 495 384 495 356.938 495 335 472.614 335 445Z" fill="#373D38" fill-rule="evenodd"/></g>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(194.74 497)">Radiator</text>
+<path d="M813 341C813 322.775 827.998 308 846.5 308 865.002 308 880 322.775 880 341 880 359.225 865.002 374 846.5 374 827.998 374 813 359.225 813 341Z" fill="#FFE699" fill-rule="evenodd"/>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="37" transform="translate(828.788 355)">H</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="19" transform="translate(854.288 355)">2</text>
+<g class="thermal-air"><path d="M171.635 396.604C186.199 391.195 203.597 393.415 206.43 401.045 209.264 408.674 227.956 410.414 243.814 404.524" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" stroke-dasharray="4 4" fill="none" fill-rule="evenodd"/></g>
+<g class="thermal-air"><path d="M176.525 383.112C191.089 377.703 208.486 379.924 211.32 387.553 214.153 395.182 232.846 396.922 248.704 391.032" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" stroke-dasharray="4 4" fill="none" fill-rule="evenodd"/></g>
+<g class="thermal-air"><path d="M181.952 372.166C196.516 366.757 213.913 368.978 216.747 376.607 219.58 384.237 238.272 385.976 254.131 380.086" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" stroke-dasharray="4 4" fill="none" fill-rule="evenodd"/></g>
+<g class="thermal-air"><path d="M168.979 411.501C183.543 406.092 200.941 408.312 203.774 415.942 206.608 423.571 225.3 425.311 241.158 419.421" stroke="#BDD7EE" stroke-width="4" stroke-miterlimit="8" stroke-dasharray="4 4" fill="none" fill-rule="evenodd"/></g><g id="thermal-energy" aria-hidden="true"><g id="thermal-h2-fc"><circle class="thermal-dot thermal-h2-fc" cx="0" cy="0" r="3.5" style="--delay:0s" /><circle class="thermal-dot thermal-h2-fc" cx="0" cy="0" r="3.5" style="--delay:-0.561111s" /><circle class="thermal-dot thermal-h2-fc" cx="0" cy="0" r="3.5" style="--delay:-1.122222s" /></g>
+<g id="thermal-fc-battery"><circle class="thermal-dot thermal-fc-battery" cx="0" cy="0" r="3.5" style="--delay:0s" /><circle class="thermal-dot thermal-fc-battery" cx="0" cy="0" r="3.5" style="--delay:-0.505556s" /><circle class="thermal-dot thermal-fc-battery" cx="0" cy="0" r="3.5" style="--delay:-1.011111s" /></g>
+<g id="thermal-battery-motor"><circle class="thermal-dot thermal-battery-motor" cx="0" cy="0" r="3.5" style="--delay:0s" /><circle class="thermal-dot thermal-battery-motor" cx="0" cy="0" r="3.5" style="--delay:-0.705556s" /><circle class="thermal-dot thermal-battery-motor" cx="0" cy="0" r="3.5" style="--delay:-1.411111s" /></g>
+<g id="thermal-fc-motor"><circle class="thermal-dot thermal-fc-motor" cx="0" cy="0" r="3.5" style="--delay:0s" /><circle class="thermal-dot thermal-fc-motor" cx="0" cy="0" r="3.5" style="--delay:-0.688889s" /><circle class="thermal-dot thermal-fc-motor" cx="0" cy="0" r="3.5" style="--delay:-1.377778s" /></g></g></g></svg>

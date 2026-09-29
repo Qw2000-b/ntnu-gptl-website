@@ -1,0 +1,79 @@
+{{- /* Search only content that the current language actually renders. */ -}}
+{{- $index := slice -}}
+{{- $en := eq site.Language.Lang "en" -}}
+{{- range site.Pages -}}
+  {{- if and .File (in (slice "home" "section" "page") .Kind) (not .Draft) (not .Params.private) (ne .Params.searchable false) -}}
+    {{- $title := .Title | default site.Title -}}
+    {{- $text := .Plain -}}
+    {{- with .Params.summary }}{{ $text = printf "%s %s" $text . }}{{ end -}}
+    {{- $index = $index | append (partial "search/entry.html" (dict "url" .RelPermalink "title" $title "text" $text "section" (cond $en "Page" "頁面"))) -}}
+    {{- $page := . -}}
+    {{- range $i, $concept := .Params.concepts -}}
+      {{- $index = $index | append (partial "search/entry.html" (dict "url" (printf "%s#concept-%d" $page.RelPermalink (add $i 1)) "title" .title "text" .text "section" (cond $en "Research direction" "研究方向"))) -}}
+    {{- end -}}
+    {{- if .IsHome -}}
+      {{- range .Params.sections -}}
+        {{- $heading := .content.heading | default .content.title | default .content.about_heading -}}
+        {{- if and .id $heading -}}
+          {{- $text := .content.text | default .content.subtitle | default "" -}}
+          {{- range .content.paragraphs }}{{ $text = printf "%s %s" $text .text }}{{ end -}}
+          {{- if eq .block "gptl-contact" }}{{ $text = partial "blocks/gptl-contact.html" (dict "wcBlock" .) }}{{ end -}}
+          {{- $index = $index | append (partial "search/entry.html" (dict "url" (printf "%s#%s" $page.RelPermalink .id) "title" $heading "text" $text "section" (cond $en "Home" "首頁"))) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- range site.Data.advisors -}}
+  {{- $title := cond $en .english .name -}}
+  {{- $profile := partial "locale/record.html" (dict "record" . "kind" "advisors" "key" .slug) -}}
+  {{- $text := printf "%s %s %s %s" $profile.role $profile.fields $profile.details .contact -}}
+  {{- if not $en }}{{ $text = printf "%s %s %s %s %s" .english .role .fields .details .contact }}{{ end -}}
+  {{- $index = $index | append (partial "search/entry.html" (dict "url" (printf "%s#advisor-%s" ("about/advisors/" | relLangURL) .slug) "title" $title "text" $text "section" (cond $en "Faculty" "指導老師"))) -}}
+{{- end -}}
+{{- range site.Data.team.members -}}
+  {{- $member := . -}}{{- $unit := "" -}}
+  {{- range where site.Data.team.institutes "id" .institute }}{{ $unit = cond $en .english .name }}{{ end -}}
+  {{- $degree := .degree -}}{{- $year := printf "%v 學年度入學" .entry_year -}}
+  {{- if $en }}{{ $degree = cond (eq .degree "博士生") "PhD student" "Master’s student" }}{{ $year = printf "Entry year: %d" (add (int .entry_year) 1911) }}{{ end -}}
+  {{- $index = $index | append (partial "search/entry.html" (dict "url" (printf "%s#member-%s" ("about/research-team/" | relLangURL) (.name | sha1)) "title" (cond $en .english .name) "text" (printf "%s %s %s %s" .english $degree $unit $year) "section" (cond $en "Current students" "在校成員"))) -}}
+{{- end -}}
+{{- range where site.Data.alumni "publish" "ne" false -}}
+  {{- $text := printf "%s %s %s %v" .englishName .degree .department .graduationYear -}}
+  {{- if $en }}{{ $text = printf "%s %s %s %v" .englishName (partial "locale/term.html" .degree) (partial "locale/term.html" .department) .graduationYear }}{{ end -}}
+  {{- $index = $index | append (partial "search/entry.html" (dict "url" (printf "%s#alumnus-%s" ("about/alumni/" | relLangURL) (.chineseName | sha1)) "title" (cond $en .englishName .chineseName) "text" $text "section" (cond $en "Alumni" "歷屆成員"))) -}}
+{{- end -}}
+
+{{- $research := site.GetPage "/research" -}}
+{{- range where $research.Params.sections "id" "collaboration-projects" -}}
+  {{- range partial "research/items.html" (dict "projects" .content.projects "kind" "collaboration-projects") -}}
+    {{- $index = $index | append (partial "search/entry.html" (dict "url" (printf "%s#project-%s" ("research/collaboration-projects/" | relLangURL) (.anchor_title | sha1)) "title" .title "text" (printf "%s %s–%s %s %s %s" .kind .start .end (.principal | default "") (.coprincipal | default "") .unit) "section" (cond $en "Research projects" "研究計畫"))) -}}
+  {{- end -}}
+{{- end -}}
+{{- range partial "research/items.html" (dict "projects" site.Data.nstc_projects "kind" "nstc-projects" "language" site.Language.Lang) -}}
+  {{- $index = $index | append (partial "search/entry.html" (dict "url" (printf "%s#project-%s" ("research/nstc-projects/" | relLangURL) (.anchor_title | sha1)) "title" .title_zh "text" (printf "%s–%s %s %s %s" .start_date .end_date (.principal_investigator | default "") (delimit (.co_investigators | default slice) "、") .unit_zh) "section" (cond $en "NSTC research projects" "國科會研究計畫"))) -}}
+{{- end -}}
+
+{{- range partial "publications/items.html" (dict) -}}
+  {{- $index = $index | append (partial "search/entry.html" (dict "url" (printf "%s#journal-%s" ("publication/journal-articles/" | relLangURL) (.title | sha1)) "title" .title "authors" .authors "text" (printf "%s · %s · %v" (delimit .authors ", ") .journal .year) "section" (cond $en "Journal articles" "期刊論文"))) -}}
+{{- end -}}
+{{- range partial "publications/conference-items.html" (dict "english" $en) -}}
+  {{- $authors := .authors | default .presenters | default slice -}}
+  {{- $index = $index | append (partial "search/entry.html" (dict "url" (printf "%s#conference-%s" ("publication/conference-papers/" | relLangURL) (printf "%v/%s" .year (.anchor_title | default .title) | sha1)) "title" .title "authors" $authors "text" (printf "%s · %s · %v" (delimit $authors ", ") (.conference | default "") .year) "section" (cond $en "Conference papers" "研討會論文"))) -}}
+{{- end -}}
+{{- range where site.Data.publications.theses "publish" "ne" false -}}
+  {{- $title := cond $en .titleEn .titleZh -}}
+  {{- if eq .sourceStatus "pending_confirmation" }}{{ $title = cond $en "To be confirmed" "確認中" }}{{ end -}}
+  {{- $author := cond $en .authorEn .authorZh -}}
+  {{- $index = $index | append (partial "search/entry.html" (dict "url" (printf "%s#thesis-%s" ("publication/theses/" | relLangURL) (printf "%s/%v" .authorZh .graduationYear | sha1)) "title" $title "authors" (slice $author) "text" (printf "%s · %v" $author .graduationYear) "section" (cond $en "Theses" "學位論文"))) -}}
+{{- end -}}
+
+{{- $news := partial "news/items.html" . -}}
+{{- range $news -}}
+  {{- $title := .title_zh | default .title -}}{{- $text := .summary_zh | default .text -}}{{- $papers := .papers -}}
+  {{- if $en }}{{ $title = .title_en }}{{ $text = .summary_en }}{{ $papers = .papers_en }}{{ end -}}
+  {{- range $papers }}{{ $text = printf "%s %s %s" $text .title .people }}{{ end -}}
+  {{- $index = $index | append (partial "search/entry.html" (dict "url" (printf "%s#news-%s" ("post/" | relLangURL) .id) "title" $title "text" $text "section" (cond $en "News" "最新消息"))) -}}
+{{- end -}}
+{{- $index | jsonify -}}

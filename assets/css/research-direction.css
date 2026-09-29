@@ -1,0 +1,44 @@
+/* Shared concept rows for the four homepage direction destinations. */
+.gptl-direction-page .direction-back{margin-bottom:24px}
+.gptl-direction-page .direction-nav{display:flex;flex-wrap:wrap;gap:18px 24px;border-bottom:1px solid var(--color-border);padding:12px 0 18px;margin:16px 0 36px}
+.gptl-direction-page .direction-nav a{color:var(--color-accent);font-size:18px;max-width:100%;overflow-wrap:break-word}
+.gptl-direction-page .direction-concept{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);border-top:1px solid var(--color-border)}
+.gptl-direction-page .direction-concept:last-child{border-bottom:1px solid var(--color-border)}
+.gptl-direction-page .direction-media-cell{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:32px var(--gptl-grid-gap) 32px 0}
+.gptl-direction-page .direction-copy-cell{min-width:0;padding:32px 0 32px var(--gptl-grid-gap);border-left:1px solid var(--color-border);overflow-wrap:break-word}
+.gptl-direction-page .direction-copy-cell h2{margin:0 0 16px;scroll-margin-top:100px}
+.gptl-direction-page .direction-title-word{white-space:nowrap}
+.gptl-direction-page .direction-concept-number{font-size:20px;color:var(--gptl-accent);margin:0 0 4px;font-weight:500;line-height:1.35}
+.gptl-direction-page .direction-copy-body{text-align:justify;text-align-last:start}
+.gptl-direction-page .direction-copy-cell p:last-child{margin-bottom:0}
+.gptl-direction-page .direction-animation-placeholder{display:grid;place-items:center;aspect-ratio:16/9;padding:24px;background:var(--color-surface-subtle);color:var(--color-text-muted);font-size:var(--font-label);text-align:center}
+.gptl-direction-page .direction-copy-placeholder{color:var(--color-text-muted)}
+.gptl-direction-page .direction-animation-frame{display:block;width:100%;aspect-ratio:16/9;border:0;background:transparent}
+/* Override the shared CTA rule's ID-level specificity for icon-only geometry. */
+.gptl-direction-page .gptl-button.direction-animation-toggle{display:inline-flex!important;align-items:center;justify-content:center;box-sizing:border-box;margin-top:12px;width:44px;height:44px;min-width:44px;padding:0!important;border-radius:50%!important;line-height:1}
+.gptl-direction-page .direction-animation-toggle svg{display:block;flex:none}
+.gptl-direction-page .direction-animation-toggle[data-paused="true"] .direction-icon-pause,
+.gptl-direction-page .direction-animation-toggle[data-paused="false"] .direction-icon-play{display:none}
+.gptl-direction-page .gptl-button.direction-animation-toggle[hidden]{display:none!important}
+.gptl-direction-page [data-animation="vehicle"] .direction-animation-frame{aspect-ratio:1130/650}
+/* Alternate desktop rows without changing the mobile reading order. */
+@media(min-width:768px){
+  .gptl-direction-page .direction-concept-reversed{grid-template-columns:minmax(0,2fr) minmax(0,3fr)}
+  .gptl-direction-page .direction-concept-reversed .direction-media-cell{grid-column:2;grid-row:1;padding:32px 0 32px var(--gptl-grid-gap);border-left:1px solid var(--color-border)}
+  .gptl-direction-page .direction-concept-reversed .direction-copy-cell{grid-column:1;grid-row:1;padding:32px var(--gptl-grid-gap) 32px 0;border-left:0}
+}
+/* Give tablet copy more room while keeping the animation visually dominant. */
+@media(min-width:768px) and (max-width:1199px){
+  .gptl-direction-page .direction-concept{grid-template-columns:minmax(0,11fr) minmax(0,9fr)}
+  .gptl-direction-page .direction-concept-reversed{grid-template-columns:minmax(0,9fr) minmax(0,11fr)}
+}
+@media(max-width:767px){
+  .gptl-direction-page .direction-concept{grid-template-columns:minmax(0,1fr)}
+  .gptl-direction-page .direction-media-cell{padding:24px 0}
+  .gptl-direction-page .direction-copy-cell{padding:0 0 24px;border-left:0}
+}
+/* Give the compact refrigerated-truck diagram a slightly wider text column. */
+@media(min-width:768px){
+  .gptl-direction-page .direction-concept[data-animation="vehicle"]{grid-template-columns:minmax(0,12fr) minmax(0,13fr)}
+  .gptl-direction-page .direction-concept-reversed[data-animation="vehicle"]{grid-template-columns:minmax(0,13fr) minmax(0,12fr)}
+}

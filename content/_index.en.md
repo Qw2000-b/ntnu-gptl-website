@@ -38,18 +38,26 @@
         "directions": [
           {
             "title": "Electrified Mobility",
+            "icon": "/images/research/01-electrified-mobility.svg",
+            "page": "/research/electrified-mobility/",
             "description": "Powertrain modeling, energy management, vehicle control, and electrified transportation systems across road and marine applications."
           },
           {
             "title": "Energy & Storage Systems",
+            "icon": "/images/research/02-energy-storage.svg",
+            "page": "/research/energy-storage/",
             "description": "Integrated research on batteries, fuel cells, hybrid energy storage, charging infrastructure, and emerging low-carbon energy technologies."
           },
           {
             "title": "Thermal & Energy Management",
+            "icon": "/images/research/03-thermal-energy-management.svg",
+            "page": "/research/thermal-energy-management/",
             "description": "Integrated thermal and energy management for improving efficiency, reliability, and system-level performance."
           },
           {
             "title": "Intelligent Control & Validation",
+            "icon": "/images/research/04-intelligent-control-validation.svg",
+            "page": "/research/intelligent-control-validation/",
             "description": "Optimization, predictive control, AI-enabled strategies, real-time simulation, HIL, and experimental verification for intelligent engineering systems."
           }
         ]

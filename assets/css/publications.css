@@ -1,7 +1,33 @@
 /* Keep the preparation state within the existing section grid, without an empty card. */
 .gptl-publications .people-group>div>p:last-child{margin-bottom:0}
+.gptl-publications .people-group>.publication-cell{padding-left:0;padding-block:0}
+.gptl-publications .publication-year{font-size:28px;line-height:1.3;font-weight:600;margin:0;padding:28px 0 12px var(--gptl-grid-gap)}
+.gptl-publications .publication-records{list-style:none;padding:0;margin:0}
+.gptl-publications .publication-record{padding:24px 0 28px var(--gptl-grid-gap);margin:0;border-bottom:1px solid var(--color-border);overflow-wrap:anywhere}
+.gptl-publications .publication-year-group:last-child .publication-record:last-child{border-bottom:0}
+.gptl-publications .publication-authors{font-size:20px;line-height:1.7;margin:0 0 10px;color:var(--color-text)}
+.gptl-publications .publication-title{font-size:24px;line-height:1.45;font-weight:500;letter-spacing:0;margin:0 0 12px}
+.gptl-publications .publication-journal{font-size:18px;line-height:1.7;margin:0 0 14px;color:var(--color-text-muted)}
+.gptl-publications .publication-labels{display:flex;flex-wrap:wrap;gap:8px;font-size:15px;line-height:1.5;margin:0}
+.gptl-publications .publication-labels>span{padding:3px 8px;border:1px solid var(--color-border);color:var(--color-text-muted)}
 @media(max-width:767px){
   .gptl-publications .people-group>header{padding-block:24px 8px}
   .gptl-publications .people-group>header h2{margin-bottom:0}
   .gptl-publications .people-group>div{padding-block:0 24px}
+  .gptl-publications .publication-year{font-size:26px;padding-left:0}
+  .gptl-publications .publication-record{padding-left:0}
+  .gptl-publications .publication-title{font-size:22px}
 }
+
+/* Reuse People navigation interactions, with native same-page section links. */
+
+.gptl-publications .publication-nav{display:flex;flex-wrap:wrap;gap:12px 24px;border-bottom:1px solid var(--gptl-line);padding:12px 0 18px;margin:16px 0 36px}
+.gptl-publications .publication-nav a{color:var(--gptl-accent);font-size:18px;white-space:nowrap}
+html:has(.publication-nav){scroll-behavior:smooth}
+.gptl-publications:has(#article-journal:target) .publication-nav a[href="#article-journal"]::after,
+.gptl-publications:has(#paper-conference:target) .publication-nav a[href="#paper-conference"]::after,
+.gptl-publications:has(#thesis:target) .publication-nav a[href="#thesis"]::after{transform:scaleX(1)}
+@media(max-width:599px){.gptl-publications .publication-nav{column-gap:18px}}
+@media(prefers-reduced-motion:reduce){html:has(.publication-nav){scroll-behavior:auto}}
+
+.gptl-publication-list .publication-record[id]{scroll-margin-top:100px}

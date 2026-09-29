@@ -1,0 +1,6 @@
+{{/* Known English spellings only. Unconfirmed personal names retain their source spelling. */}}
+{{ $text := . | default "" }}
+{{ $text = index site.Data.translations.en.terms $text | default $text }}
+{{ $names := partialCached "locale/names.html" "en" }}
+{{ $text = index $names $text | default $text }}
+{{ return $text }}

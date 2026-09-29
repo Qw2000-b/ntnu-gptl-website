@@ -4,17 +4,17 @@ import {readFile} from 'node:fs/promises';
 const source = await readFile(new URL('../assets/js/visitor-stats-provider.js', import.meta.url), 'utf8');
 const {getVisitorStats, isVisitorStats} = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
 const mock = JSON.parse(await readFile(new URL('../data/visitor_stats.json', import.meta.url), 'utf8'));
-test('mock mode makes no network request', async () => {
+test('disabled environments make no request and never show example counts', async () => {
   const result = await getVisitorStats(mock, '', () => { throw new Error('Must not fetch'); });
-  assert.deepEqual(result, {data: mock, isMock: true});
+  assert.deepEqual(result, {data: null, isMock: false, status: 'disabled'});
 });
-test('valid aggregate response replaces mock data', async () => {
+test('valid GoatCounter aggregate response enables real data', async () => {
   const data = {...mock, totalVisitors: 15000, since: 'October 2026', source: 'goatcounter', metric: 'Visits'};
-  assert.deepEqual(await getVisitorStats(mock, '/stats', async () => ({ok:true,json:async()=>data})), {data,isMock:false});
+  assert.deepEqual(await getVisitorStats(mock, '/stats', async () => ({ok:true,json:async()=>data})), {data,isMock:false,status:'ready'});
 });
-test('HTTP, JSON, network and schema failures retain mock', async () => {
+test('HTTP, JSON, network and schema failures show no fabricated counts', async () => {
   for (const fetcher of [async()=>({ok:false}),async()=>({ok:true,json:async()=>{throw Error('JSON');}}),async()=>{throw Error('Network');},async()=>({ok:true,json:async()=>({...mock,internationalPercentage:101})})]) {
-    assert.deepEqual(await getVisitorStats(mock, '/stats', fetcher), {data:mock,isMock:true});
+    assert.deepEqual(await getVisitorStats(mock, '/stats', fetcher), {data:null,isMock:false,status:'unavailable'});
   }
 });
 test('third-party URLs never trigger a request', async () => {

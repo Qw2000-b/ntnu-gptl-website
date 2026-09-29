@@ -1,0 +1,3 @@
+{{/* The search renderer uses textContent, never treats index strings as HTML. */}}
+{{ $text := .text | default "" | replaceRE "<[^>]+>" " " | plainify | htmlUnescape | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" }}
+{{ return (dict "objectID" (.url | sha1) "lang" site.Language.Lang "relpermalink" .url "permalink" (.url | absURL) "title" (.title | plainify | htmlUnescape) "summary" ($text | truncate 220) "content" $text "authors" (.authors | default slice) "section" .section "type" .section "kind" "page") }}

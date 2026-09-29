@@ -1,0 +1,13 @@
+{{ $labels := .labels }}
+<ol class="research-projects">
+{{ range .items }}
+<li id="project-{{ .anchor_title | default .title | sha1 }}" class="research-project">
+<div class="project-meta"><span class="project-kind">{{ .kind }}</span><span class="project-period">{{ .start }}–{{ .end }}</span></div>
+<h3>{{ .title }}</h3>
+<dl class="project-details">
+{{ with .principal }}<div><dt>{{ $labels.principal }}</dt><dd>{{ . }}</dd></div>{{ end }}
+{{ with .coprincipal }}<div><dt>{{ $labels.coprincipal }}</dt><dd>{{ . }}</dd></div>{{ end }}
+<div><dt>{{ $labels.unit }}</dt><dd>{{ .unit }}</dd></div>
+</dl></li>
+{{ end }}
+</ol>

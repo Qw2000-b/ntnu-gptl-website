@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ship-animation" width="1188" height="765" viewBox="0 0 1188 765" role="img" aria-labelledby="ship-title ship-description">
+  <title id="ship-title">Ship Power Flow</title>
+  <desc id="ship-description">Orange: diesel generator to battery. Green: fuel cell or battery to motor. Red: engine or motor to powertrain and powertrain to propeller. The propeller blades rotate inside a fixed perspective ellipse.</desc>
+  <style>.ship-animation .ship-dot { animation-timing-function: linear; animation-iteration-count: infinite; animation-delay: var(--delay); }
+.ship-animation .ship-rotor { transform-box: view-box; transform-origin: 0px 0px; animation: ship-propeller 1.4s linear infinite; }
+@keyframes ship-propeller { to { transform: rotate(360deg); } }
+.ship-animation .ship-upper-dg-battery { fill: #F28C45; animation-name: ship-upper-dg-battery; animation-duration: 0.86666667s; }
+@keyframes ship-upper-dg-battery {
+  0% { transform: translate(800px, 299px); }
+  100% { transform: translate(748px, 299px); }
+}
+.ship-animation .ship-upper-fc-motor { fill: #22A68A; animation-name: ship-upper-fc-motor; animation-duration: 1.8s; }
+@keyframes ship-upper-fc-motor {
+  0% { transform: translate(585px, 232px); }
+  12.03703704% { transform: translate(572px, 232px); }
+  65.74074074% { transform: translate(572px, 290px); }
+  100% { transform: translate(535px, 290px); }
+}
+.ship-animation .ship-upper-battery-motor { fill: #22A68A; animation-name: ship-upper-battery-motor; animation-duration: 0.83333333s; }
+@keyframes ship-upper-battery-motor {
+  0% { transform: translate(585px, 307px); }
+  100% { transform: translate(535px, 307px); }
+}
+.ship-animation .ship-upper-motor-pt { fill: #BB2649; animation-name: ship-upper-motor-pt; animation-duration: 0.73333333s; }
+@keyframes ship-upper-motor-pt {
+  0% { transform: translate(407px, 308px); }
+  100% { transform: translate(363px, 308px); }
+}
+.ship-animation .ship-upper-pt-propeller { fill: #BB2649; animation-name: ship-upper-pt-propeller; animation-duration: 1.06666667s; }
+@keyframes ship-upper-pt-propeller {
+  0% { transform: translate(216px, 308px); }
+  100% { transform: translate(152px, 308px); }
+}
+.ship-animation .ship-lower-dg-battery { fill: #F28C45; animation-name: ship-lower-dg-battery; animation-duration: 0.86666667s; }
+@keyframes ship-lower-dg-battery {
+  0% { transform: translate(803px, 713px); }
+  100% { transform: translate(751px, 713px); }
+}
+.ship-animation .ship-lower-battery-motor { fill: #22A68A; animation-name: ship-lower-battery-motor; animation-duration: 0.9s; }
+@keyframes ship-lower-battery-motor {
+  0% { transform: translate(588px, 713px); }
+  100% { transform: translate(534px, 713px); }
+}
+.ship-animation .ship-lower-engine-pt { fill: #BB2649; animation-name: ship-lower-engine-pt; animation-duration: 1.76667322s; }
+@keyframes ship-lower-engine-pt {
+  0% { transform: translate(408px, 643.119px); }
+  16.98144015% { transform: translate(390px, 643px); }
+  73.58500368% { transform: translate(390px, 703px); }
+  100% { transform: translate(362px, 703px); }
+}
+.ship-animation .ship-lower-motor-pt { fill: #BB2649; animation-name: ship-lower-motor-pt; animation-duration: 0.71666667s; }
+@keyframes ship-lower-motor-pt {
+  0% { transform: translate(405px, 718px); }
+  100% { transform: translate(362px, 718px); }
+}
+.ship-animation .ship-lower-pt-propeller { fill: #BB2649; animation-name: ship-lower-pt-propeller; animation-duration: 1s; }
+@keyframes ship-lower-pt-propeller {
+  0% { transform: translate(215px, 722px); }
+  100% { transform: translate(155px, 722px); }
+}</style>
+  <g transform="translate(-37 13)">
+<path d="M493 295 573.943 295" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M724.5 98.5078C724.5 97.9512 724.951 97.5001 725.508 97.5001L837.492 97.5001C838.049 97.5001 838.5 97.9512 838.5 98.5078L838.5 163.492C838.5 164.049 838.049 164.5 837.492 164.5L725.508 164.5C724.951 164.5 724.5 164.049 724.5 163.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M724.5 135.508C724.5 134.951 724.951 134.5 725.508 134.5L837.492 134.5C838.049 134.5 838.5 134.951 838.5 135.508L838.5 200.492C838.5 201.049 838.049 201.5 837.492 201.5L725.508 201.5C724.951 201.5 724.5 201.049 724.5 200.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M585.5 98.5078C585.5 97.9512 585.951 97.5001 586.508 97.5001L698.492 97.5001C699.049 97.5001 699.5 97.9512 699.5 98.5078L699.5 163.492C699.5 164.049 699.049 164.5 698.492 164.5L586.508 164.5C585.951 164.5 585.5 164.049 585.5 163.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M585.5 135.508C585.5 134.951 585.951 134.5 586.508 134.5L698.492 134.5C699.049 134.5 699.5 134.951 699.5 135.508L699.5 200.492C699.5 201.049 699.049 201.5 698.492 201.5L586.508 201.5C585.951 201.5 585.5 201.049 585.5 200.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M863.5 98.5227C863.5 97.9579 863.958 97.5001 864.523 97.5001L976.477 97.5001C977.042 97.5001 977.5 97.9579 977.5 98.5227L977.5 164.477C977.5 165.042 977.042 165.5 976.477 165.5L864.523 165.5C863.958 165.5 863.5 165.042 863.5 164.477Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M863.5 135.523C863.5 134.958 863.958 134.5 864.523 134.5L976.477 134.5C977.042 134.5 977.5 134.958 977.5 135.523L977.5 201.477C977.5 202.042 977.042 202.5 976.477 202.5L864.523 202.5C863.958 202.5 863.5 202.042 863.5 201.477Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M446.5 98.5077C446.5 97.9512 446.951 97.5001 447.508 97.5001L558.492 97.5001C559.049 97.5001 559.5 97.9512 559.5 98.5077L559.5 163.492C559.5 164.049 559.049 164.5 558.492 164.5L447.508 164.5C446.951 164.5 446.5 164.049 446.5 163.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M446.5 135.508C446.5 134.951 446.951 134.5 447.508 134.5L558.492 134.5C559.049 134.5 559.5 134.951 559.5 135.508L559.5 200.492C559.5 201.049 559.049 201.5 558.492 201.5L447.508 201.5C446.951 201.5 446.5 201.049 446.5 200.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M306.5 98.5078C306.5 97.9512 306.951 97.5001 307.508 97.5001L419.492 97.5001C420.049 97.5001 420.5 97.9512 420.5 98.5078L420.5 163.492C420.5 164.049 420.049 164.5 419.492 164.5L307.508 164.5C306.951 164.5 306.5 164.049 306.5 163.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M306.5 135.508C306.5 134.951 306.951 134.5 307.508 134.5L419.492 134.5C420.049 134.5 420.5 134.951 420.5 135.508L420.5 200.492C420.5 201.049 420.049 201.5 419.492 201.5L307.508 201.5C306.951 201.5 306.5 201.049 306.5 200.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 111 11.3809 0 46 0 34.6191 111Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(-1 0 0 1 112.5 224.5)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1216.29 152.01C1217.55 152.01 1218.57 153.029 1218.57 154.286L1218.57 163.828C1218.57 164.456 1218.32 165.025 1217.9 165.437L1217.85 165.46 1217.58 166.733 1199.23 193.348 1198.08 197.479C1196.27 201.09 1193.72 204.405 1190.45 207.19L1188.6 208.763 1133.4 288.853 1175.64 288.853C1187.78 288.853 1197.62 298.696 1197.62 310.838L1197.62 310.838C1197.62 322.98 1187.78 332.823 1175.64 332.823L257.01 332.823 257.01 332.823 211.384 332.823C209.931 332.823 208.616 332.234 207.664 331.282L206.886 329.404 206.234 328.747 203.365 321.746 201.672 321.68 52.0931 285.409 50.341 284.591 50.086 284.539C44.084 282.001 39.8726 276.057 39.8726 269.131L39.8726 202.242C39.8726 193.007 47.3594 185.52 56.5952 185.52L875.9 185.52 877.88 185.92 979.057 152.548 979.242 152.424C979.871 152.157 980.563 152.01 981.289 152.01L1105.81 152.01 1120.69 152.01Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 51.55" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 175 41.55)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 51.55" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 170 58.55)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M152.957 36.5001 158.567 36.5001 246.904 36.5001 268.433 36.5001C272.336 36.5001 275.5 39.1599 275.5 42.4409L275.5 67.3719C275.5 70.6529 272.336 73.3128 268.433 73.3128L248.361 73.3128 248.361 184.275C248.361 184.952 247.708 185.5 246.904 185.5L152.957 185.5C152.152 185.5 151.5 184.952 151.5 184.275L151.5 67.3719 151.5 42.4409 151.5 37.7247C151.5 37.0483 152.152 36.5001 152.957 36.5001Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M233 46.1306C233 43.297 235.297 41 238.131 41L264.869 41C267.703 41 270 43.297 270 46.1306L270 53.8694C270 56.703 267.703 59 264.869 59L238.131 59C235.297 59 233 56.703 233 53.8694Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M499 307 598.476 307" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M493 290 573.693 290" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M571 232 587.75 232" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 60.25" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 572 290.25)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M585 218.814C585 210.08 592.08 203 600.814 203L732.186 203C740.92 203 748 210.08 748 218.814L748 241.186C748 249.92 740.92 257 732.186 257L600.814 257C592.08 257 585 249.92 585 241.186Z" fill="#BDD7EE" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="598" y="218" width="134" height="25" fill="#BDD7EE" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(613.914 239)" xmlns="http://www.w3.org/2000/svg">Fuel Cell</text>
+<path d="M688 299 809.184 299" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M800 284.814C800 276.08 807.08 269 815.814 269L1040.19 269C1048.92 269 1056 276.08 1056 284.814L1056 307.186C1056 315.92 1048.92 323 1040.19 323L815.814 323C807.08 323 800 315.92 800 307.186Z" fill="#FFA3A3" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(825.448 305)" xmlns="http://www.w3.org/2000/svg">Diesel Generator</text>
+<path d="M585 284.814C585 276.08 592.08 269 600.814 269L732.186 269C740.92 269 748 276.08 748 284.814L748 307.186C748 315.92 740.92 323 732.186 323L600.814 323C592.08 323 585 315.92 585 307.186Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(621.147 305)" xmlns="http://www.w3.org/2000/svg">Battery</text>
+<path d="M143 308 419.484 308" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M142 309C142 296.85 144.239 287 147 287 149.761 287 152 296.85 152 309 152 321.15 149.761 331 147 331 144.239 331 142 321.15 142 309Z" fill="#FFE699" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M496 709 576.943 709" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M727.5 512.508C727.5 511.951 727.951 511.5 728.508 511.5L840.492 511.5C841.049 511.5 841.5 511.951 841.5 512.508L841.5 577.492C841.5 578.049 841.049 578.5 840.492 578.5L728.508 578.5C727.951 578.5 727.5 578.049 727.5 577.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M727.5 549.508C727.5 548.951 727.951 548.5 728.508 548.5L840.492 548.5C841.049 548.5 841.5 548.951 841.5 549.508L841.5 614.492C841.5 615.049 841.049 615.5 840.492 615.5L728.508 615.5C727.951 615.5 727.5 615.049 727.5 614.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M588.5 512.508C588.5 511.951 588.951 511.5 589.508 511.5L701.492 511.5C702.049 511.5 702.5 511.951 702.5 512.508L702.5 577.492C702.5 578.049 702.049 578.5 701.492 578.5L589.508 578.5C588.951 578.5 588.5 578.049 588.5 577.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M588.5 549.508C588.5 548.951 588.951 548.5 589.508 548.5L701.492 548.5C702.049 548.5 702.5 548.951 702.5 549.508L702.5 614.492C702.5 615.049 702.049 615.5 701.492 615.5L589.508 615.5C588.951 615.5 588.5 615.049 588.5 614.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M866.5 512.523C866.5 511.958 866.958 511.5 867.523 511.5L979.477 511.5C980.042 511.5 980.5 511.958 980.5 512.523L980.5 578.477C980.5 579.042 980.042 579.5 979.477 579.5L867.523 579.5C866.958 579.5 866.5 579.042 866.5 578.477Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M866.5 549.523C866.5 548.958 866.958 548.5 867.523 548.5L979.477 548.5C980.042 548.5 980.5 548.958 980.5 549.523L980.5 615.477C980.5 616.042 980.042 616.5 979.477 616.5L867.523 616.5C866.958 616.5 866.5 616.042 866.5 615.477Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M449.5 512.508C449.5 511.951 449.951 511.5 450.508 511.5L561.492 511.5C562.049 511.5 562.5 511.951 562.5 512.508L562.5 577.492C562.5 578.049 562.049 578.5 561.492 578.5L450.508 578.5C449.951 578.5 449.5 578.049 449.5 577.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M449.5 549.508C449.5 548.951 449.951 548.5 450.508 548.5L561.492 548.5C562.049 548.5 562.5 548.951 562.5 549.508L562.5 614.492C562.5 615.049 562.049 615.5 561.492 615.5L450.508 615.5C449.951 615.5 449.5 615.049 449.5 614.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M309.5 512.508C309.5 511.951 309.951 511.5 310.508 511.5L422.492 511.5C423.049 511.5 423.5 511.951 423.5 512.508L423.5 577.492C423.5 578.049 423.049 578.5 422.492 578.5L310.508 578.5C309.951 578.5 309.5 578.049 309.5 577.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M309.5 549.508C309.5 548.951 309.951 548.5 310.508 548.5L422.492 548.5C423.049 548.5 423.5 548.951 423.5 549.508L423.5 614.492C423.5 615.049 423.049 615.5 422.492 615.5L310.508 615.5C309.951 615.5 309.5 615.049 309.5 614.492Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 111 11.3809 0 46 0 34.6191 111Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(-1 0 0 1 115.5 638.5)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1219.4 565.927C1220.66 565.927 1221.67 566.946 1221.67 568.202L1221.67 577.745C1221.67 578.373 1221.42 578.942 1221.01 579.353L1220.95 579.376 1220.68 580.65 1202.33 607.264 1201.18 611.396C1199.37 615.006 1196.82 618.322 1193.55 621.107L1191.71 622.68 1136.5 702.77 1178.74 702.77C1190.88 702.77 1200.73 712.613 1200.73 724.755L1200.73 724.755C1200.73 736.897 1190.88 746.74 1178.74 746.74L260.115 746.739 260.114 746.74 214.488 746.74C213.035 746.74 211.72 746.151 210.768 745.199L209.99 743.321 209.338 742.663 206.47 735.663 204.776 735.597 55.1977 699.326 53.4456 698.507 53.1906 698.456C47.1887 695.917 42.9772 689.974 42.9772 683.047L42.9772 616.159C42.9772 606.923 50.4641 599.436 59.6998 599.437L879.004 599.436 880.985 599.836 982.162 566.465 982.346 566.34C982.976 566.074 983.668 565.927 984.394 565.927L1108.91 565.927 1123.8 565.927Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 51.55" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 173 472.55)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 51.55" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 179 454.55)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M155.957 449.5 161.567 449.5 249.904 449.5 271.433 449.5C275.336 449.5 278.5 452.178 278.5 455.481L278.5 480.579C278.5 483.882 275.336 486.56 271.433 486.56L251.361 486.56 251.361 598.267C251.361 598.948 250.708 599.5 249.904 599.5L155.957 599.5C155.152 599.5 154.5 598.948 154.5 598.267L154.5 480.579 154.5 455.481 154.5 450.733C154.5 450.052 155.152 449.5 155.957 449.5Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="#FFFFFF" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M236 459.845C236 457.169 238.169 455 240.845 455L268.155 455C270.831 455 273 457.169 273 459.845L273 467.155C273 469.831 270.831 472 268.155 472L240.845 472C238.169 472 236 469.831 236 467.155Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M522 713 602.943 713" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M342 718 406.943 718" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M692 713 813.184 713" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M803 698.814C803 690.08 810.08 683 818.814 683L1043.19 683C1051.92 683 1059 690.08 1059 698.814L1059 721.186C1059 729.92 1051.92 737 1043.19 737L818.814 737C810.08 737 803 729.92 803 721.186Z" fill="#FFA3A3" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(828.553 719)" xmlns="http://www.w3.org/2000/svg">Diesel Generator</text>
+<path d="M588 698.814C588 690.08 595.08 683 603.814 683L735.186 683C743.92 683 751 690.08 751 698.814L751 721.186C751 729.92 743.92 737 735.186 737L603.814 737C595.08 737 588 729.92 588 721.186Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(624.251 719)" xmlns="http://www.w3.org/2000/svg">Battery</text>
+<path d="M146 722 347.665 722" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M145 723C145 710.85 147.239 701 150 701 152.761 701 155 710.85 155 723 155 735.15 152.761 745 150 745 147.239 745 145 735.15 145 723Z" fill="#FFE699" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M405 698.815C405 690.08 412.08 683 420.814 683L518.185 683C526.92 683 534 690.08 534 698.815L534 721.185C534 729.92 526.92 737 518.185 737L420.814 737C412.08 737 405 729.92 405 721.185Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(431.858 719)" xmlns="http://www.w3.org/2000/svg">Motor</text>
+<path d="M324 703 392.076 703" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M215 699.814C215 691.08 222.08 684 230.814 684L346.186 684C354.92 684 362 691.08 362 699.814L362 722.186C362 730.92 354.92 738 346.186 738L230.814 738C222.08 738 215 730.92 215 722.186Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="24" transform="translate(227.935 719)" xmlns="http://www.w3.org/2000/svg">Powertrain</text>
+<path d="M389 643 408.046 643.119" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 60.25" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 390 701.25)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M408 631.815C408 623.08 415.08 616 423.814 616L521.185 616C529.92 616 537 623.08 537 631.815L537 654.185C537 662.92 529.92 670 521.185 670L423.814 670C415.08 670 408 662.92 408 654.185Z" fill="#FFA3A3" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(430.22 652)" xmlns="http://www.w3.org/2000/svg">Engine</text>
+<path d="M407 285.814C407 277.08 414.08 270 422.814 270L519.186 270C527.92 270 535 277.08 535 285.814L535 308.186C535 316.92 527.92 324 519.186 324L422.814 324C414.08 324 407 316.92 407 308.186Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(432.921 306)" xmlns="http://www.w3.org/2000/svg">Motor</text>
+<path d="M216 286.814C216 278.08 223.08 271 231.814 271L347.186 271C355.92 271 363 278.08 363 286.814L363 309.186C363 317.92 355.92 325 347.186 325L231.814 325C223.08 325 216 317.92 216 309.186Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="24" transform="translate(228.998 307)" xmlns="http://www.w3.org/2000/svg">Powertrain</text>
+<g class="ship-propeller-position" transform="translate(147 309)" aria-hidden="true">
+  <g class="ship-projection" transform="scale(0.2272727273 1)">
+    <g class="ship-rotor" fill="#B98C25" fill-opacity="0.85">
+      <path d="M-3 -2 C-10 -7 -10 -18 -3 -21 C3 -23 8 -17 7 -11 C6 -5 3 -1 0 3 Z" />
+      <path d="M-3 -2 C-10 -7 -10 -18 -3 -21 C3 -23 8 -17 7 -11 C6 -5 3 -1 0 3 Z" transform="rotate(120)" />
+      <path d="M-3 -2 C-10 -7 -10 -18 -3 -21 C3 -23 8 -17 7 -11 C6 -5 3 -1 0 3 Z" transform="rotate(240)" />
+    </g>
+    <circle r="3.5" fill="#D6AA45" />
+    <circle r="1.5" fill="#FFF2CC" />
+  </g>
+</g>
+<g class="ship-propeller-position" transform="translate(150 723)" aria-hidden="true">
+  <g class="ship-projection" transform="scale(0.2272727273 1)">
+    <g class="ship-rotor" fill="#B98C25" fill-opacity="0.85">
+      <path d="M-3 -2 C-10 -7 -10 -18 -3 -21 C3 -23 8 -17 7 -11 C6 -5 3 -1 0 3 Z" />
+      <path d="M-3 -2 C-10 -7 -10 -18 -3 -21 C3 -23 8 -17 7 -11 C6 -5 3 -1 0 3 Z" transform="rotate(120)" />
+      <path d="M-3 -2 C-10 -7 -10 -18 -3 -21 C3 -23 8 -17 7 -11 C6 -5 3 -1 0 3 Z" transform="rotate(240)" />
+    </g>
+    <circle r="3.5" fill="#D6AA45" />
+    <circle r="1.5" fill="#FFF2CC" />
+  </g>
+</g>
+    <g id="ship-energy-dots" aria-hidden="true">
+<g id="ship-upper-dg-battery" aria-label="Upper DG → Battery"><circle class="ship-dot ship-upper-dg-battery" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="ship-dot ship-upper-dg-battery" cx="0" cy="0" r="3.5" style="--delay: -0.43333333s" /></g>
+<g id="ship-upper-fc-motor" aria-label="Upper FC → Motor"><circle class="ship-dot ship-upper-fc-motor" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="ship-dot ship-upper-fc-motor" cx="0" cy="0" r="3.5" style="--delay: -0.6s" /><circle class="ship-dot ship-upper-fc-motor" cx="0" cy="0" r="3.5" style="--delay: -1.2s" /></g>
+<g id="ship-upper-battery-motor" aria-label="Upper Battery → Motor"><circle class="ship-dot ship-upper-battery-motor" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="ship-dot ship-upper-battery-motor" cx="0" cy="0" r="3.5" style="--delay: -0.41666667s" /></g>
+<g id="ship-upper-motor-pt" aria-label="Upper Motor → Powertrain"><circle class="ship-dot ship-upper-motor-pt" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="ship-dot ship-upper-motor-pt" cx="0" cy="0" r="3.5" style="--delay: -0.36666667s" /></g>
+<g id="ship-upper-pt-propeller" aria-label="Upper Powertrain → Propeller"><circle class="ship-dot ship-upper-pt-propeller" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="ship-dot ship-upper-pt-propeller" cx="0" cy="0" r="3.5" style="--delay: -0.53333333s" /></g>
+<g id="ship-lower-dg-battery" aria-label="Lower DG → Battery"><circle class="ship-dot ship-lower-dg-battery" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="ship-dot ship-lower-dg-battery" cx="0" cy="0" r="3.5" style="--delay: -0.43333333s" /></g>
+<g id="ship-lower-battery-motor" aria-label="Lower Battery → Motor"><circle class="ship-dot ship-lower-battery-motor" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="ship-dot ship-lower-battery-motor" cx="0" cy="0" r="3.5" style="--delay: -0.45s" /></g>
+<g id="ship-lower-engine-pt" aria-label="Lower Engine → Powertrain"><circle class="ship-dot ship-lower-engine-pt" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="ship-dot ship-lower-engine-pt" cx="0" cy="0" r="3.5" style="--delay: -0.58889107s" /><circle class="ship-dot ship-lower-engine-pt" cx="0" cy="0" r="3.5" style="--delay: -1.17778215s" /></g>
+<g id="ship-lower-motor-pt" aria-label="Lower Motor → Powertrain"><circle class="ship-dot ship-lower-motor-pt" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="ship-dot ship-lower-motor-pt" cx="0" cy="0" r="3.5" style="--delay: -0.35833333s" /></g>
+<g id="ship-lower-pt-propeller" aria-label="Lower Powertrain → Propeller"><circle class="ship-dot ship-lower-pt-propeller" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="ship-dot ship-lower-pt-propeller" cx="0" cy="0" r="3.5" style="--delay: -0.5s" /></g>
+    </g>
+  </g>
+</svg>

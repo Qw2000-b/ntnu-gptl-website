@@ -5,12 +5,13 @@
   <header class="partners-heading">{{ if not $en }}<p class="section-label" lang="en">Partners</p>{{ end }}<h2 id="partners-title">{{ .wcBlock.content.heading }}</h2></header>
   <ul class="partners-grid gptl-cell-grid" aria-labelledby="partners-title">
     {{ range site.Data.partners }}
+    {{ $name := .name }}{{ if $en }}{{ $name = partial "locale/term.html" .name }}{{ end }}
     <li class="partner-logo partner-logo--{{ .variant | default "wide" }} {{ .optionalClass }}" style="--logo-scale: {{ .scale | default 1 }}">
       {{ $file := printf "static/%s" (strings.TrimPrefix "/" .logo) }}
       {{ if fileExists $file }}
-      <span class="partner-logo-art"><img src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy" decoding="async"></span>
+      <span class="partner-logo-art"><img src="{{ .logo | relURL }}" alt="{{ $name }}" loading="lazy" decoding="async"></span>
       {{ else }}
-      <span class="partner-placeholder">{{ .name }}</span>
+      <span class="partner-placeholder">{{ $name }}</span>
       {{ end }}
     </li>
     {{ end }}

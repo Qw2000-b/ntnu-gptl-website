@@ -1,0 +1,14 @@
+{{ $labels := .labels }}
+<ol class="research-projects">
+{{ range .items }}
+<li id="project-{{ .anchor_title | default .title_zh | sha1 }}" class="research-project">
+<div class="project-meta"><span class="project-kind">{{ .type }}</span><span class="project-period">{{ replace .start_date "-" "/" }}–{{ replace .end_date "-" "/" }}</span></div>
+<h3>{{ if .title_tail }}{{ strings.TrimSuffix .title_tail .title_zh }}<wbr><span class="project-title-tail">{{ .title_tail }}</span>{{ else if .title_unbreakable }}{{ $phrase := .title_unbreakable }}{{ range $index, $part := split .title_zh $phrase }}{{ if $index }}<wbr><span class="project-title-tail">{{ $phrase }}</span>{{ end }}{{ $part }}{{ end }}{{ else }}{{ .title_zh }}{{ end }}</h3>
+<dl class="project-details">
+{{ if .principal_investigator }}<div><dt>{{ .role }}</dt><dd>{{ .principal_investigator }}</dd></div>{{ end }}
+{{ with .co_investigators }}<div><dt>{{ $labels.coprincipal }}</dt><dd>{{ delimit . (cond (eq site.Language.Lang "en") ", " "、") }}</dd></div>{{ end }}
+<div><dt>{{ $labels.unit }}</dt><dd>{{ .unit_zh }}</dd></div>
+</dl>
+</li>
+{{ end }}
+</ol>

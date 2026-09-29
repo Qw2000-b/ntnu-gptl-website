@@ -1,0 +1,13 @@
+{{/* One source for the overview and archive. A missing date sorts after known dates, without inventing dates. */}}
+{{ $items := slice }}{{ $seen := slice }}
+{{ range site.Data.publications.conference_papers }}
+  {{ $key := printf "%d/%s" (int .year) (lower .title) }}
+  {{ if and (not (in $seen $key)) true }}
+    {{ $seen = $seen | append $key }}
+    {{ $paper := merge . (dict "anchor_title" .title) }}
+    {{ if $.english }}{{ $paper = partial "locale/record.html" (dict "record" $paper "kind" "conference_papers" "key" .title) }}{{ $paper = merge $paper (dict "language" "en") }}{{ end }}
+    {{ $knownDate := .date | default .date_start | default "" }}
+    {{ $items = $items | append (merge $paper (dict "sort_key" (printf "year-%04d/%s" (int .year) $knownDate))) }}
+  {{ end }}
+{{ end }}
+{{ return (sort $items "sort_key" "desc") }}

@@ -1,0 +1,402 @@
+[
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2026-08",
+    "end_date": "2029-07",
+    "title_zh": "結合縱側向控制與深度強化學習決策之預測型節能駕駛演算法，應用於考量號誌相位與時序之氫能自動駕駛車輛",
+    "title_unbreakable": "時序",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [
+      "林煜軒"
+    ],
+    "role": "主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2026-08",
+    "end_date": "2029-07",
+    "title_zh": "具電池健康度之新能源水用載具即時系統建模、智慧型能源管理與硬體實證",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2026-08",
+    "end_date": "2027-07",
+    "title_zh": "電動冷鏈物流車冷卻液／冷媒雙迴路混合電池熱管理系統之最佳化節能設計、實驗平台模組驗證及原型車製作推廣",
+    "title_unbreakable": "模組驗證",
+    "principal_investigator": "林煜軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2026-07",
+    "end_date": "2028-06",
+    "title_zh": "創新燃料電池／鋰電池混合動力冷鏈物流車之最佳化節能設計、即時控制驗證及實車開發推廣",
+    "principal_investigator": "林煜軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2025-08",
+    "end_date": "2026-07",
+    "title_zh": "奈米節能流體與數位孿生應用於燃料電池混合電動車之最佳化熱管理／能量管理暨工程實證",
+    "title_tail": "實證",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2024-08",
+    "end_date": "2025-07",
+    "title_zh": "具電池健康度因子之車用氫能／儲電一體式最佳化系統與控制器設計暨工程實證",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2023-06",
+    "end_date": "2024-05",
+    "title_zh": "具即時動態定位控制結合影像辨識處理與避障功能之自動輔助駕駛系統應用於自駕電動高爾夫球車",
+    "title_tail": "高爾夫球車",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2022-07",
+    "end_date": "2023-02",
+    "title_zh": "電動巴士充電場域之最佳系統配置與人機介面設計",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2021-08",
+    "end_date": "2024-07",
+    "title_zh": "固定式／移動式充電站之最佳化系統設計及能源管理暨微小化示範運行",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2019-08",
+    "end_date": "2022-07",
+    "title_zh": "具仿生最佳化能量管理之優化多動力系統控制單元設計、實體平台驗證與車載運行",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2018-12",
+    "end_date": "2019-07",
+    "title_zh": "人工智慧電動自駕車之關鍵次系統的研製",
+    "principal_investigator": null,
+    "co_investigators": [
+      "洪翊軒"
+    ],
+    "role": "共同主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2018-08",
+    "end_date": "2019-07",
+    "title_zh": "四行程機車使用多壁奈米碳管／二氧化矽複合奈米潤滑油之磨潤、引擎性能及 PM2.5 排放研究",
+    "principal_investigator": null,
+    "co_investigators": [
+      "洪翊軒"
+    ],
+    "role": "共同主持人",
+    "unit_zh": "車輛與能源工程學士學位學程",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2017-08",
+    "end_date": "2020-07",
+    "title_zh": "遠紅外線塗料提升熱傳性能分析與節能應用研究",
+    "principal_investigator": null,
+    "co_investigators": [
+      "洪翊軒"
+    ],
+    "role": "共同主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2017-08",
+    "end_date": "2018-07",
+    "title_zh": "四行程機車使用奈米二氧化矽機油之磨潤、引擎性能及粒狀污染物排放研究",
+    "principal_investigator": null,
+    "co_investigators": [
+      "洪翊軒"
+    ],
+    "role": "共同主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2017-08",
+    "end_date": "2018-07",
+    "title_zh": "群組型任務子母電動車之高效能路徑規劃與整車控制開發",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2017-08",
+    "end_date": "2018-07",
+    "title_zh": "空氣動力移動載具之系統設計與控制技術發展",
+    "principal_investigator": null,
+    "co_investigators": [
+      "洪翊軒"
+    ],
+    "role": "共同主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2016-08",
+    "end_date": "2017-10",
+    "title_zh": "四行程機車使用添加奈米氧化鋁機油之引擎性能研究",
+    "principal_investigator": null,
+    "co_investigators": [
+      "洪翊軒"
+    ],
+    "role": "共同主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2016-08",
+    "end_date": "2019-07",
+    "title_zh": "以演化最佳化法進行三電力源電動車之能量管理、即時平台暨車體實驗驗證",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2016-08",
+    "end_date": "2017-01",
+    "title_zh": "複合電動馬達與複合儲能系統電動機車之系統設計與控制發展",
+    "principal_investigator": null,
+    "co_investigators": [
+      "洪翊軒"
+    ],
+    "role": "共同主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2016-02",
+    "end_date": "2018-01",
+    "title_zh": "水五金產業供應鏈資訊平台整合聯盟",
+    "principal_investigator": null,
+    "co_investigators": [
+      "洪翊軒"
+    ],
+    "role": "共同主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2015-08",
+    "end_date": "2016-07",
+    "title_zh": "能源／動力整合式奈米散熱系統設計、實驗平台建置與電動車載應用開發",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2014-12",
+    "end_date": "2017-11",
+    "title_zh": "綠能工程學習新思維、新模式、新效能：應用翻轉式教學啟發學生想像力與創意思維在綠能工程教育之學習成就研究",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2014-08",
+    "end_date": "2015-07",
+    "title_zh": "混合奈米散熱系統應用於輕型燃料電池／鋰電池之電動載具實車驗證",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2013-08",
+    "end_date": "2014-07",
+    "title_zh": "奈米冷凍機油的合成、特性分析、最佳化與碳氫冷媒冷凍空調系統應用研究",
+    "principal_investigator": null,
+    "co_investigators": [
+      "洪翊軒"
+    ],
+    "role": "共同主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2013-08",
+    "end_date": "2014-07",
+    "title_zh": "綠能混合動力模組之奈米散熱實驗系統設計、控制與實際車載應用",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2013-08",
+    "end_date": "2014-07",
+    "title_zh": "群組機器人之雲端控制技術應用於工業廠房的環安研究－子計畫四：基於雲端網路之移動機器人電池監測與控制",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "分項計畫主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2012-08",
+    "end_date": "2014-07",
+    "title_zh": "改良式水冷熱處理法之奈米碳／碳管流體製造系統開發、流體特性與應用研究",
+    "principal_investigator": null,
+    "co_investigators": [
+      "洪翊軒"
+    ],
+    "role": "共同主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2012-08",
+    "end_date": "2013-07",
+    "title_zh": "新型燃料電池／鋰電池奈米流體混合散熱系統模擬、控制與實驗設計",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2012-02",
+    "end_date": "2014-04",
+    "title_zh": "工業用無斷電備用千瓦級燃料電池系統多尺度優化分析與設計",
+    "principal_investigator": null,
+    "co_investigators": [
+      "洪翊軒"
+    ],
+    "role": "共同主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "國科會研究計畫",
+    "start_date": "2010-08",
+    "end_date": "2011-10",
+    "title_zh": "電動車多重綠色能源之整合型匹配與能量管理設計暨實驗平台驗證",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "工業教育學系",
+    "language": "zh",
+    "published": true
+  },
+  {
+    "type": "教育部計畫",
+    "start_date": "2018-08",
+    "end_date": "2019-07",
+    "title_zh": "教育部補助大學產業創新研發計畫（電動載具與綠能場域之最佳設計與智慧型能源管理新創開發）",
+    "principal_investigator": "洪翊軒",
+    "co_investigators": [],
+    "role": "主持人",
+    "unit_zh": "",
+    "language": "zh",
+    "published": false
+  }
+]

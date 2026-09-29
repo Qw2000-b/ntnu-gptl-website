@@ -21,7 +21,7 @@
     "graduationAcademicYear": 114,
     "graduationYear": 2026,
     "chineseName": "郭譯云",
-    "englishName": "Kuo I Yun",
+    "englishName": "Y-Yun Kuo",
     "department": "工業教育學系",
     "degree": "碩士",
     "englishNameOriginal": "Kuo I Yun"
@@ -240,7 +240,8 @@
     "englishName": "Chun-Ju Ao",
     "department": "工業教育學系",
     "degree": "碩士",
-    "englishNameOriginal": "AO, Chun-Ju"
+    "englishNameOriginal": "AO, Chun-Ju",
+    "publish": false
   },
   {
     "graduationAcademicYear": 105,
@@ -258,7 +259,8 @@
     "englishName": "Hui-Jun Huang",
     "department": "工業教育學系",
     "degree": "碩士",
-    "englishNameOriginal": "HUANG, HUI-JUN"
+    "englishNameOriginal": "HUANG, HUI-JUN",
+    "publish": false
   },
   {
     "graduationAcademicYear": 104,
@@ -276,7 +278,8 @@
     "englishName": "Chen-Hsiung Wang",
     "department": "工業教育學系",
     "degree": "碩士",
-    "englishNameOriginal": "Wang, Chen-Hsiung"
+    "englishNameOriginal": "Wang, Chen-Hsiung",
+    "publish": false
   },
   {
     "graduationAcademicYear": 104,
@@ -291,7 +294,7 @@
     "graduationAcademicYear": 103,
     "graduationYear": 2015,
     "chineseName": "林煜軒",
-    "englishName": "Yu-Xuan Lin",
+    "englishName": "Yu-Hsuan Lin",
     "department": "工業教育學系",
     "degree": "碩士",
     "englishNameOriginal": "Lin, Yu-Xuan"
@@ -366,6 +369,7 @@
     "englishName": "Tsai-Chuan Liu",
     "department": "工業教育學系在職進修碩士班",
     "degree": "碩士",
-    "englishNameOriginal": "Liu, Tsai-Chuan"
+    "englishNameOriginal": "Liu, Tsai-Chuan",
+    "publish": false
   }
 ]

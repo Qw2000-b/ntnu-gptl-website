@@ -1,5 +1,7 @@
 .gptl-research .research-projects{list-style:none;margin:0;padding:0}
-.gptl-research .research-project{padding:28px 0;margin:0;border-bottom:1px solid var(--color-border)}
+/* Keep separators on the grid edge; inset only the project content. */
+.gptl-research .gptl-section-grid>.research-project-cell{padding-left:0}
+.gptl-research .research-project{padding:28px 0 28px var(--gptl-grid-gap);margin:0;border-bottom:1px solid var(--color-border)}
 .gptl-research .research-project:first-child{padding-top:0}
 .gptl-research .research-project:last-child{border-bottom:0;padding-bottom:0}
 .gptl-research .project-meta{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 24px;margin-bottom:12px}
@@ -10,6 +12,9 @@
 .gptl-research .project-details>div{display:flex;flex-wrap:wrap;gap:0 12px}
 .gptl-research .project-details dt{font-weight:400;flex-shrink:0}
 .gptl-research .project-details dd{margin:0;flex:1;min-width:180px;overflow-wrap:anywhere}
-@media(max-width:767px){.gptl-research .gptl-section-grid{grid-template-columns:minmax(0,1fr)}.gptl-research .research-project h3{font-size:22px!important}.gptl-research .project-details>div{display:block}}
+@media(max-width:767px){.gptl-research .gptl-section-grid{grid-template-columns:minmax(0,1fr)}.gptl-research .research-project{padding-left:0}.gptl-research .research-project h3{font-size:22px!important}.gptl-research .project-details>div{display:block}}
 
 .gptl-research .research-title-line{display:block;white-space:nowrap}
+.gptl-research .project-title-tail{white-space:nowrap}
+
+.gptl-research .research-project[id]{scroll-margin-top:100px}

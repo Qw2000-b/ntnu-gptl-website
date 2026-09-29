@@ -1,0 +1,8 @@
+{{ $current := . }}
+<nav class="team-nav direction-nav" aria-label="{{ cond (eq .Language.Lang "en") "Research directions" "研究方向切換" }}">
+  {{ range slice "electrified-mobility" "energy-storage" "thermal-energy-management" "intelligent-control-validation" }}
+    {{ with $current.Site.GetPage (printf "/research/%s" .) }}
+      <a href="{{ .RelPermalink }}"{{ if eq .RelPermalink $current.RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>
+    {{ end }}
+  {{ end }}
+</nav>

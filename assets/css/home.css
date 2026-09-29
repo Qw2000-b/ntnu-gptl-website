@@ -40,3 +40,33 @@
 .directions-intro p+p,.directions-text .direction-translation{margin-top:12px}
 .directions-text .direction-label{font-weight:600;color:var(--gptl-ink);margin-bottom:12px}
 @media(min-width:768px) and (max-width:1199px){.gptl-directions>header{grid-column:span 3}.gptl-directions>div{grid-column:span 5}}
+
+/* Homepage direction icons: content padding stays inside the continuous row borders. */
+#development .directions-text>.direction-item{display:grid;grid-template-columns:88px minmax(0,1fr);column-gap:28px;align-items:center;padding:32px 0 32px var(--gptl-grid-gap);margin-top:0}
+#development .directions-intro+.direction-item{margin-top:32px}
+#development .direction-content{min-width:0}
+#development .direction-icon{width:88px;height:88px;display:grid;place-items:center;color:#303633;transition:color 180ms ease}
+#development .direction-icon svg{width:56px;height:56px;display:block;fill:none;transition:transform 180ms ease}
+#development a.direction-icon{text-decoration:none;border-radius:0}
+#development a.direction-icon:focus-visible{outline:2px solid var(--color-focus);outline-offset:4px}
+#development .direction-item:focus-within .direction-icon{color:#28664f}
+#development .direction-item:focus-within .direction-icon svg{transform:translateY(-2px)}
+@media(hover:hover) and (pointer:fine){
+  #development .direction-item:hover .direction-icon{color:#28664f}
+  #development .direction-item:hover .direction-icon svg{transform:translateY(-2px)}
+}
+@media(min-width:641px) and (max-width:1199px){
+  #development .directions-text>.direction-item{grid-template-columns:64px minmax(0,1fr);column-gap:20px}
+  #development .direction-icon{width:64px;height:64px}
+  #development .direction-icon svg{width:48px;height:48px}
+}
+@media(max-width:767px){#development .directions-text>.direction-item{padding-left:0}}
+@media(max-width:640px){
+  #development .directions-text>.direction-item{grid-template-columns:48px minmax(0,1fr);column-gap:16px;align-items:start}
+  #development .direction-icon{width:48px;height:48px}
+  #development .direction-icon svg{width:38px;height:38px}
+}
+@media(prefers-reduced-motion:reduce){
+  #development .direction-icon,#development .direction-icon svg{transition:none}
+  #development .direction-item:is(:hover,:focus-within) .direction-icon svg{transform:none}
+}

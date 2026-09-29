@@ -9,7 +9,7 @@
 <section class="people-group gptl-section-grid"><header><h2>{{ cond $en "Advisors" "指導老師" }}</h2></header><div>
 <ul class="people-names advisor-photo-grid">{{ range site.Data.advisors }}<li>{{ if .photo }}{{ partial "advisor-photo.html" . }}{{ end }}<div class="advisor-photo-name">{{ if $en }}{{ .english }}{{ else }}{{ .name }} <span lang="en">{{ .english }}</span>{{ end }}</div></li>{{ end }}</ul>
 <a class="text-link gptl-button" href="{{ "about/advisors/" | relLangURL }}">{{ cond $en "View Advisors" "查看老師簡介" }} <span aria-hidden="true">→</span></a></div></section>
-{{ range slice (dict "degree" "博士生" "title" "PhD Students") (dict "degree" "碩士生" "title" "Master Students") }}
+{{ range slice (dict "degree" "博士生" "title" "PhD Students") (dict "degree" "碩士生" "title" "Master’s Students") }}
 {{ $members := where site.Data.team.members "degree" .degree }}{{ if $members }}
 <section class="people-group gptl-section-grid"><header><h2>{{ cond $en .title .degree }}</h2></header><div>
 <ul class="people-names">{{ range sort $members "entry_year" "desc" }}<li>{{ cond $en .english .name }}</li>{{ end }}</ul>

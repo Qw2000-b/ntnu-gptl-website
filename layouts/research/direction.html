@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ $en := eq .Language.Lang "en" }}
+{{ $css := resources.Get "css/research-direction.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<div class="container gptl-people gptl-direction-page">
+  <a class="text-link gptl-button direction-back" href="{{ "/" | relLangURL }}#development"><span aria-hidden="true">←</span> {{ cond $en "Back to Research Directions" "返回首頁發展方向" }}</a>
+  <h1>{{ partial "keep-words.html" (dict "text" .Title "words" .Params.title_keep_together) }}</h1>
+  {{ partial "research/direction-nav.html" . }}
+  {{ range $index, $concept := .Params.concepts }}
+  {{ $headingID := printf "concept-%d" (add $index 1) }}
+  <section class="direction-concept{{ if modBool (add $index 1) 2 }} direction-concept-reversed{{ end }}"{{ with $concept.animation }} data-animation="{{ . }}"{{ end }} aria-labelledby="{{ $headingID }}">
+    <div class="direction-media-cell">
+      {{ with $concept.animation }}
+      {{ partial "research/animation.html" (dict "id" . "english" $en) }}
+      {{ else }}
+      <div class="direction-animation-placeholder">{{ cond $en "Animation to be added" "動畫預留區" }}</div>
+      {{ end }}
+    </div>
+    <div class="direction-copy-cell">
+      <p class="section-label direction-concept-number">{{ printf "%02d" (add $index 1) }}</p>
+      {{ $title := $concept.title | default (printf "%s %02d" (cond $en "Concept" "概念") (add $index 1)) | htmlEscape }}
+      {{ range $concept.title_keep_together }}
+        {{ $word := . | htmlEscape }}
+        {{ $title = replace $title $word (printf "<span class=\"direction-title-word\">%s</span>" $word) }}
+      {{ end }}
+      <h2 id="{{ $headingID }}">{{ $title | safeHTML }}</h2>
+      {{ with $concept.text }}<div class="direction-copy-body">{{ . | markdownify }}</div>{{ else }}<p class="direction-copy-placeholder">{{ cond $en "Text to be added." "文字內容待補" }}</p>{{ end }}
+    </div>
+  </section>
+  {{ end }}
+</div>
+{{ $js := resources.Get "js/research-animations.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

@@ -1,0 +1,62 @@
+{
+  "vehicle": {
+    "number": 1,
+    "file": "research-animations/vehicle-animation.svg",
+    "nameZh": "冷藏車能源與熱流",
+    "nameEn": "Refrigerated Truck Energy and Heat Flow"
+  },
+  "fuel-cell-bus": {
+    "number": 2,
+    "file": "research-animations/fuel-cell-bus-animation.svg",
+    "nameZh": "燃料電池巴士",
+    "nameEn": "Fuel Cell Bus"
+  },
+  "charging-station": {
+    "number": 3,
+    "file": "research-animations/charging-station-animation.svg",
+    "nameZh": "充電站能源流向",
+    "nameEn": "Charging Station Energy Flow"
+  },
+  "lane-change": {
+    "number": 4,
+    "file": "research-animations/lane-change-animation.svg",
+    "nameZh": "變道超車",
+    "nameEn": "Lane Change and Overtaking"
+  },
+  "ship-power": {
+    "number": 5,
+    "file": "research-animations/ship-power-animation.svg",
+    "nameZh": "船舶動力系統",
+    "nameEn": "Ship Power System"
+  },
+  "mobile-energy": {
+    "number": 6,
+    "file": "research-animations/mobile-energy-animation.svg",
+    "nameZh": "工程車與移動儲能櫃",
+    "nameEn": "Work Vehicle and Mobile Energy Storage"
+  },
+  "microgrid": {
+    "number": 7,
+    "file": "research-animations/microgrid-animation.svg",
+    "nameZh": "微電網",
+    "nameEn": "Microgrid"
+  },
+  "thermal-vehicle": {
+    "number": 8,
+    "file": "research-animations/thermal-vehicle-animation.svg",
+    "nameZh": "能源流與散熱",
+    "nameEn": "Energy Flow and Cooling"
+  },
+  "dual-battery": {
+    "number": 9,
+    "file": "research-animations/dual-battery-animation.svg",
+    "nameZh": "雙電池能源與訊號流",
+    "nameEn": "Dual-Battery Energy and Signal Flow"
+  },
+  "charging-microgrid": {
+    "number": 10,
+    "file": "research-animations/charging-microgrid-animation.svg",
+    "nameZh": "微電網與汽車充電",
+    "nameEn": "Microgrid and Vehicle Charging"
+  }
+}

@@ -1,0 +1,7 @@
+/* Layout only: buttons retain the shared News CTA appearance and interaction. */
+:is(.gptl-research,.gptl-publications) .list-all-link{max-width:100%;white-space:normal;overflow-wrap:break-word;box-sizing:border-box;margin-top:16px;text-wrap:balance}
+.gptl-list-archive .list-back-link{margin-bottom:24px;max-width:100%;white-space:normal}
+.gptl-publications.gptl-list-archive .publication-year,.gptl-publications.gptl-list-archive .publication-record{padding-left:0}
+@media(max-width:767px){:is(.gptl-research,.gptl-publications) .list-all-link{margin-bottom:16px}}
+.gptl-list-archive>h1{text-wrap:balance}
+@media(max-width:767px){.gptl-research :is(#collaboration-projects,#nstc-projects)>header,.gptl-list-archive .people-group>header{padding-bottom:0}.gptl-list-archive .people-group>header h2{margin-bottom:0}}

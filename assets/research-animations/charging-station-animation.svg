@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="station-animation" width="1151" height="461" viewBox="0 0 1151 461" role="img" aria-labelledby="station-title station-description">
+  <title id="station-title">Charging Station Energy Flow</title>
+  <desc id="station-description">Blue: grid to EMS and inner EMS to ESS recharge. Green: FC to EMS, FC to ESS and outer ESS to EMS output. Red: EMS to each charger and each charger to its bus.</desc>
+  <style>.station-animation .station-dot { animation-timing-function: linear; animation-iteration-count: infinite; animation-delay: var(--delay); }
+.station-animation .station-grid-ems { fill: #2F80ED; animation-name: station-grid-ems; animation-duration: 4.78333333s; }
+@keyframes station-grid-ems {
+  0% { transform: translate(190px, 338px); }
+  27.5261324% { transform: translate(190px, 417px); }
+  100% { transform: translate(398px, 417px); }
+}
+.station-animation .station-fc-ems { fill: #22A68A; animation-name: station-fc-ems; animation-duration: 1.25s; }
+@keyframes station-fc-ems {
+  0% { transform: translate(514px, 287px); }
+  100% { transform: translate(514px, 362px); }
+}
+.station-animation .station-fc-ess { fill: #22A68A; animation-name: station-fc-ess; animation-duration: 0.7s; }
+@keyframes station-fc-ess {
+  0% { transform: translate(514px, 215px); }
+  100% { transform: translate(514px, 173px); }
+}
+.station-animation .station-ems-ess-charge { fill: #2F80ED; animation-name: station-ems-ess-charge; animation-duration: 7.55s; }
+@keyframes station-ems-ess-charge {
+  0% { transform: translate(539px, 362px); }
+  7.50551876% { transform: translate(539px, 328px); }
+  47.2406181% { transform: translate(719px, 328px); }
+  91.61147903% { transform: translate(719px, 127px); }
+  100% { transform: translate(681px, 127px); }
+}
+.station-animation .station-ess-ems-output { fill: #22A68A; animation-name: station-ess-ems-output; animation-duration: 7.88333333s; }
+@keyframes station-ess-ems-output {
+  0% { transform: translate(681px, 114px); }
+  10.99365751% { transform: translate(733px, 114px); }
+  59.61945032% { transform: translate(733px, 344px); }
+  96.19450317% { transform: translate(560px, 344px); }
+  100% { transform: translate(560px, 362px); }
+}
+.station-animation .station-ems-charger-top { fill: #BB2649; animation-name: station-ems-charger-top; animation-duration: 6.2s; }
+@keyframes station-ems-charger-top {
+  0% { transform: translate(681px, 388px); }
+  27.95698925% { transform: translate(785px, 388px); }
+  91.93548387% { transform: translate(785px, 150px); }
+  100% { transform: translate(815px, 150px); }
+}
+.station-animation .station-ems-charger-middle { fill: #BB2649; animation-name: station-ems-charger-middle; animation-duration: 3.91666667s; }
+@keyframes station-ems-charger-middle {
+  0% { transform: translate(681px, 402px); }
+  51.91489362% { transform: translate(803px, 402px); }
+  94.89361702% { transform: translate(803px, 301px); }
+  100% { transform: translate(815px, 301px); }
+}
+.station-animation .station-ems-charger-bottom { fill: #BB2649; animation-name: station-ems-charger-bottom; animation-duration: 3.81666667s; }
+@keyframes station-ems-charger-bottom {
+  0% { transform: translate(681px, 418px); }
+  53.27510917% { transform: translate(803px, 418px); }
+  94.75982533% { transform: translate(803px, 513px); }
+  100% { transform: translate(815px, 513px); }
+}
+.station-animation .station-charger-top-bus { fill: #BB2649; animation-name: station-charger-top-bus; animation-duration: 2.36608333s; }
+@keyframes station-charger-top-bus {
+  0% { transform: translate(844px, 150px); }
+  100% { transform: translate(985.965px, 150px); }
+}
+.station-animation .station-charger-middle-bus { fill: #BB2649; animation-name: station-charger-middle-bus; animation-duration: 2.375s; }
+@keyframes station-charger-middle-bus {
+  0% { transform: translate(844px, 301px); }
+  100% { transform: translate(986.5px, 301px); }
+}
+.station-animation .station-charger-bottom-bus { fill: #BB2649; animation-name: station-charger-bottom-bus; animation-duration: 2.375s; }
+@keyframes station-charger-bottom-bus {
+  0% { transform: translate(844px, 513px); }
+  100% { transform: translate(986.5px, 513px); }
+}</style>
+  <g transform="translate(-112 -78)">
+<path d="M629 418 804.731 418" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M605 388 784.981 388" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M628 402 803.731 402" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M651 127 720.065 127" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 60.6599" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 539 388.66)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 48.8467" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 560 392.847)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M666 114 735.065 114" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 80.5409" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 190 418.541)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 253.368" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 514 411.368)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 104.448" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 803 403.448)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M190 417 400.727 417" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 231.825" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 733 345.825)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M558 344 733.731 344" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 203.597" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 719 330.597)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 241.407" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 785 389.407)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 98.2703" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 803 514.27)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1133 338 1133 438.155" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" stroke-dasharray="4 4" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M139 95 239.591 95.0001" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M113 126 265.924 126" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 16.6667 186.792" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 152 266.792)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M225.667 266.792 209 80" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 27.8667 31.8582" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 139 125.858)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M236.867 125.858 209 94" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 9.17596" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 115 127.176)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 9.17596" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 264 127.176)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 9.17596" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 238 97.176)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 9.17596" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 141 97.176)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M221.726 226.618 166 126" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 55.7264 100.618" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 157 225.618)" xmlns="http://www.w3.org/2000/svg" />
+<path d="M221.638 226.308 157 226" stroke="#6D736F" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="24" transform="translate(151.853 298)" xmlns="http://www.w3.org/2000/svg">Electric</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="24" transform="translate(168.353 326)" xmlns="http://www.w3.org/2000/svg">Grid</text>
+<rect x="398" y="80" width="283" height="93" fill="#D9DEDA" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(445.658 120)" xmlns="http://www.w3.org/2000/svg">Energy Storage</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(494.658 152)" xmlns="http://www.w3.org/2000/svg">System</text>
+<rect x="398" y="362" width="283" height="93" fill="#F28C45" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(412.075 402)" xmlns="http://www.w3.org/2000/svg">Energy Management</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(494.662 434)" xmlns="http://www.w3.org/2000/svg">System</text>
+<rect x="398" y="215" width="282" height="72" fill="#D9DEDA" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(439.869 261)" xmlns="http://www.w3.org/2000/svg">Fuel Cell System</text>
+<path d="M803 513 986.5 513" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1001 505.78C1001 504.245 1002.24 503 1003.78 503L1005.22 503C1006.76 503 1008 504.245 1008 505.78L1008 510.22C1008 511.755 1006.76 513 1005.22 513L1003.78 513C1002.24 513 1001 511.755 1001 510.22Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1014 472.316C1014 472.141 1014.14 472 1014.32 472L1034.68 472C1034.86 472 1035 472.141 1035 472.316L1035 521.684C1035 521.859 1034.86 522 1034.68 522L1014.32 522C1014.14 522 1014 521.859 1014 521.684Z" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1000 450.158C1000 449.519 1000.52 449 1001.16 449L1260.84 449C1261.48 449 1262 449.519 1262 450.158L1262 524.842C1262 525.482 1261.48 526 1260.84 526L1001.16 526C1000.52 526 1000 525.482 1000 524.842Z" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1127 472.556C1127 472.249 1127.25 472 1127.56 472L1163.44 472C1163.75 472 1164 472.249 1164 472.556L1164 521.443C1164 521.751 1163.75 522 1163.44 522L1127.56 522C1127.25 522 1127 521.751 1127 521.443Z" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1145 472.03C1145 472.013 1145.01 472 1145.03 472L1146.97 472C1146.99 472 1147 472.013 1147 472.03L1147 521.97C1147 521.987 1146.99 522 1146.97 522L1145.03 522C1145.01 522 1145 521.987 1145 521.97Z" stroke="#6D736F" stroke-width="1.6" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1041 524.5C1041 517.044 1047.04 511 1054.5 511 1061.96 511 1068 517.044 1068 524.5 1068 531.956 1061.96 538 1054.5 538 1047.04 538 1041 531.956 1041 524.5Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1045 524.5C1045 519.253 1049.25 515 1054.5 515 1059.75 515 1064 519.253 1064 524.5 1064 529.747 1059.75 534 1054.5 534 1049.25 534 1045 529.747 1045 524.5Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1179 524.5C1179 517.044 1185.04 511 1192.5 511 1199.96 511 1206 517.044 1206 524.5 1206 531.956 1199.96 538 1192.5 538 1185.04 538 1179 531.956 1179 524.5Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1183 524.5C1183 519.253 1187.25 515 1192.5 515 1197.75 515 1202 519.253 1202 524.5 1202 529.747 1197.75 534 1192.5 534 1187.25 534 1183 529.747 1183 524.5Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="815" y="459" width="29" height="65" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M821 473.146C821 469.199 824.199 466 828.146 466L829.854 466C833.801 466 837 469.199 837 473.146L837 473.854C837 477.801 833.801 481 829.854 481L828.146 481C824.199 481 821 477.801 821 473.854Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M537 328 718.71 328" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M803 301 986.5 301" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1001 294.78C1001 293.245 1002.24 292 1003.78 292L1005.22 292C1006.76 292 1008 293.245 1008 294.78L1008 298.22C1008 299.755 1006.76 301 1005.22 301L1003.78 301C1002.24 301 1001 299.755 1001 298.22Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1014 261.316C1014 261.141 1014.14 261 1014.32 261L1034.68 261C1034.86 261 1035 261.141 1035 261.316L1035 310.684C1035 310.859 1034.86 311 1034.68 311L1014.32 311C1014.14 311 1014 310.859 1014 310.684Z" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1000 238.158C1000 237.519 1000.52 237 1001.16 237L1260.84 237C1261.48 237 1262 237.519 1262 238.158L1262 312.842C1262 313.481 1261.48 314 1260.84 314L1001.16 314C1000.52 314 1000 313.481 1000 312.842Z" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1127 261.556C1127 261.249 1127.25 261 1127.56 261L1163.44 261C1163.75 261 1164 261.249 1164 261.556L1164 310.444C1164 310.751 1163.75 311 1163.44 311L1127.56 311C1127.25 311 1127 310.751 1127 310.444Z" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1145 261.03C1145 261.013 1145.01 261 1145.03 261L1146.97 261C1146.99 261 1147 261.013 1147 261.03L1147 310.97C1147 310.987 1146.99 311 1146.97 311L1145.03 311C1145.01 311 1145 310.987 1145 310.97Z" stroke="#6D736F" stroke-width="1.6" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1041 312.5C1041 305.044 1047.04 299 1054.5 299 1061.96 299 1068 305.044 1068 312.5 1068 319.956 1061.96 326 1054.5 326 1047.04 326 1041 319.956 1041 312.5Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1045 312.5C1045 307.253 1049.25 303 1054.5 303 1059.75 303 1064 307.253 1064 312.5 1064 317.747 1059.75 322 1054.5 322 1049.25 322 1045 317.747 1045 312.5Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1179 312.5C1179 305.044 1185.04 299 1192.5 299 1199.96 299 1206 305.044 1206 312.5 1206 319.956 1199.96 326 1192.5 326 1185.04 326 1179 319.956 1179 312.5Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1183 312.5C1183 307.253 1187.25 303 1192.5 303 1197.75 303 1202 307.253 1202 312.5 1202 317.747 1197.75 322 1192.5 322 1187.25 322 1183 317.747 1183 312.5Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="815" y="247" width="29" height="66" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M821 261.669C821 257.986 823.986 255 827.669 255L830.331 255C834.014 255 837 257.986 837 261.669L837 262.331C837 266.014 834.014 269 830.331 269L827.669 269C823.986 269 821 266.014 821 262.331Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M785 150 985.965 150" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1001 143.78C1001 142.245 1002.24 141 1003.78 141L1005.22 141C1006.76 141 1008 142.245 1008 143.78L1008 148.22C1008 149.755 1006.76 151 1005.22 151L1003.78 151C1002.24 151 1001 149.755 1001 148.22Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1014 110.316C1014 110.141 1014.14 110 1014.32 110L1034.68 110C1034.86 110 1035 110.141 1035 110.316L1035 159.684C1035 159.859 1034.86 160 1034.68 160L1014.32 160C1014.14 160 1014 159.859 1014 159.684Z" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1000 88.1581C1000 87.5185 1000.52 87 1001.16 87L1260.84 87C1261.48 87 1262 87.5185 1262 88.1581L1262 162.842C1262 163.481 1261.48 164 1260.84 164L1001.16 164C1000.52 164 1000 163.481 1000 162.842Z" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1127 110.556C1127 110.249 1127.25 110 1127.56 110L1163.44 110C1163.75 110 1164 110.249 1164 110.556L1164 159.444C1164 159.751 1163.75 160 1163.44 160L1127.56 160C1127.25 160 1127 159.751 1127 159.444Z" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1145 110.03C1145 110.013 1145.01 110 1145.03 110L1146.97 110C1146.99 110 1147 110.013 1147 110.03L1147 159.97C1147 159.987 1146.99 160 1146.97 160L1145.03 160C1145.01 160 1145 159.987 1145 159.97Z" stroke="#6D736F" stroke-width="1.6" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1041 162.5C1041 155.044 1047.04 149 1054.5 149 1061.96 149 1068 155.044 1068 162.5 1068 169.956 1061.96 176 1054.5 176 1047.04 176 1041 169.956 1041 162.5Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1045 162.5C1045 157.253 1049.25 153 1054.5 153 1059.75 153 1064 157.253 1064 162.5 1064 167.747 1059.75 172 1054.5 172 1049.25 172 1045 167.747 1045 162.5Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1179 162.5C1179 155.044 1185.04 149 1192.5 149 1199.96 149 1206 155.044 1206 162.5 1206 169.956 1199.96 176 1192.5 176 1185.04 176 1179 169.956 1179 162.5Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1183 162.5C1183 157.253 1187.25 153 1192.5 153 1197.75 153 1202 157.253 1202 162.5 1202 167.747 1197.75 172 1192.5 172 1187.25 172 1183 167.747 1183 162.5Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="815" y="96" width="29" height="66" stroke="#6D736F" stroke-width="2" stroke-miterlimit="8" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" />
+<path d="M821 111.146C821 107.199 824.199 104 828.146 104L829.854 104C833.801 104 837 107.199 837 111.146L837 111.854C837 115.801 833.801 119 829.854 119L828.146 119C824.199 119 821 115.801 821 111.854Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+    <g id="station-energy-dots" aria-hidden="true">
+<g id="station-grid-ems" aria-label="Electric Grid → EMS"><circle class="station-dot station-grid-ems" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="station-dot station-grid-ems" cx="0" cy="0" r="3.5" style="--delay: -1.19583333s" /><circle class="station-dot station-grid-ems" cx="0" cy="0" r="3.5" style="--delay: -2.39166667s" /><circle class="station-dot station-grid-ems" cx="0" cy="0" r="3.5" style="--delay: -3.5875s" /></g>
+<g id="station-fc-ems" aria-label="FC → EMS"><circle class="station-dot station-fc-ems" cx="0" cy="0" r="3.5" style="--delay: 0s" /></g>
+<g id="station-fc-ess" aria-label="FC → ESS"><circle class="station-dot station-fc-ess" cx="0" cy="0" r="3.5" style="--delay: 0s" /></g>
+<g id="station-ems-ess-charge" aria-label="EMS → ESS (inner recharge line)"><circle class="station-dot station-ems-ess-charge" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="station-dot station-ems-ess-charge" cx="0" cy="0" r="3.5" style="--delay: -1.25833333s" /><circle class="station-dot station-ems-ess-charge" cx="0" cy="0" r="3.5" style="--delay: -2.51666667s" /><circle class="station-dot station-ems-ess-charge" cx="0" cy="0" r="3.5" style="--delay: -3.775s" /><circle class="station-dot station-ems-ess-charge" cx="0" cy="0" r="3.5" style="--delay: -5.03333333s" /><circle class="station-dot station-ems-ess-charge" cx="0" cy="0" r="3.5" style="--delay: -6.29166667s" /></g>
+<g id="station-ess-ems-output" aria-label="ESS → EMS (outer output line)"><circle class="station-dot station-ess-ems-output" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="station-dot station-ess-ems-output" cx="0" cy="0" r="3.5" style="--delay: -1.31388889s" /><circle class="station-dot station-ess-ems-output" cx="0" cy="0" r="3.5" style="--delay: -2.62777778s" /><circle class="station-dot station-ess-ems-output" cx="0" cy="0" r="3.5" style="--delay: -3.94166667s" /><circle class="station-dot station-ess-ems-output" cx="0" cy="0" r="3.5" style="--delay: -5.25555556s" /><circle class="station-dot station-ess-ems-output" cx="0" cy="0" r="3.5" style="--delay: -6.56944444s" /></g>
+<g id="station-ems-charger-top" aria-label="EMS → top charger"><circle class="station-dot station-ems-charger-top" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="station-dot station-ems-charger-top" cx="0" cy="0" r="3.5" style="--delay: -1.24s" /><circle class="station-dot station-ems-charger-top" cx="0" cy="0" r="3.5" style="--delay: -2.48s" /><circle class="station-dot station-ems-charger-top" cx="0" cy="0" r="3.5" style="--delay: -3.72s" /><circle class="station-dot station-ems-charger-top" cx="0" cy="0" r="3.5" style="--delay: -4.96s" /></g>
+<g id="station-ems-charger-middle" aria-label="EMS → middle charger"><circle class="station-dot station-ems-charger-middle" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="station-dot station-ems-charger-middle" cx="0" cy="0" r="3.5" style="--delay: -0.97916667s" /><circle class="station-dot station-ems-charger-middle" cx="0" cy="0" r="3.5" style="--delay: -1.95833333s" /><circle class="station-dot station-ems-charger-middle" cx="0" cy="0" r="3.5" style="--delay: -2.9375s" /></g>
+<g id="station-ems-charger-bottom" aria-label="EMS → bottom charger"><circle class="station-dot station-ems-charger-bottom" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="station-dot station-ems-charger-bottom" cx="0" cy="0" r="3.5" style="--delay: -0.95416667s" /><circle class="station-dot station-ems-charger-bottom" cx="0" cy="0" r="3.5" style="--delay: -1.90833333s" /><circle class="station-dot station-ems-charger-bottom" cx="0" cy="0" r="3.5" style="--delay: -2.8625s" /></g>
+<g id="station-charger-top-bus" aria-label="Top charger → bus"><circle class="station-dot station-charger-top-bus" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="station-dot station-charger-top-bus" cx="0" cy="0" r="3.5" style="--delay: -0.78869444s" /><circle class="station-dot station-charger-top-bus" cx="0" cy="0" r="3.5" style="--delay: -1.57738889s" /></g>
+<g id="station-charger-middle-bus" aria-label="Middle charger → bus"><circle class="station-dot station-charger-middle-bus" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="station-dot station-charger-middle-bus" cx="0" cy="0" r="3.5" style="--delay: -0.79166667s" /><circle class="station-dot station-charger-middle-bus" cx="0" cy="0" r="3.5" style="--delay: -1.58333333s" /></g>
+<g id="station-charger-bottom-bus" aria-label="Bottom charger → bus"><circle class="station-dot station-charger-bottom-bus" cx="0" cy="0" r="3.5" style="--delay: 0s" /><circle class="station-dot station-charger-bottom-bus" cx="0" cy="0" r="3.5" style="--delay: -0.79166667s" /><circle class="station-dot station-charger-bottom-bus" cx="0" cy="0" r="3.5" style="--delay: -1.58333333s" /></g>
+    </g>
+  </g>
+</svg>

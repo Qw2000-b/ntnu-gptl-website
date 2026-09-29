@@ -1,0 +1,143 @@
+{
+  "混合電動車熱管理系統熱流與奈米流體調製及性能分析": {
+    "title": "Thermal Flow, Nanofluid Formulation, and Performance Analysis of a Hybrid Electric Vehicle Thermal Management System"
+  },
+  "冷鏈車之細部系統設計與開發": {
+    "title": "Detailed System Design and Development of a Refrigerated Vehicle"
+  },
+  "基於基因演算法之模糊能量管理策略於燃料電池車之應用": {
+    "title": "Application of a Genetic Algorithm-Based Fuzzy Energy Management Strategy to Fuel Cell Vehicles"
+  },
+  "燃料電池複合鋰電池貨車熱管理系統應用粒子群仿生演算法之動態性能分析": {
+    "title": "Dynamic Performance Analysis of a Fuel Cell/Lithium-Ion Battery Truck Thermal Management System Using Particle Swarm Optimization"
+  },
+  "燃料電池小型冷鏈物流貨車之動態模擬與能耗分析": {
+    "title": "Dynamic Simulation and Energy Consumption Analysis of a Small Fuel Cell Refrigerated Logistics Truck"
+  },
+  "燃料電池及鋰電池小型複電動車之四迴路散熱系統設計與效益分析": {
+    "title": "Design and Benefit Analysis of a Four-Loop Cooling System for a Small Fuel Cell/Lithium-Ion Battery Hybrid Electric Vehicle"
+  },
+  "雙電力移動式充電櫃模擬系統開發與控制策略設計": {
+    "title": "Simulation System Development and Control Strategy Design for a Dual-Source Mobile Charging Cabinet"
+  },
+  "氫能巴士儲氫系統建模與電池健康度預測": {
+    "title": "Hydrogen Storage System Modeling and Battery State-of-Health Prediction for Hydrogen Buses"
+  },
+  "創新散熱平台規則庫控制模擬與實驗驗證": {
+    "title": "Rule-Based Control Simulation and Experimental Validation of an Innovative Cooling Platform"
+  },
+  "太陽能微電網儲能系統開發": {
+    "title": "Development of a Solar Microgrid Energy Storage System"
+  },
+  "適應性人工蜂群演算法應用於電動巴士多能源充電場域之最佳化電力調度分析": {
+    "title": "Optimal Power Scheduling Analysis for Multi-Source Electric Bus Charging Facilities Using an Adaptive Artificial Bee Colony Algorithm"
+  },
+  "應用全域搜尋演算法於氫燃料電池巴士之三種目標動力系統最佳化規格匹配研究": {
+    "title": "Optimal Powertrain Specification Matching for Hydrogen Fuel Cell Buses with Three Objectives Using a Global Search Algorithm"
+  },
+  "基於全域搜索與 Simulink 模擬之燃料電池電動巴士功率響應補償與設計": {
+    "title": "Power Response Compensation and Design for Fuel Cell Electric Buses Using Global Search and Simulink Simulation"
+  },
+  "雙模式三電力電動機車充電系統模擬分析": {
+    "title": "Simulation Analysis of a Dual-Mode, Three-Source Electric Motorcycle Charging System"
+  },
+  "仿生演算法理論應用於多電力源電動巴士之熱管理系統": {
+    "title": "Application of Bio-Inspired Algorithms to Thermal Management Systems for Multi-Source Electric Buses"
+  },
+  "混合電池熱管理系統基於模糊控制模擬與實驗驗證": {
+    "title": "Fuzzy-Control Simulation and Experimental Validation of a Hybrid Battery Thermal Management System"
+  },
+  "綠能車用補充站系統設計與驗證": {
+    "title": "System Design and Validation of a Green-Energy Vehicle Refueling and Charging Station"
+  },
+  "添加奈米顆粒於基礎礦物油之基礎性質與磨潤特性研究": {
+    "title": "Fundamental Properties and Tribological Characteristics of Mineral Base Oil with Nanoparticle Additives"
+  },
+  "三動力源複合式動力車模擬與性能分析": {
+    "title": "Simulation and Performance Analysis of a Three-Source Hybrid Vehicle"
+  },
+  "電動車之多元彈性電能系統建模與控制效益評估": {
+    "title": "Modeling and Control Benefit Assessment of a Flexible Multi-Source Electrical Energy System for Electric Vehicles"
+  },
+  "電動車之即時建模與 HIL 性能提昇研究": {
+    "title": "Real-Time Modeling and HIL Performance Improvement for Electric Vehicles"
+  },
+  "電動車之再生煞車建模與最佳煞車控制效益評估": {
+    "title": "Regenerative Braking Modeling and Benefit Assessment of Optimal Braking Control for Electric Vehicles"
+  },
+  "電動重型機車動態模擬與實驗驗證": {
+    "title": "Dynamic Simulation and Experimental Validation of an Electric Heavy Motorcycle"
+  },
+  "質子交換膜燃料電池混合動力輕型載具之模擬與驗證": {
+    "title": "Simulation and Validation of a Proton Exchange Membrane Fuel Cell Hybrid Light Vehicle"
+  },
+  "建構陸軍航空武裝直升機「組員資源管理系統」之研究": {
+    "title": "Development of a Crew Resource Management System for Army Armed Helicopters"
+  },
+  "電動機車輪內雙馬達之最佳化模擬分析": {
+    "title": "Optimal Simulation Analysis of Dual In-Wheel Motors for Electric Motorcycles"
+  },
+  "UPS 燃料電池與鋰電池混合電力供應系統建模與性能模擬": {
+    "title": "Modeling and Performance Simulation of a Fuel Cell/Lithium-Ion Battery Hybrid Uninterruptible Power Supply"
+  },
+  "電動機車雙輪內馬達之最佳化尺寸設計分析": {
+    "title": "Optimal Sizing Analysis of Dual In-Wheel Motors for Electric Motorcycles"
+  },
+  "新型電動巴士與快充系統建模與評估設計": {
+    "title": "Modeling, Evaluation, and Design of a Novel Electric Bus and Fast-Charging System"
+  },
+  "氫能移動式電動車之智慧型最佳電源控制系統開發": {
+    "title": "Development of an Intelligent Optimal Power Control System for a Hydrogen-Powered Mobile Electric Vehicle"
+  },
+  "混合電力船舶模型建立與控制器開發": {
+    "title": "Modeling and Controller Development for a Hybrid Electric Vessel"
+  },
+  "人類駕駛風格之自動駕駛能耗最佳化軌跡規劃設計": {
+    "title": "Energy-Optimal Autonomous Driving Trajectory Planning Incorporating Human Driving Styles"
+  },
+  "利用雙調排序法實現模組化多階層轉換器之電容電壓平衡控制": {
+    "title": "Capacitor Voltage Balancing Control of a Modular Multilevel Converter Using Bitonic Sorting"
+  },
+  "非洲禿鷹仿生演算法應用於雙動力混合系統之硬體嵌入式系統驗證": {
+    "title": "Embedded Hardware Validation of an African Vulture Optimization Algorithm for a Hybrid Powertrain System"
+  },
+  "混能移動式充電站之機械與電力系統設計": {
+    "title": "Mechanical and Electrical System Design of a Mobile Hybrid-Energy Charging Station"
+  },
+  "雙動力應用於底盤車輛之機電整合系統與最佳化能量管理": {
+    "title": "Mechatronic Integration and Optimal Energy Management of a Hybrid Powertrain for a Vehicle Chassis"
+  },
+  "充電櫃之 Lithium-ion Battery 機電整合": {
+    "title": "Mechatronic Integration of a Lithium-Ion Battery Charging Cabinet"
+  },
+  "燃料電池/鋰電池充電模組設計與控制器開發": {
+    "title": "Design and Controller Development of a Fuel Cell/Lithium-Ion Battery Charging Module"
+  },
+  "具仿生最佳化能量管理之優化多動力系統控制單元設計、實體平台驗證與車載運行": {
+    "title": "Design of an Optimized Multi-Powertrain Control Unit with Bio-Inspired Optimal Energy Management, Physical Platform Validation, and On-Vehicle Operation"
+  },
+  "鯨魚仿生演算法應用於燃料電池與鋰電池之電能分配": {
+    "title": "Application of a Whale Optimization Algorithm to Fuel Cell and Lithium-Ion Battery Power Distribution"
+  },
+  "燃料電池/鋰電池混合電能高爾夫球車之系統設計與實作": {
+    "title": "System Design and Implementation of a Fuel Cell/Lithium-Ion Battery Hybrid Electric Golf Cart"
+  },
+  "電動載具之主動式負載模擬平台設計": {
+    "title": "Design of an Active Load Simulation Platform for Electric Vehicles"
+  },
+  "灰狼演算法應用於雙電力複合電力系統之最佳化管理": {
+    "title": "Optimal Management of a Dual-Source Hybrid Power System Using a Grey Wolf Optimizer"
+  },
+  "鯨魚仿生演算法應用於雙動力混合系統之最佳化能源管理": {
+    "title": "Optimal Energy Management of a Hybrid Powertrain System Using a Whale Optimization Algorithm"
+  },
+  "人工蜂群演算法應用於雙電力源電動車系統之最佳化能量管理": {
+    "title": "Optimal Energy Management of a Dual-Source Electric Vehicle System Using an Artificial Bee Colony Algorithm"
+  },
+  "添加奈米氧化鋁機油於四行程機車以提升引擎性能之研究": {
+    "title": "Engine Performance Enhancement of Four-Stroke Motorcycles Using Engine Oil with Alumina Nanoparticles"
+  },
+  "燃料電池/鋰電池/電動馬達整合式散熱系統設計": {
+    "title": "Design of an Integrated Cooling System for Fuel Cells, Lithium-Ion Batteries, and Electric Motors"
+  }
+}

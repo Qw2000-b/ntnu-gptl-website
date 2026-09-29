@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="vehicle-animation" width="1353" height="650" viewBox="0 0 1130 650" role="img" aria-labelledby="vehicle-title vehicle-description">
+  <title id="vehicle-title">冷藏車能源與熱流動畫</title>
+  <desc id="vehicle-description">電池沿灰色路徑供應馬達與 TRU，馬達連接後輪；綠點表示能源方向。橘色箭頭表示熱流，藍色虛線表示 TRU 冷風。</desc>
+  <style>
+.vehicle-animation { --energy-color: #22A68A; }
+.vehicle-animation .vehicle-road { animation: vehicle-road 0.9s linear infinite; }
+@keyframes vehicle-road { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -128; } }
+.vehicle-animation .wheel {
+  transform-box: view-box;
+  animation: vehicle-wheel 2s linear infinite;
+}
+.vehicle-animation .wheel-front { transform-origin: 243px 615.5px; }
+.vehicle-animation .wheel-rear { transform-origin: 779px 615.5px; }
+.vehicle-animation .energy-dot {
+  fill: var(--energy-color);
+  animation: vehicle-energy-battery-motor 3s linear infinite;
+  animation-delay: var(--delay);
+}
+.vehicle-animation .energy-battery-motor {
+  animation-name: vehicle-energy-battery-motor;
+  animation-duration: 2s;
+}
+.vehicle-animation .energy-motor-wheel {
+  fill: #BB2649;
+  animation-name: vehicle-energy-motor-wheel;
+  animation-duration: 3.6s;
+}
+.vehicle-animation .energy-tru {
+  animation-name: vehicle-energy-tru;
+}
+.vehicle-animation .heat-arrow {
+  animation: vehicle-heat 3.6s ease-in-out infinite;
+}
+.vehicle-animation .cool-window {
+  stroke-dasharray: 100 100;
+  animation: vehicle-cool 2.7s linear infinite;
+  animation-delay: var(--delay);
+}
+.vehicle-animation .cool-line {
+  animation: vehicle-air-dashes 0.8s linear infinite;
+}
+@keyframes vehicle-wheel { to { transform: rotate(-360deg); } }
+@keyframes vehicle-energy-battery-motor {
+  from { transform: translate(546px, 582px); }
+  to { transform: translate(590px, 582px); }
+}
+@keyframes vehicle-energy-motor-wheel {
+  0% { transform: translate(706px, 582px); opacity: 1; }
+  50% { transform: translate(725.8px, 582px); opacity: 1; }
+  55.555556%, 100% { transform: translate(728px, 582px); opacity: 0; }
+}
+@keyframes vehicle-energy-tru {
+  0% { transform: translate(389px, 581px); }
+  5.75% { transform: translate(366px, 581px); }
+  100% { transform: translate(366px, 204px); }
+}
+/* All heat arrows fade together, retaining a faint directional cue. */
+@keyframes vehicle-heat {
+  0%, 100% { opacity: 0.2; }
+  35%, 60% { opacity: 1; }
+}
+@keyframes vehicle-cool {
+  0% { stroke-dashoffset: 100; }
+  42%, 58% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -100; }
+}
+@keyframes vehicle-air-dashes { to { stroke-dashoffset: -13.33332; } }
+/* This animation test page always plays, as requested by the user. */
+</style>
+  <defs>
+<mask id="vehicle-cool-mask-0" maskUnits="userSpaceOnUse" x="440" y="175" width="100" height="70" style="mask-type: luminance">
+  <path class="cool-window" d="M445.5 202.5C461.036 202.5 476.572 210.639 476.572 218.777 476.572 226.916 493.489 235.054 510.406 235.054" pathLength="100" stroke="white" stroke-width="8" fill="none" style="--delay: 0.0s" />
+</mask>
+<mask id="vehicle-cool-mask-1" maskUnits="userSpaceOnUse" x="440" y="175" width="100" height="70" style="mask-type: luminance">
+  <path class="cool-window" d="M454.5 192.5C470.036 192.5 485.572 200.639 485.572 208.777 485.572 216.916 502.489 225.054 519.406 225.054" pathLength="100" stroke="white" stroke-width="8" fill="none" style="--delay: -0.9s" />
+</mask>
+<mask id="vehicle-cool-mask-2" maskUnits="userSpaceOnUse" x="440" y="175" width="100" height="70" style="mask-type: luminance">
+  <path class="cool-window" d="M463.5 184.5C479.036 184.5 494.572 192.639 494.572 200.777 494.572 208.916 511.489 217.054 528.406 217.054" pathLength="100" stroke="white" stroke-width="8" fill="none" style="--delay: -1.8s" />
+</mask>
+  </defs>
+  <g transform="translate(-83 -63)">
+<path d="M187.988 299.63 338.096 299.63C342.11 299.63 345.365 302.884 345.365 306.899L345.365 602.38C345.365 606.394 342.11 609.648 338.096 609.649L187.988 609.649 187.987 609.648 93.6076 609.648C89.6259 609.648 86.398 606.421 86.398 602.439L86.398 429.339C86.398 428.344 86.5998 427.396 86.9647 426.533L87.5305 425.693 87.5524 425.361C87.7895 424.466 88.2061 423.602 88.809 422.823L180.462 304.469 181.8 303.313 182.848 301.759C184.163 300.443 185.98 299.63 187.988 299.63Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M347.5 164.02C347.5 160.971 349.971 158.5 353.02 158.5L969.98 158.5C973.029 158.5 975.5 160.971 975.5 164.02L975.5 519.98C975.5 523.029 973.029 525.5 969.98 525.5L353.02 525.5C349.971 525.5 347.5 523.029 347.5 519.98Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="347.5" y="526.5" width="608" height="79" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" xmlns="http://www.w3.org/2000/svg" />
+<path d="M90 507.518C90 501.157 95.1566 496 101.518 496L107.482 496C113.843 496 119 501.157 119 507.518L119 528.482C119 534.843 113.843 540 107.482 540L101.518 540C95.1566 540 90 534.843 90 528.482Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<rect x="426" y="400" width="109" height="111" fill="#D9DEDA" xmlns="http://www.w3.org/2000/svg" />
+<rect x="553" y="400" width="109" height="111" fill="#D9DEDA" xmlns="http://www.w3.org/2000/svg" />
+<rect x="678" y="400" width="109" height="111" fill="#D9DEDA" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(443.95 464)" xmlns="http://www.w3.org/2000/svg">Cargo</text>
+<rect x="354" y="165" width="82" height="39" fill="#D9DEDA" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 29 0 0 25 29Z" fill="#D9DEDA" fill-rule="evenodd" transform="matrix(1 0 0 -1 436 204)" xmlns="http://www.w3.org/2000/svg" />
+<rect x="360" y="165" width="101" height="10" fill="#D9DEDA" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(377.848 195)" xmlns="http://www.w3.org/2000/svg">TRU</text>
+<path d="M539 582 749.727 582" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<g id="vehicle-energy-battery-motor" aria-hidden="true"><circle class="energy-dot energy-battery-motor" r="4" cx="0" cy="0" style="--delay: 0.0s" /><circle class="energy-dot energy-battery-motor" r="4" cx="0" cy="0" style="--delay: -1.0s" /></g>
+<g id="vehicle-energy-motor-wheel" aria-hidden="true"><circle class="energy-dot energy-motor-wheel" r="4" cx="0" cy="0" style="--delay: 0.0s" /><circle class="energy-dot energy-motor-wheel" r="4" cx="0" cy="0" style="--delay: -1.8s" /></g>
+<g id="vehicle-wheel-rear" class="wheel wheel-rear"><path d="M718 615.5C718 582.087 745.311 555 779 555 812.689 555 840 582.087 840 615.5 840 648.913 812.689 676 779 676 745.311 676 718 648.913 718 615.5Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /><path d="M0 0 0.000104987 18.6638" stroke="#FFFFFF" stroke-width="6.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 779.5 575.164)" xmlns="http://www.w3.org/2000/svg" /><path d="M737 616C737 592.804 755.804 574 779 574 802.196 574 821 592.804 821 616 821 639.196 802.196 658 779 658 755.804 658 737 639.196 737 616Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-wheel-front" class="wheel wheel-front"><path d="M182 615.5C182 582.087 209.311 555 243 555 276.689 555 304 582.087 304 615.5 304 648.913 276.689 676 243 676 209.311 676 182 648.913 182 615.5Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /><path d="M0 0 0.000104987 18.6638" stroke="#FFFFFF" stroke-width="6.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 243.5 575.164)" xmlns="http://www.w3.org/2000/svg" /><path d="M201 616C201 592.804 219.804 574 243 574 266.196 574 285 592.804 285 616 285 639.196 266.196 658 243 658 219.804 658 201 639.196 201 616Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /></g>
+<path d="M365 581 404.923 581" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M0 0 0.000104987 377.716" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 366 581.716)" xmlns="http://www.w3.org/2000/svg" />
+<g id="vehicle-energy-tru" aria-hidden="true"><circle class="energy-dot energy-tru" r="4" cx="0" cy="0" style="--delay: 0.0s" /><circle class="energy-dot energy-tru" r="4" cx="0" cy="0" style="--delay: -0.5s" /><circle class="energy-dot energy-tru" r="4" cx="0" cy="0" style="--delay: -1.0s" /><circle class="energy-dot energy-tru" r="4" cx="0" cy="0" style="--delay: -1.5s" /><circle class="energy-dot energy-tru" r="4" cx="0" cy="0" style="--delay: -2.0s" /><circle class="energy-dot energy-tru" r="4" cx="0" cy="0" style="--delay: -2.5s" /></g>
+<g id="vehicle-air-0" class="cool-reveal" mask="url(#vehicle-cool-mask-0)"><path d="M445.5 202.5C461.036 202.5 476.572 210.639 476.572 218.777 476.572 226.916 493.489 235.054 510.406 235.054" stroke="#2F80ED" stroke-width="3.33333" stroke-miterlimit="8" stroke-dasharray="3.33333 3.33333" fill="none" fill-rule="evenodd" class="cool-line" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-air-1" class="cool-reveal" mask="url(#vehicle-cool-mask-1)"><path d="M454.5 192.5C470.036 192.5 485.572 200.639 485.572 208.777 485.572 216.916 502.489 225.054 519.406 225.054" stroke="#2F80ED" stroke-width="3.33333" stroke-miterlimit="8" stroke-dasharray="3.33333 3.33333" fill="none" fill-rule="evenodd" class="cool-line" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-air-2" class="cool-reveal" mask="url(#vehicle-cool-mask-2)"><path d="M463.5 184.5C479.036 184.5 494.572 192.639 494.572 200.777 494.572 208.916 511.489 217.054 528.406 217.054" stroke="#2F80ED" stroke-width="3.33333" stroke-miterlimit="8" stroke-dasharray="3.33333 3.33333" fill="none" fill-rule="evenodd" class="cool-line" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-heat-roof-0" class="heat-arrow"><path d="M356.532 74.1222 378.22 114.916 371.157 118.671 349.468 77.8778ZM383.406 107.628 384.077 134.453 362.215 118.895Z" fill="#F28C45" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-heat-roof-1" class="heat-arrow"><path d="M400.532 74.1222 422.22 114.916 415.157 118.671 393.468 77.8778ZM427.406 107.628 428.077 134.453 406.215 118.895Z" fill="#F28C45" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-heat-roof-2" class="heat-arrow"><path d="M444.532 74.1222 466.22 114.916 459.157 118.671 437.468 77.8778ZM471.406 107.628 472.077 134.453 450.215 118.895Z" fill="#F28C45" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-heat-roof-3" class="heat-arrow"><path d="M488.532 74.1222 510.22 114.916 503.157 118.671 481.468 77.8778ZM515.406 107.628 516.077 134.453 494.215 118.895Z" fill="#F28C45" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-heat-cargo-4" class="heat-arrow"><path d="M2.56667-6.29464e-06 2.56674 29.9755-2.56659 29.9755-2.56667 6.29464e-06ZM7.70007 27.4088 0.000104987 42.8088-7.69993 27.4088Z" fill="#F28C45" transform="matrix(1 0 0 -1 450.5 395.309)" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-heat-cargo-5" class="heat-arrow"><path d="M2.56667-6.29464e-06 2.56674 29.9755-2.56659 29.9755-2.56667 6.29464e-06ZM7.70007 27.4088 0.000104987 42.8088-7.69993 27.4088Z" fill="#F28C45" transform="matrix(1 0 0 -1 481.5 395.309)" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-heat-cargo-6" class="heat-arrow"><path d="M2.56667-6.29464e-06 2.56674 29.9755-2.56659 29.9755-2.56667 6.29464e-06ZM7.70007 27.4088 0.000104987 42.8088-7.69993 27.4088Z" fill="#F28C45" transform="matrix(1 0 0 -1 513.5 395.309)" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-heat-side-7" class="heat-arrow"><path d="M4.93002e-06-4 65.1816-3.99992 65.1816 4.00008-4.93002e-06 4ZM61.1816-11.9999 85.1816 0.000104987 61.1816 12.0001Z" fill="#F28C45" transform="matrix(-1 0 0 1 1085.18 271)" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-heat-side-8" class="heat-arrow"><path d="M4.93002e-06-4 65.1816-3.99992 65.1816 4.00008-4.93002e-06 4ZM61.1816-11.9999 85.1816 0.000104987 61.1816 12.0001Z" fill="#F28C45" transform="matrix(-1 0 0 1 1085.18 321)" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="vehicle-heat-side-9" class="heat-arrow"><path d="M4.93002e-06-4 65.1816-3.99992 65.1816 4.00008-4.93002e-06 4ZM61.1816-11.9999 85.1816 0.000104987 61.1816 12.0001Z" fill="#F28C45" transform="matrix(-1 0 0 1 1085.18 371)" xmlns="http://www.w3.org/2000/svg" /></g>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(549.075 96)" xmlns="http://www.w3.org/2000/svg">Conductive, Convective,</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(549.075 128)" xmlns="http://www.w3.org/2000/svg">and Solar Heat Gain</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(540.915 382)" xmlns="http://www.w3.org/2000/svg">Cargo Load</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(1009.3 426)" xmlns="http://www.w3.org/2000/svg">Outdoor Air</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(1009.3 458)" xmlns="http://www.w3.org/2000/svg">Infiltration</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(1009.3 490)" xmlns="http://www.w3.org/2000/svg">Load</text>
+<path d="M389 558.248C389 553.693 392.693 550 397.248 550L537.752 550C542.307 550 546 553.693 546 558.248L546 586.752C546 591.307 542.307 595 537.752 595L397.248 595C392.693 595 389 591.307 389 586.752Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(417.906 582)" xmlns="http://www.w3.org/2000/svg">Battery</text>
+<path d="M590 559.065C590 554.611 593.611 551 598.065 551L697.935 551C702.389 551 706 554.611 706 559.065L706 586.935C706 591.389 702.389 595 697.935 595L598.065 595C593.611 595 590 591.389 590 586.935Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(608.114 582)" xmlns="http://www.w3.org/2000/svg">Motor</text>
+    <path id="vehicle-road" class="vehicle-road" d="M90 696 H975" fill="none" stroke="#D0CECE" stroke-width="4" stroke-dasharray="64 64" aria-hidden="true" />
+  </g>
+</svg>

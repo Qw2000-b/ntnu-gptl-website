@@ -1,24 +1,19 @@
-{{ $s := .stats }}
-<div class="col-12 gptl-global-reach" data-global-reach data-endpoint="{{ if eq (os.Getenv "HUGO_GOATCOUNTER_PREVIEW") "true" }}/.netlify/functions/visitor-stats{{ end }}" data-real-label="{{ cond .english "GoatCounter statistics · 15-minute cache" "GoatCounter 真實統計 · 快取 15 分鐘" }}" lang="en">
+{{ $enabled := eq (os.Getenv "HUGO_GOATCOUNTER_PREVIEW") "true" }}
+<div class="col-12 gptl-global-reach" data-global-reach data-endpoint="{{ if $enabled }}/.netlify/functions/visitor-stats{{ end }}" data-real-label="{{ cond .english "GoatCounter statistics · 15-minute cache" "GoatCounter 真實統計 · 快取 15 分鐘" }}" data-unavailable-label="{{ cond .english "Statistics are temporarily unavailable." "統計資料暫時無法取得。" }}" data-stats-source="none" lang="en">
   <header class="reach-heading">
     <h2>GLOBAL REACH</h2>
     <p class="section-subtitle">Research connects beyond geographic boundaries.</p>
-    <p class="reach-demo" data-reach-demo lang="{{ cond .english "en" "zh-Hant" }}">{{ cond .english "Demo data" "示範資料" }}</p>
+    <p class="reach-demo" data-reach-demo role="status" lang="{{ cond .english "en" "zh-Hant" }}">{{ if $enabled }}{{ cond .english "Loading statistics…" "正在載入統計資料…" }}{{ else if hugo.IsServer }}{{ cond .english "Statistics are not connected in this local preview." "本機預覽尚未連接統計服務。" }}{{ else }}{{ cond .english "Statistics are not enabled in this environment." "此環境尚未啟用統計資料。" }}{{ end }}</p>
   </header>
   <dl class="reach-kpis">
-    <div><dt>Visits</dt><dd data-reach-visitors>{{ lang.FormatNumber 0 $s.totalVisitors }}</dd></div>
-    <div><dt>Countries</dt><dd data-reach-countries>{{ $s.countries }}</dd></div>
-    <div><dt>International</dt><dd data-reach-international>{{ printf "%.1f%%" $s.internationalPercentage }}</dd></div>
+    <div><dt>Visits</dt><dd data-reach-visitors>—</dd></div>
+    <div><dt>Countries</dt><dd data-reach-countries>—</dd></div>
+    <div><dt>International</dt><dd data-reach-international>—</dd></div>
   </dl>
-  <div class="reach-distribution">
+  <div class="reach-distribution" data-reach-distribution-section hidden>
     <h3>Top Country Distribution</h3>
-    <ul class="reach-countries" data-reach-distribution>
-      {{ range $s.countryDistribution }}
-      <li><span class="reach-country">{{ .country }}</span><span class="reach-track" aria-hidden="true"><span style="width:{{ printf "%.1f" .percentage | safeCSS }}%"></span></span><span class="reach-percentage">{{ printf "%.1f%%" .percentage }}</span></li>
-      {{ end }}
-    </ul>
+    <ul class="reach-countries" data-reach-distribution></ul>
   </div>
   <p class="reach-since" data-reach-basis hidden>Country shares are based on geolocated visits.</p>
-  <p class="reach-since" data-reach-since>Analytics since {{ $s.since }}</p>
-  <script type="application/json" data-reach-data>{{ $s | jsonify | safeJS }}</script>
+  <p class="reach-since" data-reach-since hidden></p>
 </div>

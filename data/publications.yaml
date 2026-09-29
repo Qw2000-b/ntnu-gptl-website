@@ -1,0 +1,2450 @@
+highlight_authors:
+  - id: yi-hsuan-hung
+    display_name: Yi-Hsuan Hung
+    aliases: [Y. H. Hung, Y.H. Hung, Y H Hung]
+  - id: yu-hsuan-lin
+    display_name: Yu-Hsuan Lin
+    aliases: [Yue-Xuan Lin]
+
+# Publication years use final journal issue years; metric years match publication years.
+publications:
+  - year: 2025
+    month: 10
+    authors: ["Hwa-Dong Liu", "Yi-Hsuan Hung", "Jhen-Ting Lin", "Lin-Chuan Huang", "Jyun-Wei Shih", "Chi Li"]
+    author_ids: [yi-hsuan-hung]
+    title: Development of an intelligent transportation-oriented autonomous driving assistance system and energy efficiency optimization based on electric golf cart battery packs
+    journal: Energy
+    volume: "335"
+    article_number: "138116"
+    doi: 10.1016/j.energy.2025.138116
+    doi_url: https://doi.org/10.1016/j.energy.2025.138116
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.energy.2025.138116"
+    jcr_year: 2025
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "10.1"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=2148&whatdb=scie"
+      - "https://uefiscdi.gov.ro/resource-832709-JCR-2025.iunie-2026.site.pdf"
+
+  - year: 2025
+    month: 7
+    authors: ["Yu-Hsuan Lin", "Yi-Hsuan Hung"]
+    author_ids: [yu-hsuan-lin, yi-hsuan-hung]
+    title: Integrated thermal and energy management systems using particle swarm optimization for energy optimization in electric vehicles
+    journal: Case Studies in Thermal Engineering
+    volume: "71"
+    article_number: "106136"
+    doi: 10.1016/j.csite.2025.106136
+    doi_url: https://doi.org/10.1016/j.csite.2025.106136
+    type: Journal Article
+    author_source: "https://scholar.lib.ntnu.edu.tw/en/publications/integrated-thermal-and-energy-management-systems-using-particle-s/"
+
+  - year: 2024
+    month: 3
+    authors: ["Yu-Hsuan Lin", "Ming-Tsang Lee", "Yi-Hsuan Hung"]
+    author_ids: [yu-hsuan-lin, yi-hsuan-hung]
+    title: A thermal management control using particle swarm optimization for hybrid electric energy system of electric vehicles
+    journal: Results in Engineering
+    volume: "21"
+    article_number: "101717"
+    doi: 10.1016/j.rineng.2023.101717
+    doi_url: https://doi.org/10.1016/j.rineng.2023.101717
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.rineng.2023.101717"
+    jcr_year: 2024
+    jcr_category: Engineering, Multidisciplinary
+    jcr_quartile: Q1
+    impact_factor: "7.9"
+    jcr_sources:
+      - "https://semi.skku.edu/factory/news.do?article.offset=0&articleLimit=25&articleNo=218626&mode=view"
+      - "https://uefiscdi.gov.ro/resource-865584-JCR_2024.iunie2025.pdf"
+
+  - year: 2022
+    authors: ["Hwa-Dong Liu", "Guo-Jyun Gao", "Shiue-Der Lu", "Yi-Hsuan Hung"]
+    author_ids: [yi-hsuan-hung]
+    title: A Novel LCOT Control Strategy for Self-Driving Electric Mobile Robots
+    journal: Energies
+    volume: "15"
+    issue: "23"
+    article_number: "9178"
+    doi: 10.3390/en15239178
+    doi_url: https://doi.org/10.3390/en15239178
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.3390/en15239178"
+    jcr_year: 2022
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q3
+    impact_factor: "3.2"
+    jcr_sources:
+      - "https://www.mdpi.com/about/announcements/6118"
+
+  - year: 2022
+    authors: ["Syuan-Yi Chen", "Chu-Yang Chiu", "Yi-Hsuan Hung", "Kuo-Kuang Jen", "Gwo-Huei You", "Po-Lin Shih"]
+    author_ids: [yi-hsuan-hung]
+    title: An Optimal Sizing Design Approach of Hybrid Energy Sources for Various Electric Vehicles
+    journal: Applied Sciences
+    volume: "12"
+    issue: "6"
+    article_number: "2961"
+    doi: 10.3390/app12062961
+    doi_url: https://doi.org/10.3390/app12062961
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.3390/app12062961"
+    jcr_year: 2022
+    jcr_category: Engineering, Multidisciplinary
+    jcr_quartile: Q2
+    impact_factor: "2.7"
+    jcr_sources:
+      - "https://www.mdpi.com/about/announcements/6197"
+
+  - year: 2022
+    authors: ["Kai-Hsin Tai", "Jon-Chao Hong", "Chi-Ruei Tsai", "Chang-Zhen Lin", "Yi-Hsuan Hung"]
+    author_ids: [yi-hsuan-hung]
+    title: "Virtual reality for car-detailing skill development: Learning outcomes of procedural accuracy and performance quality predicted by VR self-efficacy, VR using anxiety, VR learning interest and flow experience"
+    journal: Computers & Education
+    volume: "182"
+    article_number: "104458"
+    doi: 10.1016/j.compedu.2022.104458
+    doi_url: https://doi.org/10.1016/j.compedu.2022.104458
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.compedu.2022.104458"
+    jcr_year: 2022
+    jcr_category: Computer Science, Interdisciplinary Applications
+    jcr_quartile: Q1
+    impact_factor: "12.0"
+    jcr_sources:
+      - "https://pr.ntnu.edu.tw/en_about_us/en_news.php?id=12771&mode=data"
+      - "https://www.im.ncnu.edu.tw/en/en-%E9%84%AD%E8%82%B2%E8%A9%95/"
+
+  - year: 2021
+    month: 12
+    authors: ["Yu-Hsuan Lin", "Li-Fan Liu", "Yi-Hsuan Hung", "Chun-Hsin Chang"]
+    author_ids: [yu-hsuan-lin, yi-hsuan-hung]
+    title: A Real-Time Simulator for an Innovative Hybrid Thermal Management System Based on Experimental Verification
+    journal: Applied Sciences
+    volume: "11"
+    issue: "24"
+    article_number: "11729"
+    doi: 10.3390/app112411729
+    doi_url: https://doi.org/10.3390/app112411729
+    type: Journal Article
+    author_source: "https://www.mdpi.com/2076-3417/11/24/11729/notes"
+    jcr_year: 2021
+    jcr_category: Engineering, Multidisciplinary
+    jcr_quartile: Q2
+    impact_factor: "2.838"
+    jcr_sources:
+      - "https://www.mdpi.com/about/announcements/4095"
+
+  - year: 2021
+    authors: ["Cheng-Ta Chung", "Chien-Hsun Wu", "Yi-Hsuan Hung"]
+    author_ids: [yi-hsuan-hung]
+    title: A design methodology for selecting energy-efficient compound split e-CVT hybrid systems with planetary gearsets based on electric circulation
+    journal: Energy
+    volume: "230"
+    article_number: "120732"
+    doi: 10.1016/j.energy.2021.120732
+    doi_url: https://doi.org/10.1016/j.energy.2021.120732
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.energy.2021.120732"
+    jcr_year: 2021
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "8.857"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=2148&whatdb=scie"
+
+  - year: 2021
+    authors: ["En-Jui Liu", "Yi-Hsuan Hung", "Che-Wun Hong"]
+    author_ids: [yi-hsuan-hung]
+    title: Improved Metaheuristic Optimization Algorithm Applied to Hydrogen Fuel Cell and Photovoltaic Cell Parameter Extraction
+    journal: Energies
+    volume: "14"
+    issue: "3"
+    article_number: "619"
+    doi: 10.3390/en14030619
+    doi_url: https://doi.org/10.3390/en14030619
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.3390/en14030619"
+    jcr_year: 2021
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q3
+    impact_factor: "3.252"
+    jcr_sources:
+      - "https://mdpi.cn/announcements/561"
+
+  - year: 2020
+    authors: ["Chun-Hsin Chang", "Hsuan-Yung Chang", "Yi-Hsuan Hung", "Chien-Hsun Wu", "Ji-Jia Xu"]
+    author_ids: [yi-hsuan-hung]
+    title: System Designs and Experimental Assessment of a Seven-Mode Vehicle-Oriented Hybrid Powertrain Platform
+    journal: Energies
+    volume: "13"
+    issue: "8"
+    article_number: "2104"
+    doi: 10.3390/en13082104
+    doi_url: https://doi.org/10.3390/en13082104
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.3390/en13082104"
+    jcr_year: 2020
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q3
+    impact_factor: "3.004"
+    jcr_sources:
+      - "https://mdpi.cn/announcements/366"
+
+  - year: 2020
+    authors: ["Cheng-Ta Chung", "Chien-Hsun Wu", "Yi-Hsuan Hung"]
+    author_ids: [yi-hsuan-hung]
+    title: Evaluation of driving performance and energy efficiency for a novel full hybrid system with dual-motor electric drive and integrated input- and output-split e-CVT
+    journal: Energy
+    volume: "191"
+    article_number: "116508"
+    doi: 10.1016/j.energy.2019.116508
+    doi_url: https://doi.org/10.1016/j.energy.2019.116508
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.energy.2019.116508"
+    jcr_year: 2020
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "7.147"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=2148&whatdb=scie"
+
+  - year: 2018
+    authors: ["Cheng-Ta Chung", "Chien-Hsun Wu", "Yi-Hsuan Hung"]
+    author_ids: [yi-hsuan-hung]
+    title: Effects of Electric Circulation on the Energy Efficiency of the Power Split e-CVT Hybrid Systems
+    journal: Energies
+    volume: "11"
+    issue: "9"
+    article_number: "2342"
+    doi: 10.3390/en11092342
+    doi_url: https://doi.org/10.3390/en11092342
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.3390/en11092342"
+    jcr_year: 2018
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q3
+    impact_factor: "2.707"
+    jcr_sources:
+      - "https://img.mdpi.org/data/2019_web.pdf"
+
+  - year: 2018
+    authors: ["Syuan-Yi Chen", "Chien-Hsun Wu", "Yi-Hsuan Hung", "Cheng-Ta Chung"]
+    author_ids: [yi-hsuan-hung]
+    title: Optimal strategies of energy management integrated with transmission control for a hybrid electric vehicle using dynamic particle swarm optimization
+    journal: Energy
+    volume: "160"
+    pages: 154-170
+    doi: 10.1016/j.energy.2018.06.023
+    doi_url: https://doi.org/10.1016/j.energy.2018.06.023
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.energy.2018.06.023"
+    jcr_year: 2018
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "5.537"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=2148&whatdb=scie"
+
+  - year: 2018
+    authors: ["Chin-Guo Kuo", "Jin-Chung Chang", "Yi-Hsuan Hung", "Yen-Tien Kang", "Chen-Yang Kao", "Jung-Hsuan Chen"]
+    author_ids: [yi-hsuan-hung]
+    title: Welding Microstructure and Tensile Properties of S45C Carbon Steel
+    journal: Sensors and Materials
+    pages: 675-684
+    doi: 10.18494/SAM.2018.1826
+    doi_url: https://doi.org/10.18494/SAM.2018.1826
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.18494/SAM.2018.1826"
+
+  - year: 2017
+    authors: ["Yi-Hsuan Hung", "Wei-Ping Wang", "Yu-Chun Hsu", "Tun-Ping Teng"]
+    author_ids: [yi-hsuan-hung]
+    title: Performance evaluation of an air-cooled heat exchange system for hybrid nanofluids
+    journal: Experimental Thermal and Fluid Science
+    volume: "81"
+    pages: 43-55
+    doi: 10.1016/j.expthermflusci.2016.10.006
+    doi_url: https://doi.org/10.1016/j.expthermflusci.2016.10.006
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.expthermflusci.2016.10.006"
+    jcr_year: 2017
+    jcr_category: Thermodynamics
+    jcr_quartile: Q1
+    impact_factor: "3.204"
+    jcr_sources:
+      - "https://bib.us.es/sites/bib3.us.es/files/jcr_2017_science.pdf"
+
+  - year: 2017
+    authors: ["P. L. Shih", "Y. H. Hung", "S. Y. Chen", "C. H. Wu"]
+    author_ids: [yi-hsuan-hung]
+    title: Bacterial foraging algorithm for the optimum on-line energy management of a three-power-source hybrid powertrain
+    journal: Journal of Environmental Protection and Ecology
+    volume: "18"
+    issue: "3"
+    pages: 1169-1178
+    publication_url: "https://scholar.lib.ntnu.edu.tw/en/publications/bacterial-foraging-algorithm-for-the-optimum-on-line-energy-manag-2/"
+    type: Journal Article
+    author_source: "https://scholar.lib.ntnu.edu.tw/en/publications/bacterial-foraging-algorithm-for-the-optimum-on-line-energy-manag-2/"
+    jcr_year: 2017
+    jcr_category: Environmental Sciences
+    jcr_quartile: Q4
+    impact_factor: "0.679"
+    jcr_sources:
+      - "https://www.research.upt.ro/assets/files/ArtJurn17.pdf"
+
+  - year: 2016
+    authors: ["Yi-Hsuan Hung", "Yeou-Feng Lue", "Hung-Jhih Gu"]
+    author_ids: [yi-hsuan-hung]
+    title: Development of a Thermal Management System for Energy Sources of an Electric Vehicle
+    journal: IEEE/ASME Transactions on Mechatronics
+    doi: 10.1109/TMECH.2015.2454851
+    doi_url: https://doi.org/10.1109/TMECH.2015.2454851
+    type: Journal Article
+    note: Online-first in 2015; keep only this single record.
+    author_source: "https://api.crossref.org/works/10.1109/TMECH.2015.2454851"
+    jcr_year: 2016
+    jcr_category: Automation & Control Systems
+    jcr_quartile: Q1
+    impact_factor: "4.357"
+    jcr_sources:
+      - "https://www.asme.org/getmedia/f4cff312-0afc-4a55-9284-9f4d063c4ffa/Division-Meeting-Fall-2021-%28Final-with-minutes-and-reports%29.pdf"
+      - "https://uefiscdi.gov.ro/resource-86979"
+
+  - year: 2016
+    authors: ["Syuan-Yi Chen", "Cheng-Yen Lee", "Chien-Hsun Wu", "Yi-Hsuan Hung"]
+    author_ids: [yi-hsuan-hung]
+    title: Intelligent motion control of voice coil motor using PID-based fuzzy neural network with optimized membership function
+    journal: Engineering Computations
+    volume: "33"
+    issue: "8"
+    pages: 2302-2319
+    doi: 10.1108/EC-08-2015-0250
+    doi_url: https://doi.org/10.1108/EC-08-2015-0250
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1108/EC-08-2015-0250"
+    jcr_year: 2016
+    jcr_category: Mechanics
+    jcr_quartile: Q4
+    impact_factor: "1.010"
+    jcr_sources:
+      - "https://msvlab.ntou.edu.tw/teacher/%E8%AB%96%E6%96%87%E7%8D%8E%E5%8B%B5%E8%B3%87%E6%96%99/107/JournalRankTab-2016-EC.pdf"
+      - "https://dcui.top/files/2017-IF.pdf"
+
+  - year: 2016
+    authors: ["Yu-Feng Lue", "Yi-Hsuan Hung", "Fang-Sheng Li", "Tun-Ping Teng", "Syuan-Yi Chen", "Chien-Hsun Wu", "Yu-Chang Ou"]
+    author_ids: [yi-hsuan-hung]
+    title: Performance Assessment and Scooter Verification of Nano-Alumina Engine Oil
+    journal: Applied Sciences
+    volume: "6"
+    issue: "9"
+    article_number: "258"
+    doi: 10.3390/app6090258
+    doi_url: https://doi.org/10.3390/app6090258
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.3390/app6090258"
+    jcr_year: 2016
+    jcr_category: Physics, Applied
+    jcr_quartile: Q3
+    impact_factor: "1.679"
+    jcr_sources:
+      - "https://www.mdpi.com/news/994"
+
+  - year: 2016
+    authors: ["Yi-Hsuan Hung", "Yu-Ming Tung", "Chun-Hsin Chang"]
+    author_ids: [yi-hsuan-hung]
+    title: Optimal control of integrated energy management/mode switch timing in a three-power-source hybrid powertrain
+    journal: Applied Energy
+    volume: "173"
+    pages: 184-196
+    doi: 10.1016/j.apenergy.2016.04.025
+    doi_url: https://doi.org/10.1016/j.apenergy.2016.04.025
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.apenergy.2016.04.025"
+    jcr_year: 2016
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "7.182"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=6143&whatdb=scie"
+
+  - year: 2016
+    authors: ["Yi-Hsuan Hung", "Yu-Hsuan Lin", "Chien-Hsun Wu", "Syuan-Yi Chen"]
+    author_ids: [yi-hsuan-hung, yu-hsuan-lin]
+    title: Mechatronics design and experimental verification of an electric-vehicle-based hybrid thermal management system
+    journal: Advances in Mechanical Engineering
+    volume: "8"
+    issue: "2"
+    pages: 1-9
+    doi: 10.1177/1687814016633581
+    doi_url: https://doi.org/10.1177/1687814016633581
+    type: Journal Article
+    note: Yue-Xuan Lin is the publication spelling used for Yu-Hsuan Lin.
+    author_source: "https://api.crossref.org/works/10.1177/1687814016633581"
+    jcr_year: 2016
+    jcr_category: Engineering, Mechanical
+    jcr_quartile: Q4
+    impact_factor: "0.827"
+    jcr_sources:
+      - "https://zaguan.unizar.es/record/48353?ln=en"
+
+  - year: 2016
+    authors: ["Syuan-Yi Chen", "Yi-Hsuan Hung", "Sheng-Sian Gong"]
+    author_ids: [yi-hsuan-hung]
+    title: Speed Control of Vane-Type Air Motor Servo System Using Proportional-Integral-Derivative-Based Fuzzy Neural Network
+    journal: International Journal of Fuzzy Systems
+    volume: "18"
+    issue: "6"
+    pages: 1065-1079
+    doi: 10.1007/s40815-015-0134-0
+    doi_url: https://doi.org/10.1007/s40815-015-0134-0
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1007/s40815-015-0134-0"
+    jcr_year: 2016
+    jcr_category: Automation & Control Systems
+    jcr_quartile: Q2
+    impact_factor: "2.198"
+    jcr_sources:
+      - "https://dcui.top/files/2017-IF.pdf"
+      - "https://uefiscdi.gov.ro/resource-86979"
+
+  - year: 2016
+    authors: ["Yi-Hsuan Hung", "Jian-Hao Chen", "Chien-Hsun Wu", "Syuan-Yi Chen"]
+    author_ids: [yi-hsuan-hung]
+    title: System design and mechatronics of an air supply station for air-powered scooters
+    journal: Computers & Electrical Engineering
+    volume: "54"
+    pages: 185-194
+    doi: 10.1016/j.compeleceng.2015.12.016
+    doi_url: https://doi.org/10.1016/j.compeleceng.2015.12.016
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.compeleceng.2015.12.016"
+    jcr_year: 2016
+    jcr_category: Engineering, Electrical & Electronic
+    jcr_quartile: Q3
+    impact_factor: "1.570"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=15901&whatdb=scie"
+
+  - year: 2016
+    authors: ["Syuan-Yi Chen", "Yi-Hsuan Hung", "Chien-Hsun Wu"]
+    author_ids: [yi-hsuan-hung]
+    title: An Integrated Optimal Energy Management/Gear-Shifting Strategy for an Electric Continuously Variable Transmission Hybrid Powertrain Using Bacterial Foraging Algorithm
+    journal: Mathematical Problems in Engineering
+    volume: "2016"
+    pages: 1-15
+    doi: 10.1155/2016/1495732
+    doi_url: https://doi.org/10.1155/2016/1495732
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1155/2016/1495732"
+    jcr_year: 2016
+    jcr_category: Engineering, Multidisciplinary
+    jcr_quartile: Q3
+    impact_factor: "0.802"
+    jcr_sources:
+      - "https://grupo.us.es/oindustrial/investigacion/proyectos/address/publicaciones/"
+
+  - year: 2016
+    authors: ["Syuan-Yi Chen", "Ying-Chih Hung", "Yi-Hsuan Hung", "Chien-Hsun Wu"]
+    author_ids: [yi-hsuan-hung]
+    title: Application of a recurrent wavelet fuzzy-neural network in the positioning control of a magnetic-bearing mechanism
+    journal: Computers & Electrical Engineering
+    volume: "54"
+    pages: 147-158
+    doi: 10.1016/j.compeleceng.2015.11.022
+    doi_url: https://doi.org/10.1016/j.compeleceng.2015.11.022
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.compeleceng.2015.11.022"
+    jcr_year: 2016
+    jcr_category: Engineering, Electrical & Electronic
+    jcr_quartile: Q3
+    impact_factor: "1.570"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=15901&whatdb=scie"
+
+  - year: 2015
+    authors: ["Cheng-Ta Chung", "Yi-Hsuan Hung"]
+    author_ids: [yi-hsuan-hung]
+    title: Performance and energy management of a novel full hybrid electric powertrain system
+    journal: Energy
+    volume: "89"
+    pages: 626-636
+    doi: 10.1016/j.energy.2015.05.151
+    doi_url: https://doi.org/10.1016/j.energy.2015.05.151
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.energy.2015.05.151"
+    jcr_year: 2015
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "4.292"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=2148&whatdb=scie"
+
+  - year: 2015
+    authors: ["Syuan-Yi Chen", "Yi-Hsuan Hung", "Chien-Hsun Wu", "Siang-Ting Huang"]
+    author_ids: [yi-hsuan-hung]
+    title: Optimal energy management of a hybrid electric powertrain system using improved particle swarm optimization
+    journal: Applied Energy
+    volume: "160"
+    pages: 132-145
+    doi: 10.1016/j.apenergy.2015.09.047
+    doi_url: https://doi.org/10.1016/j.apenergy.2015.09.047
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.apenergy.2015.09.047"
+    jcr_year: 2015
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "5.746"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=6143&whatdb=scie"
+
+  - year: 2015
+    authors: ["Yi-Hsuan Hung", "Chien-Hsun Wu"]
+    author_ids: [yi-hsuan-hung]
+    title: A combined optimal sizing and energy management approach for hybrid in-wheel motors of EVs
+    journal: Applied Energy
+    volume: "139"
+    pages: 260-271
+    doi: 10.1016/j.apenergy.2014.11.028
+    doi_url: https://doi.org/10.1016/j.apenergy.2014.11.028
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.apenergy.2014.11.028"
+    jcr_year: 2015
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "5.746"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=6143&whatdb=scie"
+
+  - year: 2014
+    authors: ["Cheng-Ta Chung", "Yi-Hsuan Hung"]
+    author_ids: [yi-hsuan-hung]
+    title: Energy improvement and performance evaluation of a novel full hybrid electric motorcycle with power split e-CVT
+    journal: Energy Conversion and Management
+    volume: "86"
+    pages: 216-225
+    doi: 10.1016/j.enconman.2014.04.043
+    doi_url: https://doi.org/10.1016/j.enconman.2014.04.043
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.enconman.2014.04.043"
+    jcr_year: 2014
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "4.380"
+    jcr_sources:
+      - "https://www.neaman.org.il/wp-content/uploads/2024/02/CV-short-Ayalon-July-2023.pdf"
+
+  - year: 2014
+    authors: ["Yi-Hsuan Hung", "Yu-Ming Tung", "Hong-Wei Li"]
+    author_ids: [yi-hsuan-hung]
+    title: A real-time model of an automotive air propulsion system
+    journal: Applied Energy
+    volume: "129"
+    pages: 287-298
+    doi: 10.1016/j.apenergy.2014.04.113
+    doi_url: https://doi.org/10.1016/j.apenergy.2014.04.113
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.apenergy.2014.04.113"
+    jcr_year: 2014
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "5.613"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=6143&whatdb=scie"
+
+  - year: 2014
+    authors: ["Yi-Hsuan Hung", "Hung-Jhih Gu"]
+    author_ids: [yi-hsuan-hung]
+    title: Multiwalled Carbon Nanotube Nanofluids Used for Heat Dissipation in Hybrid Green Energy Systems
+    journal: Journal of Nanomaterials
+    volume: "2014"
+    doi: 10.1155/2014/196074
+    doi_url: https://doi.org/10.1155/2014/196074
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1155/2014/196074"
+    jcr_year: 2014
+    jcr_category: Materials Science, Multidisciplinary
+    jcr_quartile: Q2
+    impact_factor: "1.644"
+    jcr_sources:
+      - "https://bibliosjd.org/wp-content/uploads/2017/08/OAJ_JCR_Science_2014.pdf"
+
+  - year: 2013
+    authors: ["Yi-Hsuan Hung", "Jyun-Hong Chen", "Tun-Ping Teng"]
+    author_ids: [yi-hsuan-hung]
+    title: Feasibility Assessment of Thermal Management System for Green Power Sources Using Nanofluid
+    journal: Journal of Nanomaterials
+    volume: "2013"
+    doi: 10.1155/2013/321261
+    doi_url: https://doi.org/10.1155/2013/321261
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1155/2013/321261"
+
+  - year: 2013
+    authors: ["Yi-Hsuan Hung", "Tun-Ping Teng", "Bo-Gu Lin"]
+    author_ids: [yi-hsuan-hung]
+    title: Evaluation of the thermal performance of a heat pipe using alumina nanofluids
+    journal: Experimental Thermal and Fluid Science
+    volume: "44"
+    pages: 504-511
+    doi: 10.1016/j.expthermflusci.2012.08.012
+    doi_url: https://doi.org/10.1016/j.expthermflusci.2012.08.012
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.expthermflusci.2012.08.012"
+
+  - year: 2012
+    authors: ["Yi-Hsuan Hung", "Chien-Hsun Wu"]
+    author_ids: [yi-hsuan-hung]
+    title: An integrated optimization approach for a hybrid energy system in electric vehicles
+    journal: Applied Energy
+    volume: "98"
+    pages: 479-490
+    doi: 10.1016/j.apenergy.2012.04.012
+    doi_url: https://doi.org/10.1016/j.apenergy.2012.04.012
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.apenergy.2012.04.012"
+    jcr_year: 2012
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "4.781"
+    jcr_sources:
+      - "https://lib.nbt.edu.cn/subject/indexed/showif.php?lightbox%5Bheight%5D=450&lightbox%5Bwidth%5D=550&sid=6143&whatdb=scie"
+
+  - year: 2012
+    authors: ["Yi-Hsuan Hung", "Tun-Ping Teng", "Tun-Chien Teng", "Jyun-Hong Chen"]
+    author_ids: [yi-hsuan-hung]
+    title: Assessment of heat dissipation performance for nanofluid
+    journal: Applied Thermal Engineering
+    volume: "32"
+    pages: 132-140
+    doi: 10.1016/j.applthermaleng.2011.09.008
+    doi_url: https://doi.org/10.1016/j.applthermaleng.2011.09.008
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.applthermaleng.2011.09.008"
+    jcr_year: 2012
+    jcr_category: Thermodynamics
+    jcr_quartile: Q1
+    impact_factor: "2.127"
+    jcr_sources:
+      - "https://engineering.purdue.edu/PETAL/publications/"
+
+  - year: 2014
+    authors: ["Tun-Ping Teng", "Yi-Hsuan Hung"]
+    author_ids: [yi-hsuan-hung]
+    title: Estimation and experimental study of the density and specific heat for alumina nanofluid
+    journal: Journal of Experimental Nanoscience
+    volume: "9"
+    issue: "7"
+    pages: 707-718
+    doi: 10.1080/17458080.2012.696219
+    doi_url: https://doi.org/10.1080/17458080.2012.696219
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1080/17458080.2012.696219"
+    publication_year_source: "https://api.crossref.org/works/10.1080/17458080.2012.696219"
+
+  - year: 2012
+    authors: ["Yi-Hsuan Hung", "Wen-Chieh Chou"]
+    author_ids: [yi-hsuan-hung]
+    title: Chitosan for Suspension Performance and Viscosity of MWCNTs
+    journal: International Journal of Chemical Engineering and Applications
+    volume: "3"
+    pages: 347-353
+    doi: 10.7763/IJCEA.2012.V3.215
+    doi_url: https://doi.org/10.7763/IJCEA.2012.V3.215
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.7763/IJCEA.2012.V3.215"
+
+  - year: 2012
+    authors: ["C.H. Wu", "Y.H. Hung", "C.W. Hong"]
+    author_ids: [yi-hsuan-hung]
+    title: On-line supercapacitor dynamic models for energy conversion and management
+    journal: Energy Conversion and Management
+    volume: "53"
+    issue: "1"
+    pages: 337-345
+    doi: 10.1016/j.enconman.2011.01.018
+    doi_url: https://doi.org/10.1016/j.enconman.2011.01.018
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.enconman.2011.01.018"
+    jcr_year: 2012
+    jcr_category: Energy & Fuels
+    jcr_quartile: Q1
+    impact_factor: "2.775"
+    jcr_sources:
+      - "https://brujula.ual.es/authors/848.html?lang=en&page=2&pageType=article&sortBy=journalDesc"
+
+  - year: 2011
+    authors: ["Tun-Ping Teng", "Yi-Hsuan Hung", "Tun-Chien Teng", "Jyun-Hong Chen"]
+    author_ids: [yi-hsuan-hung]
+    title: Performance evaluation on an air-cooled heat exchanger for alumina nanofluid under laminar flow
+    journal: Nanoscale Research Letters
+    volume: "6"
+    article_number: "488"
+    doi: 10.1186/1556-276X-6-488
+    doi_url: https://doi.org/10.1186/1556-276X-6-488
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1186/1556-276X-6-488"
+
+  - year: 2011
+    authors: ["Tun-Ping Teng", "Yi-Hsuan Hung", "Ching-Song Jwo", "Chien-Chih Chen", "Lung-Yue Jeng"]
+    author_ids: [yi-hsuan-hung]
+    title: Pressure drop of TiO2 nanofluid in circular pipes
+    journal: Particuology
+    volume: "9"
+    issue: "5"
+    pages: 486-491
+    doi: 10.1016/j.partic.2011.05.001
+    doi_url: https://doi.org/10.1016/j.partic.2011.05.001
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.partic.2011.05.001"
+
+  - year: 2011
+    authors: ["Chi-Yo Huang", "Yi-Hsuan Hung", "Gwo-Hshiung Tzeng"]
+    author_ids: [yi-hsuan-hung]
+    title: Using Hybrid MCDM Methods to Assess Fuel Cell Technology for the Next Generation of Hybrid Power Automobiles
+    journal: Journal of Advanced Computational Intelligence and Intelligent Informatics
+    volume: "15"
+    issue: "4"
+    pages: 406-417
+    doi: 10.20965/jaciii.2011.p0406
+    doi_url: https://doi.org/10.20965/jaciii.2011.p0406
+    type: Journal Article
+    author_source: "https://www.fujipress.jp/jaciii/jc/jacii001500040406/"
+
+  - year: 2012
+    authors: ["Y H Hung", "C H Wu", "C W Hong"]
+    author_ids: [yi-hsuan-hung]
+    title: An element-oriented model simplification algorithm based on dynamic similarity
+    journal: "Proceedings of the Institution of Mechanical Engineers, Part I: Journal of Systems and Control Engineering"
+    volume: "226"
+    issue: "1"
+    pages: 56-69
+    doi: 10.1177/0959651811409490
+    doi_url: https://doi.org/10.1177/0959651811409490
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1177/0959651811409490"
+    publication_year_source: "https://api.crossref.org/works/10.1177/0959651811409490"
+
+  - year: 2010
+    authors: ["Tun-Ping Teng", "Yi-Hsuan Hung", "Tun-Chien Teng", "Huai-En Mo", "How-Gao Hsu"]
+    author_ids: [yi-hsuan-hung]
+    title: The effect of alumina/water nanofluid particle size on thermal conductivity
+    journal: Applied Thermal Engineering
+    volume: "30"
+    issue: 14-15
+    pages: 2213-2218
+    doi: 10.1016/j.applthermaleng.2010.05.036
+    doi_url: https://doi.org/10.1016/j.applthermaleng.2010.05.036
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1016/j.applthermaleng.2010.05.036"
+    jcr_year: 2010
+    jcr_category: Thermodynamics
+    jcr_quartile: Q1
+    impact_factor: "1.826"
+    jcr_sources:
+      - "https://www.uma.es/doctorado/navegador_de_ficheros/DocDoctorado/descargar/EFI%20VER.pdf"
+
+  - year: 2007
+    authors: ["Y.H. Hung", "C.W. Hong"]
+    author_ids: [yi-hsuan-hung]
+    title: Bond graph modelling of fuel cell and engine hybrid electric scooters
+    journal: International Journal of Vehicle Design
+    volume: "45"
+    issue: "4"
+    pages: 522-546
+    doi: 10.1504/IJVD.2007.014918
+    doi_url: https://doi.org/10.1504/IJVD.2007.014918
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1504/IJVD.2007.014918"
+
+  - year: 2004
+    authors: ["Y.H. Hung", "C.W. Hong"]
+    author_ids: [yi-hsuan-hung]
+    title: Bond graph dynamics of a rubber-belt continuously variable transmission
+    journal: International Journal of Vehicle Design
+    volume: "35"
+    issue: "4"
+    pages: 383-398
+    doi: 10.1504/IJVD.2004.005246
+    doi_url: https://doi.org/10.1504/IJVD.2004.005246
+    type: Journal Article
+    author_source: "https://api.crossref.org/works/10.1504/IJVD.2004.005246"
+
+
+
+# Conference records supplied by the lab; missing dates remain absent.
+conference_papers:
+  - title: "Comparative Benefit Assessment of Diesel–Electric Hybrid and Hydrogen Fuel-Cell Hybrid Powertrains for a 5-Ton-Class Refrigeration Truck"
+    authors: ["Chi-Wen Chuang", "Yi-Hsuan Hung", "Yu-Hsuan Lin", "Chien-Chiang Tung", "Tien-Chu Huang", "Ding-Wu Bai"]
+    year: 2026
+    conference: "International Symposium on Industrial Electronics"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung", "Yu-Hsuan Lin"]
+    featured: false
+    date: "2026-06-24"
+
+  - title: "混合電動車熱管理系統熱流與奈米流體調製及性能分析"
+    authors: ["洪翊軒", "林煜軒", "李家宇", "劉宥宣", "陳祖言"]
+    year: 2026
+    date: "2026-05-08"
+    conference: "臺灣機電工程國際學會第十一屆全國學術研討會"
+    venue: "國立聯合大學"
+    city: "苗栗"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒", "林煜軒"]
+    featured: false
+    award: "最佳論文獎"
+
+  - title: "冷鏈車之細部系統設計與開發"
+    authors: ["洪翊軒", "林煜軒", "莊才威", "黃晧翔", "莊啓文"]
+    year: 2026
+    date: "2026-05-08"
+    conference: "臺灣機電工程國際學會第十一屆全國學術研討會"
+    venue: "國立聯合大學"
+    city: "苗栗"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒", "林煜軒"]
+    featured: false
+    award: "最佳論文獎"
+
+  - title: "Global Search Algorithm of Optimal Powertrain Sizing for Fuel Cell Electric Buses via Genetic Algorithm-Fuzzy Logic Strategy"
+    authors: ["Quan-You Shi", "Cheng-Chang Xiao", "Yi-Hsuan Hung"]
+    year: 2026
+    conference: "The 17th International Conference on Mechanical and Electrical Technologies"
+    conference_abbreviation: "ICMET 2026"
+    city: "Osaka"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "partial"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    date_start: "2026-04-28"
+    date_end: "2026-04-30"
+    date_kind: "conference-period"
+
+  - title: "SOH-Based Power Response Compensation Design for Fuel Cell Electric Buses with a Global Search Algorithm"
+    authors: ["An-Zhe Zheng", "Yun-Shuo Liang", "Yi-Hsuan Hung"]
+    year: 2026
+    conference: "The 17th International Conference on Mechanical and Electrical Technologies"
+    conference_abbreviation: "ICMET 2026"
+    city: "Osaka"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "partial"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    date_start: "2026-04-28"
+    date_end: "2026-04-30"
+    date_kind: "conference-period"
+
+  - title: "A Two-Stage Powertrain Sizing and Multi-Objective Decision-Making Framework for FCEV Buses: Integrating Global Search with Continuous Particle Swarm Optimization for Refined Feasibility"
+    authors: ["Quan-You Shi", "Zheng-Wei Fan", "Yi-Hsuan Hung"]
+    year: 2026
+    conference: "JSAE KANTO International Conference of Automotive Technology for Young Engineers"
+    conference_abbreviation: "ICATYE"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "partial"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    date: "2026-03"
+    date_precision: "month"
+
+  - title: "基於基因演算法之模糊能量管理策略於燃料電池車之應用"
+    authors: ["蕭程萇", "洪翊軒", "林煜軒"]
+    year: 2025
+    date: "2025-12-20"
+    conference: "中華民國第三十屆車輛工程學術研討會"
+    venue: "大葉大學"
+    city: "彰化"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒", "林煜軒"]
+    featured: false
+  - title: "燃料電池複合鋰電池貨車熱管理系統應用粒子群仿生演算法之動態性能分析"
+    authors: ["李杰庭", "林煜軒", "洪翊軒"]
+    year: 2025
+    date: "2025-12-05"
+    conference: "中國機械工程學會第四十二屆全國學術研討會"
+    venue: "國立陽明交通大學"
+    city: "新竹"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["林煜軒", "洪翊軒"]
+    featured: false
+  - title: "燃料電池小型冷鏈物流貨車之動態模擬與能耗分析"
+    authors: ["莊啓文", "范正威", "白定梧", "謝念恒", "林煜軒", "洪翊軒"]
+    year: 2025
+    date: "2025-06-19"
+    conference: "2025國際氫能與燃料電池學術研討會"
+    venue: "國立中山大學"
+    city: "高雄"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    award: "第二名"
+    source_status: "confirmed"
+    highlight_authors: ["林煜軒", "洪翊軒"]
+    featured: false
+  - title: "燃料電池及鋰電池小型複電動車之四迴路散熱系統設計與效益分析"
+    authors: ["李杰庭", "林煜軒", "洪翊軒", "張俊興", "李正麒"]
+    year: 2025
+    date: "2025-06-19"
+    conference: "2025國際氫能與燃料電池學術研討會"
+    venue: "國立中山大學"
+    city: "高雄"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    award: "佳作"
+    source_status: "confirmed"
+    highlight_authors: ["林煜軒", "洪翊軒"]
+    featured: false
+  - title: "雙電力移動式充電櫃模擬系統開發與控制策略設計"
+    authors: ["洪翊軒", "洪偉哲", "蔡浚輝", "王昱程", "林煜軒", "賓承彥", "謝念恒"]
+    year: 2025
+    date: "2025-05-02"
+    conference: "臺灣機電工程國際學會第十屆全國學術研討會"
+    venue: "國立成功大學"
+    city: "台南"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒", "林煜軒"]
+    featured: false
+  - title: "氫能巴士儲氫系統建模與電池健康度預測"
+    authors: ["洪翊軒", "詹智翔", "林詠澤", "范正威", "林煜軒"]
+    year: 2025
+    date: "2025-05-02"
+    conference: "臺灣機電工程國際學會第十屆全國學術研討會"
+    venue: "國立成功大學"
+    city: "台南"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒", "林煜軒"]
+    featured: false
+  - title: "創新散熱平台規則庫控制模擬與實驗驗證"
+    authors: ["李杰庭", "林煜軒", "李正麒", "洪翊軒"]
+    year: 2025
+    date: "2025-05-02"
+    conference: "臺灣機電工程國際學會第十屆全國學術研討會"
+    venue: "國立成功大學"
+    city: "台南"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["林煜軒", "洪翊軒"]
+    featured: false
+  - title: "太陽能微電網儲能系統開發"
+    authors: ["洪翊軒", "林煜軒", "楊東澍", "黃丞志", "梁亦豪", "賓承彥"]
+    year: 2025
+    date: "2025-05-02"
+    conference: "臺灣機電工程國際學會第十屆全國學術研討會"
+    venue: "國立成功大學"
+    city: "台南"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒", "林煜軒"]
+    featured: false
+  - title: "Analysis of Dynamic Performance of Hydrogen Storage Technologies for Fuel Cell Electric Vehicles"
+    authors: ["Zheng-Wei Fan", "Chi-Chang Huang", "Yi-Hsuan Hung", "Yu-Hsuan Lin"]
+    year: 2025
+    conference: "International Conference of Automotive Technology for Young Engineers"
+    language: "en"
+    type: "conference-paper"
+    source_status: "partial"
+    highlight_authors: ["Yi-Hsuan Hung", "Yu-Hsuan Lin"]
+    featured: false
+  - title: "Energy Management System for Hydrogen Vehicles Considering State of Health of Fuel Cells and Lithium Batteries"
+    authors: ["Chi-Chang Huang", "Zheng-Wei Fan", "Yi-Hsuan Hung", "Tsu-Yang Tsai"]
+    year: 2025
+    conference: "The 7th International Electric Vehicle Technology Conference"
+    conference_abbreviation: "EVTeC 2025"
+    city: "Yokohama"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "partial"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+  - title: "適應性人工蜂群演算法應用於電動巴士多能源充電場域之最佳化電力調度分析"
+    authors: ["鄭安哲", "賓承彥", "范正威", "莊啓文", "洪翊軒"]
+    year: 2025
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    conference: "中國機械工程學會第四十二屆全國學術研討會"
+    venue: "國立陽明交通大學"
+    city: "新竹"
+    country: "臺灣"
+    date: "2025-12-05"
+
+  - title: "應用全域搜尋演算法於氫燃料電池巴士之三種目標動力系統最佳化規格匹配研究"
+    authors: ["施權祐", "范正威", "洪翊軒", "林博煦"]
+    year: 2025
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    conference: "中國機械工程學會第四十二屆全國學術研討會"
+    venue: "國立陽明交通大學"
+    city: "新竹"
+    country: "臺灣"
+    date: "2025-12-05"
+
+  - title: "基於全域搜索與 Simulink 模擬之燃料電池電動巴士功率響應補償與設計"
+    authors: ["梁耘碩", "范正威", "洪翊軒", "蔡祖揚"]
+    year: 2025
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    conference: "中華民國第三十屆車輛工程學術研討會"
+    venue: "大葉大學"
+    city: "彰化"
+    country: "臺灣"
+    date: "2025-12-20"
+
+  - title: "Dynamic Modeling and Control of Hybrid Electric Vessels With a Super-Capacitor and a Lithium Battery"
+    authors: ["Chi-Chang Huang", "Chien-Ming Lin", "Yu-Hsuan Lin", "Chan-Chiao Lin", "Yi-Hsuan Hung"]
+    year: 2024
+    conference: "IEEE International Conference on Recent Advances in Systems Science and Engineering"
+    date_start: "2024-11-06"
+    date_end: "2024-11-08"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yu-Hsuan Lin", "Yi-Hsuan Hung"]
+    featured: false
+  - title: "雙模式三電力電動機車充電系統模擬分析"
+    authors: ["洪翊軒", "賓承彥", "林煜軒"]
+    year: 2024
+    date: "2024-11-08"
+    conference: "中華民國第二十九屆車輛工程學術研討會"
+    venue: "國立臺北科技大學車輛工程系"
+    city: "台北"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒", "林煜軒"]
+    featured: false
+  - title: "仿生演算法理論應用於多電力源電動巴士之熱管理系統"
+    authors: ["林煜軒", "洪翊軒"]
+    year: 2024
+    date: "2024-10-26"
+    conference: "中華民國第三十二屆模糊理論及其應用研討會"
+    venue: "國立臺灣師範大學"
+    city: "馬祖"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["林煜軒", "洪翊軒"]
+    featured: false
+  - title: "混合電池熱管理系統基於模糊控制模擬與實驗驗證"
+    authors: ["梁耘碩", "施權祐", "何岱祐", "洪翊軒", "林煜軒"]
+    year: 2024
+    date: "2024-04-26"
+    conference: "臺灣機電工程國際學會第九屆學術研討會"
+    venue: "國立宜蘭大學"
+    city: "宜蘭"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒", "林煜軒"]
+    featured: false
+  - title: "Application of a Recurrent Wavelet Fuzzy-Neural Network in the Positioning Control of a Magnetic-Bearing Mechanism"
+    authors: ["Syuan-Yi Chen", "Ying-Chih Hung", "Yi-Hsuan Hung", "Chien-Hsun Wu"]
+    year: 2015
+    date_start: "2015-05-22"
+    date_end: "2015-05-27"
+    conference: "2015 The International Conference on Applied System & Innovation"
+    city: "Osaka"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+  - title: "Rapid-Prototyping Designs for the Three-Power-Source Hybrid Electric Scooter with a Fuzzy-Control Energy Management"
+    authors: ["Chien-Hsun Wu", "Yi-Hsuan Hung", "Jen-Feng Tsai", "Syuan-Yi Chen"]
+    year: 2015
+    date_start: "2015-05-22"
+    date_end: "2015-05-27"
+    conference: "2015 The International Conference on Applied System & Innovation"
+    city: "Osaka"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+  - title: "System Design and Mechatronics of an Air Supply Station and the Experimental Verification of an Air-Power Scooter"
+    authors: ["Yi-Hsuan Hung", "Chien-Hsun Wu", "Syuan-Yi Chen", "Chien-Hao Chen"]
+    year: 2015
+    date_start: "2015-05-22"
+    date_end: "2015-05-27"
+    conference: "2015 The International Conference on Applied System & Innovation"
+    city: "Osaka"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+  - title: "Comparison of active and passive types of proton exchange membrane fuel cell/battery HEVs"
+    authors: ["Lu-Jung Wang", "Yi-Hsuan Hung", "Jeen-Fong Li", "Chin-Guo Kuo", "Yeue-Fong Lue", "Chin-Hsien Cheng", "Chien-Hsun Wu"]
+    year: 2015
+    date_start: "2015-04-09"
+    date_end: "2015-04-11"
+    conference: "2015 IEEE 12th International Conference on Networking, Sensing and Control"
+    city: "Taipei"
+    country: "Taiwan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+  - title: "綠能車用補充站系統設計與驗證"
+    authors: ["陳建豪", "林煜軒", "洪翊軒", "李景峰", "郭金國", "呂有豐"]
+    year: 2014
+    date_start: "2014-12-06"
+    date_end: "2014-12-07"
+    conference: "中國機械工程學會第三十一屆全國學術研討會"
+    city: "臺中"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["林煜軒", "洪翊軒"]
+    featured: false
+  - title: "添加奈米顆粒於基礎礦物油之基礎性質與磨潤特性研究"
+    authors: ["呂有豐", "李方盛", "鄧敦平", "徐有駿", "洪翊軒"]
+    year: 2014
+    date_start: "2014-12-06"
+    date_end: "2014-12-07"
+    conference: "中國機械工程學會第三十一屆全國學術研討會"
+    city: "臺中"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+  - title: "三動力源複合式動力車模擬與性能分析"
+    authors: ["董又銘", "林煜軒", "洪翊軒", "林君穎", "呂有豐"]
+    year: 2014
+    date: "2014-11-14"
+    conference: "中華民國第十九屆車輛工程學術研討會"
+    venue: "桃園創新技術學院機械工程系"
+    city: "中壢"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["林煜軒", "洪翊軒"]
+    featured: false
+  - title: "電動車之多元彈性電能系統建模與控制效益評估"
+    authors: ["洪翊軒", "廖伯霖", "黃國修", "林博煦", "張俊興"]
+    year: 2014
+    date: "2014-11-14"
+    conference: "中華民國第十九屆車輛工程學術研討會"
+    venue: "桃園創新技術學院機械工程系"
+    city: "中壢"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+  - title: "電動車之即時建模與 HIL 性能提昇研究"
+    authors: ["李鴻駿", "洪翊軒", "吳建勳", "林君穎", "郭金國", "呂有豐"]
+    year: 2013
+    date: "2013-12-13"
+    conference: "中華民國第十八屆車輛工程學術研討會"
+    venue: "屏東科技大學車輛工程系"
+    city: "屏東"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+  - title: "電動車之再生煞車建模與最佳煞車控制效益評估"
+    authors: ["呂有豐", "張晉嘉", "陳建豪", "李鴻駿", "洪翊軒", "石亞文", "陳斌勇"]
+    year: 2013
+    date: "2013-12-13"
+    conference: "中華民國第十八屆車輛工程學術研討會"
+    venue: "屏東科技大學車輛工程系"
+    city: "屏東"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+  - title: "電動重型機車動態模擬與實驗驗證"
+    authors: ["蔡祖揚", "吳建勳", "朱高弘", "林君穎", "蔡建峰", "洪翊軒"]
+    year: 2013
+    date: "2013-12-13"
+    conference: "中華民國第十八屆車輛工程學術研討會"
+    venue: "屏東科技大學車輛工程系"
+    city: "屏東"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+  - title: "質子交換膜燃料電池混合動力輕型載具之模擬與驗證"
+    authors: ["洪翊軒", "呂有豐", "王祿融", "吳建勳", "鄭欽獻"]
+    year: 2013
+    date_start: "2013-12-06"
+    date_end: "2013-12-07"
+    conference: "中國機械工程學會第三十屆全國學術研討會"
+    city: "宜蘭"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+  - title: "System/Energy Management Rapid-Prototyping Designs"
+    authors: ["Chien-Hsun Wu", "Yi-Hsuan Hung", "Lu-Jung Wang"]
+    year: 2013
+    date_start: "2013-11-08"
+    date_end: "2013-11-09"
+    conference: "The 1st International Conference on Mechanics"
+    city: "Hsinchu"
+    country: "Taiwan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+  - title: "Dynamics and Control for a Designed Range Extended Electric Vehicle"
+    authors: ["Chien-Hsun Wu", "Yu-Ming Tung", "Yi-Hsuan Hung"]
+    year: 2013
+    date_start: "2013-11-08"
+    date_end: "2013-11-09"
+    conference: "The 1st International Conference on Mechanics"
+    city: "Hsinchu"
+    country: "Taiwan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+  - title: "建構陸軍航空武裝直升機「組員資源管理系統」之研究"
+    authors: ["劉蔡權", "洪翊軒", "黃啟祐", "劉家熒"]
+    year: 2013
+    date: "2013-09-27"
+    conference: "第三屆航空科技與飛航安全學術研討會"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+  - title: "System Design and Control Strategy for a Battery/Supercapacitor Electric Bus with an Integrated Fast Charger/Bus Stop Station"
+    authors: ["Yi-Hsuan Hung", "Hong-Wei Li", "Hung-Chun Lee"]
+    year: 2013
+    date_start: "2013-04-16"
+    date_end: "2013-04-18"
+    conference: "SAE World Congress"
+    city: "Detroit"
+    region: "Michigan"
+    country: "U.S.A."
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+  - title: "電動機車輪內雙馬達之最佳化模擬分析"
+    authors: ["吳建勳", "蔡建峰", "蔡祖揚", "洪翊軒"]
+    year: 2012
+    date_start: "2012-12-07"
+    date_end: "2012-12-08"
+    conference: "中國機械工程學會第二十九屆全國學術研討會"
+    city: "高雄"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+  - title: "UPS 燃料電池與鋰電池混合電力供應系統建模與性能模擬"
+    authors: ["洪翊軒", "王祿融", "劉哲瑋", "洪哲文", "鄭欽獻", "費凱", "吳建勳"]
+    year: 2012
+    date_start: "2012-12-07"
+    date_end: "2012-12-08"
+    conference: "中國機械工程學會第二十九屆全國學術研討會"
+    city: "高雄"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+  - title: "電動機車雙輪內馬達之最佳化尺寸設計分析"
+    authors: ["洪翊軒", "呂有豐", "王祿融", "陳建豪", "古浤志", "吳建勳"]
+    year: 2012
+    date: "2012-11-09"
+    conference: "中華民國第十七屆車輛工程學術研討會"
+    venue: "南開科技大學機械工程系"
+    city: "南投"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+  - title: "新型電動巴士與快充系統建模與評估設計"
+    authors: ["張晉嘉", "李鴻駿", "李汯緯", "洪翊軒", "陳建安", "呂有豐"]
+    year: 2012
+    date: "2012-11-09"
+    conference: "中華民國第十七屆車輛工程學術研討會"
+    venue: "南開科技大學機械工程系"
+    city: "南投"
+    country: "臺灣"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+
+  - title: "Energy-optimal lane-change planning for fuel cell electric vehicles"
+    authors: ["Chi-Chang Huang", "Yi-Hsuan Hung"]
+    year: 2026
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_news_id: "iv-2026"
+    source_news_field: "papers"
+    conference: "IEEE Intelligent Vehicles Symposium"
+    conference_abbreviation: "IV 2026"
+    region: "Michigan"
+    country: "United States"
+    date_start: "2026-06-22"
+    date_end: "2026-06-25"
+    date_kind: "conference-period"
+    presenters: ["黃啟錩"]
+    presenters_en: ["Chi-Chang Huang"]
+  - title: "氫能移動式電動車之智慧型最佳電源控制系統開發"
+    authors: ["廖詠頡", "陳沛廷", "白定梧", "洪翊軒"]
+    year: 2026
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_news_id: "isme-2026"
+    source_news_field: "papers"
+    conference: "臺灣機電工程國際學會第十一屆全國學術研討會"
+    student_team: ["廖詠頡", "陳沛廷"]
+    award: "最佳論文獎"
+    source_note: "作者、題名、會議名稱、地點及論文日期依使用者確認；消息條目保留 2026-05-09。"
+    venue: "國立聯合大學"
+    city: "苗栗"
+    country: "臺灣"
+    date: "2026-05-08"
+
+  - title: "混合電力船舶模型建立與控制器開發"
+    authors: ["張右杰", "陳竑聿", "劉俊輝", "黃啟錩", "洪翊軒"]
+    year: 2026
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_news_id: "isme-2026"
+    source_news_field: "papers"
+    conference: "臺灣機電工程國際學會第十一屆全國學術研討會"
+    student_team: ["張右杰", "陳竑聿", "劉俊輝"]
+    award: "最佳論文獎"
+    source_note: "作者、題名、會議名稱、地點及論文日期依使用者確認；消息條目保留 2026-05-09。"
+    venue: "國立聯合大學"
+    city: "苗栗"
+    country: "臺灣"
+    date: "2026-05-08"
+
+  - title: "人類駕駛風格之自動駕駛能耗最佳化軌跡規劃設計"
+    authors: ["陳泓佑", "蔡易庭", "林睦鈞", "黃啟錩", "洪翊軒"]
+    year: 2026
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_news_id: "isme-2026"
+    source_news_field: "papers"
+    conference: "臺灣機電工程國際學會第十一屆全國學術研討會"
+    student_team: ["陳泓佑", "蔡易庭", "林睦鈞"]
+    award: "最佳論文獎"
+    source_note: "作者、題名、會議名稱、地點及論文日期依使用者確認；消息條目保留 2026-05-09。"
+    venue: "國立聯合大學"
+    city: "苗栗"
+    country: "臺灣"
+    date: "2026-05-08"
+
+  - title: "An Integrated Optimal System/Controller Design with Fuel Cell and Battery State-of-Health Factors for EV-based Hydrogen/Energy Storage Systems"
+    authors: ["Yi-Hsuan Hung"]
+    year: 2026
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_news_id: "aiact-2026"
+    source_news_field: "papers"
+    conference: "International Conference on Artificial Intelligence, Automation and Control Technologies"
+    conference_abbreviation: "AIACT 2026"
+    city: "Sydney"
+    country: "Australia"
+    date_start: "2026-02-02"
+    date_end: "2026-02-06"
+    date_kind: "conference-period"
+    presenters: ["洪翊軒"]
+    presenters_en: ["Yi-Hsuan Hung"]
+    award: "最佳講者"
+  - title: "利用雙調排序法實現模組化多階層轉換器之電容電壓平衡控制"
+    authors: ["白定梧", "林士文", "洪翊軒"]
+    year: 2025
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_news_id: "power-conference-2025"
+    source_news_field: "papers"
+    conference: "第 46 屆中華民國電力工程研討會暨第 22 屆台灣電力電子研討會暨 2025 電力學門成果發表會"
+    date: "2025-11-15"
+
+  - title: "Optimal Route Planning of Electric Vehicle Fleet Based on the Simulated Annealing Algorithm"
+    authors: ["C. Li", "Y. H. Hung", "M. Y. Chen"]
+    year: 2024
+    conference: "International Conference on Engineering & Technology (ICET-24)"
+    city: "Singapore"
+    date_start: "2024-08-06"
+    date_end: "2024-08-07"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Y. H. Hung"]
+    featured: false
+    source_citation: "6. C. Li, Y. H. Hung, M. Y. Chen, “Optimal Route Planning of Electric Vehicle Fleet Based on the Simulated Annealing Algorithm ”, International Conference on Engineering & Technology (ICET-24), Singapore, Aug. 6-7 2024"
+  - title: "A Real-Time Energy Management Control for a Hybrid Electric Vessel Using Whale Optimization Algorithm"
+    authors: ["Chien-Ming Lin", "Yi-Hsuan Hung", "Chi Li"]
+    year: 2024
+    conference: "2024 IEEE 10th International Conference on Applied System Innovation (IEEE ICASI 2024)"
+    city: "Kyoto"
+    country: "Japan"
+    date_start: "2024-04-17"
+    date_end: "2024-04-21"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "7. Chien-Ming Lin, YI-HSUAN HUNG, Chi Li, “A Real-Time Energy Management Control for a Hybrid Electric Vessel Using  Whale Optimization Algorithm”, 2024 IEEE 10th International Conference on Applied System Innovation (IEEE ICASI 2024), Kyoto, Japan, 17-21 April 2024"
+  - title: "THE OPTIMAL SIZING AND ENERGY MANAGEMENT OF A SUPERCAPACITOR/BATTERY SYSTEM BASED ON STATE-OF-HEALTH FACTOR"
+    authors: ["Chi Li", "Yi-Hsuan Hung", "Chien-Liang Chen"]
+    year: 2023
+    conference: "International Conference on Science, Technology, Engineering & Management (ICSTEM 2023)"
+    city: "Tokyo"
+    country: "Japan"
+    date_start: "2023-07-26"
+    date_end: "2023-07-27"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "9. CHI LI, YI-HSUAN HUNG, Chien-Liang Chen, “THE OPTIMAL SIZING AND ENERGY MANAGEMENT OF A SUPERCAPACITOR/BATTERY SYSTEM BASED ON STATE-OF-HEALTH FACTOR ”, International Conference on Science, Technology, Engineering & Management (ICSTEM 2023), Tokyo, Japan, Jul. 26-27, 2023"
+  - title: "非洲禿鷹仿生演算法應用於雙動力混合系統之硬體嵌入式系統驗證"
+    authors: ["黃啟錩", "洪翊軒", "陳建良"]
+    year: 2023
+    conference: "SAE 2023 第28屆車輛工程學術研討會"
+    city: "台南"
+    country: "台灣"
+    date: "2023-11-10"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "10. 黃啟錩 、洪翊軒 、陳建良,  “非洲禿鷹仿生演算法應用於雙動力混合系統之硬體嵌入式系統驗證 ”, SAE 2023 第28屆車輛工程學術研討會, 台南, 台灣, 中華民國一百一十二年十一月十日"
+  - title: "Energy Management of a Hybrid Vehicle System Using African Vulture Optimization Algorithm"
+    authors: ["Chi-Chang Huang", "Yi-Hsuan Hung", "Chien-Liang Chen", "Chi Li", "Yu-Hsuan Lin", "Syuan-Yi Chen"]
+    year: 2023
+    conference: "The International Automatic Control Conference (CACS 2023)"
+    city: "Penghu"
+    country: "Taiwan"
+    date_start: "2023-10-27"
+    date_end: "2023-10-28"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung", "Yu-Hsuan Lin"]
+    featured: false
+    source_citation: "11. Chi-Chang Huang, Yi-Hsuan Hung, Chien-Liang Chen, Chi Li, Yu-Hsuan Lin, Syuan-Yi Chen, “Energy Management of a Hybrid Vehicle System Using African Vulture Optimization Algorithm”, The International Automatic Control Conference (CACS 2023), Penghu, Taiwan, Oct. 27-28, 2023"
+  - title: "混能移動式充電站之機械與電力系統設計"
+    authors: ["鄧勝睿", "洪翊軒", "李陟", "陳建良"]
+    year: 2023
+    conference: "2023 ISME 第八屆台灣機電工程國際學會全國學術研討會"
+    city: "高雄"
+    country: "台灣"
+    date: "2023-04-28"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "12. 鄧勝睿、洪翊軒、李陟、陳建良, “混能移動式充電站之機械與電力系統設計”, 2023 ISME 第八屆台灣機電工程國際學會全國學術研討會, 高雄, 台灣, 中華民國一百一十二年四月二十八日"
+  - title: "雙動力應用於底盤車輛之機電整合系統與最佳化能量管理"
+    authors: ["王利翔", "洪翊軒", "蔡駿成", "陳建良", "林榆翔"]
+    year: 2023
+    conference: "2023 ISME 第八屆台灣機電工程國際學會全國學術研討會"
+    city: "高雄"
+    country: "台灣"
+    date: "2023-04-28"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "13. 王利翔 、洪翊軒 、蔡駿成 、陳建良 、林榆翔, “ 雙動力應用於底盤車輛之機電整合系統與最佳化能量管理 ”, 2023 ISME 第八屆台灣機電工程國際學會全國學術研討會, 高雄, 台灣, 中華民國一百一十二年四月二十八日"
+  - title: "充電櫃之 Lithium-ion Battery 機電整合"
+    authors: ["宋孟哲", "洪翊軒", "周鈞霖"]
+    year: 2023
+    conference: "2023 ISME 第八屆台灣機電工程國際學會全國學術研討會"
+    city: "高雄"
+    country: "台灣"
+    date: "2023-04-28"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "14. 宋孟哲、洪翊軒、周鈞霖, “ 充電櫃之 Lithium-ion Battery 機電整合 ”, 2023 ISME 第八屆台灣機電工程國際學會全國學術研討會, 高雄, 台灣, 中華民國一百一十二年四月二十八日"
+  - title: "燃料電池/鋰電池充電模組設計與控制器開發"
+    authors: ["林榆翔", "洪翊軒", "林彥均", "陳建良", "蔡駿成", "王利翔"]
+    year: 2023
+    conference: "2023 ISME 第八屆台灣機電工程國際學會全國學術研討會"
+    city: "高雄"
+    country: "台灣"
+    date: "2023-04-28"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "15. 林榆翔 、洪翊軒 、林彥均 、陳建良、蔡駿成 、王利翔, “燃料電池/鋰電池充電模組設計與控制器開發 ”, 2023 ISME 第八屆台灣機電工程國際學會全國學術研討會, 高雄, 台灣, 中華民國一百一十二年四月二十八日"
+  - title: "Suboptimal Online Energy Management for a Fuel Cell/Supercapacitor/Battery Electric Vehicle Using Artificial Neural Network Approach"
+    authors: ["Yi-Hsuan Hung"]
+    year: 2022
+    conference: "Powertrains and Energy Systems Technology Conference (SETC2022)"
+    city: "Himeji"
+    region: "Hyogo"
+    country: "Japan"
+    date: "2022-11-22"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "16. Yi-Hsuan Hung,  “Suboptimal Online Energy Management for a Fuel Cell/Supercapacitor/Battery Electric Vehicle Using Artificial Neural Network Approach”, Powertrains and Energy Systems Technology Conference(SETC2022), Himeji, Hyogo, Japan, Nov. 22, 2022"
+  - title: "Optimal Power Management Control of a Hybrid Powertrain System Using Grey Wolf Optimizer"
+    authors: ["Wei-Kai Huang", "Yi-Hsuan Hung"]
+    year: 2021
+    conference: "International Future Energy Electronics Conference 2021"
+    city: "Taipei"
+    country: "Taiwan"
+    date_start: "2021-11-16"
+    date_end: "2021-11-19"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "17. Wei-Kai Huang, Yi-Hsuan Hung,  “Optimal Power Management Control of a Hybrid Powertrain System Using Grey Wolf Optimizer”, International Future Energy Electronics Conference 2021, Taipei, Taiwan, Nov. 16-19, 2021"
+  - title: "具仿生最佳化能量管理之優化多動力系統控制單元設計、實體平台驗證與車載運行"
+    authors: ["邱竺楊", "黃威凱", "楊仕吉", "梁弼翔", "洪翊軒"]
+    year: 2021
+    conference: "科技部工程司110年度能源學門成果發表會"
+    city: "台南"
+    country: "台灣"
+    date: "2021-12-03"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "18. 邱竺楊、黃威凱、楊仕吉、梁弼翔、洪翊軒“具仿生最佳化能量管理之優化多動力系統控制單元設計、實體平台驗證與車載運行“，科技部工程司110年度能源學門成果發表會，台南, 台灣, 中華民國一百一十年十二月三日"
+  - title: "Optimal Power Management Control for the Engine/Motor Hybrid Powertrain using Improved Bat Algorithm"
+    authors: ["Hong-Kai Liu", "Yi-Hsuan Hung", "Syuan-Yi Chen", "Chien-Hsun Wu", "Chun-Hsin Chang", "Quan-Cheng Shou", "Ming-Qian Jiang", "Ping-Hung Shih"]
+    year: 2020
+    conference: "2020 The 6th International Conference on Control, Automation and Robotics (ICCAR 2020)"
+    city: "Singapore"
+    date_start: "2020-04-20"
+    date_end: "2020-04-23"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "19. Hong-Kai Liu, Yi-Hsuan Hung, Syuan-Yi Chen, Chien-Hsun Wu, Chun-Hsin Chang, Quan-Cheng Shou, Ming-Qian Jiang, Ping-Hung Shih, “Optimal Power Management Control for the Engine/Motor Hybrid Powertrain using Improved Bat Algorithm ”, 2020 The 6th International Conference on Control, Automation and Robotics (ICCAR 2020), Singapore,  April 20-23, 2020"
+  - title: "An integrated energy/thermal management system for a fuel cell/lithium battery energy module of electric vehicles"
+    authors: ["Li-Fan Liu", "Yi-Hsuan Hung", "Syuan-Yi Chen", "Chien-Hsun Wu", "Chun-Hsin Chang", "Ping-Hung Shih", "Chung-Yu Tai", "Ji-Jia Xu"]
+    year: 2020
+    conference: "2020 The 6th International Conference on Control, Automation and Robotics (ICCAR 2020)"
+    city: "Singapore"
+    date_start: "2020-04-20"
+    date_end: "2020-04-23"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "20. Li-Fan Liu, Yi-Hsuan Hung, Syuan-Yi Chen, Chien-Hsun Wu, Chun-Hsin Chang, Ping-Hung Shih, Chung-Yu Tai, Ji-Jia Xu, “An integrated energy/thermal management system for a fuel cell/lithium battery energy module of electric vehicles ”, 2020 The 6th International Conference on Control, Automation and Robotics (ICCAR 2020), Singapore,  April 20-23, 2020"
+  - title: "Optimal Power Control Strategy for a Dual-Power-Source Hybrid Powertrain Using Advanced Bat Algorithm"
+    authors: ["Hong-Kai Liu", "Yi-Hsuan Hung", "Syuan-Yi Chen", "Chia-Wen Chan"]
+    year: 2020
+    conference: "2020 International Automatic Control Conference (CACS 2020)"
+    city: "Taichung"
+    country: "Taiwan"
+    date_start: "2020-11-05"
+    date_end: "2020-11-07"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "21. Hong-Kai Liu, Yi-Hsuan Hung, Syuan-Yi Chen, Chia-Wen Chan, “Optimal Power Control Strategy for a Dual-Power-Source Hybrid Powertrain Using Advanced Bat Algorithm”, 2020 International Automatic Control Conference (CACS 2020), Taichung, Taiwan, Nov. 5-7, 2020"
+  - title: "System Design and Control Development of the Drive-by-wire for Golf Cart"
+    authors: ["Chien-Hsun Wu", "Kun-Sheng Wang", "Wen-Jin Sun", "Yi-Hsuan Hung"]
+    year: 2020
+    conference: "2020 International Automatic Control Conference (CACS 2020)"
+    city: "Taichung"
+    country: "Taiwan"
+    date_start: "2020-11-05"
+    date_end: "2020-11-07"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "22. Chien-Hsun Wu, Kun-Sheng Wang, Wen-Jin Sun, Yi-Hsuan Hung, “System Design and Control Development of the Drive-by-wire for Golf Cart”, 2020 International Automatic Control Conference (CACS 2020), Taichung, Taiwan, Nov. 5-7, 2020"
+  - title: "鯨魚仿生演算法應用於燃料電池與鋰電池之電能分配"
+    authors: ["陳建良", "洪翊軒"]
+    year: 2021
+    conference: "中華民國第二十六屆車輛工程學術研討會"
+    city: "彰化"
+    country: "台灣"
+    date: "2021-11-12"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "23. 陳建良、洪翊軒“鯨魚仿生演算法應用於燃料電池與鋰電池之電能分配“，中華民國第二十六屆車輛工程學術研討會，彰化, 台灣, 中華民國一百一十年十一月十二日。"
+  - title: "燃料電池/鋰電池混合電能高爾夫球車之系統設計與實作"
+    authors: ["梁弼翔", "洪翊軒"]
+    year: 2021
+    conference: "第十六屆全國氫能與燃料電池學術研討會暨第八屆台灣能源學會年會"
+    city: "台南"
+    country: "台灣"
+    date: "2021-09-02"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "24. 梁弼翔、洪翊軒“燃料電池/鋰電池混合電能高爾夫球車之系統設計與實作“，第十六屆全國氫能與燃料電池學術研討會暨第八屆台灣能源學會年會，台南, 台灣, 中華民國一百一十年九月二日。"
+  - title: "電動載具之主動式負載模擬平台設計"
+    authors: ["楊仕吉", "洪翊軒", "張俊興"]
+    year: 2021
+    conference: "台灣機電工程國際學會2021年會暨第六屆全國學術研討會"
+    city: "桃園"
+    country: "台灣"
+    date: "2021-05-28"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "25. 楊仕吉、洪翊軒、張俊興“電動載具之主動式負載模擬平台設計“，台灣機電工程國際學會2021年會暨第六屆全國學術研討會，桃園, 台灣, 中華民國一百一十年五月二十八日。"
+  - title: "灰狼演算法應用於雙電力複合電力系統之最佳化管理"
+    authors: ["洪翊軒"]
+    year: 2020
+    conference: "2020年中華民國力學學會年會暨第四十四屆全國力學會議"
+    city: "宜蘭"
+    country: "台灣"
+    date_start: "2020-11-26"
+    date_end: "2020-11-27"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "26. 洪翊軒“灰狼演算法應用於雙電力複合電力系統之最佳化管理“，2020年中華民國力學學會年會暨第四十四屆全國力學會議，宜蘭, 台灣, 中華民國一百零九年十一月二十六、二十七日"
+  - title: "Simulation and Experimental Verification of a Thermal Management System for the Emulated Fuel Cell/ Lithium Battery Energy System"
+    authors: ["Yi-Hsuan Hung"]
+    year: 2020
+    conference: "The 6th IEEE & 7th International Conference on Science, Education, and Viable Engineering (ICSEVEN 2020)"
+    city: "Penghu"
+    country: "Taiwan"
+    date_start: "2020-11-05"
+    date_end: "2020-11-08"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "27. Yi-Hsuan Hung, “Simulation and Experimental Verification of a Thermal Management System for the Emulated Fuel Cell/ Lithium Battery Energy System” The 6th IEEE & 7th International Conference on Science, Education, and Viable Engineering (ICSEVEN 2020), Penghu, Taiwan, Nov. 5-8, 2020"
+  - title: "具仿生最佳化能量管理之優化多動力系統控制單元設計、實體平台驗證與車載運行"
+    authors: ["戴仲瑜", "許繼嘉", "江明謙", "邵勸誠", "洪翊軒"]
+    year: 2020
+    conference: "中國機械工程學會第三十七屆全國學術研討會"
+    city: "雲林"
+    date: "2020-11-20"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "28. 戴仲瑜、許繼嘉、江明謙、邵勸誠、洪翊軒“具仿生最佳化能量管理之優化多動力系統控制單元設計、實體平台驗證與車載運行“，科技部工程司109年度能源學門成果發表會，雲林, 彰化, 中華民國一百零九年十一月二十日"
+    source_note: "使用者確認會議為「中國機械工程學會第三十七屆全國學術研討會」，地點為「雲林」；原始附件引文保留供追溯。"
+  - title: "鯨魚仿生演算法應用於雙動力混合系統之最佳化能源管理"
+    authors: ["邱竺楊", "洪翊軒", "楊仕吉", "梁弼翔", "黃威凱"]
+    year: 2020
+    conference: "中國機械工程學會第三十七屆全國學術研討會"
+    city: "雲林"
+    date: "2020-11-20"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "29. 邱竺楊、洪翊軒、楊仕吉、梁弼翔、黃威凱“鯨魚仿生演算法應用於雙動力混合系統之最佳化能源管理“，中國機械工程學會第三十七屆全國學術研討會，雲林, 彰化, 中華民國一百零九年十一月二十日"
+    source_note: "使用者確認會議為「中國機械工程學會第三十七屆全國學術研討會」，地點為「雲林」；原始附件引文保留供追溯。"
+  - title: "The Optimal Energy Management Control for a Lithium Battery/fuel cell Electric Vehicle using Bacterial Foraging Algorithm"
+    authors: ["Chung-Yu Tai", "Yi-Hsuan Hung", "Syuan-Yi Chen", "Chien-Hsun Wu", "Ming-Qian Jiang", "Ji-Jia Xu", "Quan-Cheng Shou"]
+    year: 2019
+    conference: "2019 IEEE International Conference on Applied System Innovation (ICASI 2019)"
+    city: "Fukuoka"
+    country: "Japan"
+    date_start: "2019-04-11"
+    date_end: "2019-04-15"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "30. Chung-Yu Tai, Yi-Hsuan Hung, Syuan-Yi Chen, Chien-Hsun Wu, Ming-Qian Jiang, Ji-Jia Xu, Quan-Cheng Shou, “The Optimal Energy Management Control for a Lithium Battery/fuel cell Electric Vehicle using Bacterial Foraging Algorithm”2019 IEEE International Conference on Applied System Innovation(ICASI 2019), Fukuoka, Japan, Apr. 11-15, 2019"
+  - title: "Optimal Energy Management Control for the Engine/Motor Hybrid Vehicle using Improved Artificial Bee Colony Algorithm"
+    authors: ["Quan-Cheng Shou", "Yi-Hsuan Hung", "Syuan-Yi Chen", "Chien-Hsun Wu", "Chung-Yu Tai", "Ming-Qian Jiang", "Ji-Jia Xu"]
+    year: 2019
+    conference: "2019 IEEE International Conference on Applied System Innovation (ICASI 2019)"
+    city: "Fukuoka"
+    country: "Japan"
+    date_start: "2019-04-11"
+    date_end: "2019-04-15"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "31. Quan-Cheng Shou, Yi-Hsuan Hung, Syuan-Yi Chen, Chien-Hsun Wu, Chung-Yu Tai, Ming-Qian Jiang, Ji-Jia Xu, “Optimal Energy Management Control for the Engine/Motor Hybrid Vehicle using Improved Artificial Bee Colony Algorithm”2019 IEEE International Conference on Applied System Innovation(ICASI 2019), Fukuoka, Japan, Apr. 11-15, 2019"
+  - title: "Energy Management System and Hardware-in-the-loop for Three Power Source of Heavy-duty Motorcycle"
+    authors: ["Chien-Hsun Wu", "Yong-Xiang Xu", "Wei-Chen Lin", "Yi-Hsuan Hung"]
+    year: 2019
+    conference: "2019 IEEE International Conference on Applied System Innovation (ICASI 2019)"
+    city: "Fukuoka"
+    country: "Japan"
+    date_start: "2019-04-11"
+    date_end: "2019-04-15"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "32. Chien-Hsun Wu, Yong-Xiang Xu, Wei-Chen Lin, Yi-Hsuan Hung, “Energy Management System and Hardware-in-the-loop for Three Power Source of Heavy-duty Motorcycle”2019 IEEE International Conference on Applied System Innovation(ICASI 2019), Fukuoka, Japan, Apr. 11-15, 2019"
+  - title: "人工蜂群演算法應用於雙電力源電動車系統之最佳化能量管理"
+    authors: ["江明謙", "洪翊軒", "邵勸誠", "戴仲瑜", "許繼嘉"]
+    year: 2019
+    conference: "中國機械工程學會第三十六屆全國學術研討會"
+    city: "台北"
+    country: "台灣"
+    date: "2019-12-07"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "33. 江明謙、洪翊軒、邵勸誠、戴仲瑜、許繼嘉“人工蜂群演算法應用於雙電力源電動車系統之最佳化能量管理“，中國機械工程學會第三十六屆全國學術研討會，台北, 台灣, 中華民國一百零八年十二月七日。"
+  - title: "On-line energy management control for two-energy-source hybrid powertrain by artificial intelligence optimization method."
+    authors: ["Yi-Hsuan Hung"]
+    year: 2018
+    conference: "2018 International Automatic Control Conference (CACS 2018)"
+    city: "Taoyuan"
+    country: "Taiwan"
+    date_start: "2018-11-04"
+    date_end: "2018-11-07"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "34. Yi-Hsuan Hung, “On-line energy management control for two-energy-source hybrid powertrain by artificial intelligence optimization method.”2018 International Automatic Control Conference (CACS 2018), Taoyuan, Taiwan, Nov. 4 -7, 2018"
+  - title: "Current sharing of a parallel DC-DC converters system using auto-tuning feedback type two-DOF PID control"
+    authors: ["S. Y. Chen", "Tse-An Pu", "B. C. Yang", "Y. H. Hung", "C. H. Wu"]
+    year: 2018
+    conference: "4th IEEE International Conference on Applied System Innovation 2018 (IEEE ICASI 2018)"
+    city: "Tokyo"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Y. H. Hung"]
+    featured: false
+    source_citation: "37. S. Y. Chen, Tse-An Pu, B. C. Yang, Y. H. Hung, and C. H. Wu, “Current sharing of a parallel DC-DC converters system using auto-tuning feedback type two-DOF PID control”, 4th IEEE International Conference on Applied System Innovation 2018 (IEEE ICASI 2018), Tokyo, Japan, 2018"
+  - title: "Intelligent Real-Time Energy Management Control for Three-Energy-Source Electric Vehicles by Evolutionary Optimization Method"
+    authors: ["Kai-Lin Lee", "Yi-Hsuan Hung", "Syuan-Yi Chen", "Hsuan-Yung Chang", "Chien-Hsun Wu"]
+    year: 2018
+    conference: "2018 5th International Conference on Mechatronics, Electronics and Automation Engineering (ICMEAE 2018)"
+    city: "Nagoya"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "38. Kai-Lin Lee, Yi-Hsuan Hung, Syuan-Yi Chen, Hsuan-Yung Chang, Chien-Hsun Wu, “Intelligent Real-Time Energy Management Control for Three-Energy-Source Electric Vehicles by Evolutionary Optimization Method”, 2018 5th International Conference on Mechatronics, Electronics and Automation Engineering (ICMEAE 2018), Nagoya, Japan, 2018"
+  - title: "Intelligent energy management system for a fuel cell/lithium battery/ electric motor powertrain and its thermal management system"
+    authors: ["Wei-Gang Chen", "Yi-Hsuan Hung", "Yeou-Feng Lue", "Ling-Lin Hsu"]
+    year: 2018
+    conference: "2018 5th International Conference on Mechatronics, Electronics and Automation Engineering (ICMEAE 2018)"
+    city: "Nagoya"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "39. Wei-Gang Chen, Yi-Hsuan Hung, Yeou-Feng Lue, and Ling-Lin Hsu, “Intelligent energy management system for a fuel cell/lithium battery/ electric motor powertrain and its thermal management system”, 2018 5th International Conference on Mechatronics, Electronics and Automation Engineering (ICMEAE 2018), Nagoya, Japan, 2018"
+  - title: "Speed tracking control of a pneumatic scooter in the presence of external disturbance force"
+    authors: ["S. Y. Chen", "C. H. Wu", "H. Y. Chang", "B. C. Yang", "Y. H. Hung"]
+    year: 2018
+    conference: "2018 5th International Conference on Mechatronics, Electronics and Automation Engineering (ICMEAE 2018)"
+    city: "Nagoya"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Y. H. Hung"]
+    featured: false
+    source_citation: "40. S. Y. Chen, C. H. Wu, H. Y. Chang, B. C. Yang, and Y. H. Hung, “Speed tracking control of a pneumatic scooter in the presence of external disturbance force”, 2018 5th International Conference on Mechatronics, Electronics and Automation Engineering (ICMEAE 2018), Nagoya, Japan, 2018"
+  - title: "Intelligent On-line Energy Management Design for a Fuel Cell/Lithium Battery Electric Scooter"
+    authors: ["Ling-Lin Hsu", "Yi-Hsuan Hung", "Kai-Lin Lee", "Lu-jung Wang"]
+    year: 2017
+    conference: "IEEE - International Conference on Applied System Innovation"
+    city: "Sapporo"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "41. Ling-Lin Hsu, Yi-Hsuan Hung, Kai-Lin Lee, Lu-jung Wang, “Intelligent On-line Energy Management Design for a Fuel Cell/Lithium Battery Electric Scooter”, IEEE - International Conference on Applied System Innovation, Sapporo, Japan, 2017"
+  - title: "Real-Time Dynamic Simulation of a Thermal Management System for the Integrated Fuel cell / Lithium battery / Electric motor Powertrain"
+    authors: ["Wei-Gang Chen", "Yi-Hsuan Hung", "Yeou-Feng Lue", "Ou-Yu-Chang"]
+    year: 2017
+    conference: "IEEE - International Conference on Applied System Innovation"
+    city: "Sapporo"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "42. Wei-Gang Chen, Yi-Hsuan Hung, Yeou-Feng Lue, Ou-Yu-Chang, “Real-Time Dynamic Simulation of a Thermal Management System for the Integrated Fuel cell / Lithium battery / Electric motor Powertrain”, IEEE - International Conference on Applied System Innovation, Sapporo, Japan, 2017"
+  - title: "On-Line Simulation of the Optimal Energy Management for a Three-Power-Source Hybrid Vehicle Using Bacterial Foraging Algorithm"
+    authors: ["Yi-Hsuan Hung", "Po-Lin Shih", "Syuan-Yi Chen"]
+    year: 2016
+    conference: "Tokyo 14th International Conference on Engineering & Technology, Computer, Basic & Applied Sciences"
+    city: "Tokyo"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "43. Yi-Hsuan Hung, Po-Lin Shih, Syuan-Yi Chen, “On-Line Simulation of the Optimal Energy Management for a Three-Power-Source Hybrid Vehicle Using Bacterial Foraging Algorithm”, Tokyo 14th International Conference on“Engineering & Technology, Computer, Basic & Applied Sciences.”Tokyo, Japan, 2016"
+  - title: "System Design and Mechatronics of a Three-Power-Source Experimental Platform"
+    authors: ["Yi-Hsuan Hung", "Chun-Hsin Chang"]
+    year: 2016
+    conference: "Tokyo 14th International Conference on Engineering & Technology, Computer, Basic & Applied Sciences"
+    city: "Tokyo"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "44. Yi-Hsuan Hung, Chun-Hsin Chang, “System Design and Mechatronics of a Three-Power-Source Experimental Platform”, Tokyo 14th International Conference on“Engineering & Technology, Computer, Basic & Applied Sciences.”Tokyo, Japan, 2016"
+  - title: "添加奈米氧化鋁機油於四行程機車以提升引擎性能之研究"
+    authors: ["羅士庭", "李方盛", "呂有豐", "洪翊軒"]
+    year: 2016
+    conference: "中國機械工程學會第三十三屆全國學術研討會"
+    city: "新竹"
+    country: "台灣"
+    date_start: "2016-12-03"
+    date_end: "2016-12-04"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "45. 羅士庭,李方盛,呂有豐,洪翊軒“添加奈米氧化鋁機油於四行程機車以提升引擎性能之研究“，中國機械工程學會第三十三屆全國學術研討會，新竹, 台灣, 中華民國一百零五年十二月三、四日。"
+  - title: "燃料電池/鋰電池/電動馬達整合式散熱系統設計"
+    authors: ["歐祐瑲", "洪翊軒", "呂有豐"]
+    year: 2016
+    conference: "中國機械工程學會第三十三屆全國學術研討會"
+    city: "新竹"
+    country: "台灣"
+    date_start: "2016-12-03"
+    date_end: "2016-12-04"
+    language: "zh"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["洪翊軒"]
+    featured: false
+    source_citation: "46. 歐祐瑲,洪翊軒,呂有豐“燃料電池/鋰電池/電動馬達整合式散熱系統設計“，中國機械工程學會第三十三屆全國學術研討會，新竹, 台灣, 中華民國一百零五年十二月三、四日。"
+  - title: "Design and experimental verification of an active energy management module for a three-energy-source electric vehicle"
+    authors: ["Yi-Hsuan Hung", "Tzu-Cheng Chou", "Cheng-Yen Lee", "K-David Huang"]
+    year: 2016
+    conference: "The 2016 International Conference on Innovation, Communication & Engineering"
+    city: "Xi'an"
+    country: "China"
+    date: "2016-12-08"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "47. Yi-Hsuan Hung, Tzu-Cheng Chou, Cheng-Yen Lee, K-David Huang, “Design and experimental verification of an active energy management module for a three-energy-source electric vehicle”, The 2016 International Conference on Innovation, Communication & Engineering, Xi'an, China, Dec. 08, 2016"
+  - title: "Bacterial foraging algorithm for the optimal on-line energy management of a three-power-source hybrid powertrain"
+    authors: ["P. L. Shih", "Y. H. Hung", "Syuan-Yi Chen", "C. H. Wu"]
+    year: 2016
+    conference: "The 2016 International Conference on Innovation, Communication & Engineering"
+    city: "Xi'an"
+    country: "China"
+    date: "2016-12-08"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Y. H. Hung"]
+    featured: false
+    source_citation: "48. P. L. Shih, Y. H. Hung, Syuan-Yi Chen, C. H. Wu, “Bacterial foraging algorithm for the optimal on-line energy management of a three-power-source hybrid powertrain”, The 2016 International Conference on Innovation, Communication & Engineering, Xi'an, China, Dec. 08, 2016"
+  - title: "Effects of Electric Circulation on the Operating Characteristics of the Power Split e-CVT Hybrid Systems"
+    authors: ["Cheng-Ta Chung", "Yi-Hsuan Hung"]
+    year: 2016
+    conference: "The 2016 International Conference on Innovation, Communication & Engineering"
+    city: "Xi'an"
+    country: "China"
+    date: "2016-12-08"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "49. Cheng-Ta Chung, Yi-Hsuan Hung, “Effects of Electric Circulation on the Operating Characteristics of the Power Split e-CVT Hybrid Systems”, The 2016 International Conference on Innovation, Communication & Engineering, Xi'an, China, Dec. 08, 2016"
+  - title: "Mechanical Designs, Energy Management, and Performance Assessment of a Novel Hybrid Electric Scooter"
+    authors: ["Yi-Hsuan Hung", "Shao-Wei Chang", "Wei-Ting Hsiao", "Siang-Ting Huang", "Lu-Jung Wang", "Cheng-Ta Chung"]
+    year: 2016
+    conference: "The 2016 International Conference on Innovation, Communication & Engineering"
+    city: "Xi'an"
+    country: "China"
+    date: "2016-12-08"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "50. Yi-Hsuan Hung, Shao-Wei Chang, Wei-Ting Hsiao, Siang-Ting Huang, Lu-Jung Wang, Cheng-Ta Chung, “Mechanical Designs, Energy Management, and Performance Assessment of a Novel Hybrid Electric Scooter”, The 2016 International Conference on Innovation, Communication & Engineering, Xi'an, China, Dec. 08, 2016"
+  - title: "An exploratory study on analyzing SCAMPER utilization in creative design workshop between junior high and elementary school students"
+    authors: ["Syuan-Yi Chen", "Ying-Chih Hung", "Yi-Hsuan Hung", "Chien-Hsun Wu"]
+    year: 2016
+    conference: "2016 International Conference of East-Asian Association for Science Education"
+    city: "Tokyo"
+    country: "Japan"
+    date_start: "2016-08-26"
+    date_end: "2016-08-28"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citation: "51. Syuan-Yi Chen, Ying-Chih Hung, Yi-Hsuan Hung, Chien-Hsun Wu, “An exploratory study on analyzing SCAMPER utilization in creative design workshop between junior high and elementary school students”, 2016 International Conference of East-Asian Association for Science Education, Tokyo, Japan, Aug. 26-28, 2016"
+  - title: "Speed control of an air motor using two DOF PID controller tuned by bacterial foraging optimization."
+    authors: ["Jon-Chao Hong", "Hsien-Sheng Hsiao", "Po-Hsi Chen", "Yi-Hsuan Hung", "Chi-Ruei Tsai", "Kai-Hsin Tai"]
+    year: 2018
+    date_start: "2018-11-04"
+    date_end: "2018-11-07"
+    conference: "2018 International Automatic Control Conference (CACS 2018)"
+    city: "Taoyuan"
+    country: "Taiwan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+    source_citations: ["35. Yi-Hsuan Hung, “Speed control of an air motor using two DOF PID controller tuned by bacterial foraging optimization.”2018 International Automatic Control Conference (CACS 2018), Taoyuan, Taiwan, Nov. 4 -7, 2018", "36. Jon-Chao Hong, Hsien-Sheng Hsiao, Po-Hsi Chen, Yi-Hsuan Hung, Chi-Ruei Tsai, Kai-Hsin Tai, “Speed control of an air motor using two DOF PID controller tuned by bacterial foraging optimization.”2018 International Automatic Control Conference (CACS 2018)"]
+    source_note: "使用者確認合併附件第 35、36 筆，採第 36 筆完整六位作者；日期及地點依第 35 筆。"
+
+theses:
+  - graduationYear: 2026
+    authorZh: "莊啓文"
+    authorEn: "Chi-Wen, CHUANG"
+    degree: "碩士"
+    department: "綠能科技與永續治理研究所"
+    titleZh: "冷鏈物流車輛電動化轉型之車型能耗與溫室氣體排放之性能效益分析"
+    titleEn: "Integrated Analysis of Performance and Benefit Based on Energy Consumption and Greenhouse Gases Emissions for Cold Chain Logistic Vehicles under Electrification Transition"
+    sourceUrl: "https://hdl.handle.net/11296/h7ypzs"
+    sourceStatus: "user_provided"
+  - graduationAcademicYear: 114
+    graduationYear: 2026
+    authorZh: "范正威"
+    authorEn: "Zheng-Wei Fan"
+    degree: "碩士"
+    department: "綠能科技與永續治理研究所"
+    titleZh: "考慮未來成本趨勢之燃料電池/鋰電池混合電力電動車最佳系統設計分析"
+    titleEn: "Analysis of Optimal System Design for Fuel Cell/Battery Hybrid Electric Vehicles Considering Future Cost Trends"
+    sourceUrl: "https://hdl.handle.net/11296/gf7s6d"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 114
+    graduationYear: 2026
+    authorZh: "白定梧"
+    authorEn: "Ding-Wu Bai"
+    degree: "碩士"
+    department: "綠能科技與永續治理研究所"
+    titleZh: "模組化多階層轉換器電路模擬與電容電壓平衡控制"
+    titleEn: "Modeling and Simulation of a Modular Multilevel Converter with Capacitor Voltage Balancing Control"
+    sourceUrl: null
+    sourceStatus: "user_provided_pending_ndltd"
+  - graduationAcademicYear: 114
+    graduationYear: 2026
+    authorZh: "郭譯云"
+    authorEn: "Y-Yun Kuo"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "具太陽能自主供電之彈性冷卻座椅系統"
+    titleEn: "Design and Integration of a Flexible Seat Cooling System with Solar-Powered Energy Supply"
+    sourceUrl: null
+    sourceStatus: "user_provided_pending_ndltd"
+  - graduationAcademicYear: 113
+    graduationYear: 2025
+    authorZh: "李陟"
+    authorEn: "Li Chi"
+    degree: "碩士"
+    department: "機電工程學系"
+    titleZh: "基於退火演算法之複合型電動車隊最佳路徑規劃"
+    titleEn: "Optimal Route Planning of Hybrid-Electric-Energy Vehicle Fleet Based on the Simulated Annealing Algorithm"
+    sourceUrl: "https://hdl.handle.net/11296/e62p89"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 113
+    graduationYear: 2025
+    authorZh: "賓承彥"
+    authorEn: "Chang-Yan Bin"
+    degree: "碩士"
+    department: "綠能科技與永續治理研究所"
+    titleZh: "應用基因演算法於固定式太陽能儲能系統之最佳化電價成本控制器設計"
+    titleEn: "Optimal Controller Design Based on Electricity Price Using Genetic Algorithms for a Stationary Solar Energy Storage System"
+    sourceUrl: "https://hdl.handle.net/11296/2pusch"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 113
+    graduationYear: 2025
+    authorZh: "謝念恒"
+    authorEn: "Nien-Heng Hsieh"
+    degree: "碩士"
+    department: "綠能科技與永續治理研究所"
+    titleZh: "應用於冷鏈物流之複合動力系統模擬平台開發"
+    titleEn: "Development of a Simulation Platform for Hybrid Power System in Cold Chain Logistics"
+    sourceUrl: "https://hdl.handle.net/11296/jszrzp"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 113
+    graduationYear: 2025
+    authorZh: "林建銘"
+    authorEn: "Chien-Ming Lin"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "粒子群演算法應用於氫能水下載具之能源管理系統最佳化"
+    titleEn: "Optimization of Energy Management System for Hydrogen-Powered Underwater Vehicles Using Particle Swarm Optimization"
+    sourceUrl: "https://hdl.handle.net/11296/6434fw"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 111
+    graduationYear: 2023
+    authorZh: "邱竺楊"
+    authorEn: "Chu-Yang Chiu"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "透過鯨魚演算法調變權重之類神經網路應用於三電力電動車輛系統上最佳化能源管理策略"
+    titleEn: "Artificial Neural Network Via Whale Optimization Algorithm Modulation Applied in Optimal Energy Management System for the Three-Electric-Energy Vehicle System"
+    sourceUrl: "https://hdl.handle.net/11296/567e5w"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 111
+    graduationYear: 2023
+    authorZh: "楊仕吉"
+    authorEn: "Shih-Chi Yang"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "新型態三動力混合四輪驅動車輛設計製作與主動式可變負載扭力分配"
+    titleEn: "Design and Manufacture of a New type Three Power Hybrid Four-Wheel Drive Vehicle with Motor Regulated Central Torque Distribution Differential"
+    sourceUrl: "https://hdl.handle.net/11296/atqhqq"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 111
+    graduationYear: 2023
+    authorZh: "陳建良"
+    authorEn: "Chien-Liang Chen"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "應用電池健康度因子於複合電力電動車輛之最佳化尺寸與能源管理控制器設計"
+    titleEn: "Optimal sizing and energy management controller design applied in multiple-electric-energy vehicles by using battery state-of-health factors"
+    sourceUrl: "https://hdl.handle.net/11296/4d9wz3"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 110
+    graduationYear: 2022
+    authorZh: "江明謙"
+    authorEn: "Ming-Qian Jiang"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "鯨魚演算法應用於三動力複合動力系統之最佳化能量管理"
+    titleEn: "Optimal Energy Management Strategy Using Whale Optimization Algorithm for a Three-Power-Source Hybrid Powertrain"
+    sourceUrl: "https://hdl.handle.net/11296/d4yp7x"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 110
+    graduationYear: 2022
+    authorZh: "邵勸誠"
+    authorEn: "Quan-Cheng Shou"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "改良式人工蜂群演算法應用於雙動力混合動力系統之最佳化能量管理"
+    titleEn: "Optimal Energy Management Control for the Engine/Motor Hybrid Vehicle Using Improved Artificial Bee Colony Algorithm"
+    sourceUrl: "https://hdl.handle.net/11296/v9ykkx"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 110
+    graduationYear: 2022
+    authorZh: "梁弼翔"
+    authorEn: "Bi-Xiang Liang"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "基於粒子群演算法之主動式能量管理系統應用於雙電力電動車輛"
+    titleEn: "Using Particle Swarm Optimization Algorithm for a Dual Electrical Power Electric Vehicle Applied in Active Energy Management"
+    sourceUrl: "https://hdl.handle.net/11296/e5dvdv"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 110
+    graduationYear: 2022
+    authorZh: "黃威凱"
+    authorEn: "Wei-Kai Huang"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "改良式灰狼演算法應用於三動力複合動力車之最佳化能源管理控制器開發"
+    titleEn: "Improved Grey wolf Optimizer Applied to the Optimized Energy Management Controller for Three-Power Hybrid Vehicles"
+    sourceUrl: "https://hdl.handle.net/11296/9suz86"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 109
+    graduationYear: 2021
+    authorZh: "劉力凡"
+    authorEn: "Li-Fan Liu"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "創新多迴路混合電力散熱系統動態模擬與實驗平台驗證"
+    titleEn: "Dynamic simulation and experimental platform verification of an innovative multi-loop hybrid thermal management system"
+    sourceUrl: "https://hdl.handle.net/11296/y89uvz"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 109
+    graduationYear: 2021
+    authorZh: "施秉宏"
+    authorEn: "Ping-Hung Shih"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "創新電動車輛之模組化線控底盤機構暨雙電力系統設計與實作驗證"
+    titleEn: "Innovative Modular Wire-controlled Chassis and Dual Power System Design and Implementation Verification of Electric Vehicles"
+    sourceUrl: "https://hdl.handle.net/11296/389ym2"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 109
+    graduationYear: 2021
+    authorZh: "劉宏凱"
+    authorEn: "Hong-Kai Liu"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "改良式蝙蝠演算法應用於三動力複合動力車之最佳能源管理控制器開發"
+    titleEn: "Improved bat algorithm applied to the optimized energy management controller for three-power hybrid vehicles"
+    sourceUrl: "https://hdl.handle.net/11296/934jv7"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 108
+    graduationYear: 2020
+    authorZh: "戴仲瑜"
+    authorEn: "Chung-Yu Tai"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "灰狼演算法應用於複合電力電動車輛系統之控制器設計"
+    titleEn: "Control Unit Design Using Gray Wolf Algorithm for a Multiple-Electric-Energy Vehicle"
+    sourceUrl: "https://hdl.handle.net/11296/euy3rh"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 108
+    graduationYear: 2020
+    authorZh: "許繼嘉"
+    authorEn: "Ji-Jia Xu"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "混合動力平台機電整合系統測試驗證與最佳化能量管理"
+    titleEn: "Experimental Verification for a Hybrid Powertrain Platform with Optimal Energy Management Control System"
+    sourceUrl: "https://hdl.handle.net/11296/4d6qy6"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 108
+    graduationYear: 2020
+    authorZh: "蔡宗佑"
+    authorEn: "Tsung-Yu Tsai"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "電動載具汰役電池之性能分析與變動負載驗證"
+    titleEn: "Performance Analysis and Variable Load Verification of Retired Batteries for Electric Vehicles"
+    sourceUrl: "https://hdl.handle.net/11296/wuez23"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 107
+    graduationYear: 2019
+    authorZh: "張軒墉"
+    authorEn: "Hsuan-Yung Chang"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "混合動力平台機電整合測試驗證與智慧型轉速控制"
+    titleEn: "Experimental Verification for a Hybrid Powertrain Platform with the Intelligent Speed Control"
+    sourceUrl: "https://hdl.handle.net/11296/s5h9xd"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 106
+    graduationYear: 2018
+    authorZh: "陳韋綱"
+    authorEn: "Wei-Gang Chen"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "整合式燃料電池/鋰電池/能源與散熱智能管理系統"
+    titleEn: "Intelligent Energy Management System for a Fuel cell / Lithium battery Powertrain and Thermal Management System"
+    sourceUrl: "https://hdl.handle.net/11296/4375hw"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 106
+    graduationYear: 2018
+    authorZh: "李鎧麟"
+    authorEn: "Kai-Lin Lee"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "人工蜂群演算法應用於三電力電動車系統之最佳能量管理"
+    titleEn: "Integrated Optimal Energy Management Strategy Using Artificial Bee Colony Algorithm for a Three-Energy-Source Hybrid Powertrain"
+    sourceUrl: "https://hdl.handle.net/11296/u8r9em"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 106
+    graduationYear: 2018
+    authorZh: "楊蕓瑄"
+    authorEn: "Yun-Hsuan Yang"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "以專利探勘與多準則決策分析方法建構未來電動車主軸技術平台"
+    titleEn: "Establishing a Major Technology Platform for Future Electric Vehicles by Patent Mining and Multiple Criteria Decision Making Methods"
+    sourceUrl: "https://hdl.handle.net/11296/q2c56d"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 105
+    graduationYear: 2017
+    authorZh: "周子正"
+    authorEn: "Tzu-Cheng Chou"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "三電力源電動車之主動式先進能量管理與平台實作驗證"
+    titleEn: "Design and Experimental Verification of an Active Energy Managment Module for a Three-Energy-Source Electric Vehicle"
+    sourceUrl: "https://hdl.handle.net/11296/453y49"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 105
+    graduationYear: 2017
+    authorZh: "施伯霖"
+    authorEn: "Po-Lin Shih"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "細菌覓食演算法應用於三動力複合動力車系統之最佳能量管理與變速策略"
+    titleEn: "Integrated Optimal Energy Management/Gear Shifting Strategy Using Bacterial Foraging Algorithm for a Three-Power-Source Hybrid Powertrain"
+    sourceUrl: "https://hdl.handle.net/11296/wdaw58"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 105
+    graduationYear: 2017
+    authorZh: "敖俊儒"
+    publish: false
+    authorEn: "Chun-Ju Ao"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "基於約略集合理論之自動櫃員機選址之關聯規則定義"
+    titleEn: "The Rough Set Theory Based derivations of Association Rules for Automated Teller Machines Location Selections"
+    sourceUrl: "https://hdl.handle.net/11296/89teve"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 105
+    graduationYear: 2017
+    authorZh: "韓學中"
+    authorEn: "Hsueh-Chung Han"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "智慧型伸縮電動車之結構設計與實作驗證"
+    titleEn: "Structural Design and Experimental Assessment of Intelligent Flexible-Size Electric Vehicles"
+    sourceUrl: "https://hdl.handle.net/11296/aw7bjc"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 105
+    graduationYear: 2017
+    authorZh: "黃慧君"
+    publish: false
+    authorEn: "Hui-Jun Huang"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "行動銀行使用者的科技創新意識與虛擬世界危險信念對持續使用意圖之研究"
+    titleEn: "Individual Technological Innovativeness and Belief in Dangerous Virtual World Affect Continuance Intention to Use Mobile Banking"
+    sourceUrl: "https://hdl.handle.net/11296/z5eq9w"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 104
+    graduationYear: 2016
+    authorZh: "黃祥庭"
+    authorEn: "Siang-Ting Huang"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "利用動態粒子群演算法於三動力源複合動力系統之最佳能量管理"
+    titleEn: "Dynamic particle swarm algorithm for optimal energy management for three power source of the hybrid system."
+    sourceUrl: "https://hdl.handle.net/11296/56yusb"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 104
+    graduationYear: 2016
+    authorZh: "王振雄"
+    publish: false
+    authorEn: "Chen-Hsiung Wang"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "基於專利地圖與能力集合擴展之開放性創新策略"
+    titleEn: "Open innovation strategy based on the patent map and competence set expansion"
+    sourceUrl: "https://hdl.handle.net/11296/88av3g"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 104
+    graduationYear: 2016
+    authorZh: "蕭偉廷"
+    authorEn: "Wei-Ting Hasio"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "電控式並聯複合動力機車系統設計與實車驗證"
+    titleEn: "System design and dynamometer verification of electronically controlled parallel hybrid motorcycle system"
+    sourceUrl: "https://hdl.handle.net/11296/c2346j"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 103
+    graduationYear: 2015
+    authorZh: "林煜軒"
+    authorEn: "Yu-Hsuan Lin"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "混合動力散熱模組之機電系統設計與控制"
+    titleEn: "Electromechanical System Design and Control of Hybrid Cooling Module"
+    sourceUrl: "https://hdl.handle.net/11296/d6fxce"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 103
+    graduationYear: 2015
+    authorZh: "董又銘"
+    authorEn: "Yu-Ming Tung"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "三動力源複合式動力車之最佳化能量管理與模式切換"
+    titleEn: "GSA for Engery Mangment and Mode Switch of a 3-Power Hybrid Vehicle"
+    sourceUrl: "https://hdl.handle.net/11296/zeuzx7"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 103
+    graduationYear: 2015
+    authorZh: "周文傑"
+    authorEn: "Wen-Chieh Chou"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "乳化燃料添加不同比例奈米Al2O3之柴油引擎性能研究"
+    titleEn: "Study of the effect using different proportions of Nano-Al2O3 emulsion fuel in Diesel Engine Performance"
+    sourceUrl: "https://hdl.handle.net/11296/27n4vd"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 103
+    graduationYear: 2015
+    authorZh: "李方盛"
+    authorEn: "Fang-Sheng Lee"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "添加奈米氧化鋁於四行程機車機油中引擎性能影響之研究"
+    titleEn: "The study on the influence of engine performance regarding to four-stroke motorcycle engine oil by using nano alumina"
+    sourceUrl: "https://hdl.handle.net/11296/887q83"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 103
+    graduationYear: 2015
+    authorZh: "廖伯霖"
+    authorEn: "Bo-Lin Liao"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "電動車之多電源系統建模與最佳化能量管理暨模式切換時機效益評估"
+    titleEn: "An Optimal Energy Management with Effect of Mode-Switch Timing for a Multi Energy Source System of Electric Vehicles"
+    sourceUrl: "https://hdl.handle.net/11296/dhn8y3"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 102
+    graduationYear: 2014
+    authorZh: "李汯緯"
+    authorEn: "Hong-Wei Li"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "空氣/電動混合動力機車 系統設計與實作驗證"
+    titleEn: "System Design and Experimental Verification of Air/Electric Hybrid Scooters"
+    sourceUrl: "https://hdl.handle.net/11296/6d34wd"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 102
+    graduationYear: 2014
+    authorZh: "陳建豪"
+    authorEn: "Jian-Hao Chen"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "綠能車用多能源補充站系統設計與實驗研究"
+    titleEn: "System design and experimental assessment of multiple energy supply station for green vehicles"
+    sourceUrl: "https://hdl.handle.net/11296/4n87jr"
+    sourceStatus: "verified_ndltd"
+  - graduationAcademicYear: 102
+    graduationYear: 2014
+    authorZh: "李鴻駿"
+    authorEn: "Hong-Jun Li"
+    degree: "碩士"
+    department: "工業教育學系"
+    titleZh: "電動車動力測試系統之建模與性能改善分析"
+    titleEn: "Systems modeling and performance improvement of test platform for electric vehicles"
+    sourceUrl: "https://hdl.handle.net/11296/gvt5n9"
+    sourceStatus: "verified_ndltd"

@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{ $en := eq .Language.Lang "en" }}
+{{ $css := resources.Get "css/research.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ partial "list-archives-style.html" . }}
+{{ $source := site.GetPage "/research" }}
+{{ $kind := .Params.project_kind }}
+{{ $projects := slice }}
+{{ $dateField := "start" }}
+{{ if eq $kind "nstc-projects" }}
+  {{ $projects = site.Data.nstc_projects }}{{ $dateField = "start_date" }}
+{{ else }}
+  {{ range where $source.Params.sections "id" $kind }}{{ $projects = .content.projects | default slice }}{{ end }}
+{{ end }}
+{{ $items := partial "research/items.html" (dict "projects" $projects "kind" $kind "language" .Language.Lang) }}
+<div class="container gptl-people gptl-research gptl-list-archive">
+<a class="text-link gptl-button list-back-link" href="{{ "research/" | relLangURL }}"><span aria-hidden="true">←</span> {{ cond $en "Back to Research Projects" "返回研究計畫" }}</a>
+<h1>{{ .Title }}</h1>
+{{ $years := slice }}{{ range $items }}{{ $years = $years | append (substr (index . $dateField) 0 4) }}{{ end }}
+{{ range uniq $years }}
+{{ $year := . }}{{ $group := slice }}
+{{ range $items }}{{ if eq (substr (index . $dateField) 0 4) $year }}{{ $group = $group | append . }}{{ end }}{{ end }}
+<section class="people-group gptl-section-grid"><header><h2>{{ $year }}</h2></header><div class="research-project-cell">
+{{ partial (printf "research/%s.html" $kind) (dict "items" $group "labels" $source.Params.project_labels) }}
+</div></section>
+{{ else }}<p class="text-muted">{{ cond $en "Content in preparation." "資料整理中" }}</p>{{ end }}
+</div>{{ end }}

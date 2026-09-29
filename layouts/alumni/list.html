@@ -5,18 +5,18 @@
 <div class="container gptl-team" lang="{{ site.Language.LanguageCode }}">
 <p class="team-breadcrumb">{{ cond $en "People" "研究團隊" }} / {{ .Title }}</p><h1>{{ .Title }}</h1>
 {{ partial "people-nav.html" . }}
-<h2>{{ cond $en "Alumni" "歷屆成員" }}</h2>
+{{ $alumni := where site.Data.alumni "publish" "ne" false }}
 {{ $years := slice }}
-{{ range site.Data.alumni }}{{ $years = $years | append .graduationAcademicYear }}{{ end }}
+{{ range $alumni }}{{ $years = $years | append .graduationAcademicYear }}{{ end }}
 {{ range sort (uniq $years) "value" "desc" }}
-{{ $members := where site.Data.alumni "graduationAcademicYear" . }}
-<section class="team-degree" aria-label="{{ if $en }}Graduation academic year {{ . }} (R.O.C.){{ else }}{{ . }}學年度畢業成員{{ end }}">
-<h3>{{ if $en }}{{ (index $members 0).graduationYear }}{{ else }}{{ . }}學年度（{{ (index $members 0).graduationYear }}）{{ end }}</h3>
+{{ $members := where $alumni "graduationAcademicYear" . }}
+<section class="team-degree" aria-label="{{ if $en }}Graduated {{ (index $members 0).graduationYear }}{{ else }}{{ . }}學年度畢業成員{{ end }}">
+<h2 class="team-degree-title">{{ if $en }}{{ (index $members 0).graduationYear }}{{ else }}{{ . }}學年度（{{ (index $members 0).graduationYear }}）{{ end }}</h2>
 <div class="team-grid gptl-cell-grid">
 {{ range $members }}
-<article class="team-card" aria-label="{{ cond $en .englishName .chineseName }}"><div class="team-card-body">
-<h4 class="team-member-name">{{ cond $en .englishName .chineseName }}</h4>{{ if $en }}
-{{ range where site.Data.team.institutes "name" .department }}<p class="team-institute-name">{{ .english }}</p>{{ end }}
+<article id="alumnus-{{ .chineseName | sha1 }}" class="team-card" aria-label="{{ cond $en .englishName .chineseName }}"><div class="team-card-body">
+<h3 class="team-member-name">{{ cond $en .englishName .chineseName }}</h3>{{ if $en }}
+<p class="team-degree-label">{{ partial "locale/term.html" .degree }}</p><p class="team-institute-name">{{ partial "locale/term.html" .department }}</p>
 {{ else }}<p class="team-english">{{ .englishName }}</p><p class="team-degree-label">{{ .degree }}</p><p class="team-institute-name">{{ .department }}</p>{{ end }}
 </div></article>
 {{ end }}

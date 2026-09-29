@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ $en := eq .Language.Lang "en" }}
+{{ $css := resources.Get "css/publications.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ partial "list-archives-style.html" . }}
+<div class="container gptl-people gptl-publications gptl-list-archive">
+<a class="text-link gptl-button list-back-link" href="{{ "publication/" | relLangURL }}"><span aria-hidden="true">←</span> {{ cond $en "Back to Publications" "返回研究成果" }}</a>
+<h1>{{ .Title }}</h1>
+{{ if eq .Params.publication_kind "conference-paper" }}
+{{ partial "publications/conference-list.html" (dict "items" (partial "publications/conference-items.html" (dict "english" $en)) "yearLevel" 2) }}
+{{ else if eq .Params.publication_kind "thesis" }}
+{{ partial "publications/theses-list.html" (dict "items" site.Data.publications.theses "english" $en "yearLevel" 2) }}
+{{ else }}
+{{ partial "publications/list.html" (dict "items" (partial "publications/items.html" (dict)) "english" $en "yearLevel" 2) }}
+{{ end }}
+</div>{{ end }}

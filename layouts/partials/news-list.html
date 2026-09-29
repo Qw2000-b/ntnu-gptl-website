@@ -1,30 +1,44 @@
-{{ if eq site.Language.Lang "en" }}<p class="text-muted">Content in preparation.</p>{{ else }}
-{{ $items := sort site.Data.news "sort_date" "desc" }}
+{{ $en := eq site.Language.Lang "en" }}
+{{ $items := partial "news/items.html" . }}
+{{/* A text prefix keeps year-only values from being sorted as numbers by Hugo. */}}
+{{ $ordered := slice }}
+{{ range $items }}{{ $ordered = $ordered | append (merge . (dict "news_sort_key" (printf "date-%s" .sort_date))) }}{{ end }}
+{{ $items = sort $ordered "news_sort_key" "desc" }}
 {{ if .limit }}{{ $items = first .limit $items }}{{ end }}
 {{ $home := .home | default false }}
 {{ $year := "" }}{{ $month := "" }}
-<div class="news-timeline" lang="zh-Hant">
+{{ if not $items }}<p class="text-muted">{{ cond $en "Content in preparation." "內容整理中。" }}</p>{{ else }}
+<div class="news-timeline" lang="{{ cond $en "en" "zh-Hant" }}">
 {{ range $items }}
-  {{ $nextYear := substr .sort_date 0 4 }}{{ $nextMonth := substr .sort_date 5 2 }}
+  {{ $item := . }}
+  {{ $nextYear := substr .sort_date 0 4 }}{{ $nextMonth := "" }}
+  {{ if ge (len .sort_date) 7 }}{{ $nextMonth = substr .sort_date 5 2 }}{{ end }}
   {{ if ne $year $nextYear }}
-    {{ if $home }}<h3 class="news-year">{{ $nextYear }} 年</h3>{{ else }}<h2 class="news-year">{{ $nextYear }} 年</h2>{{ end }}
+    {{ if $home }}<h3 class="news-year">{{ $nextYear }}{{ if not $en }} 年{{ end }}</h3>{{ else }}<h2 class="news-year">{{ $nextYear }}{{ if not $en }} 年{{ end }}</h2>{{ end }}
     {{ $year = $nextYear }}{{ $month = "" }}
   {{ end }}
-  {{ if ne $month $nextMonth }}<p class="news-month">{{ $nextMonth }} 月</p>{{ $month = $nextMonth }}{{ end }}
+  {{/* Year-only events stay outside dated month groups, without inventing a month. */}}
+  {{ if and (not $nextMonth) $month }}<p class="news-month">{{ cond $en "Annual record" "年度紀錄" }}</p>{{ end }}
+  {{ if and $nextMonth (ne $month $nextMonth) }}<p class="news-month">{{ $nextMonth }}{{ cond $en "" " 月" }}</p>{{ end }}
+  {{ $month = $nextMonth }}
+  {{ $title := .title_zh | default .title }}{{ $summary := .summary_zh | default .text }}
+  {{ $category := .category_zh }}{{ $papers := .papers }}
+  {{ if $en }}{{ $title = .title_en }}{{ $summary = .summary_en }}{{ $category = .category_en }}{{ $papers = .papers_en }}{{ end }}
   <article class="news-entry" id="news-{{ .id }}">
-    <p class="news-date">{{ .date_label }}{{ with .period }}<br>{{ . }}{{ end }}</p>
-    <div class="news-content">{{ if $home }}<h4 class="news-title">{{ .title }}</h4>{{ else }}<h3 class="news-title">{{ .title }}</h3>{{ end }}
+    <p class="news-date">{{ if .date_start }}{{ cond $en .date_label_en .date_label_zh }}{{ cond $en " | " "｜" }}{{ replace .date_start "-" "/" }}{{ with .date_end }}–{{ replace . "-" "/" }}{{ end }}{{ else }}{{ .date_label }}{{ with .period }}<br>{{ . }}{{ end }}{{ end }}</p>
+    <div class="news-content">
+    {{ with $category }}<p class="news-date">{{ . }}</p>{{ end }}
+    {{ if $home }}<h4 class="news-title">{{ $title }}</h4>{{ else }}<h3 class="news-title">{{ $title }}</h3>{{ end }}
     {{ with .award }}<span class="news-award">{{ . }}</span>{{ end }}
-    <p class="news-description">{{ .text }}</p>
-    {{ $papers := where .papers "title" "ne" nil }}
-    {{ if $papers }}{{ if $home }}<details open><summary>論文題目與獎項（{{ len $papers }}）</summary>{{ end }}<ul class="news-papers">
-    {{ range $papers }}{{ if .title }}
+    <p class="news-description">{{ $summary }}</p>
+    {{ with $papers }}{{ if $home }}<details open><summary>{{ cond $en "Papers and awards" "論文題目與獎項" }}（{{ len . }}）</summary>{{ end }}<ul class="news-papers">
+    {{ range . }}{{ if .title }}
       <li><strong>{{ .people }}</strong>{{ with .award }} <span class="news-award">{{ . }}</span>{{ end }}<br><span class="news-paper-title">〈{{ .title }}〉</span></li>
     {{ end }}{{ end }}
     </ul>{{ if $home }}</details>{{ end }}{{ end }}
+    {{ with .source_url }}<p class="news-date"><a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ cond $en "Source" "資料來源" }}：{{ $item.source_title }}</a></p>{{ end }}
     </div>
   </article>
 {{ end }}
 </div>
-
 {{ end }}

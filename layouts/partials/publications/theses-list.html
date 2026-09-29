@@ -1,0 +1,30 @@
+{{ $items := where .items "publish" "ne" false }}
+{{ $en := .english }}
+{{ $level := .yearLevel | default 3 }}
+{{ $departmentsEn := dict "工業教育學系" "Department of Industrial Education" "機電工程學系" "Department of Mechatronic Engineering" }}
+{{ range site.Data.team.institutes }}{{ $departmentsEn = merge $departmentsEn (dict .name .english) }}{{ end }}
+{{ $degreesEn := dict "碩士" "Master’s thesis" "博士" "Doctoral dissertation" }}
+{{ $years := slice }}
+{{ range $items }}{{ $years = $years | append .graduationYear }}{{ end }}
+<div class="gptl-publication-list gptl-theses-list" lang="{{ cond $en "en" "zh-Hant" }}">
+{{ range sort (uniq $years) "value" "desc" }}
+  {{/* Preserve source-array order within each Gregorian graduation year. */}}
+  {{ $members := where $items "graduationYear" . }}
+  <section class="publication-year-group">
+    {{ printf "<h%d class=\"publication-year\">%d</h%d>" $level (int .) $level | safeHTML }}
+    <ul class="publication-records">
+    {{ range $members }}
+      {{ $title := cond $en .titleEn .titleZh }}
+      {{ if eq .sourceStatus "pending_confirmation" }}{{ $title = cond $en "To be confirmed" "確認中" }}{{ end }}
+      <li id="thesis-{{ printf "%s/%v" .authorZh .graduationYear | sha1 }}" class="publication-record thesis-record">
+        <p class="publication-authors">{{ cond $en .authorEn .authorZh }}</p>
+        {{ printf "<h%d class=\"publication-title thesis-title\">" (add $level 1) | safeHTML }}
+          {{ with .sourceUrl }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ end }}{{ $title }}{{ with .sourceUrl }}</a>{{ end }}
+        {{ printf "</h%d>" (add $level 1) | safeHTML }}
+        <p class="publication-journal thesis-metadata">{{ if $en }}{{ index $degreesEn .degree }} · {{ partial "locale/term.html" .department }} · Graduated {{ .graduationYear }}{{ else }}{{ .degree }} · {{ .department }} · {{ .graduationYear }} 年畢業{{ end }}</p>
+      </li>
+    {{ end }}
+    </ul>
+  </section>
+{{ end }}
+</div>

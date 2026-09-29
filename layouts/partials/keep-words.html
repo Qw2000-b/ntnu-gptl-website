@@ -1,0 +1,6 @@
+{{- $text := .text | htmlEscape -}}
+{{- range .words -}}
+  {{- $word := . | htmlEscape -}}
+  {{- $text = replace $text $word (printf "<span class=\"direction-title-word\">%s</span>" $word) -}}
+{{- end -}}
+{{- return ($text | safeHTML) -}}

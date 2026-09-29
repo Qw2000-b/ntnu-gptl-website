@@ -7,7 +7,7 @@
     "text": "莊啓文赴日本名古屋，於第 35 屆 IEEE International Symposium on Industrial Electronics（ISIE 2026）發表論文。",
     "papers": [
       {
-        "people": "莊啓文",
+        "people": "Chi-Wen Chuang, Yi-Hsuan Hung, Yu-Hsuan Lin, Chien-Chiang Tung, Tien-Chu Huang, Ding-Wu Bai",
         "title": "Comparative Benefit Assessment of Diesel–Electric Hybrid and Hydrogen Fuel-Cell Hybrid Powertrains for a 5-Ton-Class Refrigeration Truck",
         "award": ""
       }
@@ -23,7 +23,7 @@
     "text": "黃啟錩赴美國密西根州，於第 37 屆 IEEE Intelligent Vehicles Symposium（IV 2026）發表論文。",
     "papers": [
       {
-        "people": "黃啟錩",
+        "people": "Chi-Chang Huang, Yi-Hsuan Hung",
         "title": "Energy-optimal lane-change planning for fuel cell electric vehicles",
         "award": ""
       }
@@ -34,10 +34,15 @@
   {
     "id": "isme-2026",
     "sort_date": "2026-05-09",
-    "date_label": "活動日期｜2026/05/09",
-    "title": "ISME 2026 研討會與研究成果",
-    "text": "實驗室專題學生參與「2026 ISME 第 11 屆台灣機電工程國際學會全國學術研討會」，各組研究題目與學生如下。",
-    "papers": [
+    "date_label": "活動日期｜2026/05/08–2026/05/09",
+    "title": "車能團隊參與 ISME 2026　多組研究成果獲最佳論文獎肯定",
+    "text": "臺師大車輛與能源團隊參與 2026 ISME 第 11 屆台灣機電工程國際學會全國學術研討會，發表智慧車輛、能源整合與永續科技相關研究。氫能移動式電動車、混合電力船舶、自動駕駛軌跡規劃、冷鏈車與熱管理研究五組團隊皆獲最佳論文獎，完整論文題目與作者如下。",
+    "period": "",
+    "award": "",
+    "award_source": "使用者於 2026-09-18 明確確認五組皆獲最佳論文獎。",
+    "editor_note": "五組皆獲最佳論文獎；公開論文題名及完整作者依使用者最新確認資料，原始學生名單保留於 archived_papers 供追溯。",
+    "category_zh": "研討會成果",
+    "archived_papers": [
       {
         "people": "廖詠頡、陳沛廷",
         "title": "氫能移動式電動車之智慧型最佳能源控制系統開發",
@@ -64,10 +69,35 @@
         "award": "最佳論文獎"
       }
     ],
-    "period": "",
-    "award": "",
-    "award_source": "使用者於 2026-09-18 明確確認五組皆獲最佳論文獎。",
-    "editor_note": "使用者指出師大公告標註有誤，本則依使用者確認標示五組獲獎；保留使用者提供的學生名單。"
+    "source_title": "國立臺灣師範大學公共事務中心",
+    "source_url": "https://pr.ntnu.edu.tw/ntnunews/index.php?id=24537&mode=data",
+    "papers": [
+      {
+        "people": "洪翊軒、林煜軒、李家宇、劉宥宣、陳祖言",
+        "title": "混合電動車熱管理系統熱流與奈米流體調製及性能分析",
+        "award": "最佳論文獎"
+      },
+      {
+        "people": "陳泓佑、蔡易庭、林睦鈞、黃啟錩、洪翊軒",
+        "title": "人類駕駛風格之自動駕駛能耗最佳化軌跡規劃設計",
+        "award": "最佳論文獎"
+      },
+      {
+        "people": "洪翊軒、林煜軒、莊才威、黃晧翔、莊啓文",
+        "title": "冷鏈車之細部系統設計與開發",
+        "award": "最佳論文獎"
+      },
+      {
+        "people": "張右杰、陳竑聿、劉俊輝、黃啟錩、洪翊軒",
+        "title": "混合電力船舶模型建立與控制器開發",
+        "award": "最佳論文獎"
+      },
+      {
+        "people": "廖詠頡、陳沛廷、白定梧、洪翊軒",
+        "title": "氫能移動式電動車之智慧型最佳電源控制系統開發",
+        "award": "最佳論文獎"
+      }
+    ]
   },
   {
     "id": "icmet-2026",
@@ -114,7 +144,7 @@
     "text": "洪翊軒教授赴澳洲雪梨參與第 10 屆 International Conference on Artificial Intelligence, Automation and Control Technologies（AIACT 2026），以以下論文進行發表，並獲「最佳講者」肯定。",
     "papers": [
       {
-        "people": "洪翊軒",
+        "people": "Yi-Hsuan Hung",
         "title": "An Integrated Optimal System/Controller Design with Fuel Cell and Battery State-of-Health Factors for EV-based Hydrogen/Energy Storage Systems",
         "award": ""
       }
@@ -130,12 +160,20 @@
     "text": "研究生蕭程萇與梁耘碩參與第 30 屆車輛工程學術研討會，發表題目如下。",
     "papers": [
       {
-        "people": "蕭程萇",
-        "title": "基於基因演算法之模糊控制策略應用於燃料電池車能量管理系統",
-        "award": ""
+        "people": "蕭程萇、洪翊軒、林煜軒",
+        "title": "基於基因演算法之模糊能量管理策略於燃料電池車之應用",
+        "award": "",
+        "correction_history": [
+          {
+            "date": "2026-09-24",
+            "title": "基於基因演算法之模糊控制策略應用於燃料電池車能量管理系統",
+            "people": "蕭程萇",
+            "reason": "依使用者確認之題目與作者修正；保留原值供追溯。"
+          }
+        ]
       },
       {
-        "people": "梁耘碩",
+        "people": "梁耘碩、范正威、洪翊軒、蔡祖揚",
         "title": "基於全域搜索與 Simulink 模擬之燃料電池電動巴士功率響應補償與設計",
         "award": ""
       }
@@ -151,33 +189,65 @@
     "text": "研究生施權祐、鄭安哲及專題生李杰庭參與「中國機械工程學會 114 年度年會暨第 42 屆全國學術研討會」，發表題目如下。",
     "papers": [
       {
-        "people": "施權祐",
-        "title": "應用全域搜尋演算法於氫燃料電池巴士之多目標動力系統最佳化規格匹配研究",
-        "award": ""
+        "people": "施權祐、范正威、洪翊軒、林博煦",
+        "title": "應用全域搜尋演算法於氫燃料電池巴士之三種目標動力系統最佳化規格匹配研究",
+        "award": "",
+        "correction_history": [
+          {
+            "date": "2026-09-24",
+            "title": "應用全域搜尋演算法於氫燃料電池巴士之多目標動力系統最佳化規格匹配研究",
+            "people": "施權祐",
+            "reason": "依使用者確認之題目與作者修正；保留原值供追溯。"
+          }
+        ],
+        "author_source_text": "施權祐1*、范正威2、洪翊軒3、林博煦"
       },
       {
-        "people": "鄭安哲",
+        "people": "鄭安哲、賓承彥、范正威、莊啓文、洪翊軒",
         "title": "適應性人工蜂群演算法應用於電動巴士多能源充電場域之最佳化電力調度分析",
         "award": ""
       },
       {
-        "people": "李杰庭",
-        "title": "燃料電池複合鋰電池商用車熱管理系統應用粒子群仿生演算法之動態性能分析",
-        "award": ""
+        "people": "李杰庭、林煜軒、洪翊軒",
+        "title": "燃料電池複合鋰電池貨車熱管理系統應用粒子群仿生演算法之動態性能分析",
+        "award": "",
+        "correction_history": [
+          {
+            "date": "2026-09-24",
+            "title": "燃料電池複合鋰電池商用車熱管理系統應用粒子群仿生演算法之動態性能分析",
+            "people": "李杰庭",
+            "reason": "依使用者確認之題目與作者修正；保留原值供追溯。"
+          }
+        ]
       }
     ],
     "period": "",
     "award": ""
   },
   {
+    "category_en": "International",
+    "category_zh": "國際交流",
+    "date_end": null,
+    "date_label_en": "Announcement date",
+    "date_label_zh": "公告日期",
+    "date_precision": "day",
+    "date_start": "2025-12-03",
+    "details_zh": [
+      "學生：黃啟錩、施權祐",
+      "合作學校：日本九州大學",
+      "項目：碩士雙聯學位",
+      "赴日修讀學期：114 學年度第 2 學期及 115 學年度第 1 學期（依原公告）"
+    ],
+    "publish": true,
+    "source_title": "臺師大車輛與能源工程學程｜2025 年最新消息",
+    "source_url": "https://en.vee.ntnu.edu.tw/index.php/zh/2025/",
+    "summary_en": "Graduate students Chi-Chang Huang and Quan-You Shi passed the review of Kyushu University’s Graduate School of Engineering Sciences and will pursue a master’s dual-degree program in Japan. The achievement reflects GPTL’s continued commitment to international academic exchange and research talent development.",
+    "summary_zh": "車輛與能源工程研究所黃啟錩與施權祐通過日本九州大學綜合理工研究院審查，將於 114 學年度第 2 學期及 115 學年度第 1 學期赴日修讀碩士雙聯學位。此項成果展現 GPTL 在研究人才培育與國際學術交流上的持續投入。",
+    "title_en": "Chi-Chang Huang and Quan-You Shi Admitted to Kyushu University Dual-Degree Program",
+    "title_zh": "黃啟錩、施權祐通過九州大學碩士雙聯學位審查",
     "id": "kyushu-dual-degree",
     "sort_date": "2025-12-03",
-    "date_label": "公告日期｜2025/12/03",
-    "title": "九州大學碩士雙聯學位核准",
-    "text": "研究生黃啟錩與施權祐經九州大學審查通過，將於 114 學年度第 2 學期及 115 學年度第 1 學期赴日本九州大學綜合理工學研究院修讀碩士雙聯學位。",
-    "papers": [],
-    "period": "",
-    "award": ""
+    "papers": []
   },
   {
     "id": "power-conference-2025",
@@ -187,7 +257,7 @@
     "text": "研究生白定梧參與「第 46 屆中華民國電力工程研討會暨第 22 屆台灣電力電子研討會暨 2025 電力學門成果發表會」，發表以下論文。",
     "papers": [
       {
-        "people": "白定梧",
+        "people": "白定梧、林士文、洪翊軒",
         "title": "利用雙調排序法實現模組化多階層轉換器之電容電壓平衡控制",
         "award": ""
       }
@@ -206,25 +276,66 @@
     "award": ""
   },
   {
+    "id": "vehicle-energy-institute-2025",
+    "sort_date": "2025-08-01",
+    "date_start": "2025-08-01",
+    "date_end": null,
+    "date_precision": "day",
+    "date_label_zh": "揭牌日期",
+    "category_zh": "發展里程碑",
+    "title_zh": "車輛與能源工程研究所正式成立揭牌",
+    "summary_zh": "國立臺灣師範大學正式成立車輛與能源工程研究所，並於科技與工程學院舉行揭牌儀式。新研究所進一步深化智慧車輛、新能源與跨域工程研究，並強化與產業界之連結。",
+    "source_title": "臺師大永續發展中心",
+    "source_url": "https://www.sdgs.ntnu.edu.tw/車輛與能源工程研究所揭牌-攜手業界共築新能源願/",
+    "publish": true
+  },
+  {
+    "id": "hung-dean-2025",
+    "sort_date": "2025-08-01",
+    "date_start": "2025-08-01",
+    "date_end": null,
+    "date_precision": "day",
+    "date_label_zh": "就任日期",
+    "category_zh": "實驗室里程碑",
+    "title_zh": "洪翊軒教授出任科技與工程學院第十任院長",
+    "summary_zh": "洪翊軒教授自 2025 年 8 月 1 日起出任國立臺灣師範大學科技與工程學院第十任院長。其研究與教學歷程長期涵蓋車輛、能源、控制與產學應用，並持續推動跨域工程研究與人才培育。",
+    "source_title": "臺師大科技與工程學院",
+    "source_url": "https://www.cte.ntnu.edu.tw/index.php/2025/05/23/updated-2/",
+    "publish": true
+  },
+  {
+    "category_en": "Awards",
+    "category_zh": "學生獲獎",
+    "date_end": "2025-06-20",
+    "date_label_en": "Conference dates",
+    "date_label_zh": "會議期間",
+    "date_precision": "range",
+    "date_start": "2025-06-18",
+    "details_zh": [
+      "莊啓文：學生論文競賽第二名",
+      "李杰庭：學生論文競賽佳作"
+    ],
+    "publish": true,
+    "source_title": "臺師大科技與工程學院電子報",
+    "source_url": "https://www.cte.ntnu.edu.tw/wp-content/uploads/2025/12/114%E5%B9%B49%E6%9C%88%E9%9B%BB%E5%AD%90%E5%A0%B1.1231.pdf",
+    "summary_en": "GPTL students Chi-Wen Chuang and Jie-Ting Li participated in the student paper competition at the 2025 International Conference and Technology Forum on Hydrogen Energy and Fuel Cells. Chuang received second place, while Li received an honorable mention, highlighting the lab’s student research achievements in hydrogen, fuel cells, and energy systems.",
+    "summary_zh": "GPTL 學生莊啓文與李杰庭參與 2025 國際氫能與燃料電池學術研討會暨技術論壇學生論文競賽，莊啓文獲第二名，李杰庭獲佳作。成果展現實驗室在氫能、燃料電池與能源系統研究上的學生培育成果。",
+    "title_en": "GPTL Students Receive Awards at the 2025 International Hydrogen and Fuel Cell Conference",
+    "title_zh": "GPTL 學生於 2025 國際氫能與燃料電池學術研討會獲獎",
     "id": "hefc-2025",
     "sort_date": "2025-06-18",
-    "date_label": "活動期間｜2025/06/18–20",
-    "title": "HEFC 2025 學生論文競賽",
-    "text": "研究生莊啓文及專題生李杰庭參與「2025 國際氫能與燃料電池學術研討會暨氫能與燃料電池技術論壇」學生論文競賽，莊啓文榮獲第二名，李杰庭榮獲佳作。",
     "papers": [
       {
-        "people": "莊啓文",
+        "people": "莊啓文、范正威、白定梧、謝念恒、林煜軒、洪翊軒",
         "title": "燃料電池小型冷鏈物流貨車之動態模擬與能耗分析",
         "award": "第二名"
       },
       {
-        "people": "李杰庭",
+        "people": "李杰庭、林煜軒、洪翊軒、張俊興、李正麒",
         "title": "燃料電池及鋰電池小型複電動車之四迴路散熱系統設計與效益分析",
         "award": "佳作"
       }
-    ],
-    "period": "",
-    "award": ""
+    ]
   },
   {
     "id": "evtec-2025",
@@ -234,12 +345,432 @@
     "text": "研究生黃啟錩赴日本橫濱，參與第 7 屆 International Electric Vehicle Technology Conference（EVTeC 2025），發表以下論文。",
     "papers": [
       {
-        "people": "黃啟錩",
+        "people": "Chi-Chang Huang, Zheng-Wei Fan, Yi-Hsuan Hung, Tsu-Yang Tsai",
         "title": "Energy Management System for Hydrogen Vehicles Considering State of Health of Fuel Cells and Lithium Batteries",
         "award": ""
       }
     ],
     "period": "",
     "award": ""
+  },
+  {
+    "category_en": "Competition",
+    "category_zh": "競賽成果",
+    "date_end": "2025-05-17",
+    "date_label_en": "Competition dates",
+    "date_label_zh": "競賽期間",
+    "date_precision": "range",
+    "date_start": "2025-05-16",
+    "details_zh": [
+      "指導教師：洪翊軒、張俊興、林煜軒",
+      "成果：車輛製作競賽第一名",
+      "成果：動態正式比賽第四名",
+      "地點：彰濱工業區"
+    ],
+    "publish": true,
+    "source_title": "臺師大車輛與能源工程學程",
+    "source_url": "https://en.vee.ntnu.edu.tw/index.php/zh/2025/05/27/1140527-1/",
+    "summary_en": "Students jointly advised by Prof. Yi-Hsuan Hung, Asst. Prof. Chun-Hsing Chang, and Adjunct Asst. Prof. Yu-Hsuan Lin competed in the 33rd National Collegiate Eco-Vehicle Competition. In their first appearance, the team won first place in vehicle fabrication and fourth place in the dynamic competition.",
+    "summary_zh": "洪翊軒教授、張俊興助理教授與林煜軒兼任助理教授共同指導學生赴彰濱工業區參加第 33 屆全國大專校院環保節能車大賽。團隊首次參賽即獲車輛製作競賽第一名，並於動態正式比賽取得第四名。",
+    "title_en": "NTNU Vehicle and Energy Team Wins First Place in Vehicle Fabrication",
+    "title_zh": "臺師大車能團隊首戰節能車大賽　勇奪車輛製作第一名",
+    "id": "eco-vehicle-2025",
+    "sort_date": "2025-05-16",
+    "papers": []
+  },
+  {
+    "category_en": "International",
+    "category_zh": "國際交流",
+    "date_end": "2023-06-20",
+    "date_label_en": "Event dates",
+    "date_label_zh": "活動期間",
+    "date_precision": "range",
+    "date_start": "2023-06-19",
+    "details_zh": [
+      "交流單位：Purdue University College of Engineering",
+      "內容：車輛研究、汽車工場與研究環境交流"
+    ],
+    "publish": true,
+    "source_title": "國立臺灣師範大學公共事務中心",
+    "source_url": "https://pr.ntnu.edu.tw/news/index.php?id=21722&mode=data",
+    "summary_en": "Faculty and students from Purdue University’s College of Engineering visited NTNU’s College of Technology and Engineering. Prof. Yi-Hsuan Hung and graduate students introduced vehicle and energy research facilities, promoting academic exchange between the two institutions.",
+    "summary_zh": "美國普渡大學工學院師生參訪臺師大科技與工程學院，洪翊軒教授帶領研究生介紹車輛與能源相關研究環境與汽車工場。活動促進兩校工程領域學生與研究團隊之間的交流。",
+    "title_en": "Purdue Engineering Visits NTNU for Vehicle Research Exchange",
+    "title_zh": "普渡大學工學院參訪臺師大　進行車輛研究與實驗環境交流",
+    "id": "purdue-exchange-2023",
+    "sort_date": "2023-06-19",
+    "papers": []
+  },
+  {
+    "id": "kyushu-agreement-2023",
+    "sort_date": "2023-03-07",
+    "date_start": "2023-03-07",
+    "date_end": null,
+    "date_precision": "day",
+    "date_label_zh": "簽署日期",
+    "category_zh": "國際交流",
+    "title_zh": "臺師大與九州大學簽署碩士雙聯學位協議",
+    "summary_zh": "臺師大科技與工程學院、理學院與日本九州大學綜合理工學研究院簽署碩士雙聯學位協議，擴展兩校研究與人才培育合作。簽署後，洪翊軒教授亦帶領九州大學師長參訪汽車電動車工場及相關研究環境。",
+    "source_title": "臺師大校友中心",
+    "source_url": "https://alumni.ntnu.edu.tw/ActiveMessage/MessageView?itemid=2625&mid=14",
+    "publish": true
+  },
+  {
+    "category_en": "Research",
+    "category_zh": "研究成果",
+    "date_end": null,
+    "date_label_en": "Award year",
+    "date_label_zh": "獲獎年度",
+    "date_precision": "year",
+    "date_start": "2023",
+    "details_zh": [
+      "獎項：研發成果推廣績優獎",
+      "獲獎人：洪翊軒教授"
+    ],
+    "publish": true,
+    "source_title": "臺師大 112 年產學合作暨研發成果推廣績優獎名單",
+    "source_url": "https://www.acad.ntnu.edu.tw/uploads/asset/data/661cc1aa33c9b39e950ec6cb/112%E5%B9%B4%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE.pdf",
+    "summary_en": "Prof. Yi-Hsuan Hung was recognized with NTNU’s 2023 Research Achievement Promotion Award, reflecting sustained efforts to translate vehicle, energy, and control research into technology applications and industry collaboration.",
+    "summary_zh": "洪翊軒教授獲列臺師大 112 年度研發成果推廣績優獎獲獎教師，反映長期將車輛、能源與控制相關研究成果推向技術應用與產學實務的成果。",
+    "title_en": "Prof. Yi-Hsuan Hung Receives NTNU Research Achievement Promotion Award",
+    "title_zh": "洪翊軒教授獲臺師大研發成果推廣績優獎",
+    "id": "research-promotion-award-2023",
+    "sort_date": "2023",
+    "papers": []
+  },
+  {
+    "category_en": "Industry",
+    "category_zh": "產學與創業",
+    "date_end": null,
+    "date_label_en": "Publication date",
+    "date_label_zh": "報導日期",
+    "date_precision": "day",
+    "date_start": "2022-05-13",
+    "details_zh": [
+      "人物：洪翊軒教授",
+      "企業：新動智能股份有限公司",
+      "主題：研究成果產業化與教師新創"
+    ],
+    "publish": true,
+    "source_title": "國立臺灣師範大學公共事務中心",
+    "source_url": "https://pr.ntnu.edu.tw/news/index.php?id=20802&mode=data",
+    "summary_en": "NTNU highlighted the commercialization of university research, featuring Prof. Yi-Hsuan Hung and NeoPower Technologies as a case of translating vehicle energy-management research into products and industrial applications.",
+    "summary_zh": "臺師大研究發展處介紹校內研究成果產業化案例，洪翊軒教授以共同創辦之新動智能股份有限公司為案例，分享由車輛能源管理研究走向產品與企業應用的歷程。",
+    "title_en": "From Research to Industry: Prof. Yi-Hsuan Hung Shares the NeoPower Startup Journey",
+    "title_zh": "從研究到產業：洪翊軒教授分享新動智能創業與技術落地歷程",
+    "id": "neopower-startup-2022",
+    "sort_date": "2022-05-13",
+    "papers": []
+  },
+  {
+    "id": "green-transport-lecture-2021",
+    "sort_date": "2021-06-04",
+    "date_start": "2021-06-04",
+    "date_end": null,
+    "date_precision": "day",
+    "date_label_zh": "演講日期",
+    "category_zh": "專題講座",
+    "title_zh": "洪翊軒教授分享節能車輛與綠運輸創新發明案例",
+    "summary_zh": "洪翊軒教授受邀於 2021 臺灣能潔能科技創意實作競賽訓練營，以「節能車輛與綠運輸之創新發明案例分享」為題進行專題演講。內容聚焦節能車輛、綠色運輸與創新實作，呈現 GPTL 長期發展之研究與教育特色。",
+    "source_title": "能源教育資源總中心",
+    "source_url": "https://learnenergy.tw/index.php?caid=1&id=242&inter=digital",
+    "publish": true
+  },
+  {
+    "category_en": "Industry",
+    "category_zh": "產學與創業",
+    "date_end": null,
+    "date_label_en": "Established",
+    "date_label_zh": "成立時間",
+    "date_precision": "month",
+    "date_start": "2020-03",
+    "details_zh": [
+      "企業：新動智能股份有限公司",
+      "方向：車輛與能源管理技術產業化"
+    ],
+    "publish": true,
+    "source_title": "NeoPower Technologies｜關於新動智能",
+    "source_url": "https://www.neopowertechnologies.com/3",
+    "summary_en": "NeoPower Technologies grew from a research and development team comprising professors from National Taiwan Normal University and National Taipei University of Technology, supported by the Ministry of Education’s university–industry innovation R&D program in 2018 to develop a university spin-off and cultivate advanced talent. Approved by NTNU’s start-up review committee in January 2020, the company was formally established that March as NTNU’s first university spin-off. Its work applies active optimal energy-management technology to green-energy facilities and electric vehicles to improve the use of energy and powertrain systems.",
+    "summary_zh": "新動智能的研發團隊由國立臺灣師範大學與國立臺北科技大學教授共同組成，於 2018 年獲教育部大學產業創新研發計畫支持，推動衍生新創與高階人才培育。公司於 2020 年 1 月通過臺師大新創審議，並於同年 3 月正式成立，成為臺師大第一間大學衍生新創公司。團隊將主動式最佳能源管理技術應用於綠能場域及電動車載具，提升能源與動力系統的使用效益。",
+    "title_en": "GPTL Research Extends into the Establishment of NeoPower Technologies",
+    "title_zh": "GPTL 研究成果延伸成立新動智能股份有限公司",
+    "id": "neopower-established-2020",
+    "sort_date": "2020-03",
+    "papers": []
+  },
+  {
+    "id": "vehicle-energy-investment-2019",
+    "sort_date": "2019-10-23",
+    "date_start": "2019-10-23",
+    "date_end": null,
+    "date_precision": "day",
+    "date_label_zh": "報導日期",
+    "category_zh": "產學成果",
+    "title_zh": "主動式車輛電能管理技術獲企業千萬元投資",
+    "summary_zh": "洪翊軒教授與陳瑄易副教授共同研發之主動式車輛電能管理技術，獲國內上櫃公司董事會決議投資新臺幣 1,000 萬元。該技術亦獲教育部大學產業創新研發計畫支持，推動專業實驗室、技術團隊與後續新創發展。",
+    "source_title": "國立臺灣師範大學公共事務中心",
+    "source_url": "https://pr.ntnu.edu.tw/ntnunews/index.php?id=18742&mode=data&type_id=73",
+    "publish": true
+  },
+  {
+    "id": "michigan-collaboration-2019",
+    "sort_date": "2019-05-20",
+    "date_start": "2019-05-20",
+    "date_end": null,
+    "date_precision": "day",
+    "date_label_zh": "交流日期",
+    "category_zh": "國際合作",
+    "title_zh": "臺師大車能與密西根大學展開跨國研究合作",
+    "summary_zh": "密西根大學機械系暨智能交通中心主任彭暉教授赴臺師大交流，與洪翊軒教授及校方討論跨國研究合作。此次交流聚焦智慧車輛與控制技術，成為雙方推動後續研究合作的重要起點。",
+    "source_title": "國立臺灣師範大學公共事務中心",
+    "source_url": "https://pr.ntnu.edu.tw/ntnunews/index.php?id=18479&mode=data",
+    "publish": true
+  },
+  {
+    "category_en": "Industry",
+    "category_zh": "產學成果",
+    "date_end": null,
+    "date_label_en": "Award year",
+    "date_label_zh": "獲獎年度",
+    "date_precision": "year",
+    "date_start": "2019",
+    "details_zh": [
+      "獎項：產學合作績優獎",
+      "獲獎人：洪翊軒教授"
+    ],
+    "publish": true,
+    "source_title": "臺師大 108 年產學合作暨研發成果推廣績優獎名單",
+    "source_url": "https://www.acad.ntnu.edu.tw/uploads/asset/data/661cc1a933c9b39e940f151f/108%E5%B9%B4%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE.pdf",
+    "summary_en": "Prof. Yi-Hsuan Hung received NTNU’s 2019 Industry–Academia Collaboration Award in recognition of achievements in collaborative vehicle, energy, and system-control technology development.",
+    "summary_zh": "洪翊軒教授獲臺師大 108 年度產學合作績優獎，肯定其在車輛、能源與系統控制相關技術之產學合作與應用成果。",
+    "title_en": "Prof. Yi-Hsuan Hung Receives NTNU Industry–Academia Collaboration Award",
+    "title_zh": "洪翊軒教授獲臺師大產學合作績優獎",
+    "id": "industry-collaboration-award-2019",
+    "sort_date": "2019",
+    "papers": []
+  },
+  {
+    "id": "moe-industry-research-2018",
+    "sort_date": "2018-09-21",
+    "date_start": "2018-09-21",
+    "date_end": null,
+    "date_precision": "day",
+    "date_label_zh": "報導日期",
+    "category_zh": "研究計畫",
+    "title_zh": "智慧能源管理計畫入選教育部大學產業創新研發計畫",
+    "summary_zh": "洪翊軒教授主持之「電動載具與綠能場域之最佳系統設計與智慧型能源管理模組開發計畫」入選教育部大學產業創新研發計畫。計畫結合電動載具、綠能場域與智慧能源管理，並以研究成果商品化與新創發展為重要目標。",
+    "source_title": "國立臺灣師範大學公共事務中心",
+    "source_url": "https://pr.ntnu.edu.tw/news/index.php?id=17819&keywords=%E8%8A%B1&mode=data",
+    "publish": true
+  },
+  {
+    "category_en": "Milestone",
+    "category_zh": "里程碑",
+    "date_end": null,
+    "date_label_en": "Established",
+    "date_label_zh": "成立日期",
+    "date_precision": "day",
+    "date_start": "2018-08-01",
+    "details_zh": [
+      "成立單位：車輛與能源工程學士學位學程",
+      "首任主任：洪翊軒教授"
+    ],
+    "publish": true,
+    "source_title": "國立臺灣師範大學公共事務中心",
+    "source_url": "https://pr.ntnu.edu.tw/news/index.php?id=17744&mode=data",
+    "summary_en": "NTNU established the Undergraduate Program of Vehicle and Energy Engineering, with Prof. Yi-Hsuan Hung serving as its founding director. The program expanded long-standing vehicle, energy, and intelligent-system research into a broader education and research framework.",
+    "summary_zh": "臺師大成立車輛與能源工程學士學位學程，由洪翊軒教授擔任首任主任。此發展使長期累積的車輛、能源與智慧系統研究進一步融入完整的教學與研究體系。",
+    "title_en": "NTNU Establishes the Undergraduate Program of Vehicle and Energy Engineering",
+    "title_zh": "臺師大成立車輛與能源工程學士學位學程　洪翊軒教授出任首任主任",
+    "id": "vehicle-energy-program-2018",
+    "sort_date": "2018-08-01",
+    "papers": []
+  },
+  {
+    "id": "multi-energy-award-2018",
+    "sort_date": "2018",
+    "date_start": "2018",
+    "date_end": null,
+    "date_precision": "year",
+    "date_label_zh": "獲獎年度",
+    "category_zh": "競賽成果",
+    "title_zh": "多能源電能管理系統獲臺灣能潔能科技創意實作競賽佳作",
+    "summary_zh": "洪翊軒教授與陳瑄易教授指導學生，以「創新無線傳輸主動式多能源電能管理系統」參加 2018 臺灣能－潔能科技創意實作競賽，獲大專在地實踐組佳作。作品整合再生能源、市電、儲能與主動功率控制，呈現多能源系統最佳化管理之應用。",
+    "source_title": "能源教育資源總中心",
+    "source_url": "https://learnenergy.tw/index.php?caid=7&id=382&inter=knowledge",
+    "publish": true
+  },
+  {
+    "id": "engineering-education-2017",
+    "sort_date": "2017-09-18",
+    "date_start": "2017-09-18",
+    "date_end": null,
+    "date_precision": "day",
+    "date_label_zh": "發布日期",
+    "category_zh": "教學與實驗室文化",
+    "title_zh": "從車輛研發到工程教育　洪翊軒教授分享實作導向教學理念",
+    "summary_zh": "臺師大教學發展中心專訪洪翊軒教授，記錄其將工研院節能車輛研發經驗帶入工程教育的歷程。文章亦呈現學生從發想、焊接車架、製作車體到整車參賽的過程，反映 GPTL 長期重視實作、創新與工程驗證的人才培育特色。",
+    "source_title": "國立臺灣師範大學教學發展中心",
+    "source_url": "https://ctld.ntnu.edu.tw/教學典範/7558",
+    "publish": true
+  },
+  {
+    "category_en": "Competition",
+    "category_zh": "競賽成果",
+    "date_end": null,
+    "date_label_en": "Event date",
+    "date_label_zh": "活動日期",
+    "date_precision": "day",
+    "date_start": "2017-06-24",
+    "details_zh": [
+      "作品：高效節能共享子母型電動車",
+      "成果：第一名"
+    ],
+    "publish": true,
+    "source_title": "國立臺北科技大學｜2017 全國智能車情境創意競賽",
+    "source_url": "https://ve.ntut.edu.tw/p/404-1063-69953.php?Lang=zh-tw",
+    "summary_en": "A team advised by Prof. Yi-Hsuan Hung won first place in the 2017 National Collegiate Intelligent Vehicle Scenario Creativity Competition with a high-efficiency shared parent–child electric vehicle concept, continuing GPTL’s hands-on work in electrified mobility and energy-efficient system design.",
+    "summary_zh": "洪翊軒教授指導團隊以「高效節能共享子母型電動車」參與 2017 全國大專校院智能車情境創意競賽並獲第一名。作品延續 GPTL 在電動載具、系統設計與節能控制領域的實作特色。",
+    "title_en": "Shared Parent–Child EV Concept Wins First Place in National Intelligent Vehicle Competition",
+    "title_zh": "高效節能共享子母型電動車獲全國智能車情境創意競賽第一名",
+    "id": "intelligent-vehicle-2017",
+    "sort_date": "2017-06-24",
+    "papers": []
+  },
+  {
+    "category_en": "Teaching",
+    "category_zh": "教學榮譽",
+    "date_end": null,
+    "date_label_en": "Announcement date",
+    "date_label_zh": "公告日期",
+    "date_precision": "day",
+    "date_start": "2017-06-05",
+    "details_zh": [
+      "獎項：106 年度教學傑出獎",
+      "獲獎人：洪翊軒教授"
+    ],
+    "publish": true,
+    "source_title": "國立臺灣師範大學教學發展中心",
+    "source_url": "https://ctld.ntnu.edu.tw/%E6%95%99%E7%99%BC%E9%9B%BB%E5%AD%90%E5%A0%B1/6816",
+    "summary_en": "Prof. Yi-Hsuan Hung received NTNU’s 2017 Distinguished Teaching Award. NTNU highlighted his integration of industrial technologies, electric-vehicle equipment, hands-on competitions, and problem-based learning into engineering education.",
+    "summary_zh": "洪翊軒教授獲臺師大 106 年度教學傑出獎。校方介紹指出，其將產業技術、電動車設備、實作競賽與問題導向學習融入教學，形成 GPTL 長期「Learning through Building」的人才培育特色。",
+    "title_en": "Prof. Yi-Hsuan Hung Receives NTNU Distinguished Teaching Award",
+    "title_zh": "洪翊軒教授獲臺師大 106 年度教學傑出獎",
+    "id": "teaching-award-2017",
+    "sort_date": "2017-06-05",
+    "papers": []
+  },
+  {
+    "id": "startup-program-2016",
+    "sort_date": "2016-12-14",
+    "date_start": "2016-12-14",
+    "date_end": null,
+    "date_precision": "day",
+    "date_label_zh": "報導日期",
+    "category_zh": "創新創業",
+    "title_zh": "臺師大啟動大師創業學分學程　洪翊軒教授參與推動",
+    "summary_zh": "臺師大正式啟動「大師創業學分學程」，以跨域實作與創新創業人才培育為核心。洪翊軒教授當時擔任研究發展處副研發長並參與推動，亦延續其將技術研發、產業連結與人才培育相互整合的理念。",
+    "source_title": "國立臺灣師範大學公共事務中心",
+    "source_url": "https://pr.ntnu.edu.tw/ntnunews/index.php?id=16436&mode=data",
+    "publish": true
+  },
+  {
+    "category_en": "Competition",
+    "category_zh": "競賽成果",
+    "date_end": null,
+    "date_label_en": "Final date",
+    "date_label_zh": "決賽日期",
+    "date_precision": "day",
+    "date_start": "2016-08-23",
+    "details_zh": [
+      "指導教授：洪翊軒",
+      "學生：韓學中、郭承儒、王鳴宇",
+      "作品：新世代電充彈簧儲能環保車",
+      "成果：佳作"
+    ],
+    "publish": true,
+    "source_title": "2016 GreenTech 東元科技創意競賽",
+    "source_url": "https://www.tecofound.org.tw/nz/2016/beingaccepted.php",
+    "summary_en": "Students Han Hsueh-Chung, Kuo Cheng-Ju, and Wang Ming-Yu, advised by Prof. Yi-Hsuan Hung, entered the 2016 GreenTech TECO Technology Creativity Competition with a spring-energy eco-vehicle and received an honorable mention.",
+    "summary_zh": "洪翊軒教授指導韓學中、郭承儒與王鳴宇，以「新世代電充彈簧儲能環保車」參與 2016 GreenTech 東元科技創意競賽並獲佳作。作品展現 GPTL 將能源概念轉化為學生工程原型與競賽成果的實作特色。",
+    "title_en": "Spring-Energy Eco Vehicle Receives Honorable Mention at GreenTech 2016",
+    "title_zh": "新世代電充彈簧儲能環保車獲 GreenTech 國際創意競賽佳作",
+    "id": "greentech-2016",
+    "sort_date": "2016-08-23",
+    "papers": []
+  },
+  {
+    "category_en": "Competition",
+    "category_zh": "競賽成果",
+    "date_end": null,
+    "date_label_en": "Publication date",
+    "date_label_zh": "報導日期",
+    "date_precision": "day",
+    "date_start": "2014-10-28",
+    "details_zh": [
+      "指導教授：洪翊軒",
+      "學生：施伯霖、陳彥霖、游明倫",
+      "成果：金賞獎／三連霸"
+    ],
+    "publish": true,
+    "source_title": "國立臺灣師範大學公共事務中心",
+    "source_url": "https://pr.ntnu.edu.tw/news/index.php?id=14545&mode=data",
+    "summary_en": "Students advised by Prof. Yi-Hsuan Hung won the Gold Prize in the Yulon Nissan Innovation Award with a magnetic vehicle anti-collision, anti-theft, and rescue system. Following Air Leaf and Endurance Life, the team achieved a third consecutive Gold Prize.",
+    "summary_zh": "洪翊軒教授指導臺師大工教系學生施伯霖、陳彥霖與游明倫，以汽車磁力防撞、防盜及救援系統參加裕隆日產汽車創新風雲賞並獲金賞。團隊繼 Air Leaf 與 Endurance Life 後第三度獲得該競賽最高獎項，完成三連霸。",
+    "title_en": "GPTL-Advised Team Secures a Third Yulon Nissan Innovation Award Gold Prize",
+    "title_zh": "GPTL 指導團隊三度奪下裕隆日產汽車創新風雲賞金賞",
+    "id": "yulon-nissan-2014",
+    "sort_date": "2014-10-28",
+    "papers": []
+  },
+  {
+    "category_en": "Competition",
+    "category_zh": "競賽成果",
+    "date_end": null,
+    "date_label_en": "Publication date",
+    "date_label_zh": "報導日期",
+    "date_precision": "day",
+    "date_start": "2012-12-18",
+    "details_zh": [
+      "作品：Endurance Life",
+      "技術概念：壓電材料、能量回收、續航提升",
+      "成果：金賞獎"
+    ],
+    "publish": true,
+    "source_title": "國立臺灣師範大學公共事務中心",
+    "source_url": "https://pr.ntnu.edu.tw/ntnunews/index.php?id=12490&mode=data&type_id=73",
+    "summary_en": "A team advised by Prof. Yi-Hsuan Hung entered the Yulon Nissan Innovation Award with Endurance Life, a concept using piezoelectric energy harvesting to extend battery endurance, and won the Gold Prize for a second consecutive championship.",
+    "summary_zh": "洪翊軒教授指導團隊以 Endurance Life 參與裕隆日產汽車創新風雲賞，利用壓電材料回收車輛相關能量以提升電池續航，並獲得金賞。這也是團隊連續第二屆取得該競賽最高獎項。",
+    "title_en": "Endurance Life Wins Gold at the Yulon Nissan Innovation Award",
+    "title_zh": "Endurance Life 獲裕隆日產汽車創新風雲賞金賞",
+    "id": "endurance-life-2012",
+    "sort_date": "2012-12-18",
+    "papers": []
+  },
+  {
+    "category_en": "Competition",
+    "category_zh": "競賽成果",
+    "date_end": null,
+    "date_label_en": "Publication date",
+    "date_label_zh": "報導日期",
+    "date_precision": "day",
+    "date_start": "2010-10-07",
+    "details_zh": [
+      "指導教授：洪翊軒",
+      "學生：林煜軒、陳建豪等",
+      "作品：Air Leaf",
+      "成果：創新科技組金賞"
+    ],
+    "publish": true,
+    "source_title": "國立臺灣師範大學公共事務中心",
+    "source_url": "https://pr.ntnu.edu.tw/ntnunews/index.php?id=8675&mode=data",
+    "summary_en": "Prof. Yi-Hsuan Hung led a student team to the Yulon Nissan Innovation Award with Air Leaf, winning the Gold Prize in the Innovative Technology category on their first attempt. The concept integrated pneumatic energy with electric mobility and became an early representative GPTL student project.",
+    "summary_zh": "洪翊軒教授帶領林煜軒、陳建豪等學生以 Air Leaf 參與裕隆日產汽車創新風雲賞，首次參賽即獲創新科技組金賞。作品將氣動能源與電動車概念整合，成為 GPTL 早期學生實作與創新車輛研究的重要代表成果。",
+    "title_en": "Air Leaf Wins Gold at the Yulon Nissan Innovation Award",
+    "title_zh": "Air Leaf 勇奪裕隆日產汽車創新風雲賞金賞",
+    "id": "air-leaf-2010",
+    "sort_date": "2010-10-07",
+    "papers": []
   }
 ]

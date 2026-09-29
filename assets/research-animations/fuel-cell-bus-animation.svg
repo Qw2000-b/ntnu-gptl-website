@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="bus-animation" width="1179" height="438" viewBox="0 0 1179 438" role="img" aria-labelledby="bus-title bus-description">
+  <title id="bus-title">Fuel Cell Bus</title>
+  <desc id="bus-description">Blue dots flow from the hydrogen tank to the fuel cell. Green dots flow from the fuel cell to the battery and motor, and from the battery to the motor. Red dots flow from the motor to the rear wheel. Both wheels rotate counterclockwise.</desc>
+  <style>
+.bus-animation { --energy-green: #22A68A; --hydrogen-blue: #2F80ED; --motor-red: #BB2649; }
+.bus-animation .bus-road { animation: bus-road 0.9s linear infinite; }
+@keyframes bus-road { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -128; } }
+.bus-animation .bus-wheel { transform-box: view-box; animation: bus-wheel 2s linear infinite; }
+.bus-animation .bus-wheel-front { transform-origin: 318.5px 530px; }
+.bus-animation .bus-wheel-rear { transform-origin: 934px 530px; }
+.bus-animation .bus-dot { fill: var(--energy-green); animation: bus-fuel-battery 3s linear infinite; animation-delay: var(--delay); }
+.bus-animation .bus-hydrogen-fuel { fill: var(--hydrogen-blue); animation-name: bus-hydrogen-fuel; }
+.bus-animation .bus-fuel-battery { animation-name: bus-fuel-battery; }
+.bus-animation .bus-fuel-motor { animation-name: bus-fuel-motor; }
+.bus-animation .bus-battery-motor { animation-name: bus-battery-motor; animation-duration: 2s; }
+.bus-animation .bus-motor-wheel { fill: var(--motor-red); animation-name: bus-motor-wheel; animation-duration: 1.8s; }
+@keyframes bus-wheel { to { transform: rotate(-360deg); } }
+@keyframes bus-hydrogen-fuel {
+  from { transform: translate(871px, 243px); }
+  to { transform: translate(1019px, 243px); }
+}
+@keyframes bus-fuel-battery {
+  from { transform: translate(1129px, 297px); }
+  to { transform: translate(1129px, 443px); }
+}
+@keyframes bus-fuel-motor {
+  0% { transform: translate(1111px, 297px); }
+  47.6595745% { transform: translate(1111px, 409px); }
+  100% { transform: translate(988px, 409px); }
+}
+@keyframes bus-battery-motor {
+  0% { transform: translate(1111px, 443px); }
+  12.1428571% { transform: translate(1111px, 426px); }
+  100% { transform: translate(988px, 426px); }
+}
+@keyframes bus-motor-wheel {
+  0% { transform: translate(934px, 452px); opacity: 1; }
+  50% { transform: translate(934px, 467.3px); opacity: 1; }
+  55.555556%, 100% { transform: translate(934px, 469px); opacity: 0; }
+}
+/* Animation previews always play, following the user's current preference. */
+</style>
+  <g transform="translate(-69 -190)">
+<path d="M1111 424 1111 445.19" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1111 289 1111 411.179" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M976 409 1110.67 409" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<g id="bus-energy-fuel-motor" aria-hidden="true"><circle class="bus-dot bus-fuel-motor" cx="0" cy="0" r="4" style="--delay: 0s" /><circle class="bus-dot bus-fuel-motor" cx="0" cy="0" r="4" style="--delay: -0.5s" /><circle class="bus-dot bus-fuel-motor" cx="0" cy="0" r="4" style="--delay: -1s" /><circle class="bus-dot bus-fuel-motor" cx="0" cy="0" r="4" style="--delay: -1.5s" /><circle class="bus-dot bus-fuel-motor" cx="0" cy="0" r="4" style="--delay: -2s" /><circle class="bus-dot bus-fuel-motor" cx="0" cy="0" r="4" style="--delay: -2.5s" /></g>
+<path d="M0 0 0.000104987 68.8358" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 934 506.836)" xmlns="http://www.w3.org/2000/svg" />
+<g id="bus-energy-motor-wheel" aria-hidden="true"><circle class="bus-dot bus-motor-wheel" cx="0" cy="0" r="4" style="--delay: 0s" /><circle class="bus-dot bus-motor-wheel" cx="0" cy="0" r="4" style="--delay: -0.9s" /></g>
+<path d="M1129 479.727 1129 269" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<g id="bus-energy-fuel-battery" aria-hidden="true"><circle class="bus-dot bus-fuel-battery" cx="0" cy="0" r="4" style="--delay: 0s" /><circle class="bus-dot bus-fuel-battery" cx="0" cy="0" r="4" style="--delay: -0.75s" /><circle class="bus-dot bus-fuel-battery" cx="0" cy="0" r="4" style="--delay: -1.5s" /><circle class="bus-dot bus-fuel-battery" cx="0" cy="0" r="4" style="--delay: -2.25s" /></g>
+<path d="M838 243 1048.73 243" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<g id="bus-energy-hydrogen-fuel" aria-hidden="true"><circle class="bus-dot bus-hydrogen-fuel" cx="0" cy="0" r="4" style="--delay: 0s" /><circle class="bus-dot bus-hydrogen-fuel" cx="0" cy="0" r="4" style="--delay: -1s" /><circle class="bus-dot bus-hydrogen-fuel" cx="0" cy="0" r="4" style="--delay: -2s" /></g>
+<path d="M976 426 1110.67 426" stroke="#D0CECE" stroke-width="4" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<g id="bus-energy-battery-motor" aria-hidden="true"><circle class="bus-dot bus-battery-motor" cx="0" cy="0" r="4" style="--delay: 0s" /><circle class="bus-dot bus-battery-motor" cx="0" cy="0" r="4" style="--delay: -0.5s" /><circle class="bus-dot bus-battery-motor" cx="0" cy="0" r="4" style="--delay: -1s" /><circle class="bus-dot bus-battery-motor" cx="0" cy="0" r="4" style="--delay: -1.5s" /></g>
+<path d="M1024 456.563C1024 449.073 1030.07 443 1037.56 443L1214.44 443C1221.93 443 1228 449.073 1228 456.563L1228 503.437C1228 510.927 1221.93 517 1214.44 517L1037.56 517C1030.07 517 1024 510.927 1024 503.437Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(1081.2 489)" xmlns="http://www.w3.org/2000/svg">Battery</text>
+<path d="M79 447.12C79 440.979 83.9788 436 90.1205 436L95.8795 436C102.021 436 107 440.979 107 447.12L107 468.88C107 475.021 102.021 480 95.8795 480L90.1205 480C83.9788 480 79 475.021 79 468.88Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M135.5 298.899C135.5 298.126 136.126 297.5 136.899 297.5L227.101 297.5C227.874 297.5 228.5 298.126 228.5 298.899L228.5 520.101C228.5 520.874 227.874 521.5 227.101 521.5L136.899 521.5C136.126 521.5 135.5 520.874 135.5 520.101Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M72.5001 198.658C72.5001 195.809 74.8094 193.5 77.6582 193.5L1240.34 193.5C1243.19 193.5 1245.5 195.809 1245.5 198.658L1245.5 531.342C1245.5 534.191 1243.19 536.5 1240.34 536.5L77.6582 536.5C74.8094 536.5 72.5001 534.191 72.5001 531.342Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M644.5 299.982C644.5 298.611 645.611 297.5 646.982 297.5L807.019 297.5C808.389 297.5 809.5 298.611 809.5 299.982L809.5 519.018C809.5 520.389 808.389 521.5 807.019 521.5L646.982 521.5C645.611 521.5 644.5 520.389 644.5 519.018Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M722.5 297.636C722.5 297.561 722.561 297.5 722.636 297.5L731.365 297.5C731.439 297.5 731.5 297.561 731.5 297.636L731.5 521.365C731.5 521.439 731.439 521.5 731.365 521.5L722.636 521.5C722.561 521.5 722.5 521.439 722.5 521.365Z" stroke="#6D736F" stroke-width="4.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<path d="M1019 236.563C1019 229.073 1025.07 223 1032.56 223L1209.44 223C1216.93 223 1223 229.073 1223 236.563L1223 283.437C1223 290.927 1216.93 297 1209.44 297L1032.56 297C1025.07 297 1019 290.927 1019 283.437Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(1069.87 253)" xmlns="http://www.w3.org/2000/svg">Fuel Cell</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(1076.29 285)" xmlns="http://www.w3.org/2000/svg">System</text>
+<path d="M604 241.023C604 231.069 612.069 223 622.023 223L852.977 223C862.931 223 871 231.069 871 241.023L871 248.977C871 258.931 862.931 267 852.977 267L622.023 267C612.069 267 604 258.931 604 248.977Z" fill="#FFE699" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(643.406 254)" xmlns="http://www.w3.org/2000/svg">H</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(661.572 254)" xmlns="http://www.w3.org/2000/svg">ydrogen</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(772.406 254)" xmlns="http://www.w3.org/2000/svg">T</text>
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(787.072 254)" xmlns="http://www.w3.org/2000/svg">ank</text>
+<g id="bus-wheel-front" class="bus-wheel bus-wheel-front"><path d="M258 530C258 496.311 285.087 469 318.5 469 351.913 469 379 496.311 379 530 379 563.689 351.913 591 318.5 591 285.087 591 258 563.689 258 530Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /><path d="M0 0 0.000104987 18.6638" stroke="#FFFFFF" stroke-width="6.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 319.5 490.164)" xmlns="http://www.w3.org/2000/svg" /><path d="M277 530C277 506.804 295.804 488 319 488 342.196 488 361 506.804 361 530 361 553.196 342.196 572 319 572 295.804 572 277 553.196 277 530Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /></g>
+<g id="bus-wheel-rear" class="bus-wheel bus-wheel-rear"><path d="M873 530C873 496.311 900.311 469 934 469 967.689 469 995 496.311 995 530 995 563.689 967.689 591 934 591 900.311 591 873 563.689 873 530Z" fill="#242825" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /><path d="M0 0 0.000104987 18.6638" stroke="#FFFFFF" stroke-width="6.66667" stroke-miterlimit="8" fill="none" fill-rule="evenodd" transform="matrix(1 0 0 -1 934.5 490.164)" xmlns="http://www.w3.org/2000/svg" /><path d="M892 530C892 506.804 910.804 488 934 488 957.196 488 976 506.804 976 530 976 553.196 957.196 572 934 572 910.804 572 892 553.196 892 530Z" fill="#373D38" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" /></g>
+<path d="M879 396.464C879 389.58 884.58 384 891.464 384L975.536 384C982.42 384 988 389.58 988 396.464L988 439.536C988 446.42 982.42 452 975.536 452L891.464 452C884.58 452 879 446.42 879 439.536Z" fill="#D9DEDA" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" />
+<text font-family="TASA Explorer SemiBold,TASA Explorer SemiBold_MSFontService,sans-serif" font-weight="600" font-size="27" transform="translate(895.921 426)" xmlns="http://www.w3.org/2000/svg">Motor</text>
+    <path id="bus-road" class="bus-road" d="M75 611 H1243" fill="none" stroke="#D0CECE" stroke-width="4" stroke-dasharray="64 64" aria-hidden="true" />
+  </g>
+</svg>

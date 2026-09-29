@@ -1,0 +1,30 @@
+{{/* Date ordering shared by the overview and archives. Preserve source order for collaboration ties. */}}
+{{ $items := slice }}
+{{ $projects := .projects | default slice }}
+{{ $dateField := "start" }}
+{{ if and (eq site.Language.Lang "en") (eq .kind "collaboration-projects") }}
+  {{ range (site.GetPage "/research").Translations }}{{ if ne .Language.Lang "en" }}
+    {{ range where .Params.sections "id" "collaboration-projects" }}{{ $projects = .content.projects }}{{ end }}
+  {{ end }}{{ end }}
+{{ end }}
+{{ if eq .kind "nstc-projects" }}
+  {{ $projects = where (where $projects "published" true) "type" "國科會研究計畫" }}
+  {{ $dateField = "start_date" }}
+{{ end }}
+{{ $starts := slice }}
+{{ range $projects }}{{ $starts = $starts | append (index . $dateField) }}{{ end }}
+{{ range sort (uniq $starts) "value" "desc" }}
+  {{ $group := where $projects $dateField . }}
+  {{ if eq $.kind "nstc-projects" }}{{ $group = sort $group "end_date" "desc" }}{{ end }}
+  {{ range $group }}{{ $items = $items | append . }}{{ end }}
+{{ end }}
+{{ $localized := slice }}
+{{ range $items }}
+  {{ $key := .title | default .title_zh }}{{ $kind := "collaboration_projects" }}
+  {{ if eq $.kind "nstc-projects" }}{{ $kind = "nstc_projects" }}{{ end }}
+  {{ $item := merge . (dict "anchor_title" $key) }}
+  {{ $item = partial "locale/record.html" (dict "record" $item "kind" $kind "key" $key) }}
+  {{ if eq site.Language.Lang "en" }}{{ $item = merge $item (dict "title_tail" "" "title_unbreakable" "") }}{{ end }}
+  {{ $localized = $localized | append $item }}
+{{ end }}
+{{ return $localized }}
