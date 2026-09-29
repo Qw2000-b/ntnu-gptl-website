@@ -1,44 +1,38 @@
-# Global Reach: GoatCounter preview adapter
+# Global Reach: production GoatCounter statistics
 
-## Files
-- `netlify/functions/visitor-stats.js`: Function entry.
-- `netlify/functions/lib/visitor-stats.cjs`: authenticated API calls, validation, pagination, aggregation and 15-minute cache.
-- `scripts/configure-visitor-stats.cjs` and `netlify/functions/lib/deploy-context.json`: bake a non-secret preview boolean at build time; false by default. Netlify runtime does not expose build CONTEXT.
-- `netlify.toml`: runs that build step; API secrets are not read or injected during builds.
-- `assets/js/visitor-stats-provider.js`: public same-origin endpoint, response validation and marked mock fallback.
-- `assets/js/global-reach.js`, `layouts/partials/global-reach.html`, `assets/css/global-reach.css`: existing presentation with Visits label, explicit real/mock status and null percentage handling.
-- `data/visitor_stats.json`: original mock numbers, retained only as clearly labelled fallback.
+## Configuration
 
-## Live schema verification
-On 2026-09-20 a temporary preview Function authenticated with the configured environment variables and actually received HTTP 200 from both endpoints. No token was returned or logged. Temporary diagnostics are removed from the final version.
+- Netlify production builds set `HUGO_GOATCOUNTER_ENABLED=true`. Preview builds explicitly disable it; local Hugo servers never include the tracker.
+- `scripts/configure-visitor-stats.cjs` bakes a public boolean into the function only when `CONTEXT=production` and the enable flag is true. No credentials are read during this step.
+- Netlify's **Production** context must provide `GOATCOUNTER_API_KEY` (secret, read statistics permission) and `GOATCOUNTER_BASE_URL=https://ntnu-gptl.goatcounter.com`. Never commit the key or place it in Hugo data, JavaScript, screenshots, or logs.
+- `data/analytics.json` holds public configuration: production origin, path namespace, reporting start and display date.
 
-`GET /api/v0/stats/total?start=...&end=...`:
-```json
-{"total":4,"total_events":0,"total_utc":4,"stats":[]}
-```
-The example abbreviates the daily/hourly stats array, which is not used. Actual root types: total, total_events, total_utc are numbers; stats is an array. Do not send limit to this endpoint (400).
+Changing this same Netlify site's visibility from Private to Public requires no analytics redeploy or reconfiguration. Real production visits made while Private also count. This measures visits since analytics activation, not exclusively visits after public launch. A future domain change requires updating `production_origin`.
 
-`GET /api/v0/stats/locations?start=...&end=...&limit=100&offset=0`:
-```json
-{"stats":[{"id":"TW","name":"Taiwan","count":4}],"more":false}
-```
-Follow more/offset pagination, validate all rows, and fail safely rather than display incomplete data.
+## Separate preview and production data
 
-## Metric and period
-GoatCounter counts a visit when a session first loads a path; repeated loads of the same path in that session are deduplicated. This is not lifetime unique people. Use **Visits**, based on total minus total_events, never label it Visitors. The legacy totalVisitors JSON key remains for component compatibility with metric="Visits" and source="goatcounter". See https://www.goatcounter.com/help/sessions and https://www.goatcounter.com/api.json.
+`assets/js/production-analytics.js` checks the exact production origin before loading GoatCounter. It sends paths such as `production:/research/` and `production:/en/research/`, with query strings and fragments removed. This preserves per-page and per-language reporting. No synthetic count requests are sent by the build.
 
-The reporting period starts 2026-09-01T00:00:00Z, the month already shown in the supplied mock. The end rounds up to the current UTC hour. Since remains September 2026; this describes the query coverage, not the lab's founding date.
+The function enumerates `/api/v0/paths` with pagination, selects only non-event paths starting with `production:/`, and sends the same `include_paths` ID filter to both `/api/v0/stats/total` and `/api/v0/stats/locations`. Newly visited routes are discovered automatically. No matching paths returns a real zero without making an unfiltered stats request. Incomplete or malformed results fail closed.
 
-Countries counts distinct nonzero country IDs. Unknown location codes are excluded from country count and country-share denominator and exposed only as aggregate unknownLocationVisits. Country shares use the sum of known country visits, disclosed beneath the chart. Taiwan appears first, then the top three other countries sorted by count, followed by Others containing all remaining known countries. Percentages round to one decimal; internationalPercentage = 100 - rounded Taiwan percentage. If no visits have a known country, internationalPercentage and taiwanPercentage are null (UI displays an em dash), not fabricated 100%.
+Historical preview paths remain intact. Even older immutable preview builds that still send unprefixed counts cannot enter the production aggregate. GoatCounter's dashboard contains both datasets; the website's Global Reach includes only production. Prefixing paths is supported by GoatCounter: https://www.goatcounter.com/help/domains.
 
-## Runtime and security
-Read GOATCOUNTER_API_KEY and GOATCOUNTER_BASE_URL only in the server function. Authorization uses Bearer. Only the existing https://ntnu-gptl.goatcounter.com origin is allowed; redirects are rejected. No query parameters from browsers are forwarded. No tokens, response errors, exceptions or headers are logged or returned. Successful responses contain only aggregates. Production returns 404 before reading credentials; HTML has no active data endpoint outside Deploy Preview.
+## Metric, period and unavailable states
 
-Warm instances cache for 900 seconds, coalesce concurrent calls and cool down failures for 60 seconds. Netlify durable CDN caching is also set to 900 seconds, with remaining TTL on warm-cache hits; browser cache is disabled. No unbounded stale data. First-load requests can make two calls, plus any required country pages. Request abort timeout is 8 seconds; frontend timeout is 10 seconds.
+The reporting start is 2026-09-30 at 00:00 UTC; the end rounds up to the current UTC hour. Only namespaced production records are selected, so earlier preview traffic is excluded.
 
-A 503/timeout/invalid response uses the clearly marked demo numbers, with no technical error on the homepage. Successful data shows the GoatCounter source label. Real zero values remain zero. No analytics credentials enter the client bundle or Hugo parameters.
+The displayed **Visits** value is GoatCounter's `total - total_events`, not lifetime unique people. A session's repeat loads of the same path are deduplicated. Country shares use known geolocated visits; unknown locations are excluded from the denominator. Taiwan, the top three other countries and Others are displayed. No geolocated visits means an unavailable percentage, not a fabricated 100%.
+
+No example counts are shown on failures. A missing key, timeout or invalid response returns 503 with `{available:false}`; the homepage shows em dashes and a localized unavailable message. Disabled environments return 404 before contacting GoatCounter.
+
+## Security and caching
+
+Only the existing GoatCounter HTTPS origin receives the server-side Bearer token; redirects are rejected. Browser query parameters are never forwarded. Public responses contain aggregate counts only. No credential, upstream error body or stack trace is returned or logged.
+
+Successful results are cached in warm instances and Netlify's durable CDN for 15 minutes; concurrent requests are coalesced. Errors have a 60-second server cooldown. Browser caching is disabled. The upstream timeout is 8 seconds and the frontend timeout is 10 seconds. Dashboard ingestion and cache expiry can delay visible changes.
 
 ## Verification
-`node --test tests/visitor-stats.test.mjs tests/visitor-stats-function.test.cjs`
-`node scripts/configure-visitor-stats.cjs` (production default)
-Production and Preview Hugo builds must both pass. Inspect generated HTML for data-endpoint: Preview only.
+
+Run `node --test tests/visitor-stats.test.mjs tests/visitor-stats-function.test.cjs tests/production-analytics.test.cjs`.
+
+Build production and preview separately. Confirm both language homepages have the tracker and stats endpoint only in production; local and preview hosts send no counts. On the deployed site, check the endpoint returns valid aggregate JSON and Global Reach shows GoatCounter data. Navigate a real production page and confirm its `production:/...` path appears in GoatCounter. Verify a cached homepage count again after cache expiry rather than generating fake visits.

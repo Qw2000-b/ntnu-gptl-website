@@ -4,7 +4,8 @@
 {{ end }}
 <noscript><style>#navbar-content.collapse{display:block!important}#navbar-main{position:relative!important}.navbar-toggler{display:none!important}body{padding-top:0!important}</style></noscript>
 
-{{/* Only the Netlify Deploy Preview context enables this public tracker. */}}
-{{ if eq (os.Getenv "HUGO_GOATCOUNTER_PREVIEW") "true" }}
-<script data-goatcounter="https://ntnu-gptl.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{{/* Production only; runtime origin check also excludes immutable deploy URLs. */}}
+{{ if and (not hugo.IsServer) (eq (os.Getenv "HUGO_GOATCOUNTER_ENABLED") "true") }}
+{{ $tracker := resources.Get "js/production-analytics.js" | minify | fingerprint }}
+<script defer src="{{ $tracker.RelPermalink }}" integrity="{{ $tracker.Data.Integrity }}" data-production-origin="{{ site.Data.analytics.production_origin }}" data-path-prefix="{{ site.Data.analytics.path_prefix }}"></script>
 {{ end }}

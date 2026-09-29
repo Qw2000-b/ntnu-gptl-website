@@ -1,4 +1,4 @@
-{{ $enabled := eq (os.Getenv "HUGO_GOATCOUNTER_PREVIEW") "true" }}
+{{ $enabled := and (not hugo.IsServer) (eq (os.Getenv "HUGO_GOATCOUNTER_ENABLED") "true") }}
 <div class="col-12 gptl-global-reach" data-global-reach data-endpoint="{{ if $enabled }}/.netlify/functions/visitor-stats{{ end }}" data-real-label="{{ cond .english "GoatCounter statistics · 15-minute cache" "GoatCounter 真實統計 · 快取 15 分鐘" }}" data-unavailable-label="{{ cond .english "Statistics are temporarily unavailable." "統計資料暫時無法取得。" }}" data-stats-source="none" lang="en">
   <header class="reach-heading">
     <h2>GLOBAL REACH</h2>

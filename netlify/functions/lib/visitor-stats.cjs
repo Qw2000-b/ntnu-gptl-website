@@ -1,5 +1,6 @@
 const TTL = 15 * 60 * 1000;
-const START = '2026-09-01T00:00:00Z';
+const analytics = require('../../../data/analytics.json');
+const START = analytics.period_start;
 const validCount = value => Number.isSafeInteger(value) && value >= 0;
 const oneDecimal = value => Math.round(value * 10) / 10;
 function normalize(total, rows, updatedAt) {
@@ -23,7 +24,7 @@ function normalize(total, rows, updatedAt) {
     totalVisitors:total.total-total.total_events, metric:'Visits', countries:countries.size,
     taiwanPercentage, internationalPercentage:known ? oneDecimal(100-taiwanPercentage) : null,
     countryDistribution:[{country:'Taiwan',percentage:percentage(taiwan)},...top.map(row=>({country:row.country,percentage:percentage(row.count)})),{country:'Others',percentage:percentage(remainder)}],
-    since:'September 2026', periodStart:START, updatedAt, source:'goatcounter',
+    since:analytics.since, periodStart:START, updatedAt, source:'goatcounter',
     countryBasis:'geolocated visits', geolocatedVisits:known, unknownLocationVisits:unknown
   };
 }
@@ -39,17 +40,33 @@ function createHandler({enabled=false, env=process.env, fetcher=globalThis.fetch
     const end=new Date(Math.ceil(now()/3600000)*3600000).toISOString();
     const controller=new AbortController(); const timer=setTimeout(()=>controller.abort(),8000);
     const get=async (path,params={})=>{
-      const query=new URLSearchParams({start:START,end,...params});
-      const result=await fetcher(`${base.origin}/api/v0/stats/${path}?${query}`,{headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},redirect:'error',signal:controller.signal});
+      const query=new URLSearchParams(params);
+      const result=await fetcher(`${base.origin}/api/v0/${path}?${query}`,{headers:{Authorization:`Bearer ${token}`,'Content-Type':'application/json'},redirect:'error',signal:controller.signal});
       if (!result.ok) throw Error('Unavailable');
       return result.json();
     };
     try {
-      const total=await get('total');
+      // Discover production path IDs so new routes are included automatically.
+      // Never send an empty include_paths: the API interprets it as ALL traffic.
+      const ids=[]; let after=0;
+      for(let page=0;page<20;page++) {
+        const data=await get('paths',{limit:'200',after:String(after)});
+        if (!Array.isArray(data.paths) || typeof data.more!=='boolean') throw Error('Invalid paths');
+        for(const path of data.paths) {
+          if (!Number.isSafeInteger(path.id) || path.id<=after || typeof path.path!=='string' || typeof path.event!=='boolean') throw Error('Invalid path');
+          after=path.id;
+          if (!path.event && path.path.startsWith(analytics.path_prefix + '/')) ids.push(path.id);
+        }
+        if (!data.more) break;
+        if (!data.paths.length || page===19) throw Error('Incomplete paths');
+      }
+      if (!ids.length) return normalize({total:0,total_events:0},[],new Date(now()).toISOString());
+      const scope={start:START,end,include_paths:ids.join(',')};
+      const total=await get('stats/total',scope);
       const rows=[]; let offset=0;
       for(let page=0;page<10;page++) {
         if(page>0) await new Promise(resolve=>setTimeout(resolve,300));
-        const data=await get('locations',{limit:'100',offset:String(offset)});
+        const data=await get('stats/locations',{...scope,limit:'100',offset:String(offset)});
         if (!Array.isArray(data.stats) || typeof data.more!=='boolean') throw Error('Invalid aggregate');
         rows.push(...data.stats); offset+=data.stats.length;
         if (!data.more) return normalize(total,rows,new Date(now()).toISOString());

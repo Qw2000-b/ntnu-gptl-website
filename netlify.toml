@@ -8,12 +8,13 @@
 
 [context.production.environment]
   HUGO_ENV = "production"
+  HUGO_GOATCOUNTER_ENABLED = "true"
 
 [context.deploy-preview]
   command = "node scripts/configure-visitor-stats.cjs && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
-  HUGO_GOATCOUNTER_PREVIEW = "true"
+  HUGO_GOATCOUNTER_ENABLED = "false"
 
 [context.branch-deploy]
   command = "node scripts/configure-visitor-stats.cjs && hugo --gc --minify -b $DEPLOY_PRIME_URL"

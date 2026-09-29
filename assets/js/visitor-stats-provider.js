@@ -1,4 +1,4 @@
-/** Public, aggregate data only. The Hugo block enables the URL in Deploy Preview only.
+/** Public, aggregate data only. The Hugo block enables the URL in production only.
  * Third-party credentials belong in server-side environment variables, never here.
  * @typedef {{totalVisitors:number,countries:number,internationalPercentage:number|null,
  * countryDistribution:Array<{country:string,percentage:number}>,since:string}} VisitorStats
