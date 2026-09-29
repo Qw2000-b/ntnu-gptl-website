@@ -60,7 +60,7 @@ test('both aggregate endpoints include only production path IDs',async()=>{
  assert.equal((await handler()).statusCode,200);
  for(const url of visited.filter(u=>u.pathname.includes('/stats/'))) {
   assert.equal(url.searchParams.get('include_paths'),'2,3');
-  assert.equal(url.searchParams.get('start'),'2026-09-30T00:00:00Z');
+  assert.equal(url.searchParams.get('start'),'2026-09-29T16:00:00Z');
  }
  assert.equal(visited.filter(u=>u.pathname.includes('/stats/')).length,2);
 });

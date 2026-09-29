@@ -19,7 +19,7 @@ Historical preview paths remain intact. Even older immutable preview builds that
 
 ## Metric, period and unavailable states
 
-The reporting start is 2026-09-30 at 00:00 UTC; the end rounds up to the current UTC hour. Only namespaced production records are selected, so earlier preview traffic is excluded.
+The reporting start is 2026-09-30 at 00:00 Asia/Taipei (2026-09-29 at 16:00 UTC); the end rounds up to the current UTC hour. Only namespaced production records are selected, so earlier preview traffic is excluded.
 
 The displayed **Visits** value is GoatCounter's `total - total_events`, not lifetime unique people. A session's repeat loads of the same path are deduplicated. Country shares use known geolocated visits; unknown locations are excluded from the denominator. Taiwan, the top three other countries and Others are displayed. No geolocated visits means an unavailable percentage, not a fabricated 100%.
 
