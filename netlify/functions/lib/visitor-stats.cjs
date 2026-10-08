@@ -48,25 +48,41 @@ function createHandler({enabled=false, env=process.env, fetcher=globalThis.fetch
     try {
       // Discover production path IDs so new routes are included automatically.
       // Never send an empty include_paths: the API interprets it as ALL traffic.
-      const ids=[]; let after=0;
+      const ids=[]; const seen=new Set(); let after=0;
       for(let page=0;page<20;page++) {
         const data=await get('paths',{limit:'200',after:String(after)});
         if (!Array.isArray(data.paths) || typeof data.more!=='boolean') throw Error('Invalid paths');
+        let nextAfter=after, previous=after, ordered=true;
         for(const path of data.paths) {
-          if (!Number.isSafeInteger(path.id) || path.id<=after || typeof path.path!=='string' || typeof path.event!=='boolean') throw Error('Invalid path');
-          after=path.id;
-          if (!path.event && path.path.startsWith(analytics.path_prefix + '/')) ids.push(path.id);
+          if (!Number.isSafeInteger(path.id) || path.id<=after || seen.has(path.id) || typeof path.path!=='string' || typeof path.event!=='boolean') throw Error('Invalid path');
+          seen.add(path.id);
+          ordered=ordered && path.id>previous; previous=path.id;
+          nextAfter=Math.max(nextAfter,path.id);
+          // Hosted GoatCounter returns paths in display order and normalizes
+          // "production:/" to "/production:" (removing the trailing slash).
+          const name=path.path.replace(/^\//,'');
+          if (!path.event && (name===analytics.path_prefix || name.startsWith(analytics.path_prefix + '/'))) ids.push(path.id);
         }
         if (!data.more) break;
+        // Do not risk skipping IDs if a paginated response violates the API's
+        // documented ID order. A complete single page needs no cursor ordering.
+        if (!ordered) throw Error('Unsafe path pagination');
+        after=nextAfter;
         if (!data.paths.length || page===19) throw Error('Incomplete paths');
       }
       if (!ids.length) return normalize({total:0,total_events:0},[],new Date(now()).toISOString());
       const scope={start:START,end,include_paths:ids.join(',')};
       const total=await get('stats/total',scope);
+      // Locations are daily aggregates. The production namespace was introduced
+      // after START, so expanding to UTC day boundaries cannot add preview visits.
+      const day=24*3600000;
+      const locationScope={...scope,
+        start:new Date(Math.floor(Date.parse(START)/day)*day).toISOString(),
+        end:new Date(Math.ceil(Date.parse(end)/day)*day).toISOString()};
       const rows=[]; let offset=0;
       for(let page=0;page<10;page++) {
         if(page>0) await new Promise(resolve=>setTimeout(resolve,300));
-        const data=await get('stats/locations',{...scope,limit:'100',offset:String(offset)});
+        const data=await get('stats/locations',{...locationScope,limit:'100',offset:String(offset)});
         if (!Array.isArray(data.stats) || typeof data.more!=='boolean') throw Error('Invalid aggregate');
         rows.push(...data.stats); offset+=data.stats.length;
         if (!data.more) return normalize(total,rows,new Date(now()).toISOString());

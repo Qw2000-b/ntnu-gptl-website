@@ -13,13 +13,15 @@ Changing this same Netlify site's visibility from Private to Public requires no 
 
 `assets/js/production-analytics.js` checks the exact production origin before loading GoatCounter. It sends paths such as `production:/research/` and `production:/en/research/`, with query strings and fragments removed. This preserves per-page and per-language reporting. No synthetic count requests are sent by the build.
 
-The function enumerates `/api/v0/paths` with pagination, selects only non-event paths starting with `production:/`, and sends the same `include_paths` ID filter to both `/api/v0/stats/total` and `/api/v0/stats/locations`. Newly visited routes are discovered automatically. No matching paths returns a real zero without making an unfiltered stats request. Incomplete or malformed results fail closed.
+The function enumerates `/api/v0/paths`, selects only non-event production paths, and sends the same `include_paths` ID filter to both `/api/v0/stats/total` and `/api/v0/stats/locations`. GoatCounter normalizes the namespace to `/production:` for the root and `/production:/research` for subpages; both normalized and original forms are recognized. A complete page may be in display order rather than ID order. Paginated responses must follow the documented ID cursor order; inconsistent partial pages fail closed to avoid missing records. Newly visited routes are discovered automatically. No matching paths returns a real zero without making an unfiltered stats request. Incomplete or malformed results fail closed.
 
 Historical preview paths remain intact. Even older immutable preview builds that still send unprefixed counts cannot enter the production aggregate. GoatCounter's dashboard contains both datasets; the website's Global Reach includes only production. Prefixing paths is supported by GoatCounter: https://www.goatcounter.com/help/domains.
 
 ## Metric, period and unavailable states
 
 The reporting start is 2026-09-30 at 00:00 Asia/Taipei (2026-09-29 at 16:00 UTC); the end rounds up to the current UTC hour. Only namespaced production records are selected, so earlier preview traffic is excluded.
+
+Country data use daily UTC buckets, so their query expands to UTC day boundaries with the identical production path filter. This is safe because the production namespace was first introduced after activation. Do not later move the reporting start within a day that already contains production records and assume country totals have hourly precision.
 
 The displayed **Visits** value is GoatCounter's `total - total_events`, not lifetime unique people. A session's repeat loads of the same path are deduplicated. Country shares use known geolocated visits; unknown locations are excluded from the denominator. Taiwan, the top three other countries and Others are displayed. No geolocated visits means an unavailable percentage, not a fabricated 100%.
 

@@ -99,6 +99,24 @@
       "photo": "/images/team/蔡浚輝.webp"
     },
     {
+      "name": "陳其佑",
+      "english": "Chi-Yu Chen",
+      "degree": "碩士生",
+      "institute": "vehicle",
+      "entry_year": 115,
+      "photo": "/images/team/chi-yu-chen.jpg",
+      "photo_framing": "chi-yu-half-body"
+    },
+    {
+      "name": "林郁勝",
+      "english": "Yu-Sheng Lin",
+      "degree": "碩士生",
+      "institute": "vehicle",
+      "entry_year": 115,
+      "photo": "/images/team/yu-sheng-lin.jpg",
+      "photo_framing": "yu-sheng-half-body"
+    },
+    {
       "name": "鄭登元",
       "english": "Teng-Yuan Cheng",
       "degree": "碩士生",
@@ -112,8 +130,8 @@
       "degree": "碩士生",
       "institute": "vehicle",
       "entry_year": 114,
-      "photo": "/images/team/黃啟錩.webp",
-      "photo_framing": "center-left"
+      "photo": "/images/team/chi-chang-huang.jpg",
+      "photo_framing": "chi-chang-half-body"
     },
     {
       "name": "施權祐",
@@ -121,8 +139,8 @@
       "degree": "碩士生",
       "institute": "vehicle",
       "entry_year": 114,
-      "photo": "/images/team/施權祐.webp",
-      "photo_framing": "center-far-left"
+      "photo": "/images/team/quan-you-shi.jpg",
+      "photo_framing": "quan-you-half-body"
     }
   ]
 }

@@ -60,7 +60,7 @@ test('both aggregate endpoints include only production path IDs',async()=>{
  assert.equal((await handler()).statusCode,200);
  for(const url of visited.filter(u=>u.pathname.includes('/stats/'))) {
   assert.equal(url.searchParams.get('include_paths'),'2,3');
-  assert.equal(url.searchParams.get('start'),'2026-09-29T16:00:00Z');
+  assert.equal(url.searchParams.get('start'),url.pathname.endsWith('/locations')?'2026-09-29T00:00:00.000Z':'2026-09-29T16:00:00Z');
  }
  assert.equal(visited.filter(u=>u.pathname.includes('/stats/')).length,2);
 });
@@ -89,4 +89,43 @@ test('path pagination includes later production paths and excludes events',async
 test('incomplete path pagination fails closed instead of returning partial totals',async()=>{
  const response=await createHandler({enabled:true,env,fetcher:async()=>({ok:true,json:async()=>({more:true,paths:[]})})})();
  assert.equal(response.statusCode,503);
+});
+
+test('hosted path normalization and display ordering retain production visits only',async()=>{
+ const observed={more:false,paths:[
+  {id:927,path:'/',event:false},{id:922,path:'/about',event:false},
+  {id:3430,path:'/production:',event:false},{id:3045,path:'/production:/research',event:false},
+  {id:3046,path:'/production:/event',event:true},{id:3047,path:'/production:preview',event:false},
+  {id:925,path:'/publication',event:false}
+ ]};
+ const response=await createHandler({enabled:true,env,fetcher:async url=>{
+  if(url.includes('/paths?')) return {ok:true,json:async()=>observed};
+  assert.equal(new URL(url).searchParams.get('include_paths'),'3430,3045');
+  return goodFetch(url);
+ }})();
+ assert.equal(response.statusCode,200);assert.equal(JSON.parse(response.body).totalVisitors,4);
+});
+
+test('unordered partial path pages fail closed rather than omit unknown IDs',async()=>{
+ const response=await createHandler({enabled:true,env,fetcher:async()=>({ok:true,json:async()=>({more:true,paths:[
+  {id:3,path:'/production:',event:false},{id:2,path:'/',event:false}
+ ]})})})();
+ assert.equal(response.statusCode,503);
+});
+
+test('country queries cover UTC daily buckets while totals retain Taipei activation time',async()=>{
+ const handler=createHandler({enabled:true,env,now:()=>Date.parse('2026-09-29T16:45:00Z'),fetcher:async url=>{
+  const u=new URL(url);
+  if(u.pathname.endsWith('/locations')) {
+   assert.equal(u.searchParams.get('start'),'2026-09-29T00:00:00.000Z');
+   assert.equal(u.searchParams.get('end'),'2026-09-30T00:00:00.000Z');
+   assert.equal(u.searchParams.get('include_paths'),'2,3');
+  }
+  if(u.pathname.endsWith('/total')) {
+   assert.equal(u.searchParams.get('start'),'2026-09-29T16:00:00Z');
+   assert.equal(u.searchParams.get('end'),'2026-09-29T17:00:00.000Z');
+  }
+  return goodFetch(url);
+ }});
+ assert.equal((await handler()).statusCode,200);
 });

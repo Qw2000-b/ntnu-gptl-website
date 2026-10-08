@@ -16,9 +16,15 @@
 .gptl-current-students .team-photo img{object-position:50% 50%}
 /* Small upward framing adjustment; slight overscan keeps the frame filled. */
 .gptl-current-students .team-photo[data-framing="slightly-up"] img{transform:translateY(-2%) scale(1.04)}
-/* Individual framing keeps off-centre portraits centred with headroom. */
-.gptl-current-students .team-photo[data-framing="center-left"] img{width:170%;max-width:none;object-position:0% 20%}
-.gptl-current-students .team-photo[data-framing="center-far-left"] img{width:235%;max-width:none;object-position:0% 50%}
+/* Frame the supplied originals without changing their pixels or proportions. */
+.gptl-current-students .team-photo[data-framing="chi-chang-half-body"],
+.gptl-current-students .team-photo[data-framing="quan-you-half-body"],
+.gptl-current-students .team-photo[data-framing="chi-yu-half-body"],
+.gptl-current-students .team-photo[data-framing="yu-sheng-half-body"]{position:relative}
+.gptl-current-students .team-photo[data-framing="chi-chang-half-body"] img{position:absolute;width:256.5%;height:auto;max-width:none;left:-48.6%;top:-111.1%}
+.gptl-current-students .team-photo[data-framing="quan-you-half-body"] img{position:absolute;width:277%;height:auto;max-width:none;left:-86.5%;top:-114.6%}
+.gptl-current-students .team-photo[data-framing="chi-yu-half-body"] img{position:absolute;width:207.3%;height:auto;max-width:none;left:-18.9%;top:-58.2%}
+.gptl-current-students .team-photo[data-framing="yu-sheng-half-body"] img{position:absolute;width:273.5%;height:auto;max-width:none;left:-101.9%;top:-38.5%}
 .gptl-team .team-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:20px;color:var(--color-text-muted);font-size:15px}
 .gptl-team .team-silhouette{position:relative;display:block;width:88px;height:88px}
 .gptl-team .team-silhouette:before{content:"";position:absolute;width:34px;height:34px;border-radius:50%;background:var(--color-border);left:27px;top:0}
