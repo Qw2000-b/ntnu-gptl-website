@@ -1,3 +1,7 @@
+{{/* Stable, higher-resolution brand favicon for search results. */}}
+{{ $searchIcon := (partial "blox-core/functions/get_icon" 96) | resources.Copy "favicon.png" }}
+<link rel="icon" type="image/png" sizes="96x96" href="{{ $searchIcon.RelPermalink }}">
+
 {{ range slice "css/design-tokens.css" "css/readability.css" "css/home.css" "css/visual-system.css" }}
 {{ $css := resources.Get . | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
