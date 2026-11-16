@@ -48,6 +48,8 @@
 #development .direction-icon{width:88px;height:88px;display:grid;place-items:center;color:#303633;transition:color 180ms ease}
 #development .direction-icon svg{width:56px;height:56px;display:block;fill:none;transition:transform 180ms ease}
 #development a.direction-icon{text-decoration:none;border-radius:0}
+#development a.direction-title{color:inherit;text-decoration-color:transparent}
+#development a.direction-title:is(:hover,:focus-visible){color:var(--gptl-accent);text-decoration-color:currentColor}
 #development a.direction-icon:focus-visible{outline:2px solid var(--color-focus);outline-offset:4px}
 #development .direction-item:focus-within .direction-icon{color:#28664f}
 #development .direction-item:focus-within .direction-icon svg{transform:translateY(-2px)}

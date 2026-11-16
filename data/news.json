@@ -1,5 +1,35 @@
 [
   {
+    "id": "icice-2026",
+    "sort_date": "2026-11-04",
+    "date_label": "發表日期｜2026/11/04",
+    "title": "GPTL 赴日本福岡參與 ICICE 2026，發表四篇研究",
+    "category_zh": "研討會成果",
+    "text": "莊啓文、李峰州、蔡浚輝及鄭登元在日本福岡舉行的 ICICE 2026 分別報告冷鏈車熱模型與系統規格、氫能自動駕駛車速與能源管理、混合動力船舶建模，以及結合太陽光電與氫能的微電網能源管理研究。鄭安哲、蕭程萇、周士綸與洪翊軒、林煜軒兩位教授也一同出席。",
+    "papers": [
+      {
+        "people": "Chi-Wen Chuang, Cheng-Chang Xiao, Yi-Hsuan Hung, Yu-Hsuan Lin, Chien-Chih Yin, Ming-Cing Peng",
+        "title": "Control-Oriented Thermal Modeling and System Sizing for Refrigerated Vehicles",
+        "award": ""
+      },
+      {
+        "people": "Feng-Chou Lee, Chi-Chang Huang, Yi-Hsuan Hung",
+        "title": "Model Predictive Control-Based Energy Management and Speed Planning of Hydrogen-Powered Autonomous Vehicles Considering Traffic Signal Phase and Timing Information",
+        "award": ""
+      },
+      {
+        "people": "Chun-Hui Tsai, Chi-Chang Huang, Shih-Lun Chou, Yi-Hsuan Hung",
+        "title": "CONTROL-ORIENTED MODELING FOR ADVANCED-POWERTRAIN VESSELS",
+        "award": ""
+      },
+      {
+        "people": "Teng-Yuan Cheng, An-Zhe Zheng, Yi-Hsuan Hung",
+        "title": "Modelling and Energy Management of a Microgrid System with PVs and Fuel Cells Powered by Green and Blue Hydrogen Sources",
+        "award": ""
+      }
+    ]
+  },
+  {
     "id": "isie-2026",
     "sort_date": "2026-06-24",
     "date_label": "發表日期｜2026/06/24",

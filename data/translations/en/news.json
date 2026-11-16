@@ -1,4 +1,32 @@
 {
+  "icice-2026": {
+    "title_en": "GPTL Presents Four Papers at ICICE 2026 in Fukuoka, Japan",
+    "summary_en": "Chi-Wen Chuang, Feng-Chou Lee, Chun-Hui Tsai, and Teng-Yuan Cheng presented research on refrigerated vehicle thermal modeling, speed planning and energy management for hydrogen-powered autonomous vehicles, hybrid vessel modeling, and solar and hydrogen microgrid energy management, respectively. An-Zhe Zheng, Cheng-Chang Xiao, and Shih-Lun Chou also attended, along with Professors Yi-Hsuan Hung and Yu-Hsuan Lin.",
+    "category_en": "Conference Presentations",
+    "date_label": "Presentation date | 2026/11/04",
+    "papers_en": [
+      {
+        "people": "Chi-Wen Chuang, Cheng-Chang Xiao, Yi-Hsuan Hung, Yu-Hsuan Lin, Chien-Chih Yin, Ming-Cing Peng",
+        "title": "Control-Oriented Thermal Modeling and System Sizing for Refrigerated Vehicles",
+        "award": ""
+      },
+      {
+        "people": "Feng-Chou Lee, Chi-Chang Huang, Yi-Hsuan Hung",
+        "title": "Model Predictive Control-Based Energy Management and Speed Planning of Hydrogen-Powered Autonomous Vehicles Considering Traffic Signal Phase and Timing Information",
+        "award": ""
+      },
+      {
+        "people": "Chun-Hui Tsai, Chi-Chang Huang, Shih-Lun Chou, Yi-Hsuan Hung",
+        "title": "CONTROL-ORIENTED MODELING FOR ADVANCED-POWERTRAIN VESSELS",
+        "award": ""
+      },
+      {
+        "people": "Teng-Yuan Cheng, An-Zhe Zheng, Yi-Hsuan Hung",
+        "title": "Modelling and Energy Management of a Microgrid System with PVs and Fuel Cells Powered by Green and Blue Hydrogen Sources",
+        "award": ""
+      }
+    ]
+  },
   "isie-2026": {
     "title_en": "Paper Presentation at IEEE ISIE 2026",
     "summary_en": "Chi-Wen Chuang traveled to Nagoya, Japan, to present a paper at the 35th IEEE International Symposium on Industrial Electronics (ISIE 2026).",

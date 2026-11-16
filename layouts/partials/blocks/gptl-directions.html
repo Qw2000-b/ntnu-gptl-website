@@ -13,7 +13,7 @@
           {{- replace $svg "<svg " `<svg aria-hidden="true" focusable="false" ` | safeHTML -}}
         {{ end }}
       </a>
-      <div class="direction-content"><h3>{{ .title }}</h3>
+      <div class="direction-content"><h3><a class="direction-title" href="{{ .page | relLangURL }}">{{ .title }}</a></h3>
       <p>{{ .description }}</p></div>
     </article>
     {{ end }}

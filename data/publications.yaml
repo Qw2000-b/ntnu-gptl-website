@@ -777,6 +777,62 @@ publications:
 
 # Conference records supplied by the lab; missing dates remain absent.
 conference_papers:
+  - title: "Control-Oriented Thermal Modeling and System Sizing for Refrigerated Vehicles"
+    authors: ["Chi-Wen Chuang", "Cheng-Chang Xiao", "Yi-Hsuan Hung", "Yu-Hsuan Lin", "Chien-Chih Yin", "Ming-Cing Peng"]
+    presenters: ["Chi-Wen Chuang"]
+    year: 2026
+    date: "2026-11-04"
+    conference: "ICICE 2026"
+    city: "Fukuoka"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung", "Yu-Hsuan Lin"]
+    featured: false
+
+  - title: "Model Predictive Control-Based Energy Management and Speed Planning of Hydrogen-Powered Autonomous Vehicles Considering Traffic Signal Phase and Timing Information"
+    authors: ["Feng-Chou Lee", "Chi-Chang Huang", "Yi-Hsuan Hung"]
+    presenters: ["Feng-Chou Lee"]
+    year: 2026
+    date: "2026-11-04"
+    conference: "ICICE 2026"
+    city: "Fukuoka"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+
+  - title: "CONTROL-ORIENTED MODELING FOR ADVANCED-POWERTRAIN VESSELS"
+    authors: ["Chun-Hui Tsai", "Chi-Chang Huang", "Shih-Lun Chou", "Yi-Hsuan Hung"]
+    presenters: ["Chun-Hui Tsai"]
+    year: 2026
+    date: "2026-11-04"
+    conference: "ICICE 2026"
+    city: "Fukuoka"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+
+  - title: "Modelling and Energy Management of a Microgrid System with PVs and Fuel Cells Powered by Green and Blue Hydrogen Sources"
+    authors: ["Teng-Yuan Cheng", "An-Zhe Zheng", "Yi-Hsuan Hung"]
+    presenters: ["Teng-Yuan Cheng"]
+    year: 2026
+    date: "2026-11-04"
+    conference: "ICICE 2026"
+    city: "Fukuoka"
+    country: "Japan"
+    language: "en"
+    type: "conference-paper"
+    source_status: "confirmed"
+    highlight_authors: ["Yi-Hsuan Hung"]
+    featured: false
+
   - title: "Comparative Benefit Assessment of Diesel–Electric Hybrid and Hydrogen Fuel-Cell Hybrid Powertrains for a 5-Ton-Class Refrigeration Truck"
     authors: ["Chi-Wen Chuang", "Yi-Hsuan Hung", "Yu-Hsuan Lin", "Chien-Chiang Tung", "Tien-Chu Huang", "Ding-Wu Bai"]
     year: 2026
