@@ -1,6 +1,6 @@
 .gptl-partners{--partner-line:var(--color-border);--partner-muted:var(--color-text-muted)}
 .gptl-partners h2{margin:0 0 8px}
-.gptl-partners .partners-subtitle{color:var(--partner-muted);font-size:17px;margin:0 0 32px}
+.gptl-partners .partners-subtitle{color:var(--partner-muted);font-size:16px;margin:0 0 32px}
 .gptl-partners .partners-grid{list-style:none;padding:0;margin:0}
 /* Square grid cells; artwork keeps its original aspect ratio inside a safe area. */
 .page-body .gptl-partners .partners-grid>:is(.partner-logo,.grid-filler){height:auto;aspect-ratio:1;padding:clamp(16px,2vw,24px)}

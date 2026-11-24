@@ -1,14 +1,14 @@
 /* Shared concept rows for the four homepage direction destinations. */
 .gptl-direction-page .direction-back{margin-bottom:24px}
 .gptl-direction-page .direction-nav{display:flex;flex-wrap:wrap;gap:18px 24px;border-bottom:1px solid var(--color-border);padding:12px 0 18px;margin:16px 0 36px}
-.gptl-direction-page .direction-nav a{color:var(--color-accent);font-size:18px;max-width:100%;overflow-wrap:break-word}
+.gptl-direction-page .direction-nav a{color:var(--color-accent);font-size:16px;max-width:100%;overflow-wrap:break-word}
 .gptl-direction-page .direction-concept{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);border-top:1px solid var(--color-border)}
 .gptl-direction-page .direction-concept:last-child{border-bottom:1px solid var(--color-border)}
 .gptl-direction-page .direction-media-cell{display:flex;flex-direction:column;justify-content:center;min-width:0;padding:32px var(--gptl-grid-gap) 32px 0}
 .gptl-direction-page .direction-copy-cell{min-width:0;padding:32px 0 32px var(--gptl-grid-gap);border-left:1px solid var(--color-border);overflow-wrap:break-word}
 .gptl-direction-page .direction-copy-cell h2{margin:0 0 16px;scroll-margin-top:100px}
 .gptl-direction-page .direction-title-word{white-space:nowrap}
-.gptl-direction-page .direction-concept-number{font-size:20px;color:var(--gptl-accent);margin:0 0 4px;font-weight:500;line-height:1.35}
+.gptl-direction-page .direction-concept-number{font-size:24px;color:var(--gptl-accent);margin:0 0 4px;font-weight:500;line-height:1.35}
 .gptl-direction-page .direction-copy-body{text-align:justify;text-align-last:start}
 .gptl-direction-page .direction-copy-cell p:last-child{margin-bottom:0}
 .gptl-direction-page .direction-animation-placeholder{display:grid;place-items:center;aspect-ratio:16/9;padding:24px;background:var(--color-surface-subtle);color:var(--color-text-muted);font-size:var(--font-label);text-align:center}

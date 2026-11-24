@@ -27,6 +27,7 @@
 .gptl-hero__shade {
   z-index: 1;
   background:
+    linear-gradient(rgba(221, 232, 240, 0.08), rgba(221, 232, 240, 0.08)),
     linear-gradient(90deg, rgba(12, 21, 29, 0.48) 0%, rgba(12, 21, 29, 0.15) 38%, rgba(12, 21, 29, 0.10) 62%, rgba(12, 21, 29, 0.42) 100%),
     linear-gradient(180deg, rgba(8, 14, 20, 0.22) 0%, transparent 34%, rgba(8, 14, 20, 0.32) 100%);
 }
@@ -44,7 +45,7 @@
   margin: 0;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-size: clamp(57.24px, 7.95vw, 131.44px);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 0.9;
   letter-spacing: -0.055em;
 }
@@ -115,6 +116,7 @@
   .gptl-hero__title-right {
     top: 320px;
     right: 0;
+    letter-spacing: -0.08em;
   }
 
   .gptl-hero__tagline {
@@ -131,7 +133,7 @@
   }
 }
 
-.gptl-introduction h1.gptl-hero__title{font-size:clamp(57.24px,7.95vw,131.44px)!important;line-height:.9!important;font-weight:400;letter-spacing:-.055em;color:var(--gptl-hero-text)}
+.gptl-introduction h1.gptl-hero__title{font-size:clamp(57.24px,7.95vw,131.44px)!important;line-height:.9!important;font-weight:700;letter-spacing:-.055em;color:var(--gptl-hero-text)}
 @media(max-width:760px){.gptl-introduction h1.gptl-hero__title{font-size:clamp(50px,15vw,76px)!important}}
 
 /* Section-local viewport units align full-bleed media without scrollbar drift. */

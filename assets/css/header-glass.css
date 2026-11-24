@@ -16,4 +16,4 @@ body:has(.gptl-site-header){padding-top:0!important}
 #navbar-main .navbar-brand img.gptl-brand-logo{display:block;height:34px;width:auto;max-height:none;object-fit:contain;flex-shrink:0}
 @media(max-width:991px){#navbar-main .navbar-brand-mobile-wrapper{margin-left:0;order:0}#navbar-main .navbar-toggler{order:1;margin-left:auto}#navbar-main .nav-icons{order:2;margin-left:8px!important}}
 @media(max-width:760px){#navbar-main,.gptl-hero{--gptl-content-gutter:20px}#navbar-main .navbar-brand img.gptl-brand-logo{height:30px}}
-@media(max-width:480px){#navbar-main .navbar-brand{font-size:16px!important}#navbar-main .nav-icons .nav-link{padding-left:4px!important;padding-right:4px!important}#navbar-main .gptl-language-switch{font-size:12px;gap:6px;margin-left:2px}#navbar-main .nav-icons{margin-left:4px!important}}
+@media(max-width:480px){#navbar-main .navbar-brand{font-size:16px!important}#navbar-main .nav-icons .nav-link{padding-left:4px!important;padding-right:4px!important}#navbar-main .gptl-language-switch{font-size:16px;gap:6px;margin-left:2px}#navbar-main .nav-icons{margin-left:4px!important}}

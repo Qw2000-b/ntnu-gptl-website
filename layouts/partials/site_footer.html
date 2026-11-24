@@ -3,3 +3,6 @@
   <p>{{ if eq site.Language.Lang "en" }}Green Power Technology Laboratory · National Taiwan Normal University{{ else }}國立臺灣師範大學 · 綠能動力特色實驗室{{ end }}</p>
   </div><div class="footer-legal">{{ partial "site_footer_license.html" . }}</div>
 </footer>
+
+{{ $typeCSS := resources.Get "css/typography-system.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $typeCSS.RelPermalink }}" integrity="{{ $typeCSS.Data.Integrity }}">
